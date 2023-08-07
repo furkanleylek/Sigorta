@@ -3,8 +3,8 @@ import { TitleH2 } from '@/components/ui/h2'
 import React from 'react'
 import SingleNasılCalısır from './single-card-nasılcalısır'
 import Container from '@/components/ui/container'
-import ButtonFirst from '@/components/ui/buttonFirst'
 import { Paragraph } from '@/components/ui/paragraph'
+import Link from 'next/link'
 
 const NasılCalısırData = [
     {
@@ -37,9 +37,12 @@ const NasılCalısır = () => {
                         Bizden teklif almadan sigorta ve kasko yaptırmayın !
                     </Paragraph>
                 </div>
-                <Button variant="outline" size="lg" className='hidden md:flex rounded-full hover:bg-main hover:text-white transition-all duration-500 text-xs '>
-                    SİGORTA TEKLİFİ AL
-                </Button>
+                <Link href='/teklifal'>
+                    <Button variant="outline" size="lg" className='hidden md:flex rounded-full hover:bg-main hover:text-white transition-all duration-500 text-xs '>
+                        SİGORTA TEKLİFİ AL
+                    </Button>
+                </Link>
+
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
                 {
@@ -48,9 +51,11 @@ const NasılCalısır = () => {
                     })
                 }
             </div>
-            <Button variant="outline" size="lg" className='flex md:hidden w-full rounded-full hover:bg-main hover:text-white transition-all duration-500 text-xs '>
-                SİGORTA TEKLİFİ AL
-            </Button>
+            <Link href='/teklifal'>
+                <Button variant="outline" size="lg" className='flex md:hidden w-full rounded-full hover:bg-main hover:text-white transition-all duration-500 text-xs '>
+                    SİGORTA TEKLİFİ AL
+                </Button>
+            </Link>
         </Container>
     )
 }
