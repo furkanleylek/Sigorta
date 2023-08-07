@@ -28,7 +28,7 @@ const NasılCalısırData = [
 const NasılCalısır = () => {
     return (
         <Container>
-            <div className='flex items-center justify-between'>
+            <div className='flex items-start justify-between'>
                 <div className='flex flex-col space-y-2'>
                     <TitleH2>
                         Tüm Sigorta İşlemleriniz için en uygun fiyat
