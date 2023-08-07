@@ -1,5 +1,5 @@
 import Header from '@/components/header/header'
-import './globals.css'
+import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter, Poppins } from 'next/font/google'
 import Footer from '@/components/footer/footer'

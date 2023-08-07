@@ -1,8 +1,11 @@
 import React from 'react'
+import Container from '../ui/container'
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <Container>
+            <div>Footer</div>
+        </Container>
     )
 }
 
