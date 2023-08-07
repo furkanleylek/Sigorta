@@ -5,12 +5,12 @@ interface SigortaCategoryProps {
     categoryItems?: {
         title: string
         description: string
+        linkHref: string
     }
 }
 
 const SigortaCategory: React.FC<SigortaCategoryProps> = ({ categoryItems }) => {
 
-    console.log(categoryItems)
     return (
         <Container>
             <h1 className='text-3xl text-white'>  {categoryItems?.title} </h1>

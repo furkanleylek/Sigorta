@@ -1,13 +1,33 @@
 {
     "data": [
         {
-            "title": "Categori 1",
-            "linkHref": "",
+            "title": "Kasko Sigortası",
+            "linkHref": "kaskosigortasi",
+            "description": "description 1"
+        },
+        {
+            "title": "Trafik Sigortası",
+            "linkHref": "trafiksigortasi",
+            "description": "description 1"
+        },
+        {
+            "title": "Deprem Sigortası",
+            "linkHref": "depremsigortasi",
+            "description": "description 1"
+        },
+        {
+            "title": "Sağlık Sigortası",
+            "linkHref": "sagliksigortasi",
             "description": "description 1"
         },
         {
             "title": "Konut Sigortası",
             "linkHref": "konutsigortasi",
+            "description": "description 1"
+        },
+        {
+            "title": "Nakliyat Sigortası",
+            "linkHref": "nakliyatsigortasi",
             "description": "description 1"
         }
     ]

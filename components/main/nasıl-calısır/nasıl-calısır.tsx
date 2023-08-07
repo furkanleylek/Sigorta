@@ -10,17 +10,17 @@ const NasılCalısırData = [
     {
         title: "Sigorta Türünü Seçiniz",
         description: 'Kasko , Trafik Sigortası , Dask , Tarsim ya da diğer sigorta ihtiyaçlarınızdan seçim yaparak form sayfasına yönlendirileceksiniz.',
-        Icon: '/service-icon.webp',
+        Icon: '/nasılcalısır/select2.png',
     },
     {
         title: "Bilgileri Gönderin",
         description: 'Talep edilen bilgileri çok kolay bir şekilde forma doldurabilir ya da hiç zaman kaybetmeden WhatsApp ile gönderebilirsiniz.',
-        Icon: '/service-icon.webp',
+        Icon: '/nasılcalısır/send1.png',
     },
     {
         title: "En Uygun Teklifi Alın",
         description: 'Dakikalar içinde sigorta ihtiyaçlarınız için en uygun teklifi alın ve sigorta poliçenizin teslimatı için arkanıza yaslanın !',
-        Icon: '/service-icon.webp',
+        Icon: '/nasılcalısır/send4.png',
     },
 ]
 
