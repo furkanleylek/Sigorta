@@ -28,7 +28,7 @@ const NasılCalısırData = [
 const NasılCalısır = () => {
     return (
         <Container>
-            <div className='flex items-center justify-between '>
+            <div className='flex items-center justify-between'>
                 <div className='flex flex-col space-y-2'>
                     <TitleH2>
                         Tüm Sigorta İşlemleriniz için en uygun fiyat
@@ -42,7 +42,6 @@ const NasılCalısır = () => {
                         SİGORTA TEKLİFİ AL
                     </Button>
                 </Link>
-
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
                 {
@@ -52,7 +51,7 @@ const NasılCalısır = () => {
                 }
             </div>
             <Link href='/teklifal'>
-                <Button variant="outline" size="lg" className='flex md:hidden w-full rounded-full hover:bg-main hover:text-white transition-all duration-500 text-xs '>
+                <Button variant="outline" size="lg" className='mt-8 flex md:hidden w-full rounded-full hover:bg-main hover:text-white transition-all duration-500 text-xs '>
                     SİGORTA TEKLİFİ AL
                 </Button>
             </Link>

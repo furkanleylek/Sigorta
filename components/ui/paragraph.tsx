@@ -7,7 +7,7 @@ interface ParagraphProps {
 
 export const Paragraph: React.FC<ParagraphProps> = ({ children, className }) => {
     return (
-        <p className={`leading-normal text-sm whitespace-break-spaces tracking-wide  ${className}`}>
+        <p className={`leading-normal text-xs md:text-sm whitespace-break-spaces tracking-wide  ${className}`}>
             {children}
         </p>
     );
