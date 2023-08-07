@@ -9,7 +9,7 @@ type Props = {
 export async function generateMetadata(
     { params }: Props
 ): Promise<Metadata> {
-    const categoryItems = CategoryData.data.find(item => item.title.replace(/\s+/g, '').toLowerCase() === params.categoryName)
+    const categoryItems = CategoryData.data.find(item => item.linkHref === params.categoryName)
     return {
         title: `Categories | ${categoryItems?.title}`,
         // description: `${categorie?.name} description`
@@ -18,7 +18,7 @@ export async function generateMetadata(
 
 export default async function CategoryPage({ params }: Props) {
 
-    const categoryItems = CategoryData.data.find(item => item.title.replace(/\s+/g, '').toLowerCase() === params.categoryName)
+    const categoryItems = CategoryData.data.find(item => item.linkHref === params.categoryName)
 
     return (
         <div className='flex flex-col w-full space-y-8 bg-main h-screen pt-44 '>

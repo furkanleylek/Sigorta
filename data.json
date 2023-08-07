@@ -2,10 +2,12 @@
     "data": [
         {
             "title": "Categori 1",
+            "linkHref": "",
             "description": "description 1"
         },
         {
-            "title": "Categori 1",
+            "title": "Konut Sigortası",
+            "linkHref": "konutsigortasi",
             "description": "description 1"
         }
     ]

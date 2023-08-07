@@ -9,41 +9,41 @@ import { PiTrafficSignBold } from 'react-icons/pi'
 const components: { title: string; href: string; description: string, Icon: string }[] = [
     {
         title: "Kasko Sigortası",
-        href: "/docs/primitives/alert-dialog",
+        href: "/kaskosigortasi",
         description:
             "A modal dialog that interrupts the user with important content and expects a response.",
         Icon: PiTrafficSignBold
     },
     {
         title: "Trafik Sigortası",
-        href: "/docs/primitives/hover-card",
+        href: "/trafiksigortasi",
         description:
             "For sighted users to preview content available behind a link.",
         Icon: PiTrafficSignBold
     },
     {
         title: "Deprem Sigortası",
-        href: "/docs/primitives/progress",
+        href: "/depremsigortasi",
         description:
             "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
         Icon: PiTrafficSignBold
     },
     {
         title: "Sağlık Sigortası",
-        href: "/docs/primitives/scroll-area",
+        href: "/sagliksigortasi",
         description: "Visually or semantically separates content.",
         Icon: PiTrafficSignBold
     },
     {
         title: "Konut Sigortası",
-        href: "/docs/primitives/tabs",
+        href: "/konutsigortasi",
         description:
             "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
         Icon: PiTrafficSignBold
     },
     {
         title: "Nakliyat Sigortası",
-        href: "/docs/primitives/tooltip",
+        href: "/nakliyatsigortasi",
         description:
             "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
         Icon: PiTrafficSignBold

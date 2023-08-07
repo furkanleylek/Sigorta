@@ -1,8 +1,12 @@
-import Header from '@/components/header/header'
 import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter, Poppins } from 'next/font/google'
+
+import NextTopLoader from 'nextjs-toploader';
+
+import Header from '@/components/header/header'
 import Footer from '@/components/footer/footer'
+
 const inter = Inter({ subsets: ['latin'] })
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'] })
 
@@ -19,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <NextTopLoader />
         <Header />
         {children}
         <Footer />
