@@ -6,7 +6,7 @@ import { Button } from '../../ui/button'
 import { BackgroundImage } from './background-image'
 const Landing = () => {
     return (
-        <div className='min-h-screen text-white h-full w-full flex items-center  relative'>
+        <div className=' text-white h-full w-full flex items-center  relative pb-36 pt-24'>
             <BackgroundImage />
             <Container className='h-full space-y-10'>
                 <h1 className='text-2xl md:text-4xl lg:text-6xl'>Kahramanmaraş Sigorta<br /> <span className='font-bold text-3xl md:text-5xl lg:text-7xl'>Kaza Geliyorum Demez !</span></h1>
@@ -17,8 +17,8 @@ const Landing = () => {
                     <Button className='uppercase bg-stroke text-secondary rounded-full font-semibold tracking-wider hover:translate-y-[-4px] transition-all duration-500' size='lg'>
                         EN UYGUN TEKLİFİ ALIN
                     </Button>
-                    <Button className='uppercase bg-transparent text-secondary rounded-full font-semibold tracking-wider hover:translate-y-[-4px] transition-all duration-500' size='lg' variant='outline'>
-                        Bize Ulaşın
+                    <Button className='uppercase bg-zinc-900 bg-opacity-20 text-secondary rounded-full font-semibold tracking-wider hover:translate-y-[-4px] transition-all duration-500' size='lg' variant='outline'>
+                        BİZE ULAŞIN
                     </Button>
                 </div>
 
