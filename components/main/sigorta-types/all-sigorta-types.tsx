@@ -16,7 +16,7 @@ const SigortaTypes = [
     {
         title: "Trafik Sigortası",
         description: 'Trafikte oluşabilecek zararları karşılayarak sizleri maddi yüklerden koruyan trafik sigortası, güvenli seyahat etmenizi sağlar .',
-        imageUrl: '/test.jpg',
+        imageUrl: '/trafik.jpg',
         linkHref: 'trafiksigortasi'
     },
     {
@@ -34,7 +34,7 @@ const SigortaTypes = [
     {
         title: "Konut Sigortası",
         description: 'Ev ve eşyalarınızı yangın, hırsızlık gibi risklere karşı koruyan konut sigortası, huzurlu bir yaşam alanı sunar .',
-        imageUrl: '/test.jpg',
+        imageUrl: '/konut.jpg',
         linkHref: 'konutsigortasi'
     },
     {
@@ -56,7 +56,7 @@ const AllSigortaTypes = () => {
                 <Paragraph className='text-gray-500 italic pl-4'>
                     Farklı risklere karşı korunma ihtiyacını karşılamak için hayat sigortası, sağlık sigortası, otomobil sigortası gibi çeşitli güvence sistemleri sunulur. Her bir sigorta türü, özel ihtiyaçlarına yönelik koruma sağlar                            </Paragraph>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
                 {
                     SigortaTypes.map((sigorta) => {
                         return <SingleSigortaType key={sigorta.title} singleSigorta={sigorta} />

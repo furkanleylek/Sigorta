@@ -1,5 +1,6 @@
 import React from 'react'
 import Container from '../ui/container'
+import ContentType from './content-type'
 
 interface SigortaCategoryProps {
     categoryItems?: {
@@ -13,7 +14,8 @@ const SigortaCategory: React.FC<SigortaCategoryProps> = ({ categoryItems }) => {
 
     return (
         <Container>
-            <h1 className='text-3xl text-white'>  {categoryItems?.title} </h1>
+            <h1 className='text-3xl'>  {categoryItems?.title} </h1>
+            <ContentType />
         </Container>
     )
 }

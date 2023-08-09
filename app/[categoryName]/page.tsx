@@ -20,7 +20,7 @@ export default async function CategoryPage({ params }: Props) {
 
     const categoryItems = CategoryData.data.find(item => item.linkHref === params.categoryName)
     return (
-        <div className='flex flex-col w-full space-y-8 bg-main h-screen pt-44 '>
+        <div className='flex flex-col w-full space-y-8  h-screen pt-44 '>
             <SigortaCategory categoryItems={categoryItems} />
         </div>
     )
