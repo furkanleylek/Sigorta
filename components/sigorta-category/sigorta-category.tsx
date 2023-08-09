@@ -13,7 +13,7 @@ interface SigortaCategoryProps {
 const SigortaCategory: React.FC<SigortaCategoryProps> = ({ categoryItems }) => {
 
     return (
-        <Container>
+        <Container className=''>
             <h1 className='text-3xl'>  {categoryItems?.title} </h1>
             <ContentType />
         </Container>

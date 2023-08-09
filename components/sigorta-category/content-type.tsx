@@ -23,15 +23,13 @@ const Buttons = [
 const ContentType = () => {
 
     const [content, setContent] = useState('genelbilgi')
-    console.log(content)
-
     return (
         <>
-            <div className='flex items-center gap-4'>
+            <div className='flex items-center gap-4 '>
                 {
                     Buttons.map((element) => {
                         return (
-                            <Button key={element.title} variant='outline' onClick={() => setContent(element.content)}>
+                            <Button key={element.title} variant={element.content === content ? 'default' : 'outline'} onClick={() => setContent(element.content)}>
                                 {element.title}
                             </Button>
                         )
