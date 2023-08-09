@@ -5,6 +5,23 @@ import GenelBilgi from './genel-bilgi'
 import MerakEdilenler from './merakedilenler'
 import TestForm from '../teklif-forms/test-form'
 
+
+interface SigortaCategoryProps {
+    categoryItems?: {
+        title: string
+        description: string
+        linkHref: string
+        merakedilenler: {
+            title: string
+            description: string
+        }[]
+        genelbilgiler: {
+            title: string
+            description: string
+        }[]
+    }
+}
+
 const Buttons = [
     {
         title: 'Genel Bilgi',
@@ -20,7 +37,7 @@ const Buttons = [
     }
 ]
 
-const ContentType = () => {
+const ContentType: React.FC<SigortaCategoryProps> = ({ categoryItems }) => {
 
     const [content, setContent] = useState('genelbilgi')
     return (
@@ -38,12 +55,12 @@ const ContentType = () => {
             </div>
             {
                 content === 'genelbilgi' && (
-                    <GenelBilgi />
+                    <GenelBilgi genelbilgiler={categoryItems?.genelbilgiler} />
                 )
             }
             {
                 content === 'merakedilenler' && (
-                    <MerakEdilenler />
+                    <MerakEdilenler merakedilenler={categoryItems?.merakedilenler} />
                 )
             }
             {

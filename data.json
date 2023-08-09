@@ -3,32 +3,272 @@
         {
             "title": "Kasko Sigortası",
             "linkHref": "kaskosigortasi",
-            "description": "description 1"
+            "description": "description 1",
+            "merakedilenler": [
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                }
+            ],
+            "genelbilgiler": [
+                {
+                    "title": "Question 1",
+                    "description": "Question 1 Description"
+                },
+                {
+                    "title": "Question 2",
+                    "description": "Question 2 Description"
+                },
+                {
+                    "title": "Question 3",
+                    "description": "Question 3 Description"
+                }
+            ]
         },
         {
             "title": "Trafik Sigortası",
             "linkHref": "trafiksigortasi",
-            "description": "description 1"
+            "description": "description 1",
+            "merakedilenler": [
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                }
+            ],
+            "genelbilgiler": [
+                {
+                    "title": "Question 1",
+                    "description": "Question 1 Description"
+                },
+                {
+                    "title": "Question 2",
+                    "description": "Question 2 Description"
+                },
+                {
+                    "title": "Question 3",
+                    "description": "Question 3 Description"
+                }
+            ]
         },
         {
             "title": "Deprem Sigortası",
             "linkHref": "depremsigortasi",
-            "description": "description 1"
+            "description": "description 1",
+            "merakedilenler": [
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                }
+            ],
+            "genelbilgiler": [
+                {
+                    "title": "Question 1",
+                    "description": "Question 1 Description"
+                },
+                {
+                    "title": "Question 2",
+                    "description": "Question 2 Description"
+                },
+                {
+                    "title": "Question 3",
+                    "description": "Question 3 Description"
+                }
+            ]
         },
         {
             "title": "Sağlık Sigortası",
             "linkHref": "sagliksigortasi",
-            "description": "description 1"
+            "description": "description 1",
+            "merakedilenler": [
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                }
+            ],
+            "genelbilgiler": [
+                {
+                    "title": "Question 1",
+                    "description": "Question 1 Description"
+                },
+                {
+                    "title": "Question 2",
+                    "description": "Question 2 Description"
+                },
+                {
+                    "title": "Question 3",
+                    "description": "Question 3 Description"
+                }
+            ]
         },
         {
             "title": "Konut Sigortası",
             "linkHref": "konutsigortasi",
-            "description": "description 1"
+            "description": "description 1",
+            "merakedilenler": [
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                }
+            ],
+            "genelbilgiler": [
+                {
+                    "title": "Question 1",
+                    "description": "Question 1 Description"
+                },
+                {
+                    "title": "Question 2",
+                    "description": "Question 2 Description"
+                },
+                {
+                    "title": "Question 3",
+                    "description": "Question 3 Description"
+                }
+            ]
         },
         {
             "title": "Nakliyat Sigortası",
             "linkHref": "nakliyatsigortasi",
-            "description": "description 1"
+            "description": "description 1",
+            "merakedilenler": [
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
+                }
+            ],
+            "genelbilgiler": [
+                {
+                    "title": "Question 1",
+                    "description": "Question 1 Description"
+                },
+                {
+                    "title": "Question 2",
+                    "description": "Question 2 Description"
+                },
+                {
+                    "title": "Question 3",
+                    "description": "Question 3 Description"
+                }
+            ]
         }
     ]
 }
