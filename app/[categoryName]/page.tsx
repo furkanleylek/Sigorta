@@ -11,7 +11,7 @@ export async function generateMetadata(
 ): Promise<Metadata> {
     const categoryItems = CategoryData.data.find(item => item.linkHref === params.categoryName)
     return {
-        title: `Categories | ${categoryItems?.title}`,
+        title: `${categoryItems?.title}`,
         // description: `${categorie?.name} description`
     }
 }

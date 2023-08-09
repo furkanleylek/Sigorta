@@ -1,8 +1,13 @@
 import React from 'react'
-
+import AllTeklifler from '@/components/teklifler/all-teklifler'
+import Container from '@/components/ui/container'
 const SigortaTeklifi = () => {
     return (
-        <div className='bg-main pt-44'>SigortaTeklifi</div>
+        <Container>
+            <div className='pt-16 h-screen'>
+                <AllTeklifler />
+            </div>
+        </Container>
     )
 }
 
