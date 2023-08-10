@@ -136,8 +136,8 @@
             ]
         },
         {
-            "title": "Sağlık Sigortası",
-            "linkHref": "sagliksigortasi",
+            "title": "Dask Sigortası",
+            "linkHref": "dasksigortasi",
             "description": "description 1",
             "merakedilenler": [
                 {
@@ -226,8 +226,8 @@
             ]
         },
         {
-            "title": "Nakliyat Sigortası",
-            "linkHref": "nakliyatsigortasi",
+            "title": "İşyeri Sigortası",
+            "linkHref": "isyerisigortasi",
             "description": "description 1",
             "merakedilenler": [
                 {

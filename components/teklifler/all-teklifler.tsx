@@ -9,8 +9,6 @@ import IsyeriForm from '../teklif-forms/isyeri-form'
 import DaskForm from '../teklif-forms/dask-form'
 
 
-
-
 const Buttons = [
     {
         title: 'Trafik Sigortası Teklif Formu',
@@ -40,13 +38,16 @@ const AllTeklifler = () => {
 
     return (
         <div className='flex flex-col gap-20'>
-            <div className='flex items-center gap-4 '>
+            <div className='flex items-center gap-4 border-2 p-4 rounded-xl bg-main text-white'>
                 {
                     Buttons.map((element) => {
                         return (
-                            <Button key={element.title} variant={element.content === content ? 'default' : 'outline'} onClick={() => setContent(element.content)}>
+                            // <Button key={element.title} variant={element.content === content ? 'outline' : 'default'} onClick={() => setContent(element.content)}>
+                            //     {element.title}
+                            // </Button>
+                            <button key={element.title} onClick={() => setContent(element.content)}>
                                 {element.title}
-                            </Button>
+                            </button>
                         )
                     })
                 }

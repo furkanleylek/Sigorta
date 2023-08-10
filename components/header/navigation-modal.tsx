@@ -23,13 +23,6 @@ const components: { title: string; href: string; description: string, Icon: stri
         Icon: PiTrafficSignBold
     },
     {
-        title: "Deprem SİGORTASI",
-        href: "/depremsigortasi",
-        description:
-            "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-        Icon: PiTrafficSignBold
-    },
-    {
         title: "Konut SİGORTASI",
         href: "/konutsigortasi",
         description:
@@ -37,7 +30,7 @@ const components: { title: string; href: string; description: string, Icon: stri
         Icon: PiTrafficSignBold
     },
     {
-        title: "FERDİ Kaza SİGORTASI",
+        title: "Dask SİGORTASI",
         href: "/ferdikazasigortasi",
         description: "Visually or semantically separates content.",
         Icon: PiTrafficSignBold
@@ -46,13 +39,6 @@ const components: { title: string; href: string; description: string, Icon: stri
         title: "İŞ YERİ SİGORTASI",
         href: "/isyerisigortasi",
         description: "Visually or semantically separates content.",
-        Icon: PiTrafficSignBold
-    },
-    {
-        title: "NAKLİYAT SİGORTASI",
-        href: "/nakliyatsigortasi",
-        description:
-            "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
         Icon: PiTrafficSignBold
     },
 ]

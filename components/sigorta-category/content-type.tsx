@@ -3,7 +3,11 @@ import React, { useState } from 'react'
 import { Button } from '../ui/button'
 import GenelBilgi from './genel-bilgi'
 import MerakEdilenler from './merakedilenler'
-import TestForm from '../teklif-forms/test-form'
+import KaskoForm from '../teklif-forms/kasko-form'
+import TrafikForm from '../teklif-forms/trafik-form'
+import KonutForm from '../teklif-forms/konut-form'
+import IsyeriForm from '../teklif-forms/isyeri-form'
+import DaskForm from '../teklif-forms/dask-form'
 
 
 interface SigortaCategoryProps {
@@ -65,7 +69,36 @@ const ContentType: React.FC<SigortaCategoryProps> = ({ categoryItems }) => {
             }
             {
                 content === 'teklifformu' && (
-                    <TestForm />
+                    <>
+
+                        {
+                            categoryItems?.title === 'Kasko Sigortası' && (
+                                <KaskoForm />
+                            )
+                        }
+                        {
+                            categoryItems?.title === 'Trafik Sigortası' && (
+                                <TrafikForm />
+                            )
+                        }
+                        {
+                            categoryItems?.title === 'Konut Sigortası' && (
+                                <KonutForm />
+                            )
+                        }
+                        {
+                            categoryItems?.title === 'İşyeri Sigortası' && (
+                                <IsyeriForm />
+                            )
+                        }
+                        {
+                            categoryItems?.title === 'Dask Sigortası' && (
+                                <DaskForm />
+                            )
+                        }
+                    </>
+
+
                 )
             }
         </>
