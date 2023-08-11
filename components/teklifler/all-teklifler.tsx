@@ -34,11 +34,11 @@ const Buttons = [
 
 const AllTeklifler = () => {
 
-    const [content, setContent] = useState('genelbilgi')
+    const [content, setContent] = useState('trafik')
 
     return (
         <div className='flex flex-col gap-20'>
-            <div className='flex items-center gap-4 border-2 p-4 rounded-xl bg-main text-white'>
+            <div className='flex items-center gap-4 border-2 p-4 rounded-xl bg-main text-white flex-1 flex-wrap'>
                 {
                     Buttons.map((element) => {
                         return (

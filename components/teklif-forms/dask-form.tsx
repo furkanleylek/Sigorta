@@ -1,8 +1,9 @@
 import React from 'react'
+import TestForm from './test'
 
 const DaskForm = () => {
     return (
-        <div>Dask Sigorta Teklif Formu</div>
+        <TestForm />
     )
 }
 
