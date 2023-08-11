@@ -6,6 +6,7 @@ import NextTopLoader from 'nextjs-toploader';
 
 import Header from '@/components/header/header'
 import Footer from '@/components/footer/footer'
+import ContextProvider from '@/components/context';
 
 const inter = Inter({ subsets: ['latin'] })
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'] })
@@ -23,10 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <NextTopLoader />
-        <Header />
-        {children}
-        <Footer />
+        <ContextProvider>
+          <NextTopLoader />
+          <Header />
+          {children}
+          <Footer />
+        </ContextProvider>
       </body>
     </html>
   )

@@ -8,7 +8,8 @@ import KonutForm from '../teklif-forms/konut-form'
 import IsyeriForm from '../teklif-forms/isyeri-form'
 import DaskForm from '../teklif-forms/dask-form'
 import Image from 'next/image'
-
+import TeklifİletildiModal from '../modals/teklif-iletildi-modal'
+import { useSigortaContext } from '../context'
 
 const Buttons = [
     {
@@ -41,6 +42,7 @@ const Buttons = [
 const AllTeklifler = () => {
 
     const [content, setContent] = useState('trafik')
+    const { openModal } = useSigortaContext()
 
     return (
         <div className='flex flex-col gap-12'>
@@ -98,6 +100,12 @@ const AllTeklifler = () => {
             {
                 content === 'dask' && (
                     <DaskForm />
+                )
+            }
+            {openModal &&
+                (
+                    <TeklifİletildiModal />
+
                 )
             }
         </div>

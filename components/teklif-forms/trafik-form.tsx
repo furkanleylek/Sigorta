@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -13,6 +14,8 @@ import { Textarea } from '../ui/textarea'
 import DogrulamaKodu from '../teklifler/dogrulama-kodu'
 import { Button } from '../ui/button'
 import { TitleH2 } from '../ui/h2'
+
+import { useSigortaContext } from '../context'
 
 const formSchema = z.object({
     sahiptürü: z.enum(["sahis", "sirket", "yabanci-sahis"]),
@@ -36,6 +39,8 @@ const formSchema = z.object({
 })
 
 const TrafikForm = () => {
+
+    const { setOpenModal } = useSigortaContext()
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -377,11 +382,11 @@ const TrafikForm = () => {
                     />
                 </div>
                 {/* DOGRULAMA VE GÖNDERME  */}
-
-                <Button>
-                    Teklif Al
-                </Button>
             </form>
+
+            <Button onClick={() => { setOpenModal(true) }} className='w-full md:w-2/3'>
+                Teklif Al
+            </Button>
         </Form>
     )
 }
