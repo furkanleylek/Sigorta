@@ -12,6 +12,7 @@ import { Separator } from '../ui/separator'
 import { Textarea } from '../ui/textarea'
 import DogrulamaKodu from '../teklifler/dogrulama-kodu'
 import { Button } from '../ui/button'
+import { TitleH2 } from '../ui/h2'
 
 const formSchema = z.object({
     sahiptürü: z.enum(["sahis", "sirket", "yabanci-sahis"]),
@@ -87,9 +88,10 @@ const TrafikForm = () => {
     return (
         <Form {...form}>
             <form className='flex flex-col gap-4 w-full md:w-2/3'>
-
                 {/* RUHSAT SAHİBİ BİLGİLERİ */}
                 <div className='flex flex-col gap-4'>
+                    <TitleH2 className='mb-6'>Trafik Sigortası </TitleH2>
+                    <Separator />
                     <TitleH3>Ruhsat Sahibi Bilgileri</TitleH3>
                     <FormField
                         control={form.control}

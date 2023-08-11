@@ -43,7 +43,7 @@ const AllTeklifler = () => {
     const [content, setContent] = useState('trafik')
 
     return (
-        <div className='flex flex-col gap-20'>
+        <div className='flex flex-col gap-12'>
             <div className='flex items-center gap-4 md:space-x-12 rounded-xl flex-1 flex-wrap'>
                 {
                     Buttons.map((element) => {
@@ -55,6 +55,7 @@ const AllTeklifler = () => {
                                 key={element.title}
                                 className={`flex flex-col items-center justify-center gap-2 border border-border rounded-full py-2 px-4 md:py-4 md:px-8 cursor-pointer
                                 ${element.content === content && 'bg-main text-white'} 
+                                hover:scale-105 transition-all
                             `}
                                 onClick={() => setContent(element.content)}
                             >
