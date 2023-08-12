@@ -13,7 +13,7 @@ const Header = () => {
                 <NavLinks />
             </div>
             <Separator />
-            <div className='text-main hidden lg:flex items-center justify-center py-4'>
+            <div className='text-main hidden lg:flex  w-full'>
                 <NavbarModal />
                 {/* <Link
                     href='/'

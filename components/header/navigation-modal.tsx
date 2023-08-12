@@ -1,7 +1,5 @@
 'use client'
-import React from 'react'
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '../ui/navigation-menu'
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { PiTrafficSignBold } from 'react-icons/pi'
 
@@ -188,53 +186,96 @@ interface ListItemProps {
 }
 
 
-const ListItem: React.FC<ListItemProps> = ({ title, linkHref, Icon }) => {
-    return (
-        <li>
-            <NavigationMenuLink asChild>
-                <Link
-                    href={linkHref}
-                    className={`block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground, `}>
-                    <Icon />
-                    <div className='space-y-2 py-2'>
-                        <h5 className="text-sm font-medium leading-none">
-                            {title}
-                        </h5>
-                    </div>
-                </Link>
-            </NavigationMenuLink>
-        </li>
-    )
+// const ListItem: React.FC<ListItemProps> = ({ title, linkHref, Icon }) => {
+//     return (
+//         <li>
+//             <NavigationMenuLink asChild>
+//                 <Link
+//                     href={linkHref}
+//                     className={`block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground, `}>
+//                     <Icon />
+//                     <div className='space-y-2 py-2'>
+//                         <h5 className="text-sm font-medium leading-none">
+//                             {title}
+//                         </h5>
+//                     </div>
+//                 </Link>
+//             </NavigationMenuLink>
+//         </li>
+//     )
+// }
+
+
+const ListItem = () => {
+
 }
 
 export const NavbarModal = () => {
-    return (
-        <NavigationMenu>
-            <NavigationMenuList>
-                {
-                    components.map((anabaslık) => {
 
-                        const Icon = anabaslık.Icon
+    const [openModal, setOpenModal] = useState(false)
+    const [category, setCategory] = useState('')
+
+    const getAltBasliklar = (category: string) => {
+        const matchedComponent = components.find(component => component.title === category);
+        return matchedComponent ? matchedComponent.altbaslıklar : [];
+    };
+
+    const altBasliklar = getAltBasliklar(category);
+    console.log("openModal:", openModal)
+    console.log("category:", category)
+    return (
+        <div className='w-full relative '>
+            <div className='flex items-center justify-center '>
+                {
+                    components.map((e) => {
                         return (
-                            <NavigationMenuItem key={anabaslık.title}>
-                                <NavigationMenuTrigger className='bg-transparent uppercase '>
-                                    <Icon />
-                                    {anabaslık.title}
-                                </NavigationMenuTrigger>
-                                <NavigationMenuContent>
-                                    <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                                        {
-                                            anabaslık.altbaslıklar.map((e) => {
-                                                return <ListItem key={e.title} title={e.title} linkHref={e.linkHref} Icon={e.Icon} />
-                                            })
-                                        }
-                                    </ul>
-                                </NavigationMenuContent>
-                            </NavigationMenuItem>
+                            <div
+                                key={e.title}
+                                className={` p-8 ${openModal && category === e.title && 'bg-gray-100'}`}
+                                onMouseOver={() => { setOpenModal(true), setCategory(e.title) }}
+                                onMouseLeave={() => setOpenModal(false)}
+                            >
+                                <Link
+                                    className=''
+                                    href={e.href}
+                                >
+                                    {e.title}
+                                </Link>
+                            </div>
                         )
                     })
                 }
-            </NavigationMenuList>
-        </NavigationMenu>
+            </div>
+            {
+                openModal && (
+                    <div
+                        className='absolute top-22 w-full h-20 bg-gray-100 z-10 flex items-center justify-center space-x-6'
+                        onMouseOver={() => setOpenModal(true)}
+                        onMouseLeave={() => setOpenModal(false)}
+                    >
+                        {/* {
+                            components.map((e) => (
+                                <div key={e.title} className='flex items-center justify-center'>
+                                    {
+                                        e.altbaslıklar.map((e) => {
+                                            return (
+                                                <div key={e.title}>
+                                                    {e.title}
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
+                            ))
+                        } */}
+                        {altBasliklar.map(altBaslik => (
+                            <div key={altBaslik.title} className='flex items-center justify-center'>
+                                {altBaslik.title}
+                            </div>
+                        ))}
+                    </div>
+                )
+            }
+        </div>
     )
 }
