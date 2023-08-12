@@ -2,7 +2,11 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { PiTrafficSignBold } from 'react-icons/pi'
-
+import Image from 'next/image'
+import { FaCar, FaGripfire } from 'react-icons/fa'
+import { MdHealthAndSafety } from 'react-icons/md'
+import { GiCargoCrate, GiFarmTractor } from 'react-icons/gi'
+import { MdEngineering } from 'react-icons/md'
 
 const components = [
     {
@@ -32,7 +36,8 @@ const components = [
         ],
         description:
             "For sighted users to preview content available behind a link.",
-        Icon: PiTrafficSignBold
+        Icon: FaCar,
+        imageSrc: '/kaza.png'
     },
 
     {
@@ -62,7 +67,9 @@ const components = [
         ],
         description:
             "A modal dialog that interrupts the user with important content and expects a response.",
-        Icon: PiTrafficSignBold
+        Icon: FaGripfire,
+        imageSrc: '/trafik.png'
+
     },
     {
         title: "HAYAT",
@@ -91,12 +98,14 @@ const components = [
             {
                 title: 'Ferdi Kaza',
                 linkHref: '/otodisisorumluluk',
-                Icon: PiTrafficSignBold
+                Icon: MdHealthAndSafety
             }
         ],
         description:
             "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-        Icon: PiTrafficSignBold
+        Icon: MdHealthAndSafety,
+        imageSrc: '/trafik.png'
+
     },
     {
         title: "NAKLİYAT",
@@ -120,11 +129,13 @@ const components = [
             {
                 title: 'CMR',
                 linkHref: '/otodisisorumluluk',
-                Icon: PiTrafficSignBold
+                Icon: GiCargoCrate
             }
         ],
         description: "Visually or semantically separates content.",
-        Icon: PiTrafficSignBold
+        Icon: GiCargoCrate,
+        imageSrc: '/trafik.png'
+
     },
     {
         title: "MÜHENDİSLİK",
@@ -152,7 +163,9 @@ const components = [
             }
         ],
         description: "Visually or semantically separates content.",
-        Icon: PiTrafficSignBold
+        Icon: MdEngineering,
+        imageSrc: '/trafik.png'
+
     },
     {
         title: "TARIM",
@@ -175,7 +188,8 @@ const components = [
             },
         ],
         description: "Visually or semantically separates content.",
-        Icon: PiTrafficSignBold
+        Icon: GiFarmTractor,
+        imageSrc: '/trafik.png'
     },
 ]
 
@@ -206,10 +220,6 @@ interface ListItemProps {
 // }
 
 
-const ListItem = () => {
-
-}
-
 export const NavbarModal = () => {
 
     const [openModal, setOpenModal] = useState(false)
@@ -221,25 +231,35 @@ export const NavbarModal = () => {
     };
 
     const altBasliklar = getAltBasliklar(category);
-    console.log("openModal:", openModal)
-    console.log("category:", category)
     return (
         <div className='w-full relative '>
             <div className='flex items-center justify-center '>
                 {
                     components.map((e) => {
+
+                        const Icon = e.Icon
                         return (
                             <div
                                 key={e.title}
-                                className={` p-8 ${openModal && category === e.title && 'bg-gray-100'}`}
+                                className={`px-12 ${openModal && category === e.title && 'bg-gray-100'}`}
                                 onMouseOver={() => { setOpenModal(true), setCategory(e.title) }}
                                 onMouseLeave={() => setOpenModal(false)}
                             >
                                 <Link
-                                    className=''
                                     href={e.href}
-                                >
-                                    {e.title}
+                                    className={`block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground, `}>
+                                    <div className='flex flex-col items-center justify-center space-y-2 py-2'>
+                                        {/* <Image
+                                            src={e.imageSrc}
+                                            width={40}
+                                            height={40}
+                                            alt='e.title'
+                                        /> */}
+                                        <Icon size={32} />
+                                        <h5 className="text-sm font-medium leading-none">
+                                            {e.title}
+                                        </h5>
+                                    </div>
                                 </Link>
                             </div>
                         )
@@ -253,25 +273,21 @@ export const NavbarModal = () => {
                         onMouseOver={() => setOpenModal(true)}
                         onMouseLeave={() => setOpenModal(false)}
                     >
-                        {/* {
-                            components.map((e) => (
-                                <div key={e.title} className='flex items-center justify-center'>
-                                    {
-                                        e.altbaslıklar.map((e) => {
-                                            return (
-                                                <div key={e.title}>
-                                                    {e.title}
-                                                </div>
-                                            )
-                                        })
-                                    }
-                                </div>
-                            ))
-                        } */}
+
                         {altBasliklar.map(altBaslik => (
-                            <div key={altBaslik.title} className='flex items-center justify-center'>
-                                {altBaslik.title}
-                            </div>
+                            // <div key={altBaslik.title} className='flex items-center justify-center'>
+                            //     {altBaslik.title}
+                            // </div>
+                            <Link
+                                key={altBaslik.title}
+                                href={altBaslik.linkHref}
+                                className={`block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground, `}>
+                                <div className='space-y-2 py-2'>
+                                    <h5 className="text-sm font-medium leading-none">
+                                        {altBaslik.title}
+                                    </h5>
+                                </div>
+                            </Link>
                         ))}
                     </div>
                 )
