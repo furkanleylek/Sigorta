@@ -152,7 +152,7 @@ const components = [
                 Icon: PiTrafficSignBold
             },
             {
-                title: 'İnşşat All Risk',
+                title: 'İnşaat All Risk',
                 linkHref: '/otosorumluluk',
                 Icon: PiTrafficSignBold
             },
@@ -233,35 +233,36 @@ export const NavbarModal = () => {
     const altBasliklar = getAltBasliklar(category);
     return (
         <div className='w-full relative '>
-            <div className='flex items-center justify-center '>
+            <div className='flex items-center justify-center border-b '>
                 {
-                    components.map((e) => {
+                    components.map((e, index) => {
 
                         const Icon = e.Icon
+                        const isSeperate = index === 0;
+
                         return (
-                            <div
-                                key={e.title}
-                                className={`px-12 ${openModal && category === e.title && 'bg-gray-100'}`}
-                                onMouseOver={() => { setOpenModal(true), setCategory(e.title) }}
-                                onMouseLeave={() => setOpenModal(false)}
-                            >
+                            <>
+                                {!isSeperate && <div key={index} className='w-[1px] h-8 bg-gray-200'></div>}
                                 <Link
+                                    key={e.title}
                                     href={e.href}
-                                    className={`block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground, `}>
-                                    <div className='flex flex-col items-center justify-center space-y-2 py-2'>
-                                        {/* <Image
-                                            src={e.imageSrc}
-                                            width={40}
-                                            height={40}
-                                            alt='e.title'
-                                        /> */}
-                                        <Icon size={32} />
-                                        <h5 className="text-sm font-medium leading-none">
-                                            {e.title}
-                                        </h5>
+                                    className={`px-12 ${openModal && category === e.title && 'bg-gray-100'} `}
+                                    onMouseOver={() => { setOpenModal(true), setCategory(e.title) }}
+                                    onMouseLeave={() => setOpenModal(false)}
+                                >
+                                    <div
+                                        className={`block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground `}
+                                    >
+
+                                        <div className='flex flex-col items-center justify-center space-y-2 py-2 text-main'>
+                                            <Icon size={32} />
+                                            <h5 className="text-sm font-medium leading-none text-gray-600">
+                                                {e.title}
+                                            </h5>
+                                        </div>
                                     </div>
                                 </Link>
-                            </div>
+                            </>
                         )
                     })
                 }
@@ -269,26 +270,31 @@ export const NavbarModal = () => {
             {
                 openModal && (
                     <div
-                        className='absolute top-22 w-full h-20 bg-gray-100 z-10 flex items-center justify-center space-x-6'
+                        className='absolute top-22 w-full h-20 bg-gray-100 z-10 flex items-center justify-center space-x-6 text-gray-600'
                         onMouseOver={() => setOpenModal(true)}
                         onMouseLeave={() => setOpenModal(false)}
                     >
 
-                        {altBasliklar.map(altBaslik => (
-                            // <div key={altBaslik.title} className='flex items-center justify-center'>
-                            //     {altBaslik.title}
-                            // </div>
-                            <Link
-                                key={altBaslik.title}
-                                href={altBaslik.linkHref}
-                                className={`block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground, `}>
-                                <div className='space-y-2 py-2'>
-                                    <h5 className="text-sm font-medium leading-none">
-                                        {altBaslik.title}
-                                    </h5>
-                                </div>
-                            </Link>
-                        ))}
+                        {
+                            altBasliklar.map((altBaslik, index) => {
+                                const isSeperate = index === 0;
+
+                                return (
+                                    <>
+                                        {!isSeperate && <div key={index} className='w-[1px] h-8 bg-gray-500'></div>}
+                                        <Link
+                                            key={altBaslik.title}
+                                            href={altBaslik.linkHref}
+                                            className={`block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-main focus:bg-accent focus:text-accent-foreground, `}>
+                                            <div className='space-y-2 py-2'>
+                                                <h5 className="text-sm font-medium leading-none">
+                                                    {altBaslik.title}
+                                                </h5>
+                                            </div>
+                                        </Link>
+                                    </>
+                                )
+                            })}
                     </div>
                 )
             }
