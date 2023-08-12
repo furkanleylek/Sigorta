@@ -246,12 +246,12 @@ export const NavbarModal = () => {
                                 <Link
                                     key={e.title}
                                     href={e.href}
-                                    className={`px-12 ${openModal && category === e.title && 'bg-gray-100'} `}
+                                    className={`px-12 ${openModal && category === e.title && 'bg-gray-200'} `}
                                     onMouseOver={() => { setOpenModal(true), setCategory(e.title) }}
                                     onMouseLeave={() => setOpenModal(false)}
                                 >
                                     <div
-                                        className={`block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground `}
+                                        className={`block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors  `}
                                     >
 
                                         <div className='flex flex-col items-center justify-center space-y-2 py-2 text-main'>
@@ -270,7 +270,7 @@ export const NavbarModal = () => {
             {
                 openModal && (
                     <div
-                        className='absolute top-22 w-full h-20 bg-gray-100 z-10 flex items-center justify-center space-x-6 text-gray-600'
+                        className='absolute top-22 w-full h-20 bg-gray-200 z-10 flex items-center justify-center space-x-6 text-gray-600'
                         onMouseOver={() => setOpenModal(true)}
                         onMouseLeave={() => setOpenModal(false)}
                     >
@@ -281,7 +281,7 @@ export const NavbarModal = () => {
 
                                 return (
                                     <>
-                                        {!isSeperate && <div key={index} className='w-[1px] h-8 bg-gray-500'></div>}
+                                        {!isSeperate && <div key={index} className='w-[1px] h-8 bg-gray-300'></div>}
                                         <Link
                                             key={altBaslik.title}
                                             href={altBaslik.linkHref}
