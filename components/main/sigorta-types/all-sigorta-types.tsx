@@ -5,43 +5,51 @@ import Container from '@/components/ui/container'
 import { TitleH3 } from '@/components/ui/h3'
 import { TitleH2 } from '@/components/ui/h2'
 import { Paragraph } from '@/components/ui/paragraph'
+import { FaCar, FaGripfire } from 'react-icons/fa'
+import { MdHealthAndSafety } from 'react-icons/md'
+import { GiCargoCrate, GiFarmTractor } from 'react-icons/gi'
+import { MdEngineering } from 'react-icons/md'
 
 const SigortaTypes = [
     {
-        title: "Kasko Sigortası",
-        description: 'Aracınızı olası kaza ve hasarlara karşı koruyan kasko sigortası, sürüş keyfinizi güven içinde yaşamanızı sağlar .',
-        imageUrl: '/test.jpg',
-        linkHref: 'kaskosigortasi'
+        title: "Kasko Sigortaları",
+        linkHref: 'kaskosigortasi',
+        Icon: FaCar,
     },
     {
-        title: "Trafik Sigortası",
-        description: 'Trafikte oluşabilecek zararları karşılayarak sizleri maddi yüklerden koruyan trafik sigortası, güvenli seyahat etmenizi sağlar .',
-        imageUrl: '/trafik.jpg',
-        linkHref: 'trafiksigortasi'
+        title: "Trafik Sigortaları",
+        linkHref: 'trafiksigortasi',
+        Icon: MdHealthAndSafety,
     },
     {
-        title: "Deprem Sigortası",
-        description: 'Değerli konutunuzu deprem riskine karşı koruyan sigorta, beklenmedik anlarda gelecek güvence ile sizi rahatlatır .',
-        imageUrl: '/test.jpg',
-        linkHref: 'depremsigortasi'
+        title: "Deprem Sigortaları",
+        linkHref: 'depremsigortasi',
+        Icon: FaGripfire,
     },
     {
-        title: "Sağlık Sigortası",
-        description: 'Sağlık giderlerinizi karşılayarak sizlere en iyi tedavi imkanını sunan sağlık sigortası, sağlığınıza değer verir .',
-        imageUrl: '/test.jpg',
-        linkHref: 'sagliksigortasi'
+        title: "Sağlık Sigortaları",
+        linkHref: 'sagliksigortasi',
+        Icon: GiCargoCrate,
     },
     {
-        title: "Konut Sigortası",
-        description: 'Ev ve eşyalarınızı yangın, hırsızlık gibi risklere karşı koruyan konut sigortası, huzurlu bir yaşam alanı sunar .',
-        imageUrl: '/konut.jpg',
-        linkHref: 'konutsigortasi'
+        title: "Konut Sigortaları",
+        linkHref: 'konutsigortasi',
+        Icon: GiFarmTractor,
     },
     {
-        title: "Nakliyat Sigortası",
-        description: 'Eşyalarınızın taşınması sırasında oluşabilecek hasarlara karşı güvence sağlayan nakliyat sigortası, taşınma sürecinizi kolaylaştırır .',
-        imageUrl: '/test.jpg',
-        linkHref: 'nakliyatsigortasi'
+        title: "Nakliyat Sigortaları",
+        linkHref: 'nakliyatsigortasi',
+        Icon: MdEngineering,
+    },
+    {
+        title: "Ferdi Kaza Sigortaları",
+        linkHref: 'nakliyatsigortasi',
+        Icon: GiCargoCrate,
+    },
+    {
+        title: "Mühendislik Sigortaları",
+        linkHref: 'nakliyatsigortasi',
+        Icon: GiFarmTractor,
     }
 ]
 
@@ -56,7 +64,7 @@ const AllSigortaTypes = () => {
                 <Paragraph className='text-gray-500 italic pl-4'>
                     Farklı risklere karşı korunma ihtiyacını karşılamak için hayat sigortası, sağlık sigortası, otomobil sigortası gibi çeşitli güvence sistemleri sunulur. Her bir sigorta türü, özel ihtiyaçlarına yönelik koruma sağlar                            </Paragraph>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
+            <div className='grid grid-cols-2 xl:grid-cols-3 gap-4'>
                 {
                     SigortaTypes.map((sigorta) => {
                         return <SingleSigortaType key={sigorta.title} singleSigorta={sigorta} />
