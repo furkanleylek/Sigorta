@@ -9,45 +9,52 @@ import { FaCar, FaGripfire } from 'react-icons/fa'
 import { MdHealthAndSafety } from 'react-icons/md'
 import { GiCargoCrate, GiFarmTractor } from 'react-icons/gi'
 import { MdEngineering } from 'react-icons/md'
-
+import { LuHeartHandshake } from 'react-icons/lu'
+import { BiBuildingHouse } from 'react-icons/bi'
+import { BsShop } from 'react-icons/bs'
 const SigortaTypes = [
     {
-        title: "Kasko Sigortaları",
+        title: "Trafik Sigortaları",
         linkHref: 'kaskosigortasi',
         Icon: FaCar,
     },
     {
-        title: "Trafik Sigortaları",
+        title: "Kasko Sigortaları",
         linkHref: 'trafiksigortasi',
         Icon: MdHealthAndSafety,
     },
     {
-        title: "Deprem Sigortaları",
-        linkHref: 'depremsigortasi',
-        Icon: FaGripfire,
-    },
-    {
-        title: "Sağlık Sigortaları",
-        linkHref: 'sagliksigortasi',
-        Icon: GiCargoCrate,
-    },
-    {
         title: "Konut Sigortaları",
+        linkHref: 'depremsigortasi',
+        Icon: BiBuildingHouse,
+    },
+    {
+        title: "İş Yeri Sigortaları",
+        linkHref: 'sagliksigortasi',
+        Icon: BsShop,
+    },
+    {
+        title: "Dask Sigortaları",
         linkHref: 'konutsigortasi',
-        Icon: GiFarmTractor,
+        Icon: FaGripfire,
     },
     {
         title: "Nakliyat Sigortaları",
         linkHref: 'nakliyatsigortasi',
-        Icon: MdEngineering,
+        Icon: GiCargoCrate,
     },
     {
         title: "Ferdi Kaza Sigortaları",
         linkHref: 'nakliyatsigortasi',
-        Icon: GiCargoCrate,
+        Icon: LuHeartHandshake,
     },
     {
         title: "Mühendislik Sigortaları",
+        linkHref: 'nakliyatsigortasi',
+        Icon: MdEngineering,
+    },
+    {
+        title: "Tarım Sigortaları",
         linkHref: 'nakliyatsigortasi',
         Icon: GiFarmTractor,
     }
