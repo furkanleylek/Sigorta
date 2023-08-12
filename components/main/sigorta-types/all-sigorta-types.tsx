@@ -6,22 +6,23 @@ import { TitleH3 } from '@/components/ui/h3'
 import { TitleH2 } from '@/components/ui/h2'
 import { Paragraph } from '@/components/ui/paragraph'
 import { FaCar, FaGripfire } from 'react-icons/fa'
-import { MdHealthAndSafety } from 'react-icons/md'
+import { MdOutlineHealthAndSafety } from 'react-icons/md'
 import { GiCargoCrate, GiFarmTractor } from 'react-icons/gi'
-import { MdEngineering } from 'react-icons/md'
+import { MdEngineering, MdOutlineEngineering } from 'react-icons/md'
 import { LuHeartHandshake } from 'react-icons/lu'
 import { BiBuildingHouse } from 'react-icons/bi'
 import { BsShop } from 'react-icons/bs'
+import { IoCarSportOutline } from 'react-icons/io5'
 const SigortaTypes = [
     {
         title: "Trafik Sigortaları",
         linkHref: 'kaskosigortasi',
-        Icon: FaCar,
+        Icon: IoCarSportOutline,
     },
     {
         title: "Kasko Sigortaları",
         linkHref: 'trafiksigortasi',
-        Icon: MdHealthAndSafety,
+        Icon: MdOutlineHealthAndSafety,
     },
     {
         title: "Konut Sigortaları",
@@ -51,7 +52,7 @@ const SigortaTypes = [
     {
         title: "Mühendislik Sigortaları",
         linkHref: 'nakliyatsigortasi',
-        Icon: MdEngineering,
+        Icon: MdOutlineEngineering,
     },
     {
         title: "Tarım Sigortaları",
