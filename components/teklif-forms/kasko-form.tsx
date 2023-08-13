@@ -17,56 +17,74 @@ import { TitleH2 } from '../ui/h2'
 
 import { useSigortaContext } from '../context'
 
-const formSchema = z.object({
-    sahipturu: z.enum(["sahis", "sirket", "yabanci-sahis"]),
-    kullaniciAdi: z.string().min(2, {
-        message: 'Kullanıcı ismi girilmesi gerekiyor .'
-    }),
-    tcKimlik: z.string().refine((value) => value.length === 11 && /^\d+$/.test(value)),
-    meslek: z.string().min(2),
 
-    plakaNo: z.string().min(2),
-    kullanimTarzi: z.string().min(2),
-    marka: z.string().min(2),
-    modelYili: z.string().min(2),
-    ekAksesuarBilgileri: z.string().min(2),
-    ASBISno: z.string().refine((value) => value.length === 19 && /^\d+$/.test(value)),
-
-    police: z.enum(["var", "yok"]),
-    sigortaSirketi: z.string().min(2),
-    acentaNumarasi: z.number().min(2),
-    policeNumarasi: z.string().min(2),
-    yenilemeNumarasi: z.number(),
-    policeBitisTarihi: z.string(),
-
-    adres: z
-        .string()
-        .min(10, {
-            message: "Adres en az 10 karakter olmalı.",
-        }),
-    telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
-    eposta: z.string().min(2),
-    mesaj: z.string().min(2),
-})
-
-const TrafikForm = () => {
+const KaskoForm = () => {
 
     const { setOpenModal } = useSigortaContext()
     const [loading, setLoading] = useState(false)
     const [isPolice, setIsPolice] = useState('')
+    const [isSahipTuru, setIsSahipTuru] = useState('Şahıs')
+
+
+    const formSchema = z.object({
+        sahipturu: z.enum(["Şahıs", "Şirket", "Yabancı Şahıs"]),
+        ...(isSahipTuru === 'Şahıs' ? {
+            kullaniciAdi: z.string().min(2, {
+                message: 'Kullanıcı ismi girilmesi gerekiyor .'
+            }),
+            tcKimlik: z.string().refine((value) => value.length === 11 && /^\d+$/.test(value)),
+            meslek: z.string().min(2),
+        } : {}),
+        ...(isSahipTuru === 'Şirket' ? {
+            sirketUnvani: z.string().min(2),
+            vergiNo: z.number(),
+            meslek: z.string().min(2),
+        } : {}),
+        ...(isSahipTuru === 'Yabancı Şahıs' ? {
+            kullaniciAdi: z.string().min(2, {
+                message: 'Kullanıcı ismi girilmesi gerekiyor .'
+            }),
+            pasaportNo: z.number(),
+            meslek: z.string().min(2),
+        } : {}),
+
+
+        plakaNo: z.string().min(2),
+        kullanimTarzi: z.string().min(2),
+        marka: z.string().min(2),
+        modelYili: z.number(),
+        ekAksesuarBilgileri: z.string().min(2),
+        ASBISno: z.string().refine((value) => value.length === 19 && /^\d+$/.test(value)),
+
+        police: z.enum(["var", "yok"]),
+        ...(isPolice === 'var' ? {
+            sigortaSirketi: z.string().min(2),
+            acentaNumarasi: z.number(),
+            policeNumarasi: z.string(),
+            yenilemeNumarasi: z.number(),
+            policeBitisTarihi: z.string(),
+        } : {}),
+
+        adres: z
+            .string()
+            .min(10, {
+                message: "Adres en az 10 karakter olmalı.",
+            }),
+        telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
+        eposta: z.string().min(2),
+        mesaj: z.string().min(2),
+    })
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
             kullaniciAdi: '',
-            sahipturu: 'sahis',
+            sahipturu: 'Şahıs',
             tcKimlik: '',
             meslek: '',
 
             plakaNo: '',
-            kullanimTarzi: '',
             marka: '',
-            modelYili: '',
             ekAksesuarBilgileri: '',
             ASBISno: '',
 
@@ -82,15 +100,17 @@ const TrafikForm = () => {
     async function onSubmit(values: z.infer<typeof formSchema>) {
         try {
             setLoading(true)
-            const URL = `http://localhost:3001/api/trafik`
-            const response = await fetch(URL, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(values)
-            })
-            form.reset();
+            // const URL = `http://localhost:3001/api/trafik`
+            // const response = await fetch(URL, {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify(values)
+            // })
+            // form.reset();
+            console.log("values:", values)
+
         } catch (error) {
             console.log(error)
         } finally {
@@ -190,20 +210,20 @@ const TrafikForm = () => {
                                     >
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='sahis' id='sahis' />
+                                                <RadioGroupItem value='Şahıs' id='sahis' onClick={() => setIsSahipTuru('Şahıs')} />
                                             </FormControl>
                                             <Label htmlFor='sahis'>Şahıs</Label>
                                         </FormItem>
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='sirket' id='sirket' />
+                                                <RadioGroupItem value='Şirket' id='sirket' onClick={() => setIsSahipTuru('Şirket')} />
                                             </FormControl>
                                             <Label htmlFor='sirket'>Şirket</Label>
 
                                         </FormItem>
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='yabancı-sahis' id='yabanci-sahis' />
+                                                <RadioGroupItem value='Yabancı Şahıs' id='yabanci-sahis' onClick={() => setIsSahipTuru('Yabancı Şahıs')} />
                                             </FormControl>
                                             <Label htmlFor='yabanci-sahis'>Yabancı Uyruklu Şahıs</Label>
                                         </FormItem>
@@ -213,56 +233,146 @@ const TrafikForm = () => {
                         )}
 
                     />
-                    <FormField
-                        control={form.control}
-                        name='kullaniciAdi'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Adı - Soyadı : </FormLabel>
-                                <FormControl>
-                                    <Input placeholder='Adınız / Soyadınız' {...field} />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name='tcKimlik'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>T.C. Kimlik Numaranız :</FormLabel>
-                                <FormControl>
-                                    <Input
-                                        {...field}
-                                        type="text"
-                                        inputMode="numeric"
-                                        pattern="[0-9]*"
-                                        maxLength={11}
-                                        placeholder="Örn: 12345678901"
-                                        className={`shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline ${form.formState.errors.tcKimlik ? 'border-red-500' : ''
-                                            }`}
-                                    // onChange={onInputChange}
-                                    />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
 
-
+                    {
+                        isSahipTuru === 'Şahıs' && (
+                            <>
+                                <FormField
+                                    control={form.control}
+                                    name='kullaniciAdi'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Adı - Soyadı : </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Adınız / Soyadınız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='tcKimlik'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>T.C. Kimlik Numaranız :</FormLabel>
+                                            <FormControl>
+                                                <Input
+                                                    {...field}
+                                                    type="text"
+                                                    inputMode="numeric"
+                                                    pattern="[0-9]*"
+                                                    maxLength={11}
+                                                    placeholder="Örn: 12345678901"
+                                                    className={`shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline ${form.formState.errors.tcKimlik ? 'border-red-500' : ''
+                                                        }`}
+                                                    value={field.value as string}
+                                                // onChange={onInputChange}
+                                                />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='meslek'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Meslek :</FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Mesleğiniz' {...field} {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                            </>
+                        )
+                    }
+                    {
+                        isSahipTuru === 'Şirket' && (
+                            <>
+                                <FormField
+                                    control={form.control}
+                                    name='sirketUnvani'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Şirket Ünvanı: </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Adınız / Soyadınız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='vergiNo'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Vergi Numarası: </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Vergi numaranız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='meslek'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Meslek :</FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Mesleğiniz' {...field} {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                            </>
+                        )
+                    }
+                    {
+                        isSahipTuru === 'Yabancı Şahıs' && (
+                            <>
+                                <FormField
+                                    control={form.control}
+                                    name='kullaniciAdi'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Adı - Soyadı : </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Adınız / Soyadınız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='pasaportNo'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Pasaport Numarası : </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Pasaport numaranız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='meslek'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Meslek :</FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Mesleğiniz' {...field} {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                            </>
+                        )
+                    }
 
                     {/* DOĞUM TARİHİ EKLENECEK */}
-                    <FormField
-                        control={form.control}
-                        name='meslek'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Meslek :</FormLabel>
-                                <FormControl>
-                                    <Input placeholder='Mesleğiniz' {...field} />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
 
 
                 </div>
@@ -314,7 +424,7 @@ const TrafikForm = () => {
                             control={form.control}
                             name='marka'
                             render={({ field }) => (
-                                <FormItem>
+                                <FormItem className='w-full'>
                                     <FormLabel>Marka : </FormLabel>
                                     <FormControl>
                                         <Input placeholder='Marka' {...field} />
@@ -326,19 +436,16 @@ const TrafikForm = () => {
                             control={form.control}
                             name='modelYili'
                             render={({ field }) => (
-                                <FormItem>
+                                <FormItem className='w-full'>
                                     <FormLabel>Model Yılı : </FormLabel>
                                     <FormControl>
                                         <Input
                                             {...field}
-                                            type="text"
+                                            type="number"
                                             inputMode="numeric"
                                             pattern="[0-9]*"
                                             maxLength={4}
                                             placeholder="Model Yılı"
-                                            className={`shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline ${form.formState.errors.modelYili ? 'border-red-500' : ''
-                                                }`}
-                                        // onChange={onModelChange}
                                         />
                                     </FormControl>
                                 </FormItem>
@@ -424,12 +531,11 @@ const TrafikForm = () => {
                                     control={form.control}
                                     name='sigortaSirketi'
                                     render={({ field }) => (
-                                        <FormItem >
+                                        <FormItem className='w-full'>
                                             <FormLabel >Sigorta Şirketi :</FormLabel>
                                             <FormControl>
-                                                <Input placeholder='Şirket adı' {...field} />
+                                                <Input placeholder='Şirket adı' {...field} value={field.value as string} />
                                             </FormControl>
-
                                         </FormItem>
                                     )}
                                 />
@@ -437,9 +543,9 @@ const TrafikForm = () => {
                                     control={form.control}
                                     name='acentaNumarasi'
                                     render={({ field }) => (
-                                        <FormItem >
+                                        <FormItem className='w-full'>
                                             <FormControl>
-                                                <Input placeholder='Acenta Numarası' type='number' {...field} />
+                                                <Input placeholder='Acenta Numarası' type='number' {...field} value={field.value as string} />
                                             </FormControl>
                                         </FormItem>
                                     )}
@@ -450,12 +556,11 @@ const TrafikForm = () => {
                                     control={form.control}
                                     name='policeNumarasi'
                                     render={({ field }) => (
-                                        <FormItem >
+                                        <FormItem className='w-full'>
                                             <FormLabel >Poliçe Nuamarası :</FormLabel>
                                             <FormControl>
-                                                <Input placeholder='Poliçe Numaranız' {...field} />
+                                                <Input placeholder='Poliçe Numaranız' {...field} value={field.value as string} />
                                             </FormControl>
-
                                         </FormItem>
                                     )}
                                 />
@@ -463,9 +568,9 @@ const TrafikForm = () => {
                                     control={form.control}
                                     name='yenilemeNumarasi'
                                     render={({ field }) => (
-                                        <FormItem >
+                                        <FormItem className='w-full'>
                                             <FormControl>
-                                                <Input placeholder='Yenileme Numarası' type='number' {...field} />
+                                                <Input placeholder='Yenileme Numarası' type='number' {...field} value={field.value as string} />
                                             </FormControl>
                                         </FormItem>
                                     )}
@@ -478,9 +583,8 @@ const TrafikForm = () => {
                                     <FormItem >
                                         <FormLabel >Poliçe Bitiş Tarihi :</FormLabel>
                                         <FormControl>
-                                            <Input placeholder='Poliçe Numaranız' {...field} />
+                                            <Input placeholder='Poliçe Numaranız' {...field} value={field.value as string} />
                                         </FormControl>
-
                                     </FormItem>
                                 )}
                             />
@@ -558,7 +662,7 @@ const TrafikForm = () => {
                         )}
                     />
                 </div>
-                <Button className='w-full md:w-2/3'>
+                <Button className='w-full md:w-2/3' disabled={loading ? true : false}>
                     Teklif Al
                 </Button>
                 {/* DOGRULAMA VE GÖNDERME  */}
@@ -569,4 +673,4 @@ const TrafikForm = () => {
     )
 }
 
-export default TrafikForm
+export default KaskoForm

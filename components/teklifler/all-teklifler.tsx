@@ -10,6 +10,8 @@ import DaskForm from '../teklif-forms/dask-form'
 import Image from 'next/image'
 import TeklifİletildiModal from '../modals/teklif-iletildi-modal'
 import { useSigortaContext } from '../context'
+import FerdiKazaForm from '../teklif-forms/ferdi-kaza'
+import { InputForm } from '../teklif-forms/test'
 
 const Buttons = [
     {
@@ -92,7 +94,7 @@ const AllTeklifler = () => {
                     <KaskoForm />
                 )
             }
-            {
+            {/* {
                 content === 'konut' && (
                     <KonutForm />
                 )
@@ -107,6 +109,11 @@ const AllTeklifler = () => {
                     <DaskForm />
                 )
             }
+            {
+                content === 'ferdikaza' && (
+                    <FerdiKazaForm />
+                )
+            } */}
             {openModal &&
                 (
                     <TeklifİletildiModal />

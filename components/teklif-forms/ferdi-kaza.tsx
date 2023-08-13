@@ -14,33 +14,9 @@ import { Textarea } from '../ui/textarea'
 import DogrulamaKodu from '../teklifler/dogrulama-kodu'
 import { Button } from '../ui/button'
 import { TitleH2 } from '../ui/h2'
-
-import { useSigortaContext } from '../context'
 import { Checkbox } from '../ui/checkbox'
 
-const korumaOnlemleri = [
-    {
-        id: "Demir Kepenk",
-        label: "Demir Kepenk",
-    },
-    {
-        id: "Demir Parmaklık",
-        label: "Demir Parmaklık",
-    },
-    {
-        id: "Güvenlik",
-        label: "Güvenlik",
-    },
-    {
-        id: "Alarm",
-        label: "Alarm",
-    },
-    {
-        id: "Kamera",
-        label: "Kamera",
-    },
-] as const
-
+import { useSigortaContext } from '../context'
 
 const formSchema = z.object({
     basvuran: z.enum(["Şahıs", "Şirket", "Yabancı Şahıs"]),
@@ -48,18 +24,21 @@ const formSchema = z.object({
         message: 'Kullanıcı ismi girilmesi gerekiyor .'
     }),
     tcKimlik: z.string().refine((value) => value.length === 11 && /^\d+$/.test(value)),
+    dogumTarihi: z.string(),
+    meslek: z.string().min(2),
 
-    isyeri: z.string().min(2),
-    faaliyetKonusu: z.string().min(2),
-    calısanSayısı: z.number(),
-    brütalan: z.number(),
-    rizikoAdresi: z.string().min(2),
-    korumaOnlemleri: z.array(z.string()).refine((value) => value.some((item) => item), {
-        message: "You have to select at least one item.",
-    }),
-    hasar: z.enum(["var", "yok"]),
+    plakaNo: z.string().min(2),
+    kullanimTarzi: z.string().min(2),
+    marka: z.string().min(2),
+    modelYili: z.string().min(2),
+    ekAksesuarBilgileri: z.string().min(2),
+    ASBISno: z.string().refine((value) => value.length === 19 && /^\d+$/.test(value)),
 
     police: z.enum(["var", "yok"]),
+    teminatMiktari: z.number(),
+    ekTeminatlar: z.array(z.string()).refine((value) => value.some((item) => item), {
+        message: "You have to select at least one item.",
+    }),
     sigortaSirketi: z.string().min(2),
     acentaNumarasi: z.number().min(2),
     policeNumarasi: z.string().min(2),
@@ -76,7 +55,18 @@ const formSchema = z.object({
     mesaj: z.string().min(2),
 })
 
-export const IsyeriForm = () => {
+const ekTeminatlar = [
+    {
+        id: "Tedavi Masrafları Teminatı",
+        label: "Tedavi Masrafları Teminatı",
+    },
+    {
+        id: "Gündelik Tazminat Teminatı",
+        label: "Gündelik Tazminat Teminatı",
+    },
+] as const
+
+const FerdiKazaForm = () => {
 
     const { setOpenModal } = useSigortaContext()
     const [loading, setLoading] = useState(false)
@@ -88,13 +78,17 @@ export const IsyeriForm = () => {
             kullaniciAdi: '',
             basvuran: 'Şahıs',
             tcKimlik: '',
+            meslek: '',
 
-            calısanSayısı: 1,
-            brütalan: 100,
-            rizikoAdresi: '',
-            korumaOnlemleri: [''],
+            plakaNo: '',
+            kullanimTarzi: '',
+            marka: '',
+            modelYili: '',
+            ekAksesuarBilgileri: '',
+            ASBISno: '',
 
             police: 'yok',
+            ekTeminatlar: [''],
 
             adres: '',
             telefonNumarasi: '',
@@ -104,23 +98,25 @@ export const IsyeriForm = () => {
     })
 
     async function onSubmit(values: z.infer<typeof formSchema>) {
-        try {
-            setLoading(true)
-            const URL = `http://localhost:3001/api/trafik`
-            const response = await fetch(URL, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(values)
-            })
-            form.reset();
-        } catch (error) {
-            console.log(error)
-        } finally {
-            setLoading(false)
-            setOpenModal(true)
-        }
+        // try {
+        //     setLoading(true)
+        //     const URL = `http://localhost:3001/api/trafik`
+        //     const response = await fetch(URL, {
+        //         method: 'POST',
+        //         headers: {
+        //             'Content-Type': 'application/json'
+        //         },
+        //         body: JSON.stringify(values)
+        //     })
+        //     form.reset();
+        // } catch (error) {
+        //     console.log(error)
+        // } finally {
+        //     setLoading(false)
+        //     setOpenModal(true)
+        // }
+        console.log("sa")
+        console.log(values)
     }
 
     const onPhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -181,6 +177,7 @@ export const IsyeriForm = () => {
     const onModelChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const inputValue = e.target.value;
         const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
+        console.log("inputValue:", inputValue)
         if (numericValue.length > 4) {
             return;
         }
@@ -196,15 +193,15 @@ export const IsyeriForm = () => {
             <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full md:w-2/3'>
                 {/* RUHSAT SAHİBİ BİLGİLERİ */}
                 <div className='flex flex-col gap-4'>
-                    <TitleH2 className='mb-6'>İş Yeri Sigortası </TitleH2>
+                    <TitleH2 className='mb-6'>Ferdi Kaza Sigortası </TitleH2>
                     <Separator />
-                    <TitleH3>Sigortalı\Sigorta Ettiren Bilgileri</TitleH3>
+                    <TitleH3>Sigortalı \ Sigorta Ettiren Bilgileri</TitleH3>
                     <FormField
                         control={form.control}
                         name='basvuran'
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Başvuran :</FormLabel>
+                                <FormLabel>Başvuran:</FormLabel>
                                 <FormControl>
                                     <RadioGroup
                                         className='flex items-center gap-10'
@@ -222,6 +219,7 @@ export const IsyeriForm = () => {
                                                 <RadioGroupItem value='Şirket' id='sirket' />
                                             </FormControl>
                                             <Label htmlFor='sirket'>Şirket</Label>
+
                                         </FormItem>
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
@@ -269,119 +267,75 @@ export const IsyeriForm = () => {
                             </FormItem>
                         )}
                     />
+                    {/* <FormField
+                        control={form.control}
+                        name='dogumTarihi'
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel>Doğum Tarihi : </FormLabel>
+                                <FormControl>
+                                    <Input placeholder='Doğum tarihiniz' type='date' {...field} />
+                                </FormControl>
+                            </FormItem>
+                        )}
+                    /> */}
 
-
-
-                    {/* DOĞUM TARİHİ EKLENECEK */}
-
+                    <FormField
+                        control={form.control}
+                        name='meslek'
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel>Meslek :</FormLabel>
+                                <FormControl>
+                                    <Input placeholder='Mesleğiniz' {...field} />
+                                </FormControl>
+                            </FormItem>
+                        )}
+                    />
 
 
                 </div>
+
                 <Separator className='my-6' />
-                {/* KONUT BİLGİLERİ */}
+
+                {/* POLİÇE BİLGİLERİ */}
                 <div className='flex flex-col gap-4'>
-                    <TitleH3>İş Yeri Bilgileri</TitleH3>
+                    <TitleH3>Poliçe Bilgileri</TitleH3>
+                    {/* 
                     <FormField
                         control={form.control}
-                        name='isyeri'
+                        name='teminatMiktari'
                         render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>İş Yeri Durumu:</FormLabel>
-                                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormItem >
+                                <FormLabel>Vefat Halinde İstenecek Teminat Miktarı :</FormLabel>
+                                <div className='relative'>
                                     <FormControl>
-                                        <SelectTrigger>
-                                            <SelectValue placeholder='Yapı Tarzını Seçiniz' />
-                                        </SelectTrigger>
+                                        <Input placeholder='İstediğiniz teminat miktarı' {...field} type='number' />
                                     </FormControl>
-                                    <SelectContent>
-                                        <SelectItem value='Apartman Dairesi'>Apartman Dairesi</SelectItem>
-                                        <SelectItem value='Magaza / Dükkan'>Mağaza / Dükkan</SelectItem>
-                                        <SelectItem value='Depo'>Depo</SelectItem>
-                                        <SelectItem value='İş Hanı / Ofis'>İş Hanı / Ofis</SelectItem>
-                                        <SelectItem value='Fabrika'>Fabrika</SelectItem>
-                                        <SelectItem value='Diger'>Diğer</SelectItem>
-                                    </SelectContent>
-                                </Select>
+                                    <span className='absolute top-1 right-10 h-full items-center text-center font-semibold text-xl'>₺</span>
+                                </div>
                             </FormItem>
                         )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name='faaliyetKonusu'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Faaliyet Konusu :</FormLabel>
-                                <FormControl>
-                                    <Input placeholder='Faaliyet Konunuz'  {...field} />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name='calısanSayısı'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Çalışan Sayısı :</FormLabel>
-                                <FormControl>
-                                    <Input placeholder='Çalışan Sayınız' type='number' {...field} />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name='brütalan'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Brüt Alanı :</FormLabel>
-                                <FormControl>
-                                    <Input placeholder='Brüt Alanınız' type='number' {...field} />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
-
-                    <span>BİNA BEDELİ</span>
-                    <span>EMTİA BEDELİ</span>
-                    <span>CAM BEDELİ</span>
-                    <span>KASA MUHTEVİYATI BEDELİ</span>
+                    /> */}
 
                     <FormField
                         control={form.control}
-                        name='rizikoAdresi'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Riziko Adresi :</FormLabel>
-                                <FormControl>
-                                    <Textarea
-                                        placeholder='Riziko Adresi'
-                                        className='resize-none'
-                                        {...field}
-                                    />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
-
-                    <FormField
-                        control={form.control}
-                        name="korumaOnlemleri"
+                        name="ekTeminatlar"
                         render={() => (
                             <FormField
                                 control={form.control}
-                                name="korumaOnlemleri"
+                                name="ekTeminatlar"
                                 render={() => (
                                     <FormItem >
                                         <div className=' mb-4'>
-                                            <FormLabel >Mevcut Koruma Önlemleri :</FormLabel>
+                                            <FormLabel>Ek Teminatlar :</FormLabel>
                                         </div>
                                         <div className='flex items-center flex-wrap gap-4'>
-                                            {korumaOnlemleri.map((item) => (
+                                            {ekTeminatlar.map((item) => (
                                                 <FormField
                                                     key={item.id}
                                                     control={form.control}
-                                                    name="korumaOnlemleri"
+                                                    name="ekTeminatlar"
                                                     render={({ field }) => {
                                                         return (
                                                             <FormItem
@@ -418,43 +372,6 @@ export const IsyeriForm = () => {
                         )}
                     />
 
-
-                    <FormField
-                        control={form.control}
-                        name='hasar'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>İş yerinizde hasar var mı ?  </FormLabel>
-                                <FormControl>
-                                    <RadioGroup
-                                        className='flex items-center gap-10'
-                                        defaultValue={field.value}
-                                        onValueChange={field.onChange}
-                                    >
-                                        <FormItem className='flex items-center space-x-2 space-y-0'>
-                                            <FormControl>
-                                                <RadioGroupItem value='var' id='var' />
-                                            </FormControl>
-                                            <Label htmlFor='var'>Var</Label>
-                                        </FormItem>
-                                        <FormItem className='flex items-center space-x-2 space-y-0'>
-                                            <FormControl>
-                                                <RadioGroupItem value='yok' id='yok' />
-                                            </FormControl>
-                                            <Label htmlFor='yok'>Yok</Label>
-                                        </FormItem>
-                                    </RadioGroup>
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
-                </div>
-
-                <Separator className='my-6' />
-
-                {/* POLİÇE BİLGİLERİ */}
-                <div className='flex flex-col gap-4'>
-                    <TitleH3>Poliçe Bilgileri</TitleH3>
                     <FormField
                         control={form.control}
                         name='police'
@@ -555,8 +472,9 @@ export const IsyeriForm = () => {
                     )}
                 </div>
 
-                <Separator className='my-6' />
 
+
+                <Separator className='my-6' />
                 {/* İLETİŞİM BİLGİLERİ */}
                 <div className='flex flex-col gap-4'>
                     <TitleH3>İletişim Bilgileri</TitleH3>
@@ -627,7 +545,7 @@ export const IsyeriForm = () => {
                         )}
                     />
                 </div>
-                <Button className='w-full md:w-2/3'>
+                <Button className='w-full md:w-2/3' type='submit'>
                     Teklif Al
                 </Button>
                 {/* DOGRULAMA VE GÖNDERME  */}
@@ -638,3 +556,4 @@ export const IsyeriForm = () => {
     )
 }
 
+export default FerdiKazaForm

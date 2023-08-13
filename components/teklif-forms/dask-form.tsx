@@ -81,9 +81,12 @@ const formSchema = z.object({
     }),
     tcKimlik: z.string().refine((value) => value.length === 11 && /^\d+$/.test(value)),
 
+    binaInsaYili: z.number(),
     yapitarzi: z.string().min(2),
-    ikametgah: z.enum(['sürekli', 'dönemsel']),
+    kullanimSekli: z.string().min(2),
     brütalan: z.number(),
+    katSayisi: z.number(),
+
     rizikoAdresi: z.string().min(2),
     korumaOnlemleri: z.array(z.string()).refine((value) => value.some((item) => item), {
         message: "You have to select at least one item.",
@@ -119,7 +122,6 @@ const DaskForm = () => {
             basvuran: 'Şahıs',
             tcKimlik: '',
 
-            ikametgah: 'sürekli',
             brütalan: 100,
             rizikoAdresi: '',
             korumaOnlemleri: [''],
@@ -309,10 +311,24 @@ const DaskForm = () => {
 
 
                 </div>
+
                 <Separator className='my-6' />
+
                 {/* KONUT BİLGİLERİ */}
                 <div className='flex flex-col gap-4'>
-                    <TitleH3>Konut Bilgileri</TitleH3>
+                    <TitleH3>Bina Bilgileri</TitleH3>
+                    <FormField
+                        control={form.control}
+                        name='binaInsaYili'
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel>Bina İnşa Yılı :</FormLabel>
+                                <FormControl>
+                                    <Input placeholder='Binanızın inşa yılı' type='number' {...field} />
+                                </FormControl>
+                            </FormItem>
+                        )}
+                    />
                     <FormField
                         control={form.control}
                         name='yapitarzi'
@@ -335,51 +351,54 @@ const DaskForm = () => {
                             </FormItem>
                         )}
                     />
-
                     <FormField
                         control={form.control}
-                        name='ikametgah'
+                        name='kullanimSekli'
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>İkametgah Durumu :</FormLabel>
-                                <FormControl>
-                                    <RadioGroup
-                                        className='flex items-center gap-10'
-                                        defaultValue={field.value}
-                                        onValueChange={field.onChange}
-                                    >
-                                        <FormItem className='flex items-center space-x-2 space-y-0'>
-                                            <FormControl>
-                                                <RadioGroupItem value='sürekli' id='sürekli' />
-                                            </FormControl>
-                                            <Label htmlFor='sürekli'>Sürekli</Label>
-                                        </FormItem>
-                                        <FormItem className='flex items-center space-x-2 space-y-0'>
-                                            <FormControl>
-                                                <RadioGroupItem value='dönemsel' id='dönemsel' />
-                                            </FormControl>
-                                            <Label htmlFor='dönemsel'>Dönemsel ( Yazlık vb. )</Label>
-                                        </FormItem>
-                                    </RadioGroup>
-                                </FormControl>
+                                <FormLabel>Kullanım Şekli :</FormLabel>
+                                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                    <FormControl>
+                                        <SelectTrigger>
+                                            <SelectValue placeholder='Kullanım şeklini seçiniz' />
+                                        </SelectTrigger>
+                                    </FormControl>
+                                    <SelectContent>
+                                        <SelectItem value='Büro'>Büro</SelectItem>
+                                        <SelectItem value='Mesken'>Mesken</SelectItem>
+                                        <SelectItem value='Ticarethane'>Ticarethane</SelectItem>
+                                        <SelectItem value='Diger'>Diğer</SelectItem>
+                                    </SelectContent>
+                                </Select>
                             </FormItem>
                         )}
                     />
-                    <span>BİNA BEDELİ</span>
-                    <span>EŞYA BEDELİ</span>
+                    <div className='flex items-end space-x-2'>
+                        <FormField
+                            control={form.control}
+                            name='brütalan'
+                            render={({ field }) => (
+                                <FormItem className='w-full'>
+                                    <FormLabel>Brüt Alanı :</FormLabel>
+                                    <FormControl>
+                                        <Input placeholder='Brüt Alanınız' type='number' {...field} />
+                                    </FormControl>
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name='katSayisi'
+                            render={({ field }) => (
+                                <FormItem className='w-full'>
+                                    <FormControl>
+                                        <Input placeholder='Kat Sayısı' type='number' {...field} />
+                                    </FormControl>
+                                </FormItem>
+                            )}
+                        />
+                    </div>
 
-                    <FormField
-                        control={form.control}
-                        name='brütalan'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Brüt Alanı :</FormLabel>
-                                <FormControl>
-                                    <Input placeholder='Brüt Alanınız' type='number' {...field} />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
                     <FormField
                         control={form.control}
                         name='rizikoAdresi'
@@ -399,66 +418,10 @@ const DaskForm = () => {
 
                     <FormField
                         control={form.control}
-                        name="korumaOnlemleri"
-                        render={() => (
-                            <FormField
-                                control={form.control}
-                                name="korumaOnlemleri"
-                                render={() => (
-                                    <FormItem >
-                                        <div className=' mb-4'>
-                                            <FormLabel className="text-base">Mevcut Koruma Önlemleri :</FormLabel>
-                                        </div>
-                                        <div className='flex items-center flex-wrap gap-4'>
-                                            {korumaOnlemleri.map((item) => (
-                                                <FormField
-                                                    key={item.id}
-                                                    control={form.control}
-                                                    name="korumaOnlemleri"
-                                                    render={({ field }) => {
-                                                        console.log("field:", field)
-                                                        return (
-                                                            <FormItem
-                                                                key={item.id}
-                                                                className="flex flex-row items-center space-x-3 space-y-0"
-                                                            >
-                                                                <FormControl>
-                                                                    <Checkbox
-                                                                        checked={field.value?.includes(item.id)}
-                                                                        onCheckedChange={(checked) => {
-                                                                            return checked
-                                                                                ? field.onChange([...field.value, item.id])
-                                                                                : field.onChange(
-                                                                                    field.value?.filter(
-                                                                                        (value) => value !== item.id
-                                                                                    )
-                                                                                )
-                                                                        }}
-                                                                    />
-                                                                </FormControl>
-                                                                <FormLabel className="text-sm font-normal">
-                                                                    {item.label}
-                                                                </FormLabel>
-                                                            </FormItem>
-                                                        )
-                                                    }}
-                                                />
-                                            ))}
-                                        </div>
-                                        <FormMessage />
-                                    </FormItem>
-                                )}
-                            />
-                        )}
-                    />
-
-
-                    <FormField
-                        control={form.control}
                         name='hasar'
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Konutunuzda hasar var mı ?  </FormLabel>
+                                <FormLabel>Binanızda hasar var mı ?  </FormLabel>
                                 <FormControl>
                                     <RadioGroup
                                         className='flex items-center gap-10'
@@ -521,39 +484,26 @@ const DaskForm = () => {
                     />
                     {isPolice === 'var' && (
                         <>
-                            <div className='flex items-end space-x-2'>
-                                <FormField
-                                    control={form.control}
-                                    name='sigortaSirketi'
-                                    render={({ field }) => (
-                                        <FormItem >
-                                            <FormLabel >Sigorta Şirketi :</FormLabel>
-                                            <FormControl>
-                                                <Input placeholder='Şirket adı' {...field} />
-                                            </FormControl>
+                            <FormField
+                                control={form.control}
+                                name='sigortaSirketi'
+                                render={({ field }) => (
+                                    <FormItem >
+                                        <FormLabel >Sigorta Şirketi :</FormLabel>
+                                        <FormControl>
+                                            <Input placeholder='Şirket adı' {...field} />
+                                        </FormControl>
 
-                                        </FormItem>
-                                    )}
-                                />
-                                <FormField
-                                    control={form.control}
-                                    name='acentaNumarasi'
-                                    render={({ field }) => (
-                                        <FormItem >
-                                            <FormControl>
-                                                <Input placeholder='Acenta Numarası' type='number' {...field} />
-                                            </FormControl>
-                                        </FormItem>
-                                    )}
-                                />
-                            </div>
+                                    </FormItem>
+                                )}
+                            />
                             <div className='flex items-end space-x-2'>
                                 <FormField
                                     control={form.control}
                                     name='policeNumarasi'
                                     render={({ field }) => (
-                                        <FormItem >
-                                            <FormLabel >Poliçe Nuamarası :</FormLabel>
+                                        <FormItem className='w-full'>
+                                            <FormLabel >Poliçe Numarası :</FormLabel>
                                             <FormControl>
                                                 <Input placeholder='Poliçe Numaranız' {...field} />
                                             </FormControl>
@@ -563,29 +513,16 @@ const DaskForm = () => {
                                 />
                                 <FormField
                                     control={form.control}
-                                    name='yenilemeNumarasi'
+                                    name='policeBitisTarihi'
                                     render={({ field }) => (
-                                        <FormItem >
+                                        <FormItem className='w-full'>
                                             <FormControl>
-                                                <Input placeholder='Yenileme Numarası' type='number' {...field} />
+                                                <Input placeholder='Bitiş Tarihi' type='number' {...field} />
                                             </FormControl>
                                         </FormItem>
                                     )}
                                 />
                             </div>
-                            <FormField
-                                control={form.control}
-                                name='policeBitisTarihi'
-                                render={({ field }) => (
-                                    <FormItem >
-                                        <FormLabel >Poliçe Bitiş Tarihi :</FormLabel>
-                                        <FormControl>
-                                            <Input placeholder='Poliçe Numaranız' {...field} />
-                                        </FormControl>
-
-                                    </FormItem>
-                                )}
-                            />
                         </>
                     )}
                 </div>
