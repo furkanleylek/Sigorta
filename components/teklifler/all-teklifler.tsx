@@ -94,11 +94,12 @@ const AllTeklifler = () => {
                     <KaskoForm />
                 )
             }
-            {/* {
+            {
                 content === 'konut' && (
                     <KonutForm />
                 )
             }
+            {/*
             {
                 content === 'isyeri' && (
                     <IsyeriForm />
