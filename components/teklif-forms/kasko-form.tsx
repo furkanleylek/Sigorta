@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
@@ -14,38 +15,88 @@ import DogrulamaKodu from '../teklifler/dogrulama-kodu'
 import { Button } from '../ui/button'
 import { TitleH2 } from '../ui/h2'
 
+import { useSigortaContext } from '../context'
+
 const formSchema = z.object({
-    sahiptürü: z.enum(["sahis", "sirket", "yabanci-sahis"]),
-    kullanıcıadı: z.string().min(2, {
+    sahipturu: z.enum(["sahis", "sirket", "yabanci-sahis"]),
+    kullaniciAdi: z.string().min(2, {
         message: 'Kullanıcı ismi girilmesi gerekiyor .'
     }),
     tcKimlik: z.string().refine((value) => value.length === 11 && /^\d+$/.test(value)),
-    plakano: z.string(),
-    marka: z.string(),
-    modelyılı: z.string(),
+    meslek: z.string().min(2),
+
+    plakaNo: z.string().min(2),
+    kullanimTarzi: z.string().min(2),
+    marka: z.string().min(2),
+    modelYili: z.string().min(2),
+    ekAksesuarBilgileri: z.string().min(2),
     ASBISno: z.string().refine((value) => value.length === 19 && /^\d+$/.test(value)),
-    poliçe: z.enum(["var", "yok"]),
+
+    police: z.enum(["var", "yok"]),
+    sigortaSirketi: z.string().min(2),
+    acentaNumarasi: z.number().min(2),
+    policeNumarasi: z.string().min(2),
+    yenilemeNumarasi: z.number(),
+    policeBitisTarihi: z.string(),
+
     adres: z
         .string()
         .min(10, {
             message: "Adres en az 10 karakter olmalı.",
         }),
-    telefonNumarası: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
-    eposta: z.string(),
-    mesaj: z.string(),
+    telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
+    eposta: z.string().min(2),
+    mesaj: z.string().min(2),
 })
 
-const KaskoForm = () => {
+const TrafikForm = () => {
+
+    const { setOpenModal } = useSigortaContext()
+    const [loading, setLoading] = useState(false)
+    const [isPolice, setIsPolice] = useState('')
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            kullanıcıadı: ''
+            kullaniciAdi: '',
+            sahipturu: 'sahis',
+            tcKimlik: '',
+            meslek: '',
+
+            plakaNo: '',
+            kullanimTarzi: '',
+            marka: '',
+            modelYili: '',
+            ekAksesuarBilgileri: '',
+            ASBISno: '',
+
+            police: 'yok',
+
+            adres: '',
+            telefonNumarasi: '',
+            eposta: '',
+            mesaj: ''
         }
     })
 
-    function onSubmit(values: z.infer<typeof formSchema>) {
-
+    async function onSubmit(values: z.infer<typeof formSchema>) {
+        try {
+            setLoading(true)
+            const URL = `http://localhost:3001/api/trafik`
+            const response = await fetch(URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(values)
+            })
+            form.reset();
+        } catch (error) {
+            console.log(error)
+        } finally {
+            setLoading(false)
+            setOpenModal(true)
+        }
     }
 
     const onPhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -71,6 +122,9 @@ const KaskoForm = () => {
         });
 
         e.target.value = formattedValue;
+
+        return formattedValue
+
     };
 
     const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -82,12 +136,41 @@ const KaskoForm = () => {
         }
 
         e.target.value = numericValue;
+
+        return numericValue
     };
 
+    const onASBISChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const inputValue = e.target.value;
+        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
+
+        if (numericValue.length > 19) {
+            return;
+        }
+
+        e.target.value = numericValue;
+
+        return numericValue
+
+    };
+
+    const onModelChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const inputValue = e.target.value;
+        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
+        console.log("inputValue:", inputValue)
+        if (numericValue.length > 4) {
+            return;
+        }
+
+        e.target.value = numericValue;
+
+        return numericValue
+
+    };
 
     return (
         <Form {...form}>
-            <form className='flex flex-col gap-4 w-full md:w-2/3'>
+            <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full md:w-2/3'>
                 {/* RUHSAT SAHİBİ BİLGİLERİ */}
                 <div className='flex flex-col gap-4'>
                     <TitleH2 className='mb-6'>Kasko Sigortası </TitleH2>
@@ -95,14 +178,14 @@ const KaskoForm = () => {
                     <TitleH3>Ruhsat Sahibi Bilgileri</TitleH3>
                     <FormField
                         control={form.control}
-                        name='sahiptürü'
+                        name='sahipturu'
                         render={({ field }) => (
                             <FormItem>
                                 <FormLabel>Sahip Türü :</FormLabel>
                                 <FormControl>
                                     <RadioGroup
                                         className='flex items-center gap-10'
-                                        defaultValue='sahis'
+                                        defaultValue={field.value}
                                         onValueChange={field.onChange}
                                     >
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
@@ -132,7 +215,7 @@ const KaskoForm = () => {
                     />
                     <FormField
                         control={form.control}
-                        name='kullanıcıadı'
+                        name='kullaniciAdi'
                         render={({ field }) => (
                             <FormItem>
                                 <FormLabel>Adı - Soyadı : </FormLabel>
@@ -158,12 +241,30 @@ const KaskoForm = () => {
                                         placeholder="Örn: 12345678901"
                                         className={`shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline ${form.formState.errors.tcKimlik ? 'border-red-500' : ''
                                             }`}
-                                        onChange={onInputChange}
+                                    // onChange={onInputChange}
                                     />
                                 </FormControl>
                             </FormItem>
                         )}
                     />
+
+
+
+                    {/* DOĞUM TARİHİ EKLENECEK */}
+                    <FormField
+                        control={form.control}
+                        name='meslek'
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel>Meslek :</FormLabel>
+                                <FormControl>
+                                    <Input placeholder='Mesleğiniz' {...field} />
+                                </FormControl>
+                            </FormItem>
+                        )}
+                    />
+
+
                 </div>
                 <Separator className='my-6' />
                 {/* ARAÇ BİLGİLERİ */}
@@ -171,7 +272,7 @@ const KaskoForm = () => {
                     <TitleH3>Araç Bilgileri</TitleH3>
                     <FormField
                         control={form.control}
-                        name='plakano'
+                        name='plakaNo'
                         render={({ field }) => (
                             <FormItem>
                                 <FormLabel>Plaka No : </FormLabel>
@@ -183,11 +284,11 @@ const KaskoForm = () => {
                     />
                     <FormField
                         control={form.control}
-                        name='tcKimlik'
+                        name='kullanimTarzi'
                         render={({ field }) => (
                             <FormItem>
                                 <FormLabel>Kullanım Tarzı :</FormLabel>
-                                <Select>
+                                <Select onValueChange={field.onChange} defaultValue={field.value}>
                                     <FormControl>
                                         <SelectTrigger>
                                             <SelectValue placeholder='Kullanım Tarzını Seçiniz' />
@@ -223,7 +324,7 @@ const KaskoForm = () => {
                         />
                         <FormField
                             control={form.control}
-                            name='modelyılı'
+                            name='modelYili'
                             render={({ field }) => (
                                 <FormItem>
                                     <FormLabel>Model Yılı : </FormLabel>
@@ -233,17 +334,29 @@ const KaskoForm = () => {
                                             type="text"
                                             inputMode="numeric"
                                             pattern="[0-9]*"
-                                            maxLength={11}
+                                            maxLength={4}
                                             placeholder="Model Yılı"
-                                            className={`shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline ${form.formState.errors.tcKimlik ? 'border-red-500' : ''
+                                            className={`shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline ${form.formState.errors.modelYili ? 'border-red-500' : ''
                                                 }`}
-                                            onChange={onInputChange}
+                                        // onChange={onModelChange}
                                         />
                                     </FormControl>
                                 </FormItem>
                             )}
                         />
                     </div>
+                    <FormField
+                        control={form.control}
+                        name='ekAksesuarBilgileri'
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel>Ek Aksesuar Bilgileri :</FormLabel>
+                                <FormControl>
+                                    <Input placeholder='Ek aksesuar bilgileriniz' {...field} />
+                                </FormControl>
+                            </FormItem>
+                        )}
+                    />
                     <FormField
                         control={form.control}
                         name='ASBISno'
@@ -260,7 +373,7 @@ const KaskoForm = () => {
                                         placeholder="Ruhsat Belge Seri Numarası"
                                         className={`shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline ${form.formState.errors.tcKimlik ? 'border-red-500' : ''
                                             }`}
-                                        onChange={onInputChange}
+                                    // onChange={onASBISChange}
                                     />
                                 </FormControl>
                                 <FormDescription className='text-xs ml-4 italic'>
@@ -277,33 +390,102 @@ const KaskoForm = () => {
                     <TitleH3>Poliçe Bilgileri</TitleH3>
                     <FormField
                         control={form.control}
-                        name='poliçe'
+                        name='police'
                         render={({ field }) => (
                             <FormItem>
                                 <FormLabel>Yürürlükte poliçeniz var mı ?</FormLabel>
                                 <FormControl>
                                     <RadioGroup
                                         className='flex items-center gap-10'
-                                        defaultValue='sahis'
+                                        defaultValue={field.value}
                                         onValueChange={field.onChange}
                                     >
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='var' id='var' />
+                                                <RadioGroupItem value='var' id='varPolice' onClick={() => setIsPolice('var')} />
                                             </FormControl>
-                                            <Label htmlFor='var'>Var</Label>
+                                            <Label htmlFor='varPolice'>Var</Label>
                                         </FormItem>
-                                        <FormItem className='flex items-center space-x-2 space-y-0'>
+                                        <FormItem className='flex items-center space-x-2 space-y-0' >
                                             <FormControl>
-                                                <RadioGroupItem value='yok' id='yok' />
+                                                <RadioGroupItem value='yok' id='yokPolice' onClick={() => setIsPolice('yok')} />
                                             </FormControl>
-                                            <Label htmlFor='yok'>Yok</Label>
+                                            <Label htmlFor='yokPolice'>Yok</Label>
                                         </FormItem>
                                     </RadioGroup>
                                 </FormControl>
                             </FormItem>
                         )}
                     />
+                    {isPolice === 'var' && (
+                        <>
+                            <div className='flex items-end space-x-2'>
+                                <FormField
+                                    control={form.control}
+                                    name='sigortaSirketi'
+                                    render={({ field }) => (
+                                        <FormItem >
+                                            <FormLabel >Sigorta Şirketi :</FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Şirket adı' {...field} />
+                                            </FormControl>
+
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='acentaNumarasi'
+                                    render={({ field }) => (
+                                        <FormItem >
+                                            <FormControl>
+                                                <Input placeholder='Acenta Numarası' type='number' {...field} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                            </div>
+                            <div className='flex items-end space-x-2'>
+                                <FormField
+                                    control={form.control}
+                                    name='policeNumarasi'
+                                    render={({ field }) => (
+                                        <FormItem >
+                                            <FormLabel >Poliçe Nuamarası :</FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Poliçe Numaranız' {...field} />
+                                            </FormControl>
+
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='yenilemeNumarasi'
+                                    render={({ field }) => (
+                                        <FormItem >
+                                            <FormControl>
+                                                <Input placeholder='Yenileme Numarası' type='number' {...field} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                            </div>
+                            <FormField
+                                control={form.control}
+                                name='policeBitisTarihi'
+                                render={({ field }) => (
+                                    <FormItem >
+                                        <FormLabel >Poliçe Bitiş Tarihi :</FormLabel>
+                                        <FormControl>
+                                            <Input placeholder='Poliçe Numaranız' {...field} />
+                                        </FormControl>
+
+                                    </FormItem>
+                                )}
+                            />
+                        </>
+                    )}
                 </div>
                 <Separator className='my-6' />
                 {/* İLETİŞİM BİLGİLERİ */}
@@ -327,7 +509,7 @@ const KaskoForm = () => {
                     />
                     <FormField
                         control={form.control}
-                        name='adres'
+                        name='telefonNumarasi'
                         render={({ field }) => (
                             <FormItem>
                                 <FormLabel>Telefon Numarası :</FormLabel>
@@ -337,7 +519,7 @@ const KaskoForm = () => {
                                         type='text'
                                         maxLength={14}
                                         placeholder='Telefon Numaranız'
-                                        onChange={onPhoneChange}
+                                    // onChange={onPhoneChange}
                                     />
                                 </FormControl>
                             </FormItem>
@@ -376,14 +558,15 @@ const KaskoForm = () => {
                         )}
                     />
                 </div>
-                {/* DOGRULAMA VE GÖNDERME  */}
-
-                <Button>
+                <Button className='w-full md:w-2/3'>
                     Teklif Al
                 </Button>
+                {/* DOGRULAMA VE GÖNDERME  */}
             </form>
-        </Form>
+
+
+        </Form >
     )
 }
 
-export default KaskoForm
+export default TrafikForm

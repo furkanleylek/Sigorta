@@ -6,7 +6,7 @@ import MerakEdilenler from './merakedilenler'
 import KaskoForm from '../teklif-forms/kasko-form'
 import TrafikForm from '../teklif-forms/trafik-form'
 import KonutForm from '../teklif-forms/konut-form'
-import IsyeriForm from '../teklif-forms/isyeri-form'
+import { IsyeriForm } from '../teklif-forms/isyeri-form'
 import DaskForm from '../teklif-forms/dask-form'
 
 

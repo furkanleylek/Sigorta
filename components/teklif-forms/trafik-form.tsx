@@ -18,7 +18,7 @@ import { TitleH2 } from '../ui/h2'
 import { useSigortaContext } from '../context'
 
 const formSchema = z.object({
-    sahipturu: z.enum(["sahis", "sirket", "yabanci-sahis"]),
+    sahipturu: z.enum(["Şahıs", "Şirket", "Yabancı Şahıs"]),
     kullaniciAdi: z.string().min(2, {
         message: 'Kullanıcı ismi girilmesi gerekiyor .'
     }),
@@ -28,7 +28,14 @@ const formSchema = z.object({
     marka: z.string().min(2),
     modelYili: z.string().min(2),
     ASBISno: z.string().refine((value) => value.length === 19 && /^\d+$/.test(value)),
+
     police: z.enum(["var", "yok"]),
+    sigortaSirketi: z.string().min(2),
+    acentaNumarasi: z.number().min(2),
+    policeNumarasi: z.string().min(2),
+    yenilemeNumarasi: z.number(),
+    policeBitisTarihi: z.string(),
+
     adres: z
         .string()
         .min(10, {
@@ -43,18 +50,20 @@ const TrafikForm = () => {
 
     const { setOpenModal } = useSigortaContext()
     const [loading, setLoading] = useState(false)
+    const [isPolice, setIsPolice] = useState('')
+
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
             kullaniciAdi: '',
-            sahipturu: 'sahis',
+            sahipturu: 'Şahıs',
             tcKimlik: '',
             plakaNo: '',
             kullanimTarzi: '',
             marka: '',
             modelYili: '',
             ASBISno: '',
-            police: 'var',
+            police: 'yok',
             adres: '',
             telefonNumarasi: '',
             eposta: '',
@@ -63,23 +72,24 @@ const TrafikForm = () => {
     })
 
     async function onSubmit(values: z.infer<typeof formSchema>) {
-        try {
-            setLoading(true)
-            const URL = `http://localhost:3001/api/trafik`
-            const response = await fetch(URL, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(values)
-            })
-            form.reset();
-        } catch (error) {
-            console.log(error)
-        } finally {
-            setLoading(false)
-            setOpenModal(true)
-        }
+        // try {
+        //     setLoading(true)
+        //     const URL = `http://localhost:3001/api/trafik`
+        //     const response = await fetch(URL, {
+        //         method: 'POST',
+        //         headers: {
+        //             'Content-Type': 'application/json'
+        //         },
+        //         body: JSON.stringify(values)
+        //     })
+        //     form.reset();
+        // } catch (error) {
+        //     console.log(error)
+        // } finally {
+        //     setLoading(false)
+        //     setOpenModal(true)
+        // }
+        console.log("values:", values)
     }
 
     const onPhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -151,6 +161,12 @@ const TrafikForm = () => {
 
     };
 
+    // console.log("form:", form)
+    console.log("police:", isPolice)
+    console.log("---------------------------------------------------------------")
+    // console.log("sahip türü:", form.control._fields)
+
+
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full md:w-2/3'>
@@ -173,20 +189,20 @@ const TrafikForm = () => {
                                     >
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='sahis' id='sahis' />
+                                                <RadioGroupItem value='Şahıs' id='sahis' />
                                             </FormControl>
                                             <Label htmlFor='sahis'>Şahıs</Label>
                                         </FormItem>
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='sirket' id='sirket' />
+                                                <RadioGroupItem value='Şirket' id='sirket' />
                                             </FormControl>
                                             <Label htmlFor='sirket'>Şirket</Label>
 
                                         </FormItem>
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='yabancı-sahis' id='yabanci-sahis' />
+                                                <RadioGroupItem value='Yabancı Şahıs' id='yabanci-sahis' />
                                             </FormControl>
                                             <Label htmlFor='yabanci-sahis'>Yabancı Uyruklu Şahıs</Label>
                                         </FormItem>
@@ -362,21 +378,90 @@ const TrafikForm = () => {
                                     >
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='var' id='var' />
+                                                <RadioGroupItem value='var' id='varPolice' onClick={() => setIsPolice('var')} />
                                             </FormControl>
-                                            <Label htmlFor='var'>Var</Label>
+                                            <Label htmlFor='varPolice'>Var</Label>
                                         </FormItem>
-                                        <FormItem className='flex items-center space-x-2 space-y-0'>
+                                        <FormItem className='flex items-center space-x-2 space-y-0' >
                                             <FormControl>
-                                                <RadioGroupItem value='yok' id='yok' />
+                                                <RadioGroupItem value='yok' id='yokPolice' onClick={() => setIsPolice('yok')} />
                                             </FormControl>
-                                            <Label htmlFor='yok'>Yok</Label>
+                                            <Label htmlFor='yokPolice'>Yok</Label>
                                         </FormItem>
                                     </RadioGroup>
                                 </FormControl>
                             </FormItem>
                         )}
                     />
+                    {isPolice === 'var' && (
+                        <>
+                            <div className='flex items-end space-x-2'>
+                                <FormField
+                                    control={form.control}
+                                    name='sigortaSirketi'
+                                    render={({ field }) => (
+                                        <FormItem >
+                                            <FormLabel >Sigorta Şirketi :</FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Şirket adı' {...field} />
+                                            </FormControl>
+
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='acentaNumarasi'
+                                    render={({ field }) => (
+                                        <FormItem >
+                                            <FormControl>
+                                                <Input placeholder='Acenta Numarası' type='number' {...field} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                            </div>
+                            <div className='flex items-end space-x-2'>
+                                <FormField
+                                    control={form.control}
+                                    name='policeNumarasi'
+                                    render={({ field }) => (
+                                        <FormItem >
+                                            <FormLabel >Poliçe Nuamarası :</FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Poliçe Numaranız' {...field} />
+                                            </FormControl>
+
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='yenilemeNumarasi'
+                                    render={({ field }) => (
+                                        <FormItem >
+                                            <FormControl>
+                                                <Input placeholder='Yenileme Numarası' type='number' {...field} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                            </div>
+                            <FormField
+                                control={form.control}
+                                name='policeBitisTarihi'
+                                render={({ field }) => (
+                                    <FormItem >
+                                        <FormLabel >Poliçe Bitiş Tarihi :</FormLabel>
+                                        <FormControl>
+                                            <Input placeholder='Poliçe Numaranız' {...field} />
+                                        </FormControl>
+
+                                    </FormItem>
+                                )}
+                            />
+                        </>
+                    )}
                 </div>
                 <Separator className='my-6' />
                 {/* İLETİŞİM BİLGİLERİ */}

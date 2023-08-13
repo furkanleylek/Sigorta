@@ -5,7 +5,7 @@ import { Button } from '../ui/button'
 import TrafikForm from '../teklif-forms/trafik-form'
 import KaskoForm from '../teklif-forms/kasko-form'
 import KonutForm from '../teklif-forms/konut-form'
-import IsyeriForm from '../teklif-forms/isyeri-form'
+import { IsyeriForm } from '../teklif-forms/isyeri-form'
 import DaskForm from '../teklif-forms/dask-form'
 import Image from 'next/image'
 import TeklifİletildiModal from '../modals/teklif-iletildi-modal'
@@ -28,13 +28,18 @@ const Buttons = [
         imageSrc: '/konut.png'
     },
     {
-        title: 'İşyeri',
+        title: 'İş Yeri',
         content: 'isyeri',
         imageSrc: '/isyeri.png'
     },
     {
         title: 'Dask',
         content: 'dask',
+        imageSrc: '/dask.png'
+    },
+    {
+        title: 'Ferdi Kaza',
+        content: 'ferdikaza',
         imageSrc: '/dask.png'
     }
 ]
@@ -46,7 +51,7 @@ const AllTeklifler = () => {
 
     return (
         <div className='flex flex-col gap-12'>
-            <div className='flex items-center gap-4 md:space-x-12 rounded-xl flex-1 flex-wrap'>
+            <div className='flex items-center gap-4 md:space-x-6 rounded-xl flex-1 flex-wrap'>
                 {
                     Buttons.map((element) => {
                         return (
@@ -61,14 +66,14 @@ const AllTeklifler = () => {
                             `}
                                 onClick={() => setContent(element.content)}
                             >
-                                <div className='relative w-6 h-6 md:w-12 md:h-12'>
+                                <div className='relative w-6 h-6 md:w-10 md:h-10'>
                                     <Image
                                         src={element.imageSrc}
                                         fill
                                         alt={element.title}
                                     />
                                 </div>
-                                <span className='font-semibold text-xs md:text-base'>
+                                <span className='font-semibold text-xs md:text-sm'>
                                     {element.title}
                                 </span>
                             </div>
