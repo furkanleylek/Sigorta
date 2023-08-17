@@ -106,7 +106,7 @@ const KonutForm = () => {
 
         yapitarzi: z.string().min(2),
         ikametgah: z.enum(['sürekli', 'dönemsel']),
-        brütalan: z.number(),
+        brütalan: z.string(),
         rizikoAdresi: z.string().min(2),
         korumaOnlemleri: z.array(z.string()).refine((value) => value.some((item) => item), {
             message: "You have to select at least one item.",
@@ -136,7 +136,6 @@ const KonutForm = () => {
             tcKimlik: '',
 
             ikametgah: 'sürekli',
-            brütalan: 100,
             rizikoAdresi: '',
             korumaOnlemleri: [''],
 
@@ -152,15 +151,17 @@ const KonutForm = () => {
     async function onSubmit(values: z.infer<typeof formSchema>) {
         try {
             setLoading(true)
-            const URL = `http://localhost:3001/api/trafik`
-            const response = await fetch(URL, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(values)
-            })
-            form.reset();
+            // const URL = `http://localhost:3001/api/trafik`
+            // const response = await fetch(URL, {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify(values)
+            // })
+            // form.reset();
+            console.log("values:", values)
+
         } catch (error) {
             console.log(error)
         } finally {
@@ -168,75 +169,6 @@ const KonutForm = () => {
             setOpenModal(true)
         }
     }
-
-    const onPhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-        const formattedValue = numericValue.replace(/^0?(\d{0,3})?(\d{0,3})?(\d{0,2})?(\d{0,2})?/, (match, p1, p2, p3, p4) => {
-            let formatted = '';
-
-            if (p1) {
-                formatted += `0${p1}`;
-            }
-            if (p2) {
-                formatted += ` ${p2}`;
-            }
-            if (p3) {
-                formatted += ` ${p3}`;
-            }
-            if (p4) {
-                formatted += ` ${p4}`;
-            }
-
-            return formatted.trim();
-        });
-
-        e.target.value = formattedValue;
-
-        return formattedValue
-
-    };
-
-    const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-
-        if (numericValue.length > 11) {
-            return;
-        }
-
-        e.target.value = numericValue;
-
-        return numericValue
-    };
-
-    const onASBISChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-
-        if (numericValue.length > 19) {
-            return;
-        }
-
-        e.target.value = numericValue;
-
-        return numericValue
-
-    };
-
-    const onModelChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-        console.log("inputValue:", inputValue)
-        if (numericValue.length > 4) {
-            return;
-        }
-
-        e.target.value = numericValue;
-
-        return numericValue
-
-    };
 
     return (
         <Form {...form}>
@@ -305,11 +237,15 @@ const KonutForm = () => {
                                                     inputMode="numeric"
                                                     pattern="[0-9]*"
                                                     maxLength={11}
-                                                    placeholder="Örn: 12345678901"
-                                                    className={`shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline ${form.formState.errors.tcKimlik ? 'border-red-500' : ''
-                                                        }`}
+                                                    placeholder="Kimlik numaranız"
                                                     value={field.value as string}
-                                                // onChange={onInputChange}
+                                                    onChange={(e) => {
+                                                        const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                        if (numericValue.length <= 11) {
+                                                            field.onChange(numericValue);
+                                                        }
+                                                    }}
                                                 />
                                             </FormControl>
                                         </FormItem>
@@ -419,7 +355,22 @@ const KonutForm = () => {
                             <FormItem>
                                 <FormLabel>Brüt Alanı :</FormLabel>
                                 <FormControl>
-                                    <Input placeholder='Brüt Alanınız' type='number' {...field} />
+                                    <Input
+                                        {...field}
+                                        type="text"
+                                        inputMode="numeric"
+                                        pattern="[0-9]*"
+                                        maxLength={4}
+                                        placeholder='Brüt Alanınız'
+                                        value={field.value as string}
+                                        onChange={(e) => {
+                                            const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                            if (numericValue.length <= 4) {
+                                                field.onChange(numericValue);
+                                            }
+                                        }}
+                                    />
                                 </FormControl>
                             </FormItem>
                         )}

@@ -4,7 +4,7 @@ import { Separator } from '../ui/separator'
 
 const SocialLinks = () => {
     return (
-        <div className='flex items-center gap-2'>
+        <div className='hidden lg:flex items-center gap-2'>
             <div className='flex items-center gap-3'>
                 <BsFacebook size={16} />
                 <span className='border-l-2 h-6'></span>

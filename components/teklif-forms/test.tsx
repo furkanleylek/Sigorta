@@ -1,57 +1,26 @@
-"use client"
+'use client'
+import React, { useState } from 'react'
+import { Input } from '../ui/input'
+import { Button } from '../ui/button'
+const TestForm = () => {
+    const [seriNoNumber, setSeriNoNumber] = useState(0)
+    const [seriNoString, setSeriNoString] = useState('')
 
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import * as z from "zod"
-
-import { Button } from "@/components/ui/button"
-import {
-    Form,
-    FormControl,
-    FormDescription,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-
-const FormSchema = z.object({
-    username: z.string().min(2, {
-        message: "Username must be at least 2 characters.",
-    }),
-})
-
-export function InputForm() {
-    const form = useForm<z.infer<typeof FormSchema>>({
-        resolver: zodResolver(FormSchema),
-    })
-
-    function onSubmit(data: z.infer<typeof FormSchema>) {
-        console.log(data)
+    function onSubmit() {
+        console.log(seriNoNumber, '', seriNoString)
     }
 
     return (
-        <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6">
-                <FormField
-                    control={form.control}
-                    name="username"
-                    render={({ field }) => (
-                        <FormItem>
-                            <FormLabel>Username</FormLabel>
-                            <FormControl>
-                                <Input placeholder="shadcn" {...field} />
-                            </FormControl>
-                            <FormDescription>
-                                This is your public display name.
-                            </FormDescription>
-                            <FormMessage />
-                        </FormItem>
-                    )}
-                />
-                <Button type="submit">Submit</Button>
+        <div>
+            <form onSubmit={onSubmit}>
+                <div className='flex border border-border'>
+                    <input value={seriNoString} onChange={(e) => setSeriNoString(e.target.value)} className='w-1/4' />
+                    <input type='number' value={seriNoNumber} onChange={(e) => setSeriNoNumber(e.target.valueAsNumber)} className='w-3/4 border-l-4 pl-4' />
+                </div>
+                <Button>Submit</Button>
             </form>
-        </Form>
+        </div>
     )
 }
+
+export default TestForm

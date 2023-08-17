@@ -52,7 +52,7 @@ const KaskoForm = () => {
         plakaNo: z.string().min(2),
         kullanimTarzi: z.string().min(2),
         marka: z.string().min(2),
-        modelYili: z.number(),
+        modelYili: z.string().refine((value) => value.length === 4 && /^\d+$/.test(value)),
         ekAksesuarBilgileri: z.string().min(2),
         ASBISno: z.string().refine((value) => value.length === 19 && /^\d+$/.test(value)),
 
@@ -70,7 +70,9 @@ const KaskoForm = () => {
             .min(10, {
                 message: "Adres en az 10 karakter olmalı.",
             }),
-        telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
+        // telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
+        telefonNumarasi: z.string().refine((value) => value.length === 11 && /^\d+$/.test(value)),
+
         eposta: z.string().min(2),
         mesaj: z.string().min(2),
     })
@@ -262,11 +264,15 @@ const KaskoForm = () => {
                                                     inputMode="numeric"
                                                     pattern="[0-9]*"
                                                     maxLength={11}
-                                                    placeholder="Örn: 12345678901"
-                                                    className={`shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline ${form.formState.errors.tcKimlik ? 'border-red-500' : ''
-                                                        }`}
+                                                    placeholder="Kimlik numaranız"
                                                     value={field.value as string}
-                                                // onChange={onInputChange}
+                                                    onChange={(e) => {
+                                                        const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                        if (numericValue.length <= 11) {
+                                                            field.onChange(numericValue);
+                                                        }
+                                                    }}
                                                 />
                                             </FormControl>
                                         </FormItem>
@@ -441,11 +447,19 @@ const KaskoForm = () => {
                                     <FormControl>
                                         <Input
                                             {...field}
-                                            type="number"
+                                            type="text"
                                             inputMode="numeric"
                                             pattern="[0-9]*"
                                             maxLength={4}
-                                            placeholder="Model Yılı"
+                                            placeholder="Model Yılınız"
+                                            value={field.value as string}
+                                            onChange={(e) => {
+                                                const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                if (numericValue.length <= 4) {
+                                                    field.onChange(numericValue);
+                                                }
+                                            }}
                                         />
                                     </FormControl>
                                 </FormItem>
@@ -478,8 +492,6 @@ const KaskoForm = () => {
                                         pattern="[0-9]*"
                                         maxLength={19}
                                         placeholder="Ruhsat Belge Seri Numarası"
-                                        className={`shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline ${form.formState.errors.tcKimlik ? 'border-red-500' : ''
-                                            }`}
                                     // onChange={onASBISChange}
                                     />
                                 </FormControl>
@@ -620,10 +632,27 @@ const KaskoForm = () => {
                                 <FormControl>
                                     <Input
                                         {...field}
-                                        type='text'
-                                        maxLength={14}
+                                        type="text"
+                                        inputMode="numeric"
+                                        // pattern="0 \d{3} \d{3} \d{2} \d{2}"
+                                        maxLength={11}
                                         placeholder='Telefon Numaranız'
-                                    // onChange={onPhoneChange}
+                                        value={field.value as string}
+                                        onChange={(e) => {
+                                            const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                            if (numericValue.length <= 11) {
+                                                field.onChange(numericValue);
+                                            }
+                                        }}
+                                    // onChange={(e) => {
+                                    //     const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                    //     if (numericValue.length <= 14) {
+                                    //         const formattedValue = numericValue.replace(/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/, '$1 $2 $3 $4 $5');
+                                    //         field.onChange(formattedValue);
+                                    //     }
+                                    // }}
                                     />
                                 </FormControl>
                             </FormItem>

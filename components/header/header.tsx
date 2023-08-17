@@ -5,6 +5,7 @@ import { NavbarModal } from './navigation-modal'
 import SocialLinks from './social-links'
 import { Separator } from '../ui/separator'
 import Image from 'next/image'
+import MenuModal from './menu-modal'
 const Header = () => {
     return (
         <header className='w-full '>
@@ -19,6 +20,7 @@ const Header = () => {
                     />
                     <span>maraşsigorta</span>
                 </Link>
+                <MenuModal />
                 <NavLinks />
             </div>
             <Separator />

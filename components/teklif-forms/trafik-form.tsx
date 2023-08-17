@@ -46,7 +46,7 @@ const TrafikForm = () => {
         plakaNo: z.string().min(2),
         kullanimTarzi: z.string().min(2),
         marka: z.string().min(2),
-        modelYili: z.number(),
+        modelYili: z.string().refine((value) => value.length === 4 && /^\d+$/.test(value)),
         ASBISno: z.string().refine((value) => value.length === 19 && /^\d+$/.test(value)),
 
 
@@ -71,20 +71,6 @@ const TrafikForm = () => {
 
 
     })
-
-    // const conditionalSchema = (isPolice: string) =>
-    //     isPolice === 'var'
-    //         ? formSchema.extend({
-    //             sigortaSirketi: z.string().min(2),
-    //             acentaNumarasi: z.number(),
-    //             policeNumarasi: z.string(),
-    //             yenilemeNumarasi: z.number(),
-    //             policeBitisTarihi: z.string(),
-    //         })
-    //         : formSchema;
-
-    // const extendFormSchema = conditionalSchema(isPolice);
-    // console.log("extendFormSchema:", extendFormSchema)
 
     const form = useForm<z.infer<typeof extendFormSchema>>({
         resolver: zodResolver(extendFormSchema),
@@ -269,11 +255,15 @@ const TrafikForm = () => {
                                                 inputMode="numeric"
                                                 pattern="[0-9]*"
                                                 maxLength={11}
-                                                placeholder="Örn: 12345678901"
-                                                className={`shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline ${form.formState.errors.tcKimlik ? 'border-red-500' : ''
-                                                    }`}
+                                                placeholder="Kimlik numaranız"
                                                 value={field.value as string}
-                                            // onChange={onInputChange}
+                                                onChange={(e) => {
+                                                    const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                    if (numericValue.length <= 11) {
+                                                        field.onChange(numericValue);
+                                                    }
+                                                }}
                                             />
                                         </FormControl>
                                     </FormItem>
@@ -411,11 +401,19 @@ const TrafikForm = () => {
                                 <FormControl>
                                     <Input
                                         {...field}
-                                        type="number"
+                                        type="text"
                                         inputMode="numeric"
                                         pattern="[0-9]*"
                                         maxLength={4}
-                                        placeholder="Model Yılı"
+                                        placeholder="Model Yılınız"
+                                        value={field.value as string}
+                                        onChange={(e) => {
+                                            const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                            if (numericValue.length <= 4) {
+                                                field.onChange(numericValue);
+                                            }
+                                        }}
                                     />
                                 </FormControl>
                             </FormItem>

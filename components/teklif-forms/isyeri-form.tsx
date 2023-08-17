@@ -42,45 +42,65 @@ const korumaOnlemleri = [
 ] as const
 
 
-const formSchema = z.object({
-    basvuran: z.enum(["Şahıs", "Şirket", "Yabancı Şahıs"]),
-    kullaniciAdi: z.string().min(2, {
-        message: 'Kullanıcı ismi girilmesi gerekiyor .'
-    }),
-    tcKimlik: z.string().refine((value) => value.length === 11 && /^\d+$/.test(value)),
-
-    isyeri: z.string().min(2),
-    faaliyetKonusu: z.string().min(2),
-    calısanSayısı: z.number(),
-    brütalan: z.number(),
-    rizikoAdresi: z.string().min(2),
-    korumaOnlemleri: z.array(z.string()).refine((value) => value.some((item) => item), {
-        message: "You have to select at least one item.",
-    }),
-    hasar: z.enum(["var", "yok"]),
-
-    police: z.enum(["var", "yok"]),
-    sigortaSirketi: z.string().min(2),
-    acentaNumarasi: z.number().min(2),
-    policeNumarasi: z.string().min(2),
-    yenilemeNumarasi: z.number(),
-    policeBitisTarihi: z.string(),
-
-    adres: z
-        .string()
-        .min(10, {
-            message: "Adres en az 10 karakter olmalı.",
-        }),
-    telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
-    eposta: z.string().min(2),
-    mesaj: z.string().min(2),
-})
-
 export const IsyeriForm = () => {
 
     const { setOpenModal } = useSigortaContext()
     const [loading, setLoading] = useState(false)
     const [isPolice, setIsPolice] = useState('')
+    const [isSahipTuru, setIsSahipTuru] = useState('Şahıs')
+
+
+
+    const formSchema = z.object({
+        basvuran: z.enum(["Şahıs", "Şirket", "Yabancı Şahıs"]),
+        ...(isSahipTuru === 'Şahıs' ? {
+            kullaniciAdi: z.string().min(2, {
+                message: 'Kullanıcı ismi girilmesi gerekiyor .'
+            }),
+            tcKimlik: z.string().refine((value) => value.length === 11 && /^\d+$/.test(value)),
+        } : {}),
+        ...(isSahipTuru === 'Şirket' ? {
+            sirketUnvani: z.string().min(2),
+            vergiNo: z.number(),
+        } : {}),
+        ...(isSahipTuru === 'Yabancı Şahıs' ? {
+            kullaniciAdi: z.string().min(2, {
+                message: 'Kullanıcı ismi girilmesi gerekiyor .'
+            }),
+            pasaportNo: z.number(),
+        } : {}),
+
+        isyeri: z.string().min(2),
+        faaliyetKonusu: z.string().min(2),
+        calısanSayısı: z.string(),
+        brütalan: z.string(),
+        rizikoAdresi: z.string().min(2),
+        korumaOnlemleri: z.array(z.string()).refine((value) => value.some((item) => item), {
+            message: "You have to select at least one item.",
+        }),
+        hasar: z.enum(["var", "yok"]),
+
+
+        police: z.enum(["var", "yok"]),
+        ...(isPolice === 'var' ? {
+            sigortaSirketi: z.string().min(2),
+            acentaNumarasi: z.number(),
+            policeNumarasi: z.string(),
+            yenilemeNumarasi: z.number(),
+            policeBitisTarihi: z.string(),
+        } : {}),
+
+        adres: z
+            .string()
+            .min(10, {
+                message: "Adres en az 10 karakter olmalı.",
+            }),
+        telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
+        eposta: z.string().min(2),
+        mesaj: z.string().min(2),
+    })
+
+
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -89,8 +109,6 @@ export const IsyeriForm = () => {
             basvuran: 'Şahıs',
             tcKimlik: '',
 
-            calısanSayısı: 1,
-            brütalan: 100,
             rizikoAdresi: '',
             korumaOnlemleri: [''],
 
@@ -106,15 +124,17 @@ export const IsyeriForm = () => {
     async function onSubmit(values: z.infer<typeof formSchema>) {
         try {
             setLoading(true)
-            const URL = `http://localhost:3001/api/trafik`
-            const response = await fetch(URL, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(values)
-            })
-            form.reset();
+            // const URL = `http://localhost:3001/api/trafik`
+            // const response = await fetch(URL, {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify(values)
+            // })
+            // form.reset();
+            console.log("values:", values)
+
         } catch (error) {
             console.log(error)
         } finally {
@@ -213,19 +233,20 @@ export const IsyeriForm = () => {
                                     >
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='Şahıs' id='sahis' />
+                                                <RadioGroupItem value='Şahıs' id='sahis' onClick={() => setIsSahipTuru('Şahıs')} />
                                             </FormControl>
                                             <Label htmlFor='sahis'>Şahıs</Label>
                                         </FormItem>
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='Şirket' id='sirket' />
+                                                <RadioGroupItem value='Şirket' id='sirket' onClick={() => setIsSahipTuru('Şirket')} />
                                             </FormControl>
                                             <Label htmlFor='sirket'>Şirket</Label>
+
                                         </FormItem>
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='Yabancı Şahıs' id='yabanci-sahis' />
+                                                <RadioGroupItem value='Yabancı Şahıs' id='yabanci-sahis' onClick={() => setIsSahipTuru('Yabancı Şahıs')} />
                                             </FormControl>
                                             <Label htmlFor='yabanci-sahis'>Yabancı Uyruklu Şahıs</Label>
                                         </FormItem>
@@ -233,43 +254,113 @@ export const IsyeriForm = () => {
                                 </FormControl>
                             </FormItem>
                         )}
-
-                    />
-                    <FormField
-                        control={form.control}
-                        name='kullaniciAdi'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Adı - Soyadı : </FormLabel>
-                                <FormControl>
-                                    <Input placeholder='Adınız / Soyadınız' {...field} />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name='tcKimlik'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>T.C. Kimlik Numaranız :</FormLabel>
-                                <FormControl>
-                                    <Input
-                                        {...field}
-                                        type="text"
-                                        inputMode="numeric"
-                                        pattern="[0-9]*"
-                                        maxLength={11}
-                                        placeholder="Örn: 12345678901"
-                                        className={`shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline ${form.formState.errors.tcKimlik ? 'border-red-500' : ''
-                                            }`}
-                                    // onChange={onInputChange}
-                                    />
-                                </FormControl>
-                            </FormItem>
-                        )}
                     />
 
+                    {
+                        isSahipTuru === 'Şahıs' && (
+                            <>
+                                <FormField
+                                    control={form.control}
+                                    name='kullaniciAdi'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Adı - Soyadı : </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Adınız / Soyadınız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='tcKimlik'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>T.C. Kimlik Numaranız :</FormLabel>
+                                            <FormControl>
+                                                <Input
+                                                    {...field}
+                                                    type="text"
+                                                    inputMode="numeric"
+                                                    pattern="[0-9]*"
+                                                    maxLength={11}
+                                                    placeholder="Kimlik numaranız"
+                                                    value={field.value as string}
+                                                    onChange={(e) => {
+                                                        const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                        if (numericValue.length <= 11) {
+                                                            field.onChange(numericValue);
+                                                        }
+                                                    }}
+                                                />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                            </>
+                        )
+                    }
+                    {
+                        isSahipTuru === 'Şirket' && (
+                            <>
+                                <FormField
+                                    control={form.control}
+                                    name='sirketUnvani'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Şirket Ünvanı: </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Adınız / Soyadınız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='vergiNo'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Vergi Numarası: </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Vergi numaranız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                            </>
+                        )
+                    }
+                    {
+                        isSahipTuru === 'Yabancı Şahıs' && (
+                            <>
+                                <FormField
+                                    control={form.control}
+                                    name='kullaniciAdi'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Adı - Soyadı : </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Adınız / Soyadınız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='pasaportNo'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Pasaport Numarası : </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Pasaport numaranız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                            </>
+                        )
+                    }
 
 
                     {/* DOĞUM TARİHİ EKLENECEK */}
@@ -324,7 +415,21 @@ export const IsyeriForm = () => {
                             <FormItem>
                                 <FormLabel>Çalışan Sayısı :</FormLabel>
                                 <FormControl>
-                                    <Input placeholder='Çalışan Sayınız' type='number' {...field} />
+                                    <Input
+                                        {...field}
+                                        type="text"
+                                        inputMode="numeric"
+                                        pattern="[0-9]*"
+                                        maxLength={4}
+                                        placeholder='Çalışan Sayınız' value={field.value as string}
+                                        onChange={(e) => {
+                                            const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                            if (numericValue.length <= 4) {
+                                                field.onChange(numericValue);
+                                            }
+                                        }}
+                                    />
                                 </FormControl>
                             </FormItem>
                         )}
@@ -335,9 +440,27 @@ export const IsyeriForm = () => {
                         render={({ field }) => (
                             <FormItem>
                                 <FormLabel>Brüt Alanı :</FormLabel>
-                                <FormControl>
-                                    <Input placeholder='Brüt Alanınız' type='number' {...field} />
-                                </FormControl>
+                                <div className='relative'>
+                                    <FormControl>
+                                        <Input
+                                            {...field}
+                                            type="text"
+                                            inputMode="numeric"
+                                            pattern="[0-9]*"
+                                            maxLength={4}
+                                            placeholder='Brüt Alanınız'
+                                            value={field.value as string}
+                                            onChange={(e) => {
+                                                const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                if (numericValue.length <= 4) {
+                                                    field.onChange(numericValue);
+                                                }
+                                            }}
+                                        />
+                                    </FormControl>
+                                    <span className='absolute top-2 right-10 h-full items-center text-center font-semibold text-md ordinal'>m²</span>
+                                </div>
                             </FormItem>
                         )}
                     />
@@ -491,12 +614,11 @@ export const IsyeriForm = () => {
                                     control={form.control}
                                     name='sigortaSirketi'
                                     render={({ field }) => (
-                                        <FormItem >
+                                        <FormItem className='w-full'>
                                             <FormLabel >Sigorta Şirketi :</FormLabel>
                                             <FormControl>
-                                                <Input placeholder='Şirket adı' {...field} />
+                                                <Input placeholder='Şirket adı' {...field} value={field.value as string} />
                                             </FormControl>
-
                                         </FormItem>
                                     )}
                                 />
@@ -504,9 +626,9 @@ export const IsyeriForm = () => {
                                     control={form.control}
                                     name='acentaNumarasi'
                                     render={({ field }) => (
-                                        <FormItem >
+                                        <FormItem className='w-full'>
                                             <FormControl>
-                                                <Input placeholder='Acenta Numarası' type='number' {...field} />
+                                                <Input placeholder='Acenta Numarası' type='number' {...field} value={field.value as string} />
                                             </FormControl>
                                         </FormItem>
                                     )}
@@ -517,12 +639,11 @@ export const IsyeriForm = () => {
                                     control={form.control}
                                     name='policeNumarasi'
                                     render={({ field }) => (
-                                        <FormItem >
+                                        <FormItem className='w-full'>
                                             <FormLabel >Poliçe Nuamarası :</FormLabel>
                                             <FormControl>
-                                                <Input placeholder='Poliçe Numaranız' {...field} />
+                                                <Input placeholder='Poliçe Numaranız' {...field} value={field.value as string} />
                                             </FormControl>
-
                                         </FormItem>
                                     )}
                                 />
@@ -530,9 +651,9 @@ export const IsyeriForm = () => {
                                     control={form.control}
                                     name='yenilemeNumarasi'
                                     render={({ field }) => (
-                                        <FormItem >
+                                        <FormItem className='w-full'>
                                             <FormControl>
-                                                <Input placeholder='Yenileme Numarası' type='number' {...field} />
+                                                <Input placeholder='Yenileme Numarası' type='number' {...field} value={field.value as string} />
                                             </FormControl>
                                         </FormItem>
                                     )}
@@ -545,9 +666,8 @@ export const IsyeriForm = () => {
                                     <FormItem >
                                         <FormLabel >Poliçe Bitiş Tarihi :</FormLabel>
                                         <FormControl>
-                                            <Input placeholder='Poliçe Numaranız' {...field} />
+                                            <Input placeholder='Poliçe Numaranız' {...field} value={field.value as string} />
                                         </FormControl>
-
                                     </FormItem>
                                 )}
                             />

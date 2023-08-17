@@ -1,10 +1,12 @@
 import Container from '@/components/ui/container'
+import Image from 'next/image'
 import React from 'react'
 
 const İletisim = () => {
     return (
-        <Container>
+        <Container className=''>
             <div>İletisim</div>
+
         </Container>
     )
 }

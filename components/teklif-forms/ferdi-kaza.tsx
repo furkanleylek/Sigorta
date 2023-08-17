@@ -18,42 +18,6 @@ import { Checkbox } from '../ui/checkbox'
 
 import { useSigortaContext } from '../context'
 
-const formSchema = z.object({
-    basvuran: z.enum(["Şahıs", "Şirket", "Yabancı Şahıs"]),
-    kullaniciAdi: z.string().min(2, {
-        message: 'Kullanıcı ismi girilmesi gerekiyor .'
-    }),
-    tcKimlik: z.string().refine((value) => value.length === 11 && /^\d+$/.test(value)),
-    dogumTarihi: z.string(),
-    meslek: z.string().min(2),
-
-    plakaNo: z.string().min(2),
-    kullanimTarzi: z.string().min(2),
-    marka: z.string().min(2),
-    modelYili: z.string().min(2),
-    ekAksesuarBilgileri: z.string().min(2),
-    ASBISno: z.string().refine((value) => value.length === 19 && /^\d+$/.test(value)),
-
-    police: z.enum(["var", "yok"]),
-    teminatMiktari: z.number(),
-    ekTeminatlar: z.array(z.string()).refine((value) => value.some((item) => item), {
-        message: "You have to select at least one item.",
-    }),
-    sigortaSirketi: z.string().min(2),
-    acentaNumarasi: z.number().min(2),
-    policeNumarasi: z.string().min(2),
-    yenilemeNumarasi: z.number(),
-    policeBitisTarihi: z.string(),
-
-    adres: z
-        .string()
-        .min(10, {
-            message: "Adres en az 10 karakter olmalı.",
-        }),
-    telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
-    eposta: z.string().min(2),
-    mesaj: z.string().min(2),
-})
 
 const ekTeminatlar = [
     {
@@ -71,6 +35,56 @@ const FerdiKazaForm = () => {
     const { setOpenModal } = useSigortaContext()
     const [loading, setLoading] = useState(false)
     const [isPolice, setIsPolice] = useState('')
+    const [isBasvuran, setIsBasvuran] = useState('Şahıs')
+
+
+    const formSchema = z.object({
+        basvuran: z.enum(["Şahıs", "Şirket", "Yabancı Şahıs"]),
+        ...(isBasvuran === 'Şahıs' ? {
+            kullaniciAdi: z.string().min(2, {
+                message: 'Kullanıcı ismi girilmesi gerekiyor .'
+            }),
+            tcKimlik: z.string().refine((value) => value.length === 11 && /^\d+$/.test(value)),
+            meslek: z.string().min(2),
+        } : {}),
+        ...(isBasvuran === 'Şirket' ? {
+            sirketUnvani: z.string().min(2),
+            vergiNo: z.number(),
+            faaliyetKonusu: z.string().min(2),
+            calısanSayisi: z.number(),
+        } : {}),
+        ...(isBasvuran === 'Yabancı Şahıs' ? {
+            kullaniciAdi: z.string().min(2, {
+                message: 'Kullanıcı ismi girilmesi gerekiyor .'
+            }),
+            pasaportNo: z.number(),
+            meslek: z.string().min(2),
+        } : {}),
+
+        // dogumTarihi: z.string(),
+
+        police: z.enum(["var", "yok"]),
+        ...(isPolice === 'var' ? {
+            sigortaSirketi: z.string().min(2),
+            acentaNumarasi: z.number(),
+            policeNumarasi: z.string(),
+            yenilemeNumarasi: z.number(),
+            policeBitisTarihi: z.string(),
+        } : {}),
+        teminatMiktari: z.string(),
+        ekTeminatlar: z.array(z.string()).refine((value) => value.some((item) => item), {
+            message: "You have to select at least one item.",
+        }),
+
+        adres: z
+            .string()
+            .min(10, {
+                message: "Adres en az 10 karakter olmalı.",
+            }),
+        telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
+        eposta: z.string().min(2),
+        mesaj: z.string().min(2),
+    })
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -79,13 +93,6 @@ const FerdiKazaForm = () => {
             basvuran: 'Şahıs',
             tcKimlik: '',
             meslek: '',
-
-            plakaNo: '',
-            kullanimTarzi: '',
-            marka: '',
-            modelYili: '',
-            ekAksesuarBilgileri: '',
-            ASBISno: '',
 
             police: 'yok',
             ekTeminatlar: [''],
@@ -97,26 +104,27 @@ const FerdiKazaForm = () => {
         }
     })
 
+
     async function onSubmit(values: z.infer<typeof formSchema>) {
-        // try {
-        //     setLoading(true)
-        //     const URL = `http://localhost:3001/api/trafik`
-        //     const response = await fetch(URL, {
-        //         method: 'POST',
-        //         headers: {
-        //             'Content-Type': 'application/json'
-        //         },
-        //         body: JSON.stringify(values)
-        //     })
-        //     form.reset();
-        // } catch (error) {
-        //     console.log(error)
-        // } finally {
-        //     setLoading(false)
-        //     setOpenModal(true)
-        // }
-        console.log("sa")
-        console.log(values)
+        try {
+            setLoading(true)
+            // const URL = `http://localhost:3001/api/trafik`
+            // const response = await fetch(URL, {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify(values)
+            // })
+            // form.reset();
+            console.log("values:", values)
+
+        } catch (error) {
+            console.log(error)
+        } finally {
+            setLoading(false)
+            setOpenModal(true)
+        }
     }
 
     const onPhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -210,20 +218,19 @@ const FerdiKazaForm = () => {
                                     >
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='Şahıs' id='sahis' />
+                                                <RadioGroupItem value='Şahıs' id='sahis' onClick={() => setIsBasvuran('Şahıs')} />
                                             </FormControl>
                                             <Label htmlFor='sahis'>Şahıs</Label>
                                         </FormItem>
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='Şirket' id='sirket' />
+                                                <RadioGroupItem value='Şirket' id='sirket' onClick={() => setIsBasvuran('Şirket')} />
                                             </FormControl>
                                             <Label htmlFor='sirket'>Şirket</Label>
-
                                         </FormItem>
                                         <FormItem className='flex items-center space-x-2 space-y-0'>
                                             <FormControl>
-                                                <RadioGroupItem value='Yabancı Şahıs' id='yabanci-sahis' />
+                                                <RadioGroupItem value='Yabancı Şahıs' id='yabanci-sahis' onClick={() => setIsBasvuran('Yabancı Şahıs')} />
                                             </FormControl>
                                             <Label htmlFor='yabanci-sahis'>Yabancı Uyruklu Şahıs</Label>
                                         </FormItem>
@@ -233,66 +240,167 @@ const FerdiKazaForm = () => {
                         )}
 
                     />
-                    <FormField
-                        control={form.control}
-                        name='kullaniciAdi'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Adı - Soyadı : </FormLabel>
-                                <FormControl>
-                                    <Input placeholder='Adınız / Soyadınız' {...field} />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name='tcKimlik'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>T.C. Kimlik Numaranız :</FormLabel>
-                                <FormControl>
-                                    <Input
-                                        {...field}
-                                        type="text"
-                                        inputMode="numeric"
-                                        pattern="[0-9]*"
-                                        maxLength={11}
-                                        placeholder="Örn: 12345678901"
-                                        className={`shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline ${form.formState.errors.tcKimlik ? 'border-red-500' : ''
-                                            }`}
-                                    // onChange={onInputChange}
-                                    />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
-                    {/* <FormField
-                        control={form.control}
-                        name='dogumTarihi'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Doğum Tarihi : </FormLabel>
-                                <FormControl>
-                                    <Input placeholder='Doğum tarihiniz' type='date' {...field} />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    /> */}
+                    {
+                        isBasvuran === 'Şahıs' && (
+                            <>
+                                <FormField
+                                    control={form.control}
+                                    name='kullaniciAdi'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Adı - Soyadı : </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Adınız / Soyadınız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='tcKimlik'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>T.C. Kimlik Numaranız :</FormLabel>
+                                            <FormControl>
+                                                <Input
+                                                    {...field}
+                                                    type="text"
+                                                    inputMode="numeric"
+                                                    pattern="[0-9]*"
+                                                    maxLength={11}
+                                                    placeholder="Kimlik numaranız"
+                                                    value={field.value as string}
+                                                    onChange={(e) => {
+                                                        const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
 
-                    <FormField
-                        control={form.control}
-                        name='meslek'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Meslek :</FormLabel>
-                                <FormControl>
-                                    <Input placeholder='Mesleğiniz' {...field} />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
-
+                                                        if (numericValue.length <= 11) {
+                                                            field.onChange(numericValue);
+                                                        }
+                                                    }}
+                                                />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='meslek'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Meslek :</FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Mesleğiniz' {...field} {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                            </>
+                        )
+                    }
+                    {
+                        isBasvuran === 'Şirket' && (
+                            <>
+                                <FormField
+                                    control={form.control}
+                                    name='sirketUnvani'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Şirket Ünvanı: </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Adınız / Soyadınız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='vergiNo'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Vergi Numarası: </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Vergi numaranız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='faaliyetKonusu'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Faaliyet Konusu :</FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Faaliyet konusu' {...field} {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='calısanSayisi'
+                                    render={({ field }) => (
+                                        <FormItem className='w-full'>
+                                            <FormLabel>Çalışan Sayısı :</FormLabel>
+                                            <FormControl>
+                                                <Input
+                                                    placeholder='Çalışan sayısı'
+                                                    type='number'
+                                                    {...field}
+                                                    value={field.value as number ?? ''}
+                                                    onChange={(e) => {
+                                                        field.onChange(e.target.value ? parseInt(e.target.value) : undefined);
+                                                    }}
+                                                />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                            </>
+                        )
+                    }
+                    {
+                        isBasvuran === 'Yabancı Şahıs' && (
+                            <>
+                                <FormField
+                                    control={form.control}
+                                    name='kullaniciAdi'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Adı - Soyadı : </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Adınız / Soyadınız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='pasaportNo'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Pasaport Numarası : </FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Pasaport numaranız' {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name='meslek'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>Meslek :</FormLabel>
+                                            <FormControl>
+                                                <Input placeholder='Mesleğiniz' {...field} {...field} value={field.value as string} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+                            </>
+                        )
+                    }
 
                 </div>
 
@@ -301,7 +409,7 @@ const FerdiKazaForm = () => {
                 {/* POLİÇE BİLGİLERİ */}
                 <div className='flex flex-col gap-4'>
                     <TitleH3>Poliçe Bilgileri</TitleH3>
-                    {/* 
+
                     <FormField
                         control={form.control}
                         name='teminatMiktari'
@@ -310,13 +418,28 @@ const FerdiKazaForm = () => {
                                 <FormLabel>Vefat Halinde İstenecek Teminat Miktarı :</FormLabel>
                                 <div className='relative'>
                                     <FormControl>
-                                        <Input placeholder='İstediğiniz teminat miktarı' {...field} type='number' />
+                                        <Input
+                                            {...field}
+                                            type="text"
+                                            inputMode="numeric"
+                                            pattern="[0-9]*"
+                                            maxLength={7}
+                                            placeholder='İstediğiniz teminat miktarı'
+                                            value={field.value as string}
+                                            onChange={(e) => {
+                                                const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                if (numericValue.length <= 7) {
+                                                    field.onChange(numericValue);
+                                                }
+                                            }}
+                                        />
                                     </FormControl>
-                                    <span className='absolute top-1 right-10 h-full items-center text-center font-semibold text-xl'>₺</span>
+                                    <span className='absolute top-2 right-10 h-full items-center text-center font-semibold text-md'>₺</span>
                                 </div>
                             </FormItem>
                         )}
-                    /> */}
+                    />
 
                     <FormField
                         control={form.control}
@@ -408,12 +531,11 @@ const FerdiKazaForm = () => {
                                     control={form.control}
                                     name='sigortaSirketi'
                                     render={({ field }) => (
-                                        <FormItem >
+                                        <FormItem className='w-full'>
                                             <FormLabel >Sigorta Şirketi :</FormLabel>
                                             <FormControl>
-                                                <Input placeholder='Şirket adı' {...field} />
+                                                <Input placeholder='Şirket adı' {...field} value={field.value as string} />
                                             </FormControl>
-
                                         </FormItem>
                                     )}
                                 />
@@ -421,9 +543,9 @@ const FerdiKazaForm = () => {
                                     control={form.control}
                                     name='acentaNumarasi'
                                     render={({ field }) => (
-                                        <FormItem >
+                                        <FormItem className='w-full'>
                                             <FormControl>
-                                                <Input placeholder='Acenta Numarası' type='number' {...field} />
+                                                <Input placeholder='Acenta Numarası' type='number' {...field} value={field.value as string} />
                                             </FormControl>
                                         </FormItem>
                                     )}
@@ -434,12 +556,11 @@ const FerdiKazaForm = () => {
                                     control={form.control}
                                     name='policeNumarasi'
                                     render={({ field }) => (
-                                        <FormItem >
+                                        <FormItem className='w-full'>
                                             <FormLabel >Poliçe Nuamarası :</FormLabel>
                                             <FormControl>
-                                                <Input placeholder='Poliçe Numaranız' {...field} />
+                                                <Input placeholder='Poliçe Numaranız' {...field} value={field.value as string} />
                                             </FormControl>
-
                                         </FormItem>
                                     )}
                                 />
@@ -447,9 +568,9 @@ const FerdiKazaForm = () => {
                                     control={form.control}
                                     name='yenilemeNumarasi'
                                     render={({ field }) => (
-                                        <FormItem >
+                                        <FormItem className='w-full'>
                                             <FormControl>
-                                                <Input placeholder='Yenileme Numarası' type='number' {...field} />
+                                                <Input placeholder='Yenileme Numarası' type='number' {...field} value={field.value as string} />
                                             </FormControl>
                                         </FormItem>
                                     )}
@@ -462,17 +583,14 @@ const FerdiKazaForm = () => {
                                     <FormItem >
                                         <FormLabel >Poliçe Bitiş Tarihi :</FormLabel>
                                         <FormControl>
-                                            <Input placeholder='Poliçe Numaranız' {...field} />
+                                            <Input placeholder='Poliçe Numaranız' {...field} value={field.value as string} />
                                         </FormControl>
-
                                     </FormItem>
                                 )}
                             />
                         </>
                     )}
                 </div>
-
-
 
                 <Separator className='my-6' />
                 {/* İLETİŞİM BİLGİLERİ */}
