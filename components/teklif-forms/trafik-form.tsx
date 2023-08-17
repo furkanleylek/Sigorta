@@ -16,6 +16,59 @@ import { TitleH2 } from '../ui/h2'
 
 import { useSigortaContext } from '../context'
 
+
+const kullanımTarzıData = [
+    {
+        value: "Otomobil",
+    },
+    {
+        value: "Taksi",
+    },
+    {
+        value: "Dolmuş",
+    },
+    {
+        value: "Minibüs",
+    },
+    {
+        value: "Otobüs",
+    },
+    {
+        value: "Kamyonet",
+    },
+    {
+        value: "Kamyon",
+    },
+    {
+        value: "İş Makinesi",
+    },
+    {
+        value: "Traktör",
+    },
+    {
+        value: "Römork",
+    },
+    {
+        value: "Motosiklet",
+    },
+    {
+        value: "Tanker",
+    },
+    {
+        value: "Çekici",
+    },
+    {
+        value: "Özel Amaçlı Taksi",
+    },
+    {
+        value: "Tarım Makinesi",
+    },
+    {
+        value: "Diğer",
+    },
+] as const
+
+
 const TrafikForm = () => {
 
     const { setOpenModal } = useSigortaContext()
@@ -53,22 +106,15 @@ const TrafikForm = () => {
         police: z.enum(["var", "yok"]),
         ...(isPolice === 'var' ? {
             sigortaSirketi: z.string().min(2),
-            acentaNumarasi: z.number(),
             policeNumarasi: z.string(),
-            yenilemeNumarasi: z.number(),
             policeBitisTarihi: z.string(),
         } : {}),
 
 
-        adres: z
-            .string()
-            .min(10, {
-                message: "Adres en az 10 karakter olmalı.",
-            }),
+        adres: z.string(),
         telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
-        eposta: z.string().min(2),
-        mesaj: z.string().min(2),
-
+        eposta: z.string(),
+        mesaj: z.string(),
 
     })
 
@@ -186,7 +232,7 @@ const TrafikForm = () => {
     return (
         <Form {...form}>
 
-            <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full md:w-2/3'>
+            <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full md:w-2/3 '>
                 <TitleH2 className='mb-6'>Trafik Sigortası </TitleH2>
                 <Separator />
                 <TitleH3>Ruhsat Sahibi Bilgileri</TitleH3>
@@ -365,15 +411,9 @@ const TrafikForm = () => {
                                     </SelectTrigger>
                                 </FormControl>
                                 <SelectContent>
-                                    <SelectItem value='motosiklet'>Motosiklet</SelectItem>
-                                    <SelectItem value='özelotomobil'>Özel Otomobil</SelectItem>
-                                    <SelectItem value='taksi'>Taksi</SelectItem>
-                                    <SelectItem value='dolmus'>Dolmuş</SelectItem>
-                                    <SelectItem value='minibus'>Minibüs</SelectItem>
-                                    <SelectItem value='otobus'>Otobüs</SelectItem>
-                                    <SelectItem value='kamyon'>Kamyon</SelectItem>
-                                    <SelectItem value='kamyonet'>Kamyonet</SelectItem>
-                                    <SelectItem value='diger'>Diğer</SelectItem>
+                                    {kullanımTarzıData.map((e) => (
+                                        <SelectItem key={e.value} value={e.value}>{e.value}</SelectItem>
+                                    ))}
                                 </SelectContent>
                             </Select>
                         </FormItem>
@@ -481,68 +521,59 @@ const TrafikForm = () => {
 
                 {isPolice === 'var' && (
                     <>
-                        <div className='flex items-end space-x-2'>
-                            <FormField
-                                control={form.control}
-                                name='sigortaSirketi'
-                                render={({ field }) => (
-                                    <FormItem className='w-full'>
-                                        <FormLabel >Sigorta Şirketi :</FormLabel>
-                                        <FormControl>
-                                            <Input placeholder='Şirket adı' {...field} value={field.value as string} />
-                                        </FormControl>
-                                    </FormItem>
-                                )}
-                            />
-                            <FormField
-                                control={form.control}
-                                name='acentaNumarasi'
-                                render={({ field }) => (
-                                    <FormItem className='w-full'>
-                                        <FormControl>
-                                            <Input placeholder='Acenta Numarası' type='number' {...field} value={field.value as string} />
-                                        </FormControl>
-                                    </FormItem>
-                                )}
-                            />
-                        </div>
+                        <FormField
+                            control={form.control}
+                            name='sigortaSirketi'
+                            render={({ field }) => (
+                                <FormItem className='w-full'>
+                                    <FormLabel >Sigorta Şirketi :</FormLabel>
+                                    <FormControl>
+                                        <Input placeholder='Şirket adı' {...field} value={field.value as string} />
+                                    </FormControl>
+                                </FormItem>
+                            )}
+                        />
                         <div className='flex items-end space-x-2'>
                             <FormField
                                 control={form.control}
                                 name='policeNumarasi'
                                 render={({ field }) => (
-                                    <FormItem className='w-full'>
-                                        <FormLabel >Poliçe Nuamarası :</FormLabel>
+                                    <FormItem className='w-3/4'>
+                                        <FormLabel >Poliçe Numarası :</FormLabel>
                                         <FormControl>
-                                            <Input placeholder='Poliçe Numaranız' {...field} value={field.value as string} />
+                                            <Input
+                                                {...field}
+                                                type="text"
+                                                inputMode="numeric"
+                                                pattern="[0-9]*"
+                                                maxLength={4}
+                                                placeholder='Poliçe Numaranız'
+                                                value={field.value as string}
+                                                onChange={(e) => {
+                                                    const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                    if (numericValue.length <= 4) {
+                                                        field.onChange(numericValue);
+                                                    }
+                                                }}
+                                            />
                                         </FormControl>
                                     </FormItem>
                                 )}
                             />
                             <FormField
                                 control={form.control}
-                                name='yenilemeNumarasi'
+                                name='policeBitisTarihi'
                                 render={({ field }) => (
-                                    <FormItem className='w-full'>
+                                    <FormItem >
+                                        <FormLabel >Poliçe Bitiş Tarihi :</FormLabel>
                                         <FormControl>
-                                            <Input placeholder='Yenileme Numarası' type='number' {...field} value={field.value as string} />
+                                            <Input placeholder='Bitiş tarihi' {...field} value={field.value as string} />
                                         </FormControl>
                                     </FormItem>
                                 )}
                             />
                         </div>
-                        <FormField
-                            control={form.control}
-                            name='policeBitisTarihi'
-                            render={({ field }) => (
-                                <FormItem >
-                                    <FormLabel >Poliçe Bitiş Tarihi :</FormLabel>
-                                    <FormControl>
-                                        <Input placeholder='Poliçe Numaranız' {...field} value={field.value as string} />
-                                    </FormControl>
-                                </FormItem>
-                            )}
-                        />
                     </>
                 )}
 

@@ -45,37 +45,6 @@ const korumaOnlemleri = [
     },
 ] as const
 
-
-
-const items = [
-    {
-        id: "recents",
-        label: "Recents",
-    },
-    {
-        id: "home",
-        label: "Home",
-    },
-    {
-        id: "applications",
-        label: "Applications",
-    },
-    {
-        id: "desktop",
-        label: "Desktop",
-    },
-    {
-        id: "downloads",
-        label: "Downloads",
-    },
-    {
-        id: "documents",
-        label: "Documents",
-    },
-] as const
-
-
-
 const KonutForm = () => {
 
     const { setOpenModal } = useSigortaContext()
@@ -118,14 +87,10 @@ const KonutForm = () => {
             daskPoliceNo: z.string(),
         } : {}),
 
-        adres: z
-            .string()
-            .min(10, {
-                message: "Adres en az 10 karakter olmalı.",
-            }),
+        adres: z.string(),
         telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
-        eposta: z.string().min(2),
-        mesaj: z.string().min(2),
+        eposta: z.string(),
+        mesaj: z.string(),
     })
 
     const form = useForm<z.infer<typeof formSchema>>({
@@ -306,10 +271,10 @@ const KonutForm = () => {
                                         </SelectTrigger>
                                     </FormControl>
                                     <SelectContent>
-                                        <SelectItem value='tamkagir'>Tam Kagir (Çelik, Betornarme, Karkas)</SelectItem>
-                                        <SelectItem value='yarıkagir'>Yarı Kagir</SelectItem>
-                                        <SelectItem value='yıgmakagir'>Yığma Kagir</SelectItem>
-                                        <SelectItem value='diger'>Diğer</SelectItem>
+                                        <SelectItem value='Apartman Dairesi'>Apartman Dairesi</SelectItem>
+                                        <SelectItem value='Müstakil Konut'>Müstakil Konut</SelectItem>
+                                        <SelectItem value='Villa'>Villa</SelectItem>
+                                        <SelectItem value='Diğer'>Diğer</SelectItem>
                                     </SelectContent>
                                 </Select>
                             </FormItem>
@@ -380,12 +345,23 @@ const KonutForm = () => {
                         name='rizikoAdresi'
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Riziko Adresi :</FormLabel>
+                                <FormLabel>Riziko Adresi UAVT Kodu :</FormLabel>
                                 <FormControl>
-                                    <Textarea
-                                        placeholder='Riziko Adresi'
-                                        className='resize-none'
+                                    <Input
                                         {...field}
+                                        type="text"
+                                        inputMode="numeric"
+                                        pattern="[0-9]*"
+                                        maxLength={15}
+                                        placeholder='Riziko Adresi'
+                                        value={field.value as string}
+                                        onChange={(e) => {
+                                            const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                            if (numericValue.length <= 15) {
+                                                field.onChange(numericValue);
+                                            }
+                                        }}
                                     />
                                 </FormControl>
                             </FormItem>
@@ -514,7 +490,22 @@ const KonutForm = () => {
                                     <FormItem className='w-full'>
                                         <FormLabel >Dask Poliçe Numarası :</FormLabel>
                                         <FormControl>
-                                            <Input placeholder='Dask poliçe numaranız' {...field} value={field.value as string} />
+                                            <Input
+                                                {...field}
+                                                type="text"
+                                                inputMode="numeric"
+                                                pattern="[0-9]*"
+                                                maxLength={4}
+                                                placeholder='Dask poliçe numaranız'
+                                                value={field.value as string}
+                                                onChange={(e) => {
+                                                    const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                    if (numericValue.length <= 4) {
+                                                        field.onChange(numericValue);
+                                                    }
+                                                }}
+                                            />
                                         </FormControl>
                                     </FormItem>
                                 )}

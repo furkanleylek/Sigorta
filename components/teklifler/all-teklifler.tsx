@@ -62,13 +62,13 @@ const AllTeklifler = () => {
                             // </Button>
                             <div
                                 key={element.title}
-                                className={`flex flex-col items-center justify-center gap-2 border border-border rounded-full py-2 px-4 md:py-4 md:px-8 cursor-pointer
+                                className={`flex flex-col items-center justify-center gap-2 border border-border rounded-full py-2 px-4 md:py-2 md:px-4 cursor-pointer
                                 ${element.content === content && 'bg-main text-white'} 
                                 hover:scale-105 transition-all
                             `}
                                 onClick={() => setContent(element.content)}
                             >
-                                <div className='relative w-6 h-6 md:w-10 md:h-10'>
+                                <div className='relative w-6 h-6 md:w-4 md:h-4'>
                                     <Image
                                         src={element.imageSrc}
                                         fill

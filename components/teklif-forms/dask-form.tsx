@@ -89,14 +89,10 @@ const DaskForm = () => {
         } : {}),
 
 
-        adres: z
-            .string()
-            .min(10, {
-                message: "Adres en az 10 karakter olmalı.",
-            }),
+        adres: z.string(),
         telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
-        eposta: z.string().min(2),
-        mesaj: z.string().min(2),
+        eposta: z.string(),
+        mesaj: z.string(),
     })
 
 
@@ -414,10 +410,9 @@ const DaskForm = () => {
                                         </SelectTrigger>
                                     </FormControl>
                                     <SelectContent>
-                                        <SelectItem value='tamkagir'>Tam Kagir (Çelik, Betornarme, Karkas)</SelectItem>
-                                        <SelectItem value='yarıkagir'>Yarı Kagir</SelectItem>
-                                        <SelectItem value='yıgmakagir'>Yığma Kagir</SelectItem>
-                                        <SelectItem value='diger'>Diğer</SelectItem>
+                                        <SelectItem value='Çelik'>Çelik</SelectItem>
+                                        <SelectItem value='Betonarme'>Betonarme</SelectItem>
+                                        <SelectItem value='Diğer'>Diğer</SelectItem>
                                     </SelectContent>
                                 </Select>
                             </FormItem>
@@ -499,12 +494,23 @@ const DaskForm = () => {
                         name='rizikoAdresi'
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Riziko Adresi :</FormLabel>
+                                <FormLabel>Riziko Adresi UAVT Kodu :</FormLabel>
                                 <FormControl>
-                                    <Textarea
-                                        placeholder='Riziko Adresi'
-                                        className='resize-none'
+                                    <Input
                                         {...field}
+                                        type="text"
+                                        inputMode="numeric"
+                                        pattern="[0-9]*"
+                                        maxLength={15}
+                                        placeholder='Riziko Adresi'
+                                        value={field.value as string}
+                                        onChange={(e) => {
+                                            const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                            if (numericValue.length <= 15) {
+                                                field.onChange(numericValue);
+                                            }
+                                        }}
                                     />
                                 </FormControl>
                             </FormItem>
@@ -600,7 +606,22 @@ const DaskForm = () => {
                                         <FormItem className='w-3/4'>
                                             <FormLabel >Poliçe Numarası :</FormLabel>
                                             <FormControl>
-                                                <Input placeholder='Poliçe Numaranız' {...field} value={field.value as string} />
+                                                <Input
+                                                    {...field}
+                                                    type="text"
+                                                    inputMode="numeric"
+                                                    pattern="[0-9]*"
+                                                    maxLength={4}
+                                                    placeholder='Poliçe Numaranız'
+                                                    value={field.value as string}
+                                                    onChange={(e) => {
+                                                        const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                        if (numericValue.length <= 4) {
+                                                            field.onChange(numericValue);
+                                                        }
+                                                    }}
+                                                />
                                             </FormControl>
                                         </FormItem>
                                     )}

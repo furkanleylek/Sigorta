@@ -53,28 +53,20 @@ const KaskoForm = () => {
         kullanimTarzi: z.string().min(2),
         marka: z.string().min(2),
         modelYili: z.string().refine((value) => value.length === 4 && /^\d+$/.test(value)),
-        ekAksesuarBilgileri: z.string().min(2),
+        ekAksesuarBilgileri: z.string(),
         ASBISno: z.string().refine((value) => value.length === 19 && /^\d+$/.test(value)),
 
         police: z.enum(["var", "yok"]),
         ...(isPolice === 'var' ? {
             sigortaSirketi: z.string().min(2),
-            acentaNumarasi: z.number(),
             policeNumarasi: z.string(),
-            yenilemeNumarasi: z.number(),
             policeBitisTarihi: z.string(),
         } : {}),
 
-        adres: z
-            .string()
-            .min(10, {
-                message: "Adres en az 10 karakter olmalı.",
-            }),
-        // telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
-        telefonNumarasi: z.string().refine((value) => value.length === 11 && /^\d+$/.test(value)),
-
-        eposta: z.string().min(2),
-        mesaj: z.string().min(2),
+        adres: z.string(),
+        telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
+        eposta: z.string(),
+        mesaj: z.string(),
     })
 
     const form = useForm<z.infer<typeof formSchema>>({
@@ -551,55 +543,49 @@ const KaskoForm = () => {
                                         </FormItem>
                                     )}
                                 />
-                                <FormField
-                                    control={form.control}
-                                    name='acentaNumarasi'
-                                    render={({ field }) => (
-                                        <FormItem className='w-full'>
-                                            <FormControl>
-                                                <Input placeholder='Acenta Numarası' type='number' {...field} value={field.value as string} />
-                                            </FormControl>
-                                        </FormItem>
-                                    )}
-                                />
+
                             </div>
                             <div className='flex items-end space-x-2'>
                                 <FormField
                                     control={form.control}
                                     name='policeNumarasi'
                                     render={({ field }) => (
-                                        <FormItem className='w-full'>
-                                            <FormLabel >Poliçe Nuamarası :</FormLabel>
+                                        <FormItem className='w-3/4'>
+                                            <FormLabel >Poliçe Numarası :</FormLabel>
                                             <FormControl>
-                                                <Input placeholder='Poliçe Numaranız' {...field} value={field.value as string} />
+                                                <Input
+                                                    {...field}
+                                                    type="text"
+                                                    inputMode="numeric"
+                                                    pattern="[0-9]*"
+                                                    maxLength={4}
+                                                    placeholder='Poliçe Numaranız'
+                                                    value={field.value as string}
+                                                    onChange={(e) => {
+                                                        const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                        if (numericValue.length <= 4) {
+                                                            field.onChange(numericValue);
+                                                        }
+                                                    }}
+                                                />
                                             </FormControl>
                                         </FormItem>
                                     )}
                                 />
                                 <FormField
                                     control={form.control}
-                                    name='yenilemeNumarasi'
+                                    name='policeBitisTarihi'
                                     render={({ field }) => (
-                                        <FormItem className='w-full'>
+                                        <FormItem >
+                                            <FormLabel >Poliçe Bitiş Tarihi :</FormLabel>
                                             <FormControl>
-                                                <Input placeholder='Yenileme Numarası' type='number' {...field} value={field.value as string} />
+                                                <Input placeholder='Bitiş tarihi' {...field} value={field.value as string} />
                                             </FormControl>
                                         </FormItem>
                                     )}
                                 />
                             </div>
-                            <FormField
-                                control={form.control}
-                                name='policeBitisTarihi'
-                                render={({ field }) => (
-                                    <FormItem >
-                                        <FormLabel >Poliçe Bitiş Tarihi :</FormLabel>
-                                        <FormControl>
-                                            <Input placeholder='Poliçe Numaranız' {...field} value={field.value as string} />
-                                        </FormControl>
-                                    </FormItem>
-                                )}
-                            />
                         </>
                     )}
                 </div>
