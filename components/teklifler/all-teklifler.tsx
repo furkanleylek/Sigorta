@@ -12,49 +12,60 @@ import TeklifİletildiModal from '../modals/teklif-iletildi-modal'
 import { useSigortaContext } from '../context'
 import FerdiKazaForm from '../teklif-forms/ferdi-kaza'
 import TestForm from '../teklif-forms/test'
-import { AiOutlineCar } from 'react-icons/ai'
-import { FaHouseChimney } from 'react-icons/fa6'
+import { AiOutlineCar, AiOutlineShop } from 'react-icons/ai'
+import { FaHouseChimney, } from 'react-icons/fa6'
+import { FaCarCrash } from 'react-icons/fa'
 import { GiShop } from 'react-icons/gi'
+import { FaHouseDamage } from 'react-icons/fa'
+import { FaStarOfLife } from 'react-icons/fa'
+import { MdOutlineReportProblem } from 'react-icons/md'
+import { LiaStarOfLifeSolid, LiaHouseDamageSolid, LiaCarCrashSolid } from 'react-icons/lia'
 const Buttons = [
     {
         title: 'Trafik',
         content: 'trafik',
         imageSrc: '/trafik.png',
+        renkKodu: '#051937',
         Icon: AiOutlineCar,
     },
     {
         title: 'Kasko',
         content: 'kasko',
         imageSrc: '/kasko.png',
-        Icon: AiOutlineCar,
+        renkKodu: '#051937',
+        Icon: LiaCarCrashSolid,
 
     },
     {
         title: 'Konut',
         content: 'konut',
         imageSrc: '/konut.png',
-        Icon: FaHouseChimney,
+        renkKodu: '#051937',
+        Icon: LiaHouseDamageSolid,
 
     },
     {
         title: 'İş Yeri',
         content: 'isyeri',
         imageSrc: '/isyeri.png',
-        Icon: GiShop,
+        renkKodu: '#051937',
+        Icon: AiOutlineShop,
 
     },
     {
         title: 'Dask',
         content: 'dask',
         imageSrc: '/dask.png',
-        Icon: AiOutlineCar,
+        renkKodu: '#051937',
+        Icon: MdOutlineReportProblem,
 
     },
     {
         title: 'Ferdi Kaza',
         content: 'ferdikaza',
         imageSrc: '/dask.png',
-        Icon: AiOutlineCar,
+        renkKodu: '#A8EB12',
+        Icon: LiaStarOfLifeSolid,
 
     }
 ]
@@ -65,23 +76,32 @@ const AllTeklifler = () => {
     const { openModal } = useSigortaContext()
 
     return (
-        <div className='py-4 lg:py-12 flex flex-col gap-12'>
-            <div className='flex items-center gap-4 space-x-4 md:space-x-10 rounded-xl overflow-x-auto border border-border p-4 shadow-xl w-auto'>
+        <div className='py-4 lg:py-12 flex flex-col gap-12 w-full'>
+            <div className='flex items-center gap-4 space-x-4 md:space-x-10 rounded-xl overflow-x-auto border border-border p-4 shadow-xl lg:w-max'>
 
                 {
                     Buttons.map((element) => {
 
                         const Icon = element.Icon
+
+                        const isActive = element.content === content;
+
+                        const itemStyle = {
+                            color: isActive ? element.renkKodu : 'gray',
+                        };
+
+
                         return (
                             <div
                                 key={element.title}
                                 className='flex flex-col items-center justify-center'
+
                             >
                                 <div
-                                    className='relative p-1 rounded-full cursor-pointer group'
+                                    className='relative p-1 rounded-full cursor-pointer group hover:scale-105 transition-all'
                                     onClick={() => setContent(element.content)}
                                 >
-                                    <Icon size={36} className={`z-10 text-gray-700 group-hover:text-green-700 ${element.content === content && 'text-green-700'}  `} />
+                                    <Icon size={36} className={`z-10 group-hover:text-green-700  ${element.content === content && `bg-${element.renkKodu}`} `} style={itemStyle} />
                                     <span className='absolute w-8 h-8 bg-slate-200  z-[-10] rounded-full top-0 right-0'>
 
                                     </span>
@@ -90,27 +110,6 @@ const AllTeklifler = () => {
                                     {element.title}
                                 </span>
                             </div>
-
-                            // <div
-                            //     key={element.title}
-                            //     className={`flex flex-col items-center justify-center gap-2 border border-border rounded-full py-2 px-4 md:py-2 md:px-4 cursor-pointer
-                            //     ${element.content === content && 'bg-main text-white'} 
-                            //     hover:scale-105 transition-all
-                            // `}
-                            //     onClick={() => setContent(element.content)}
-                            // >
-                            //     <div className='relative w-6 h-6 md:w-4 md:h-4'>
-                            //         <Image
-                            //             src={element.imageSrc}
-                            //             fill
-                            //             alt={element.title}
-                            //         />
-                            //     </div>
-                            //     <span className='font-semibold text-xs md:text-sm'>
-                            //         {element.title}
-                            //     </span>
-                            // </div>
-
                         )
                     })
                 }
