@@ -20,6 +20,12 @@ import { FaHouseDamage } from 'react-icons/fa'
 import { FaStarOfLife } from 'react-icons/fa'
 import { MdOutlineReportProblem } from 'react-icons/md'
 import { LiaStarOfLifeSolid, LiaHouseDamageSolid, LiaCarCrashSolid } from 'react-icons/lia'
+import { BsShop } from 'react-icons/bs'
+import { LuHeartHandshake } from 'react-icons/lu'
+import { FaGripfire } from 'react-icons/fa'
+import { MdOutlineHealthAndSafety } from 'react-icons/md'
+import { BiBuildingHouse } from 'react-icons/bi'
+
 const Buttons = [
     {
         title: 'Trafik',
@@ -33,7 +39,7 @@ const Buttons = [
         content: 'kasko',
         imageSrc: '/kasko.png',
         renkKodu: '#BB0B1A',
-        Icon: LiaCarCrashSolid,
+        Icon: MdOutlineHealthAndSafety,
 
     },
     {
@@ -41,7 +47,7 @@ const Buttons = [
         content: 'konut',
         imageSrc: '/konut.png',
         renkKodu: '#0738E9',
-        Icon: LiaHouseDamageSolid,
+        Icon: BiBuildingHouse,
 
     },
     {
@@ -49,7 +55,7 @@ const Buttons = [
         content: 'isyeri',
         imageSrc: '/isyeri.png',
         renkKodu: '#E07513',
-        Icon: AiOutlineShop,
+        Icon: BsShop,
 
     },
     {
@@ -57,7 +63,7 @@ const Buttons = [
         content: 'dask',
         imageSrc: '/dask.png',
         renkKodu: '#780EEC',
-        Icon: MdOutlineReportProblem,
+        Icon: FaGripfire,
 
     },
     {
@@ -65,7 +71,7 @@ const Buttons = [
         content: 'ferdikaza',
         imageSrc: '/dask.png',
         renkKodu: '#780EEC',
-        Icon: LiaStarOfLifeSolid,
+        Icon: LuHeartHandshake,
 
     }
 ]
