@@ -1,26 +1,49 @@
 'use client'
-import React, { useState } from 'react'
-import { Input } from '../ui/input'
-import { Button } from '../ui/button'
-const TestForm = () => {
-    const [seriNoNumber, setSeriNoNumber] = useState(0)
-    const [seriNoString, setSeriNoString] = useState('')
+import React from 'react';
+import { useForm, Controller } from 'react-hook-form';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
 
-    function onSubmit() {
-        console.log(seriNoNumber, '', seriNoString)
-    }
+const formSchema = z.object({
+    birthDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+});
+
+type FormData = z.infer<typeof formSchema>;
+
+const TestForm: React.FC = () => {
+    const { handleSubmit, control, formState } = useForm<FormData>({
+        resolver: zodResolver(formSchema),
+    });
+
+    const onSubmit = (data: FormData) => {
+        console.log(data);
+    };
 
     return (
-        <div>
-            <form onSubmit={onSubmit}>
-                <div className='flex border border-border'>
-                    <input value={seriNoString} onChange={(e) => setSeriNoString(e.target.value)} className='w-1/4' />
-                    <input type='number' value={seriNoNumber} onChange={(e) => setSeriNoNumber(e.target.valueAsNumber)} className='w-3/4 border-l-4 pl-4' />
-                </div>
-                <Button>Submit</Button>
-            </form>
-        </div>
-    )
-}
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+            <div>
+                <label htmlFor="birthDate">Doğum Tarihi</label>
+                <Controller
+                    name="birthDate"
+                    control={control}
+                    render={({ field }) => (
+                        <input
+                            {...field}
+                            type="date"
+                            className={`border rounded-md p-2 ${formState.errors.birthDate ? 'border-red-500' : 'border-gray-300'
+                                }`}
+                        />
+                    )}
+                />
+                {formState.errors.birthDate && (
+                    <p className="text-red-500 text-sm">{formState.errors.birthDate.message}</p>
+                )}
+            </div>
+            <button type="submit" className="bg-blue-500 text-white p-2 rounded-md">
+                Gönder
+            </button>
+        </form>
+    );
+};
 
-export default TestForm
+export default TestForm;

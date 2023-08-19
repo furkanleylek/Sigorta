@@ -77,7 +77,7 @@ const AllTeklifler = () => {
 
     return (
         <div className='py-4 lg:py-8 flex flex-col gap-12 w-full '>
-            <div className='flex items-center gap-4 space-x-4 md:space-x-10 rounded-xl overflow-x-auto border border-border p-4 shadow-xl lg:w-max'>
+            <div className='flex items-center justify-between gap-4 space-x-4 md:space-x-10 rounded-xl overflow-x-auto border border-border p-4 shadow-xl w-full lg:w-2/3'>
                 {
                     Buttons.map((element) => {
 
@@ -104,7 +104,7 @@ const AllTeklifler = () => {
 
                                     </span>
                                 </div>
-                                <span className='font-semibold text-xs md:text-sm tracking-wider text-gray-700 whitespace-nowrap'>
+                                <span className='font-semibold text-xs md:text-sm tracking-wider  whitespace-nowrap' style={itemStyle}>
                                     {element.title}
                                 </span>
                             </div>

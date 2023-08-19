@@ -93,9 +93,10 @@ const TrafikForm = () => {
             kullaniciAdi: z.string().min(2, {
                 message: 'Kullanıcı ismi girilmesi gerekiyor .'
             }),
-            pasaportNo: z.number(),
+            pasaportNo: z.string(),
         } : {}),
 
+        dogumTarihi: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).min(2),
 
         plakaNo: z.string().min(2),
         kullanimTarzi: z.string().min(2),
@@ -159,82 +160,11 @@ const TrafikForm = () => {
         }
     }
 
-
-
-    const onPhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-        const formattedValue = numericValue.replace(/^0?(\d{0,3})?(\d{0,3})?(\d{0,2})?(\d{0,2})?/, (match, p1, p2, p3, p4) => {
-            let formatted = '';
-
-            if (p1) {
-                formatted += `0${p1}`;
-            }
-            if (p2) {
-                formatted += ` ${p2}`;
-            }
-            if (p3) {
-                formatted += ` ${p3}`;
-            }
-            if (p4) {
-                formatted += ` ${p4}`;
-            }
-
-            return formatted.trim();
-        });
-
-        e.target.value = formattedValue;
-
-        return formattedValue
-
-    };
-
-    const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-
-        if (numericValue.length > 11) {
-            return;
-        }
-
-        e.target.value = numericValue;
-
-        return numericValue
-    };
-
-    const onASBISChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-
-        if (numericValue.length > 19) {
-            return;
-        }
-
-        e.target.value = numericValue;
-
-        return numericValue
-
-    };
-
-    const onModelChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-        console.log("inputValue:", inputValue)
-        if (numericValue.length > 4) {
-            return;
-        }
-
-        e.target.value = numericValue;
-
-        return numericValue
-
-    };
-
     return (
         <Form {...form}>
 
-            <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full md:w-2/3 '>
-                <TitleH2 className='mb-6'>Trafik Sigortası </TitleH2>
+            <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full lg:w-2/3 '>
+                {/* <TitleH2 className='mb-6'>Trafik Sigortası </TitleH2> */}
 
 
                 <FormContainer>
@@ -318,6 +248,7 @@ const TrafikForm = () => {
                                         </FormItem>
                                     )}
                                 />
+
                             </>
                         )
                     }
@@ -382,7 +313,21 @@ const TrafikForm = () => {
                             </>
                         )
                     }
-
+                    <FormField
+                        control={form.control}
+                        name='dogumTarihi'
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel>Doğum Tarihiniz :</FormLabel>
+                                <FormControl>
+                                    <Input
+                                        {...field}
+                                        type="date"
+                                    />
+                                </FormControl>
+                            </FormItem>
+                        )}
+                    />
                 </FormContainer>
 
                 {/* DOĞUM TARİHİ EKLENECEK */}
@@ -397,7 +342,7 @@ const TrafikForm = () => {
                             <FormItem>
                                 <FormLabel>Plaka No : </FormLabel>
                                 <FormControl>
-                                    <Input placeholder='Plaka Numarası' {...field} />
+                                    <Input placeholder='Plaka Numarası' {...field} className='uppercase placeholder:normal-case' />
                                 </FormControl>
                             </FormItem>
                         )}
@@ -431,7 +376,7 @@ const TrafikForm = () => {
                                 <FormItem className='w-full'>
                                     <FormLabel>Marka : </FormLabel>
                                     <FormControl>
-                                        <Input placeholder='Marka' {...field} />
+                                        <Input placeholder='Marka' {...field} className='capitalize' />
                                     </FormControl>
                                 </FormItem>
                             )}

@@ -71,6 +71,8 @@ export const IsyeriForm = () => {
             pasaportNo: z.number(),
         } : {}),
 
+        dogumTarihi: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).min(2),
+
         isyeri: z.string().min(2),
         faaliyetKonusu: z.string().min(2),
         calısanSayısı: z.string(),
@@ -209,7 +211,7 @@ export const IsyeriForm = () => {
 
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full md:w-2/3'>
+            <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full lg:w-2/3'>
                 {/* RUHSAT SAHİBİ BİLGİLERİ */}
                 <TitleH2 className='mb-6'>İş Yeri Sigortası </TitleH2>
                 <FormContainer className='flex flex-col gap-4'>
@@ -358,7 +360,21 @@ export const IsyeriForm = () => {
                     }
 
 
-                    {/* DOĞUM TARİHİ EKLENECEK */}
+                    <FormField
+                        control={form.control}
+                        name='dogumTarihi'
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel>Doğum Tarihiniz :</FormLabel>
+                                <FormControl>
+                                    <Input
+                                        {...field}
+                                        type="date"
+                                    />
+                                </FormControl>
+                            </FormItem>
+                        )}
+                    />
 
 
 
