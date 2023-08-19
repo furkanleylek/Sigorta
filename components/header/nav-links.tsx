@@ -1,10 +1,14 @@
+'use client'
 import Link from 'next/link'
 import React from 'react'
-import { NavbarModal } from './navigation-modal'
+import { usePathname } from 'next/navigation'
+import TeklifAlMenuModal from './teklifal-menu-modal'
 
 
 
 const NavLinks = () => {
+
+    const pathname = usePathname()
 
     return (
         <div className='hidden lg:flex items-center space-x-10'>
@@ -25,6 +29,11 @@ const NavLinks = () => {
             >
                 BİZE ULAŞIN
             </Link>
+            {pathname === '/teklifal' && (
+                <div className='hidden lg:flex'>
+                    <TeklifAlMenuModal />
+                </div>
+            )}
         </div>
     )
 }

@@ -243,7 +243,7 @@ export const NavbarModal = () => {
             {
                 openModal && (
                     <div
-                        className='absolute top-22 w-full h-20 bg-gray-200 z-10 flex items-center justify-center space-x-6 text-gray-600'
+                        className='absolute top-[92px] w-full h-20 bg-gray-200 z-10 flex items-center justify-center space-x-6 text-gray-600'
                         onMouseOver={() => setOpenModal(true)}
                         onMouseLeave={() => setOpenModal(false)}
                     >

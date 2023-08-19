@@ -76,7 +76,7 @@ const AllTeklifler = () => {
     const { openModal } = useSigortaContext()
 
     return (
-        <div className='py-4 lg:py-12 flex flex-col gap-12 w-full'>
+        <div className='py-4 lg:py-8 flex flex-col gap-12 w-full'>
             <div className='flex items-center gap-4 space-x-4 md:space-x-10 rounded-xl overflow-x-auto border border-border p-4 shadow-xl lg:w-max'>
 
                 {
