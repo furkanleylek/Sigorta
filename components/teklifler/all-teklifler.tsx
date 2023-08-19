@@ -25,6 +25,7 @@ import { LuHeartHandshake } from 'react-icons/lu'
 import { FaGripfire } from 'react-icons/fa'
 import { MdOutlineHealthAndSafety } from 'react-icons/md'
 import { BiBuildingHouse } from 'react-icons/bi'
+import { PiCarDuotone } from 'react-icons/pi'
 
 const Buttons = [
     {
@@ -32,7 +33,7 @@ const Buttons = [
         content: 'trafik',
         imageSrc: '/trafik.png',
         renkKodu: '#096F04',
-        Icon: AiOutlineCar,
+        Icon: PiCarDuotone,
     },
     {
         title: 'Kasko',
