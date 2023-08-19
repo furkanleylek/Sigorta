@@ -8,6 +8,7 @@ import { MdHealthAndSafety } from 'react-icons/md'
 import { GiCargoCrate, GiFarmTractor } from 'react-icons/gi'
 import { MdEngineering } from 'react-icons/md'
 import { usePathname } from 'next/navigation'
+import { Separator } from '../ui/separator'
 
 const components = [
     {
@@ -244,7 +245,8 @@ export const NavbarModal = () => {
             {
                 openModal && (
                     <div
-                        className='absolute top-[92px] w-full h-20 bg-gray-200 z-10 flex items-center justify-center space-x-6 text-gray-600'
+
+                        className={`absolute top-[92px] w-full h-20 bg-gray-200 z-10 flex items-center justify-center space-x-6 text-gray-600 `}
                         onMouseOver={() => setOpenModal(true)}
                         onMouseLeave={() => setOpenModal(false)}
                     >
