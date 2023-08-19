@@ -17,6 +17,7 @@ import { TitleH2 } from '../ui/h2'
 
 import { useSigortaContext } from '../context'
 import { Checkbox } from '../ui/checkbox'
+import FormContainer from './form-container'
 
 const korumaOnlemleri = [
     {
@@ -210,9 +211,8 @@ export const IsyeriForm = () => {
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full md:w-2/3'>
                 {/* RUHSAT SAHİBİ BİLGİLERİ */}
-                <div className='flex flex-col gap-4'>
-                    <TitleH2 className='mb-6'>İş Yeri Sigortası </TitleH2>
-                    <Separator />
+                <TitleH2 className='mb-6'>İş Yeri Sigortası </TitleH2>
+                <FormContainer className='flex flex-col gap-4'>
                     <TitleH3>Sigortalı\Sigorta Ettiren Bilgileri</TitleH3>
                     <FormField
                         control={form.control}
@@ -362,10 +362,10 @@ export const IsyeriForm = () => {
 
 
 
-                </div>
+                </FormContainer>
                 <Separator className='my-6' />
                 {/* KONUT BİLGİLERİ */}
-                <div className='flex flex-col gap-4'>
+                <FormContainer>
                     <TitleH3>İş Yeri Bilgileri</TitleH3>
                     <FormField
                         control={form.control}
@@ -577,12 +577,12 @@ export const IsyeriForm = () => {
                             </FormItem>
                         )}
                     />
-                </div>
+                </FormContainer>
 
                 <Separator className='my-6' />
 
                 {/* POLİÇE BİLGİLERİ */}
-                <div className='flex flex-col gap-4'>
+                <FormContainer>
                     <TitleH3>Poliçe Bilgileri</TitleH3>
                     <FormField
                         control={form.control}
@@ -673,12 +673,12 @@ export const IsyeriForm = () => {
                             </div>
                         </>
                     )}
-                </div>
+                </FormContainer>
 
                 <Separator className='my-6' />
 
                 {/* İLETİŞİM BİLGİLERİ */}
-                <div className='flex flex-col gap-4'>
+                <FormContainer>
                     <TitleH3>İletişim Bilgileri</TitleH3>
                     <FormField
                         control={form.control}
@@ -746,8 +746,8 @@ export const IsyeriForm = () => {
                             </FormItem>
                         )}
                     />
-                </div>
-                <Button className='w-full md:w-2/3'>
+                </FormContainer>
+                <Button className='w-full md:w-2/3 mt-6'>
                     Teklif Al
                 </Button>
                 {/* DOGRULAMA VE GÖNDERME  */}

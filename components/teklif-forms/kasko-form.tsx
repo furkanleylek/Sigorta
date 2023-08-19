@@ -16,6 +16,7 @@ import { Button } from '../ui/button'
 import { TitleH2 } from '../ui/h2'
 
 import { useSigortaContext } from '../context'
+import FormContainer from './form-container'
 
 const kullanımTarzıData = [
     {
@@ -236,9 +237,9 @@ const KaskoForm = () => {
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full md:w-2/3'>
                 {/* RUHSAT SAHİBİ BİLGİLERİ */}
-                <div className='flex flex-col gap-4'>
-                    <TitleH2 className='mb-6'>Kasko Sigortası </TitleH2>
-                    <Separator />
+
+                <TitleH2 className='mb-6'>Kasko Sigortası </TitleH2>
+                <FormContainer>
                     <TitleH3>Ruhsat Sahibi Bilgileri</TitleH3>
                     <FormField
                         control={form.control}
@@ -419,14 +420,15 @@ const KaskoForm = () => {
                             </>
                         )
                     }
-
                     {/* DOĞUM TARİHİ EKLENECEK */}
 
+                </FormContainer>
 
-                </div>
+
+
                 <Separator className='my-6' />
                 {/* ARAÇ BİLGİLERİ */}
-                <div className='flex flex-col gap-4'>
+                <FormContainer>
                     <TitleH3>Araç Bilgileri</TitleH3>
                     <FormField
                         control={form.control}
@@ -519,7 +521,7 @@ const KaskoForm = () => {
                         name='ASBISno'
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Ruhsat Belge Seri No / ASBİS No : </FormLabel>
+                                <FormLabel>Ruhsat Belge Seri No  : </FormLabel>
                                 <FormControl>
                                     <Input
                                         {...field}
@@ -531,17 +533,14 @@ const KaskoForm = () => {
                                     // onChange={onASBISChange}
                                     />
                                 </FormControl>
-                                <FormDescription className='text-xs ml-4 italic'>
-                                    Yeni tescil işlemlerinde geçici ruhsat belgesinde yazan ASBİS numarasını, diğer işlemlerde ruhsat üzerindeki seri numarayı kullanın.
-                                </FormDescription>
                                 <FormMessage />
                             </FormItem>
                         )}
                     />
-                </div>
+                </FormContainer>
                 <Separator className='my-6' />
                 {/* POLİÇE BİLGİLERİ */}
-                <div className='flex flex-col gap-4'>
+                <FormContainer >
                     <TitleH3>Poliçe Bilgileri</TitleH3>
                     <FormField
                         control={form.control}
@@ -632,10 +631,10 @@ const KaskoForm = () => {
                             </div>
                         </>
                     )}
-                </div>
+                </FormContainer>
                 <Separator className='my-6' />
                 {/* İLETİŞİM BİLGİLERİ */}
-                <div className='flex flex-col gap-4'>
+                <FormContainer >
                     <TitleH3>İletişim Bilgileri</TitleH3>
                     <FormField
                         control={form.control}
@@ -720,8 +719,8 @@ const KaskoForm = () => {
                             </FormItem>
                         )}
                     />
-                </div>
-                <Button className='w-full md:w-2/3' disabled={loading ? true : false}>
+                </FormContainer>
+                <Button className='w-full md:w-2/3 mt-6' disabled={loading ? true : false}>
                     Teklif Al
                 </Button>
                 {/* DOGRULAMA VE GÖNDERME  */}
