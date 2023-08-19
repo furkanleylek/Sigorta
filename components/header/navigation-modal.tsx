@@ -7,7 +7,7 @@ import { FaCar, FaGripfire } from 'react-icons/fa'
 import { MdHealthAndSafety } from 'react-icons/md'
 import { GiCargoCrate, GiFarmTractor } from 'react-icons/gi'
 import { MdEngineering } from 'react-icons/md'
-import { Key } from 'lucide-react'
+import { usePathname } from 'next/navigation'
 
 const components = [
     {
@@ -198,6 +198,7 @@ export const NavbarModal = () => {
 
     const [openModal, setOpenModal] = useState(false)
     const [category, setCategory] = useState('')
+    const pathname = usePathname()
 
     const getAltBasliklar = (category: string) => {
         const matchedComponent = components.find(component => component.title === category);
@@ -207,7 +208,7 @@ export const NavbarModal = () => {
     const altBasliklar = getAltBasliklar(category);
     return (
         <div className='w-full relative '>
-            <div className='flex items-center justify-center border-b '>
+            <div className={`flex items-center justify-center  ${pathname !== '/teklifal' ? 'border-b' : 'border-t'}`}>
                 {
                     components.map((e, index) => {
 
