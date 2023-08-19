@@ -410,7 +410,7 @@ const TrafikForm = () => {
                                         <SelectValue placeholder='Kullanım Tarzını Seçiniz' />
                                     </SelectTrigger>
                                 </FormControl>
-                                <SelectContent>
+                                <SelectContent className='h-40 overflow-y-scroll'>
                                     {kullanımTarzıData.map((e) => (
                                         <SelectItem key={e.value} value={e.value}>{e.value}</SelectItem>
                                     ))}

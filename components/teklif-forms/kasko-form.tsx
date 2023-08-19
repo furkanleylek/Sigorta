@@ -17,6 +17,56 @@ import { TitleH2 } from '../ui/h2'
 
 import { useSigortaContext } from '../context'
 
+const kullanımTarzıData = [
+    {
+        value: "Otomobil",
+    },
+    {
+        value: "Taksi",
+    },
+    {
+        value: "Dolmuş",
+    },
+    {
+        value: "Minibüs",
+    },
+    {
+        value: "Otobüs",
+    },
+    {
+        value: "Kamyonet",
+    },
+    {
+        value: "Kamyon",
+    },
+    {
+        value: "İş Makinesi",
+    },
+    {
+        value: "Traktör",
+    },
+    {
+        value: "Römork",
+    },
+    {
+        value: "Motosiklet",
+    },
+    {
+        value: "Tanker",
+    },
+    {
+        value: "Çekici",
+    },
+    {
+        value: "Özel Amaçlı Taksi",
+    },
+    {
+        value: "Tarım Makinesi",
+    },
+    {
+        value: "Diğer",
+    },
+] as const
 
 const KaskoForm = () => {
 
@@ -402,16 +452,10 @@ const KaskoForm = () => {
                                             <SelectValue placeholder='Kullanım Tarzını Seçiniz' />
                                         </SelectTrigger>
                                     </FormControl>
-                                    <SelectContent>
-                                        <SelectItem value='motosiklet'>Motosiklet</SelectItem>
-                                        <SelectItem value='özelotomobil'>Özel Otomobil</SelectItem>
-                                        <SelectItem value='taksi'>Taksi</SelectItem>
-                                        <SelectItem value='dolmus'>Dolmuş</SelectItem>
-                                        <SelectItem value='minibus'>Minibüs</SelectItem>
-                                        <SelectItem value='otobus'>Otobüs</SelectItem>
-                                        <SelectItem value='kamyon'>Kamyon</SelectItem>
-                                        <SelectItem value='kamyonet'>Kamyonet</SelectItem>
-                                        <SelectItem value='diger'>Diğer</SelectItem>
+                                    <SelectContent className='h-40 overflow-y-scroll'>
+                                        {kullanımTarzıData.map((e) => (
+                                            <SelectItem key={e.value} value={e.value}>{e.value}</SelectItem>
+                                        ))}
                                     </SelectContent>
                                 </Select>
                             </FormItem>
