@@ -76,7 +76,7 @@ const AllTeklifler = () => {
     const { openModal } = useSigortaContext()
 
     return (
-        <div className='py-4 lg:py-8 flex flex-col gap-12 w-full'>
+        <div className='py-4 lg:py-8 flex flex-col gap-12 w-full '>
             <div className='flex items-center gap-4 space-x-4 md:space-x-10 rounded-xl overflow-x-auto border border-border p-4 shadow-xl lg:w-max'>
                 {
                     Buttons.map((element) => {
@@ -91,45 +91,23 @@ const AllTeklifler = () => {
 
 
                         return (
-                            <div className='flex flex-col gap-20' key={element.title}>
+                            <div
+                                key={element.title}
+                                className='flex flex-col items-center justify-center cursor-pointer group hover:scale-105 transition-all'
+                                onClick={() => setContent(element.content)}
+                            >
                                 <div
-                                    key={element.title}
-                                    className='flex flex-col items-center justify-center cursor-pointer group hover:scale-105 transition-all'
-                                    onClick={() => setContent(element.content)}
+                                    className='relative p-1 rounded-full '
                                 >
-                                    <div
-                                        className='relative p-1 rounded-full '
-                                    >
-                                        <Icon size={36} className={`z-10 group-hover:text-green-700`} style={itemStyle} />
-                                        <span className='absolute w-8 h-8 bg-slate-100  z-[-10] rounded-full top-0 right-0'>
+                                    <Icon size={36} className={`z-10 group-hover:text-green-700`} style={itemStyle} />
+                                    <span className='absolute w-8 h-8 bg-slate-100  z-[-10] rounded-full top-0 right-0'>
 
-                                        </span>
-                                    </div>
-                                    <span className='font-semibold text-xs md:text-sm tracking-wider text-gray-700 whitespace-nowrap'>
-                                        {element.title}
                                     </span>
                                 </div>
-                                <div
-                                    key={element.title}
-                                    className='flex flex-col items-center justify-center cursor-pointer group hover:scale-105 transition-all'
-                                    onClick={() => setContent(element.content)}
-                                >
-                                    <div
-                                        className={`${element.content === content && 'bg-main rounded-full'} p-3`}
-                                    >
-                                        <Image
-                                            src={element.imageSrc}
-                                            width={26}
-                                            height={26}
-                                            alt={element.title}
-                                        />
-                                    </div>
-                                    <span className='font-semibold text-xs md:text-sm tracking-wider text-gray-700 whitespace-nowrap'>
-                                        {element.title}
-                                    </span>
-                                </div>
+                                <span className='font-semibold text-xs md:text-sm tracking-wider text-gray-700 whitespace-nowrap'>
+                                    {element.title}
+                                </span>
                             </div>
-
                         )
                     })
                 }

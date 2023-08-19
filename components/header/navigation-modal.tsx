@@ -221,7 +221,7 @@ export const NavbarModal = () => {
                                 {!isSeperate && <div className='w-[1px] h-8 bg-gray-200'></div>}
                                 <Link
                                     href={e.href}
-                                    className={`px-12 ${openModal && category === e.title && 'bg-gray-200'} `}
+                                    className={`px-12  ${openModal && category === e.title && 'bg-gray-200'} `}
                                     onMouseOver={() => { setOpenModal(true), setCategory(e.title) }}
                                     onMouseLeave={() => setOpenModal(false)}
                                 >
