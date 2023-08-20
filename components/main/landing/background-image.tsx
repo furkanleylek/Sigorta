@@ -6,7 +6,7 @@ export const BackgroundImage = () => {
             src="/bg2.jpg"
             fill
             alt='bg'
-            className='bg-cover object-cover w-full z-[-20] brightness-[.65]'
+            className=' bg-cover object-cover w-full z-[-20] brightness-[.65] '
         />
     )
 }

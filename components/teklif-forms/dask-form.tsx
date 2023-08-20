@@ -306,7 +306,7 @@ const DaskForm = () => {
                                         <FormItem>
                                             <FormLabel>Şirket Ünvanı: </FormLabel>
                                             <FormControl>
-                                                <Input placeholder='Adınız / Soyadınız' {...field} value={field.value as string} />
+                                                <Input placeholder='Şirket ünvanınız' {...field} value={field.value as string} />
                                             </FormControl>
                                         </FormItem>
                                     )}

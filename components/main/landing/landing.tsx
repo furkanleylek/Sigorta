@@ -7,7 +7,7 @@ import { BackgroundImage } from './background-image'
 import Link from 'next/link'
 const Landing = () => {
     return (
-        <div className=' text-white h-full w-full flex items-center  relative pb-36 pt-24'>
+        <div className=' text-white h-full w-full flex items-center  relative  pb-12 pt-12 md:pb-36 md:pt-24'>
             <BackgroundImage />
             <Container className='h-full space-y-10'>
                 <h1 className='text-2xl md:text-4xl lg:text-6xl'>Kahramanmaraş Sigorta<br /> <span className='font-bold text-3xl md:text-5xl lg:text-7xl'>Kaza Geliyorum Demez !</span></h1>

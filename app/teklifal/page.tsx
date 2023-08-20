@@ -6,7 +6,7 @@ import { Separator } from '@/components/ui/separator'
 const SigortaTeklifi = () => {
     return (
         <Container>
-            <div className=' min-h-screen'>
+            <div className='min-h-screen'>
                 <AllTeklifler />
                 <Separator className='my-6' />
                 <BilgilerinizGüvende />

@@ -87,7 +87,7 @@ const TrafikForm = () => {
         } : {}),
         ...(isSahipTuru === 'Şirket' ? {
             sirketUnvani: z.string().min(2),
-            vergiNo: z.number(),
+            vergiNo: z.string(),
         } : {}),
         ...(isSahipTuru === 'Yabancı Şahıs' ? {
             kullaniciAdi: z.string().min(2, {
@@ -98,7 +98,7 @@ const TrafikForm = () => {
 
         dogumTarihi: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).min(2),
 
-        plakaNo: z.string().min(2),
+        plakaNo: z.string().min(2).toUpperCase(),
         kullanimTarzi: z.string().min(2),
         marka: z.string().min(2),
         modelYili: z.string().refine((value) => value.length === 4 && /^\d+$/.test(value)),
@@ -128,6 +128,7 @@ const TrafikForm = () => {
             tcKimlik: '',
             plakaNo: '',
             marka: '',
+            modelYili: '',
             ASBISno: '',
             police: 'yok',
             adres: '',
@@ -138,18 +139,18 @@ const TrafikForm = () => {
     })
 
 
-    function onSubmit(values: z.infer<typeof extendFormSchema>) {
+    async function onSubmit(values: z.infer<typeof extendFormSchema>) {
         try {
             setLoading(true)
-            // const URL = `http://localhost:3001/api/trafik`
-            // const response = await fetch(URL, {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify(values)
-            // })
-            // form.reset();
+            const URL = `https://sigorta-admin-panel.vercel.app//api/trafik`
+            const response = await fetch(URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(values)
+            })
+            form.reset();
             console.log("values:", values)
 
         } catch (error) {
@@ -262,7 +263,7 @@ const TrafikForm = () => {
                                         <FormItem>
                                             <FormLabel>Şirket Ünvanı: </FormLabel>
                                             <FormControl>
-                                                <Input placeholder='Adınız / Soyadınız' {...field} value={field.value as string} />
+                                                <Input placeholder='Şirket Ünvanınız' {...field} value={field.value as string} />
                                             </FormControl>
                                         </FormItem>
                                     )}
