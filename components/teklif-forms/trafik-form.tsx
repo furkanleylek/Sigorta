@@ -142,7 +142,7 @@ const TrafikForm = () => {
     async function onSubmit(values: z.infer<typeof extendFormSchema>) {
         try {
             setLoading(true)
-            const URL = `https://sigorta-admin-panel.vercel.app//api/trafik`
+            const URL = `https://sigorta-admin-panel.vercel.app/api/trafik`
             const response = await fetch(URL, {
                 method: 'POST',
                 headers: {
