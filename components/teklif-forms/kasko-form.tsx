@@ -237,7 +237,7 @@ const KaskoForm = () => {
 
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full lg:w-2/3'>
+            <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full lg:w-2/3 '>
                 {/* RUHSAT SAHİBİ BİLGİLERİ */}
 
                 <TitleH2 className='mb-6'>Kasko Sigortası </TitleH2>

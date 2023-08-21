@@ -9,7 +9,7 @@ interface MerakEdilenlerProps {
 }
 const MerakEdilenler: React.FC<MerakEdilenlerProps> = ({ merakedilenler }) => {
     return (
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-4 w-full lg:w-2/3'>
             {
                 merakedilenler?.map((element) => {
                     return (

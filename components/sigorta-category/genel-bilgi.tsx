@@ -2,6 +2,7 @@ import React from 'react'
 import { Paragraph } from '../ui/paragraph'
 import { GenelbilgiH3 } from '../ui/genelbilgi-h3'
 import { HiOutlineChevronRight } from 'react-icons/hi'
+import { Separator } from '../ui/separator'
 interface GenelBilgilerProps {
     genelbilgiler?: {
         title: string
@@ -13,11 +14,11 @@ interface GenelBilgilerProps {
 
 const GenelBilgi: React.FC<GenelBilgilerProps> = ({ genelbilgiler }) => {
     return (
-        <div className='flex flex-col gap-20'>
+        <div className='flex flex-col w-full lg:w-2/3'>
             {genelbilgiler?.map((element) => {
                 return (
                     <div key={element.title} className='flex flex-col items-start gap-2'>
-                        <GenelbilgiH3>{element.title}</GenelbilgiH3>
+                        <GenelbilgiH3 >{element.title}</GenelbilgiH3>
                         <div className='flex flex-col gap-2'>
                             {
                                 element.description.map((e, index) => (
@@ -28,6 +29,7 @@ const GenelBilgi: React.FC<GenelBilgilerProps> = ({ genelbilgiler }) => {
                                 ))
                             }
                         </div>
+                        <Separator className='my-8' />
                     </div>
                 )
             })}

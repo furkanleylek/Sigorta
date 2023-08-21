@@ -203,15 +203,30 @@
             ]
         },
         {
-            "title": "",
-            "description": "",
-            "linkHref": "",
+            "title": "Trafik Sigortası",
+            "description": "Zorunlu trafik sigortası",
+            "linkHref": "trafik",
             "genelbilgiler": [
                 {
-                    "title": "",
+                    "title": "Zorunlu trafik sigortası",
                     "description": [
                         {
-                            "paragraph": ""
+                            "paragraph": "2918 sayılı Karayolları Trafik Kanununda düzenlenen ve trafiğe çıkan her aracın yaptırmak zorunda olduğu, her yıl yenilenmesi gereken, Türkiye sınırları içerisinde geçerli olan bir sigorta türüdür. "
+                        },
+                        {
+                            "paragraph": "Zorunlu trafik sigortası esas olarak, hasar anında karşı tarafa verilebilecek bedeni ve maddi zararları güvence altına almaktadır."
+                        },
+                        {
+                            "paragraph": "Bu sigortayı yaptırmayan araçlar trafiğe çıkamazlar."
+                        },
+                        {
+                            "paragraph": "Zorunlu trafik sigortası sadece zarar verdiği diğer aracın zararını karşılar."
+                        },
+                        {
+                            "paragraph": "Zorunlu trafik sigortasının limitleri ile uygulama esasları Hazine Müsteşarlığı tarafından belirlenip Resmi Gazetede yayımlanarak yürürlüğe girmektedir. Trafik sigortası, tüm sigorta şirketleri tarafından aynı genel şartlar çerçevesinde aynı teminat ve limitler ile farklı primler üzerinden düzenlenmektedir."
+                        },
+                        {
+                            "paragraph": "Limitler, trafik kazasında oluşacak zararın türüne göre değişmektedir. Herhangi bir can kaybı olması durumunda ölenin yakınlarına verilmesi gereken miktar, yaralanma olması durumunda hastane masrafları için ödenecek miktardan farklıdır. Öte yandan sadece maddi hasar olması durumunda da ödenecek rakam farklılık gösterir. Böyle durumlarda ödenecek miktar her sene değişmekte ve böylece her sene ödenecek primlerde de değişiklik olmaktadır"
                         }
                     ]
                 }

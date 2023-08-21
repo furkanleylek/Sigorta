@@ -48,7 +48,7 @@ const ContentType: React.FC<SigortaCategoryProps> = ({ categoryItems }) => {
     const [content, setContent] = useState('genelbilgi')
     return (
         <>
-            <div className='flex items-center gap-4 '>
+            <div className='flex items-center gap-4 w-full lg:w-2/3'>
                 {
                     Buttons.map((element) => {
                         return (
