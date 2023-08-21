@@ -78,7 +78,7 @@ const DaskForm = () => {
         binaInsaYili: z.string(),
         yapitarzi: z.string().min(2),
         kullanimSekli: z.string().min(2),
-        brütalan: z.string(),
+        brutalan: z.string(),
         katSayisi: z.number(),
         rizikoAdresi: z.string().min(2),
         hasar: z.enum(["var", "yok"]),
@@ -457,7 +457,7 @@ const DaskForm = () => {
                     <div className='flex items-end space-x-2'>
                         <FormField
                             control={form.control}
-                            name='brütalan'
+                            name='brutalan'
                             render={({ field }) => (
                                 <FormItem className='w-full'>
                                     <FormLabel>Brüt Alanı :</FormLabel>

@@ -13,7 +13,9 @@ interface SigortaCategoryProps {
         }[]
         genelbilgiler: {
             title: string
-            description: string
+            description: {
+                paragraph: string
+            }[]
         }[]
     }
 }

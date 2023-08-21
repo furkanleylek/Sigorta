@@ -12,7 +12,7 @@ export async function generateMetadata(
     const categoryItems = CategoryData.data.find(item => item.linkHref === params.categoryName)
     return {
         title: `${categoryItems?.title}`,
-        // description: `${categorie?.name} description`
+        description: `${categoryItems?.description}`
     }
 }
 
@@ -21,7 +21,7 @@ export default async function CategoryPage({ params }: Props) {
     const categoryItems = CategoryData.data.find(item => item.linkHref === params.categoryName)
     return (
 
-        <div className='flex flex-col  w-full space-y-8 pt-16 h-screen'>
+        <div className='flex flex-col  w-full space-y-8 pt-16 min-h-screen'>
             <SigortaCategory categoryItems={categoryItems} />
         </div>
     )

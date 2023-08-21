@@ -71,12 +71,10 @@ const FerdiKazaForm = () => {
             policeBitisTarihi: z.string(),
         } : {}),
         teminatMiktari: z.string(),
-        ekTeminatlar: z.array(z.string()).refine((value) => value.some((item) => item), {
-            message: "You have to select at least one item.",
-        }),
+        ekTeminatlar: z.array(z.string()).refine((value) => value.some((item) => item)).optional(),
 
         adres: z.string(),
-        telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
+        telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)).optional(),
         eposta: z.string(),
         mesaj: z.string(),
     })
@@ -90,28 +88,32 @@ const FerdiKazaForm = () => {
             meslek: '',
 
             police: 'yok',
-            ekTeminatlar: [''],
 
             adres: '',
-            telefonNumarasi: '',
             eposta: '',
+            telefonNumarasi: '',
             mesaj: ''
         }
     })
 
 
+
     async function onSubmit(values: z.infer<typeof formSchema>) {
         try {
+            if (values.ekTeminatlar === undefined) {
+                values.ekTeminatlar = [''];
+            }
+
             setLoading(true)
-            // const URL = `http://localhost:3001/api/trafik`
-            // const response = await fetch(URL, {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify(values)
-            // })
-            // form.reset();
+            const URL = `http://localhost:3000/api/ferdikaza`
+            const response = await fetch(URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(values)
+            })
+            form.reset();
             console.log("values:", values)
 
         } catch (error) {
@@ -121,75 +123,6 @@ const FerdiKazaForm = () => {
             setOpenModal(true)
         }
     }
-
-    const onPhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-        const formattedValue = numericValue.replace(/^0?(\d{0,3})?(\d{0,3})?(\d{0,2})?(\d{0,2})?/, (match, p1, p2, p3, p4) => {
-            let formatted = '';
-
-            if (p1) {
-                formatted += `0${p1}`;
-            }
-            if (p2) {
-                formatted += ` ${p2}`;
-            }
-            if (p3) {
-                formatted += ` ${p3}`;
-            }
-            if (p4) {
-                formatted += ` ${p4}`;
-            }
-
-            return formatted.trim();
-        });
-
-        e.target.value = formattedValue;
-
-        return formattedValue
-
-    };
-
-    const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-
-        if (numericValue.length > 11) {
-            return;
-        }
-
-        e.target.value = numericValue;
-
-        return numericValue
-    };
-
-    const onASBISChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-
-        if (numericValue.length > 19) {
-            return;
-        }
-
-        e.target.value = numericValue;
-
-        return numericValue
-
-    };
-
-    const onModelChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-        console.log("inputValue:", inputValue)
-        if (numericValue.length > 4) {
-            return;
-        }
-
-        e.target.value = numericValue;
-
-        return numericValue
-
-    };
 
     return (
         <Form {...form}>
@@ -468,6 +401,7 @@ const FerdiKazaForm = () => {
                                                     control={form.control}
                                                     name="ekTeminatlar"
                                                     render={({ field }) => {
+                                                        const value = field.value || [];
                                                         return (
                                                             <FormItem
                                                                 key={item.id}
@@ -478,7 +412,7 @@ const FerdiKazaForm = () => {
                                                                         checked={field.value?.includes(item.id)}
                                                                         onCheckedChange={(checked) => {
                                                                             return checked
-                                                                                ? field.onChange([...field.value, item.id])
+                                                                                ? field.onChange([...value, item.id])
                                                                                 : field.onChange(
                                                                                     field.value?.filter(
                                                                                         (value) => value !== item.id

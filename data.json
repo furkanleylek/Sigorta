@@ -2,7 +2,7 @@
     "data": [
         {
             "title": "Kasko Sigortası",
-            "linkHref": "kaskosigortasi",
+            "linkHref": "kasko",
             "description": "description 1",
             "merakedilenler": [
                 {
@@ -32,241 +32,194 @@
             ],
             "genelbilgiler": [
                 {
-                    "title": "Question 1",
-                    "description": "Question 1 Description"
+                    "title": "Kasko sigortası",
+                    "description": [
+                        {
+                            "paragraph": "Mal sigortalarının türlerinden biridir. Herhangi bir motorlu kara taşıtının sigortalının iradesi dışında hasara uğraması, yanması, çalınması vb. durumlarda, sigortalıya tazminat ödenmesini sağlamak için yapılır."
+                        },
+                        {
+                            "paragraph": "Araç kasko sigortası karşı araçtaki hasarı değil, sigortalıya ait araçtaki hasarı teminat altına alır. Kasko sigortasının amacı, sigorta yaptırana ait olan motorlu aracın uğrayacağı zararları tazmin etmektir."
+                        },
+                        {
+                            "paragraph": "Kasko aynı zamanda isteğe bağlı bir sigorta türüdür. Aracın yanması, çalınması gibi standart teminatlar dışında sigortalının talebi doğrultusunda ek teminatlar ile sigorta kapsamı genişletilebilir. Poliçede aksi belirtilmediği sürece kasko sadece Türkiye sınırları içinde geçerlidir."
+                        }
+                    ]
                 },
                 {
-                    "title": "Question 2",
-                    "description": "Question 2 Description"
+                    "title": "Neden Kasko Sigortası?",
+                    "description": [
+                        {
+                            "paragraph": "Kasko sigortası isteğe bağlı olarak yapılmaktadır. Trafik sigortasının kapsamı dışında olan pek çok teminatı içermektedir. Trafik sigortasında herhangi bir kaza/hasar durumunda, karşı tarafın riskleri kapsam altındadır. Eğer hatalı olan poliçe sahibi ise, kazaya karışan diğer tarafın masrafları trafik sigortası tarafından karşılanır. Hatalı olan taraftaysanız ve kasko poliçeniz yoksa sadece karşı tarafın masrafları ödenir, sizin masraflarınız trafik sigortası dışında kalır. Kasko sigortası yaptırarak öncelikle kaza durumunda kendi risklerinizi güvence altına almış olursunuz."
+                        },
+                        {
+                            "paragraph": "“Neden kasko sigortası?” sorusunun önemli bir cevabı ise, kasko sigortası sadece kaza risklerini kapsam altına almaz. Başta hırsızlık olmak üzere, yangın, deprem gibi sizin kontrolünüz dışında olan çevresel faktörlere karşı da aracınızı güvence altına alınır. Kasko sigortasına ihtiyaç duyduğunuz ek teminatları da ekleyerek aracınızın güvence kapsamını daha da arttırabilirsiniz."
+                        },
+                        {
+                            "paragraph": "Sigorta, neden sigorta yaptırmalıyım sorusuna cevap olacak şekilde finansal olarak varlık sahiplerini korumak amacıyla ortaya çıkmıştır. Kasko ya da konut sigortasında da amaç değişmez. Bu nedenle eğer yerine yenisini koymakta zorlanacağınız varlıklarınız varsa mutlaka bu sigortayı yaptırmalısınız."
+                        },
+                        {
+                            "paragraph": "Zorunlu trafik sigortası yaptıranların tüm risklerden korunmak için kasko sigortalarını da yaptırmaları en doğru karardır."
+                        }
+                    ]
                 },
                 {
-                    "title": "Question 3",
-                    "description": "Question 3 Description"
+                    "title": "Kasko Sigortası Şartları Nelerdir?",
+                    "description": [
+                        {
+                            "paragraph": "Kasko sigortası, aracınızda çeşitli nedenlerle oluşabilecek hasarlar sonucunda maddi zararınızı karşılamayı veya minimuma indirmeyi hedeflemektedir. Kasko sigortaları yıllık olarak yapılmakta, teminatlar peşin veya acente ile ortak belirlenen taksitlerle ödenebilmektedir. Herhangi bir ek teminat mevcut değilse, kasko sigortası Türkiye sınırları dahilinde geçerlidir."
+                        },
+                        {
+                            "paragraph": "Kasko sigortalarında genel ve özel şartlar bulunmaktadır. Kanun tarafından belirlenmiş genel şartların dışındaki özel kasko şartları taleplerinize ve acentelere göre farklılık göstermektedir."
+                        },
+                        {
+                            "paragraph": "Genel şartlara göre standart olarak sunulan temel hizmetler şöyledir: Kasko sigortası bulunan bir araçta çalınma, yanma, trafik kazalarında çarpma ve çarpılma olaylarında meydana gelen zararı sigorta teminatı karşılar."
+                        },
+                        {
+                            "paragraph": "Genel şartlar dahilinde sigorta şirketleri tarafından çeşitli ek teminatlar da yapılabilmektedir. Örneğin; sigortanın Türkiye dışında da geçerli olması; terör eylemleri ve doğal afetler sonucunda oluşan hasarın karşılanması; yangın dışında meydana gelen yanıklar; araç anahtarlarının ele geçirilmesiyle gerçekleşen çalınma olayları gibi durumlar ek teminat kapsamına girmektedir."
+                        },
+                        {
+                            "paragraph": "1 Ocak 1994’te yürürlüğe girmiş olan Kara Taşıtları Kasko Genel Şartları, genel teminatlar, ek teminatlar, hasar tazminatı, sigortalının ve sigortacının yükümlülükleri gibi konuları düzenlemektedir."
+                        },
+                        {
+                            "paragraph": "Ayrıca kasko sigortasının önemi ve sektörde artan rekabet nedeniyle sigorta şirketleri yukarıda sayılanlara ek olarak müşterilerine bir takım özel şartlar da sunabilmektedir. Örneğin aracınızın yaşına ve kullanım alanına bağlı olarak sigorta şirketi tarafından bir takım özel avantajlar sağlanabilmektedir"
+                        }
+                    ]
+                },
+                {
+                    "title": "Kasko Nasıl Hesaplanır?",
+                    "description": [
+                        {
+                            "paragraph": "Kasko hesaplama, kasko sigortasına ihtiyaç duyan herkesin ilk ihtiyacıdır. Kasko sigortası alınmadan önce; kasko hesaplaması nasıl yapılır, nelere dikkat edilmelidir, doğru hesaplama yöntemi nedir ve en uygun kasko sigortasını nasıl alırım sorularına cevap aranır."
+                        },
+                        {
+                            "paragraph": "Kasko sigortası primlerinin hesaplanmasında  her sigorta şirketi, kendine özgü bir algoritma kullanmaktadır. Bu hesaplama algoritmasında ise farklı değişkenler bulunmaktadır. Kasko hesaplamasında kullanılan değişkenlerin bir kısmı araç ile ilgili iken bir kısmı aracın ruhsat sahibi ile ilişkili olmaktadır."
+                        },
+                        {
+                            "paragraph": "Araç sigorta fiyatları, sigorta şirketinin sunduğu paketlere göre değişebileceği gibi, araç sahibinin talep ettiği teminatlara göre de değişebilmektedir."
+                        },
+                        {
+                            "paragraph": "Araç sigorta fiyatları belirlenirken aracın piyasa değeri temel alınır, yenilenmiş parçalarının olup olmadığına bakılır ve daha sonra talep edilen ek teminatlar da dikkate alınarak toplam bir poliçe bedeli elde edilir."
+                        },
+                        {
+                            "paragraph": "Aracı kullanan kişiye bağlı olarak yararlanılabilecek indirimler sayesinde de araç sigorta fiyatları daha uygun bir hâle gelebilmektedir."
+                        },
+                        {
+                            "paragraph": " Poliçede sigorta fiyatları yıllık olarak belirlenmekte, araç sahibinin isteğine göre ve sigorta şirketlerinin anlaşmalı olduğu banka seçeneklerine göre 12 aya varan taksitlerle, aylara bölünerek ödenebilmektedir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Kasko hesaplarken şu tavsiyeleri göz önünde bulundurmak gerekir:",
+                    "description": [
+                        {
+                            "paragraph": "Gerçekten ihtiyacınız olan teminatların neler olduğuna dikkat edin. Kasko hesaplamasında fiyatı yükselten en önemli etkenlerden biri teminatlardır."
+                        },
+                        {
+                            "paragraph": "Kasko hesaplaması yapılırken faydalanabileceğiniz indirimler olup olmadığını mutlaka kontrol edin. Hasarsızlık, meslek, çalışılan kurum, sürücü gibi farklı değişkenler kasko priminizde indirim sağlayabilir. Pek çok sigorta şirketi farklı ürün seçenekleri sunmaktadır. Kasko ürünlerini, ürün özelliklerini ve teminatlarını incelemeden acele karar vermeyin."
+                        }
+                    ]
+                },
+                {
+                    "title": "Kasko Sigortası Teminatları",
+                    "description": [
+                        {
+                            "paragraph": "Kasko sigortası yaptırırken dikkat edilmesi gereken en önemli konu ihtiyacınıza uygun doğru teminatların seçilmesidir. Kasko sigortası çarpma, çarpılma, yanma ve çalınma ana teminatlarını içerir. Diğer pek çok riskinizi de aşağıdaki ek teminatlarla güvence altına alabilirsiniz."
+                        },
+                        {
+                            "paragraph": "Ferdi Kaza Teminatı: Çok küçük bir prim ile vefat ve kalıcı sakatlığa karşı araçta bulunan sürücü ve yolcuları güvence altına alır. Bir kaza sonucunda araçta bulunanların vefat etmeleri hâlinde kanuni varislerine, kalıcı sakat kalmaları hâlinde ise kendilerine poliçede yazılı limitlerle tazminat ödenir."
+                        },
+                        {
+                            "paragraph": "Ferdi Kaza Deprem Teminatı: Deprem sonucu araçta bulunan yolcuların vefat etmeleri durumunda kanuni varislerine, kalıcı sakat kalmaları durumunda kendilerine tazminat ödenir."
+                        },
+                        {
+                            "paragraph": "Enflasyon Teminatı: Olası bir hasarda sigortalı aracın değerinin enflasyona karşı korunmasını sağlar.Deprem ve Yanardağ Püskürmesi Teminatı: Deprem ve yanardağ püskürmesi sonucu sigortalı araçta oluşabilecek hasarlar teminat altına alınır."
+                        },
+                        {
+                            "paragraph": "Sel ve Su Baskını Teminatı: Sel ve su baskını ile meydana gelen zararlar bu teminat kapsamında ödenir. Terör Teminatı: Grev, lokavt, kargaşalık, halk hareketleri ile bunları önlemek ve etkileri azaltmak üzere yetkili organlar tarafından yapılan müdahaleler sonucunda oluşabilecek zararlar güvence altına alınır."
+                        },
+                        {
+                            "paragraph": "Hukuksal Yardım Teminatı: Kaza sonucu araca bağlı veya sürücüden kaynaklanan uyuşmazlıklardan doğan hukuki giderleri karşılar. Limitler dahilinde bütün işlemlerin masraflarını ve sürücünün geçici olarak serbest bırakılabilmesi için kefalet ücretini borç olarak öder."
+                        },
+                        {
+                            "paragraph": "İhtiyari Mali Mesuliyet Teminatı: Sigortalı aracın sahibine düşen hukuki sorumluluk trafik sigortası limitlerini aşıyorsa yani bir kaza durumunda üçüncü şahıslara verilebilecek zararlar zorunlu trafik sigortası limitlerini aşıyorsa bunun üzerinde kalan kısım için poliçede yazılı limitler dahilinde ilave güvence sağlar."
+                        },
+                        {
+                            "paragraph": "Yardım Hizmet Paketi Teminatı: Elektrik arızası, mekanik arıza, yangın, hırsızlık veya kaza sonucu sigortalı aracın hareket edememesi ile araç ve içindeki tüm yolcuların kaza sonucu gerekli yardım hizmetlerini alabilmeleri bu güvence ile mümkündür."
+                        },
+                        {
+                            "paragraph": "Eskime Payı Düşmeme Teminatı: Aracın hasar sebebiyle tamir edilmesi sırasında değiştirilen hasarlı parçalarının yerine yenilerinin sigortalı tarafından herhangi bir ek prim ödenmeden takılmasını sağlar. Teminat alınmaz ise aracın yaşı ile orantılı olarak hasar tazminatından kesinti yapılır."
+                        },
+                        {
+                            "paragraph": "Kullanım Kaybı Teminatı: Aracın bir hasar sonucu kullanılamadığı durumlarda şehir içi taksi ve kiralık araç gibi ulaşım giderleri limitler dahilinde karşılanır."
+                        },
+                        {
+                            "paragraph": "Hasar İkame Teminatı: Aracın bir zarara uğraması sonucunda ödenen hasar tutarı kadar sigorta bedeli düşer ve sigorta eksik bedel üzerinden devam eder. Örneğin, 30.000 TL üzerinden sigortalı aracınızın 4.000 TL hasarı olduğunda poliçe 26.000 TL bedel üzerinden devam edecektir. Poliçenin aracın eski değeri üzerinden devam edebilmesi için hasar ikame zeylinin yapılması gerekmektedir. Bu teminatın alınması durumunda zeyil yaptırmak gerekmez ve hasar durumunda sigorta bedeli tazminat bedeli kadar azalmaz."
+                        },
+                        {
+                            "paragraph": "Yurt Dışı Teminatı: Sigortalı aracın yurt dışında poliçe kapsamı dahilinde meydana gelen zararları bu güvence ile karşılanır."
+                        },
+                        {
+                            "paragraph": "Alevsiz Yangın Teminatı: Sigortalı araçta sigara ve benzeri maddelerin koltuk ile döşeme gibi araç içindeki ekipmana teması meydana geldiğinde yangın dışında oluşan zararlar bu güvence kapsamında karşılanır."
+                        },
+                        {
+                            "paragraph": "Kilit Sistemi Teminatı: Araç anahtarının poliçede belirtilen durumlar sonucunda ele geçirilmesi suretiyle aracın çalınması, çalınmaya teşebbüsü sonucu meydana gelecek ziya ve hasarları ile kaybolan ve çalınan anahtarlar dolayısıyla aracın kilit mekanizmasının değiştirilmesi masrafları bu teminatla güvence altına alınır."
+                        }
+                    ]
+                },
+                {
+                    "title": "Kasko Sigortası Kapsamı Dışında Kalan Hâller Nelerdir?",
+                    "description": [
+                        {
+                            "paragraph": "Kasko sigortasında da diğer tüm sigortalarda olduğu gibi kapsam altında olan ve olmayan hâller özel ve genel şartlar ile belirtilmiştir. Kasko sigortasının genel şartları her sigorta şirketi için aynıdır. Özel şartlar ise şirketlere göre farklılık gösterir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Genel şartlara göre kapsam dışında kalan hâller aşağıdaki gibidir:",
+                    "description": [
+                        {
+                            "paragraph": "Olası bir savaşta, nükleer tehlikeler ve bu olaylardan dolayı güvenlik güçleri tarafından alınan önlemler neticesinde aracın uğradığı hasarlar,"
+                        },
+                        {
+                            "paragraph": "Kamu otoritesince uygulanabilecek yaptırımlar neticesinde araca verilen zararlar (kamu otoritesince aracın çekilmesi hariç),"
+                        },
+                        {
+                            "paragraph": "Aracın sürücü belgesine sahip olmayan kişilerce kullanılması esnasında meydana gelen hasarlar,"
+                        },
+                        {
+                            "paragraph": "Alkol, uyuşturucu ve benzeri maddelerin etkisi altındaki kişiler tarafından aracın kullanılması esnasında meydana gelen zararlar,"
+                        },
+                        {
+                            "paragraph": "Sigortalı ya da sigortalının hareketlerinden sorumlu olduğu şahıslar veya birlikte yaşadığı şahısların bilerek veya isteyerek verdiği zararlar ile bu şahısların sigortalı aracı çalması veya kaçırması gibi sebeplerden biri neticesinde ortaya çıkan zararlar,"
+                        },
+                        {
+                            "paragraph": "Periyodik olarak bakım ve onarımının yapılmaması sonucunda çürümeler, paslanma, eskime, yağsızlık, susuzluk ve donma sebebiyle araçta oluşabilecek zararlar,"
+                        },
+                        {
+                            "paragraph": "Aracın kendi kuvveti ile hareket ederek girip çıkabileceği, belirli bir tarifeye bağlı, ruhsatı olan ve düzenli olarak sefer yapan gemi ve trenler haricindeki araçlarla nakli esnasında oluşabilecek kazalarda araca verilecek hasarlar."
+                        }
+                    ]
                 }
             ]
         },
         {
-            "title": "Trafik Sigortası",
-            "linkHref": "trafiksigortasi",
-            "description": "description 1",
+            "title": "",
+            "description": "",
+            "linkHref": "",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
             "merakedilenler": [
                 {
                     "title": "Lorem Ipsum",
                     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                }
-            ],
-            "genelbilgiler": [
-                {
-                    "title": "Question 1",
-                    "description": "Question 1 Description"
-                },
-                {
-                    "title": "Question 2",
-                    "description": "Question 2 Description"
-                },
-                {
-                    "title": "Question 3",
-                    "description": "Question 3 Description"
-                }
-            ]
-        },
-        {
-            "title": "Deprem Sigortası",
-            "linkHref": "depremsigortasi",
-            "description": "description 1",
-            "merakedilenler": [
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                }
-            ],
-            "genelbilgiler": [
-                {
-                    "title": "Question 1",
-                    "description": "Question 1 Description"
-                },
-                {
-                    "title": "Question 2",
-                    "description": "Question 2 Description"
-                },
-                {
-                    "title": "Question 3",
-                    "description": "Question 3 Description"
-                }
-            ]
-        },
-        {
-            "title": "Dask Sigortası",
-            "linkHref": "dasksigortasi",
-            "description": "description 1",
-            "merakedilenler": [
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                }
-            ],
-            "genelbilgiler": [
-                {
-                    "title": "Question 1",
-                    "description": "Question 1 Description"
-                },
-                {
-                    "title": "Question 2",
-                    "description": "Question 2 Description"
-                },
-                {
-                    "title": "Question 3",
-                    "description": "Question 3 Description"
-                }
-            ]
-        },
-        {
-            "title": "Konut Sigortası",
-            "linkHref": "konutsigortasi",
-            "description": "description 1",
-            "merakedilenler": [
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                }
-            ],
-            "genelbilgiler": [
-                {
-                    "title": "Question 1",
-                    "description": "Question 1 Description"
-                },
-                {
-                    "title": "Question 2",
-                    "description": "Question 2 Description"
-                },
-                {
-                    "title": "Question 3",
-                    "description": "Question 3 Description"
-                }
-            ]
-        },
-        {
-            "title": "İşyeri Sigortası",
-            "linkHref": "isyerisigortasi",
-            "description": "description 1",
-            "merakedilenler": [
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                },
-                {
-                    "title": "Lorem Ipsum",
-                    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
-                }
-            ],
-            "genelbilgiler": [
-                {
-                    "title": "Question 1",
-                    "description": "Question 1 Description"
-                },
-                {
-                    "title": "Question 2",
-                    "description": "Question 2 Description"
-                },
-                {
-                    "title": "Question 3",
-                    "description": "Question 3 Description"
                 }
             ]
         }
