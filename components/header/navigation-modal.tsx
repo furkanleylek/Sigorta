@@ -145,12 +145,12 @@ const components = [
         altbaslıklar: [
             {
                 title: 'Mak. Kırılması',
-                linkHref: '/makkırılması',
+                linkHref: '/makinekirilmasi',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'E. Cihaz',
-                linkHref: '/ecihaz',
+                linkHref: '/elektronikcihaz',
                 Icon: PiTrafficSignBold
             },
             {
@@ -175,7 +175,7 @@ const components = [
         altbaslıklar: [
             {
                 title: 'Kümes',
-                linkHref: '/kümes',
+                linkHref: '/kumes',
                 Icon: PiTrafficSignBold
             },
             {

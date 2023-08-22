@@ -1053,9 +1053,461 @@
             ]
         },
         {
-            "title": "",
-            "description": "",
-            "linkHref": "",
+            "title": "Birikimli Hayat Sigortası",
+            "description": "Birikimli Hayat Sigortası",
+            "linkHref": "birikimlihayat",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Birikimsiz Hayat Sigortası",
+            "description": "Birikimsiz Hayat Sigortası",
+            "linkHref": "birikimsizhayat",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Emeklilik Sigortası",
+            "description": "Emeklilik Sigortası",
+            "linkHref": "emeklilik",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Ferdi Kaza Sigortası",
+            "description": "Ferdi Kaza Sigortası",
+            "linkHref": "ferdikaza",
+            "genelbilgiler": [
+                {
+                    "title": "Ferdi Kaza",
+                    "description": [
+                        {
+                            "paragraph": "Ani ve beklenmedik kaza ve hastalıklar sonucunda meydana gelecek sıkıntıların üstesinden gelmek yeterince zor bir durumdur. Ancak aynı anda meydana gelebilecek maddi kayıpların üstesinden gelmek daha da zor olabilir."
+                        },
+                        {
+                            "paragraph": "Ferdi kaza sigortası, kaza sonucu uğranabilecek maddi kayıpları teminat altına alarak, hayatın bu zorlu anlarında hiç değilse işin maddi boyutunu unutmanıza yardımcı olur."
+                        }
+                    ]
+                },
+                {
+                    "title": "Teminat Kapsamı",
+                    "description": [
+                        {
+                            "paragraph": "Ferdi kaza poliçeleri, kişinin poliçe kapsamında tanımlanan bir kaza nedeniyle, ölümü, geçici veya  sürekli olarak iş görme yeteneğini kaybetmesi durumunda, toplu bir para veya azami olarak belirlenmiş bir süre boyunca, aylık veya üç aylık gelir şeklinde tazmin edilmesini sağlayan poliçelerdir. Poliçe, genellikle yıllık olarak düzenlenir ve dönem sonunda, sigortalı, prim ödemeye devam etmeye hazır olsa dahi, sigortacının poliçeyi yenilememe hakkı söz konusudur. Sigortalının mesleği, önemli bir risk değerlendirme faktörü olmasına karşın, herhangi bir işte çalışmayan kişiler için de teminat verilebilmektedir. Kişi kendi adına veya sigorta edilebilir menfaatin bulunduğu hâllerde, bir başkası adına da poliçe yaptırabilmektedir. Bu poliçeler, kazaya bağlı  olarak sigortalının yapmak durumunda olduğu tedavi harcamalarını da temin etmektedir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Ferdi Kaza Sigortası Prim Ödemeleri",
+                    "description": [
+                        {
+                            "paragraph": "Ferdi kaza sigortası primleri poliçe üzerinde yazılı vadede ödenir ya da kredi kartından tahsil edilir. Sigorta ettiren kimse, kesin vadeleri poliçe üzerinde belirtilen ya da yazılı olarak kendisine bildirilmiş olan prim taksitlerinin herhangi birini vade günü bitimine kadar ödemediği takdirde temerrüde düşer. Prim ödeme borcunda temerrüde düşülmesi hâlinde Borçlar Kanunu hükümleri uygulanır ve Borçlar Kanunu’nun 107’nci maddesinin 3’üncü bendi uyarınca herhangi bir mehile gerek kalmaksızın sözleşme derhal feshedilmiş olur."
+                        }
+                    ]
+                },
+                {
+                    "title": "Ferdi Kaza Sigortası Vergi Avantajı",
+                    "description": [
+                        {
+                            "paragraph": "Ücretli çalışanlar; kendileri, eş ve küçük çocuklarının ölüm, kaza, sağlık, hastalık, sakatlık, işsizlik, analık, doğum ve eğitim gibi diğer hayat sigortası poliçeleri için ödenen primlerin tamamını, aylık brüt ücretin %15'ini ve brüt asgari ücretin toplam tutarını aşmamak kaydıyla vergi indiriminde kullanabilirler"
+                        }
+                    ]
+                },
+                {
+                    "title": "1. Gider Vergisi Yönünden:",
+                    "description": [
+                        {
+                            "paragraph": "Bu sigortanın teminat primleri Gider Vergisi’ne tabi değildir."
+                        }
+                    ]
+                },
+                {
+                    "title": "2. Gelir Vergisi Yönünden:",
+                    "description": [
+                        {
+                            "paragraph": "Ücretliler Açısından: 193 sayılı Gelir Vergisi Kanunu’nun 63/3 maddesi gereği; ücretlinin şahsına, eşine ve küçük çocuklarına ait hayat, ölüm, kaza, hastalık, sakatlık, işsizlik, analık, doğum ve tahsil gibi şahıs sigorta poliçeleri için hizmet erbabı tarafından ödenen primler, Sigortanın Türkiye’de kâin ve merkezi Türkiye’de bulunan bir sigorta şirketi nezdinde akdedilmiş olması, Sigorta priminin ödenmiş olduğunun belgelendirilmiş olması, şartıyla gelir vergisi matrahından indirilebilmektedir.Ödenen primlerin, gelir vergisi matrahından indirilebilmesi için ödendiği ayda elde edilen ücretin %5’ini ve yıllık olarak asgari ücretin yıllık tutarını aşmaması gerekir."
+                        },
+                        {
+                            "paragraph": "Beyana Tabi Vergi Mükellefleri Açısından: 193 sayılı Gelir Vergisi Kanunu’nun 89/1 maddesi gereği; mükelleflerin yıllık beyanname ile bildirecekleri gelirlerden şahsına, eşine ve bakmakla yükümlü olduğu çocuklarına ait hayat, ölüm, kaza, hastalık, sakatlık, analık, doğum ve tahsil gibi şahıs sigorta poliçeleri için ödenen primler, Sigortanın Türkiye’de kâin ve merkezi Türkiye’de bulunan bir sigorta şirketi nezdinde akdedilmiş olması, İndirilecek sigorta prim tutarının gelirin elde edildiği yılda ödenmiş olması, şartıyla gelir vergisi matrahından indirilebilmektedir. Ödenen primlerin, gelir vergisi matrahından indirilebilmesi için beyan edilen gelirin % 5’ini ve yıllık olarak asgari ücretin yıllık tutarını aşmaması gerekir. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Dikkat Edilecek Hususlar",
+                    "description": [
+                        {
+                            "paragraph": "İnsan hayatının değerini veya  organlarını yitirmesi sonucu, maddi kayıplarını belirlemek mümkün olmasa da, teminat limiti belirlemek gerekir. Sigorta teminat limitinin belirlenmesinde meslek, yaş gibi bazı özellikleri dikkate alınır. Bu limit sigortalının talebine istinaden belirlenir."
+                        },
+                        {
+                            "paragraph": "Poliçe üzerinde yazılı teminat limiti çerçevesinde bütün dünyada geçerlidir."
+                        },
+                        {
+                            "paragraph": "Poliçeler genellikle yıllık olmakla birlikte bir yıldan kısa süreli de olabilmektedir."
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Tekne-Deniz Araçları Sigortası",
+            "description": "Tekne-Deniz Araçları Sigortası",
+            "linkHref": "tekne",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": "Tekne-deniz araçları sigortası, her türlü deniz aracının deniz tehlikeleri nedeniyle uğrayabileceği hasarlara karşı teminat sağlamaktadır. Ancak, deniz vasıtalarının inşası ve denize indirilmeleri sırasında meydana gelmesi muhtemel hasarlar da tekne sigortaları kapsamında değerlendirilmektedir."
+                        },
+                        {
+                            "paragraph": "Tekne sigortalarında teminat kapsamı Londra Sigortacılar Enstitüsü Tekne Klozları ile belirlenmektedir."
+                        },
+                        {
+                            "paragraph": "Tekne sigortalarında, batma, yanma, infilak, karaya vurma, sığlığa bindirme, oturma, fırtına, alabora olma, bir başka gemi veya tekne ile çatışma, çatışmadan doğan sorumluluk, güvence altına alınan rizikolardan doğan kurtarma masrafları, dava ve say masrafları, müşterek avarya hasar ve masrafları, tekne ve makinelerdeki gizli kusur, yükleme veya boşaltma sırasında tekneye gelen hasarlar, harp ve grev rizikoları dışındaki rizikolar kapsam dışında tutulmaktadır."
+                        },
+                        {
+                            "paragraph": "Tekne sigortalarının konusunu  çeşitli amaçlarla kullanılan gemiler teşkil eder. Bunlar kullanış biçimine göre üç kısımda gruplandırılır: Ticari tekneler, Hizmet tekneleri, Tenezzüh tekneleri "
+                        }
+                    ]
+                },
+                {
+                    "title": "Teminat Kapsamı",
+                    "description": [
+                        {
+                            "paragraph": "Bu sigortalar rizikonun gerçekleşmesi sonucu gemi veya diğer deniz araçlarının  yahut bunlara ilişkin diğer menfaatlerin uğrayacağı ziya ve hasarı, ayrıca teminata dahil edilmişse  sorumluluk tazminatını yahut bunlarla ilgili masrafları kapsar."
+                        },
+                        {
+                            "paragraph": "Ziya veya hasar yahut sorumluluk tazminatı ile bunlara ilişkin masrafların kapsam ve içeriği, teminata dahil ve istisna edilen rizikolar, bu poliçeye eklenen özel şartlarla belirlenir."
+                        },
+                        {
+                            "paragraph": "Ayrıca, istenildiği takdirde savaş, terör riskleri ve çatışma teminatı da ilave edilebilir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Tekne Sigortaları Poliçe Çeşitleri",
+                    "description": [
+                        {
+                            "paragraph": "1. Tekne Müddet Sigortaları: Poliçede belirtilen süre içinde gerçekleşecek rizikolardan meydana gelen ziya ve hasarları temin eder."
+                        },
+                        {
+                            "paragraph": "2. Tekne Sefer Sigortaları: Müddete bağlı olmadan belirli bir seferi sigorta eden poliçedir."
+                        },
+                        {
+                            "paragraph": "3. Tekne İnşaat Sigortaları: Gemi inşaatı, tamiri veya tadiliyle ilgili rizikoları temin eder. Buradan anlaşılacağı gibi sigortanın konusu yeni inşa edilen bir gemi olabileceği gibi tamir veya tadil edilen bir gemi de olabilir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Yat Sigortası",
+                    "description": [
+                        {
+                            "paragraph": "Yat sigortası ile yatınızı sadece denizde değil, iç sularda, limanda seyir esnasında, marinada, rıhtımda, yatma mahallinde, çekek yerinde, dubaya bağlı ya da kızakta iken, deneme seferlerinde, tehlikede olan başka bir tekneyi çekerken, çekek yerine çekilirken veya denize indirilirken, sahilde ve depoda, sökme, montaj, normal ya da olağanüstü bakım esnasında da güvence altına alabilirsiniz."
+                        }
+                    ]
+                },
+                {
+                    "title": "Yat Sigortası Teminatları",
+                    "description": [
+                        {
+                            "paragraph": "Denizlerin, ırmakların, göllerin ya da diğer sefer yapılabilir suların tehlikeleri,                            "
+                        },
+                        {
+                            "paragraph": "Denize mal atılması,"
+                        },
+                        {
+                            "paragraph": "Korsanlık,"
+                        },
+                        {
+                            "paragraph": "Batma, çarpma, çarpışma, oturma, fırtına sonucu oluşacak hasarlar,"
+                        },
+                        {
+                            "paragraph": "Deprem, volkanik patlama ya da yıldırım gibi doğal afetlerle oluşan hasarlar,"
+                        },
+                        {
+                            "paragraph": "Kumanya, yakıt, donanım, ekipman ve makinelerin yüklenmesi, boşaltılması veya yer değiştirmesi sırasında meydana gelebilecek kazalar,"
+                        },
+                        {
+                            "paragraph": "Yatın ve/veya servis botlarının tümüyle çalınması,"
+                        },
+                        {
+                            "paragraph": "Normal bağlantısına ek olarak hırsızlığı önleyici bir aygıt veya ayrıca bilinen yöntemlerle yata veya bota emniyetli bir şekilde kilitlenmiş olan dıştan takma motorların çalınması,"
+                        },
+                        {
+                            "paragraph": "Yatınıza veya kıyıdaki depo onarım mahalline zorla girilmesi koşuluyla dıştan takma motorlar veya ekipman da dahil makinelerin çalınması,"
+                        },
+                        {
+                            "paragraph": "Makine veya teknedeki herhangi bir gizli kusur, şaftların kırılması veya kazanların patlaması nedeniyle oluşacak ziya veya hasarlar (Kırılan şaftın, patlayan kazanın veya kusurlu kısmın tamir ve ikame masrafları hariç),"
+                        },
+                        {
+                            "paragraph": "Herhangi bir kişinin ihmali (sigortalının, yat sahiplerinin veya yat işletmecilerinin hesabına yapılan bir tamirat veya tadilat işi yahut yatın bakımı itibariyle ihmalden veya sözleşmenin ihlalinden kaynaklanmış kusurların giderilmesi masrafları hariç),"
+                        },
+                        {
+                            "paragraph": "Hiçbir hasar çıkmasa dahi, bir oturmadan sonra sırf karinanın kontrolü amacıyla makul surette yapılmış masraflardır."
+                        },
+                        {
+                            "paragraph": "Yatınızın bir başka tekne ile çatışması hâlinde diğer tekne ve üzerindeki mala gelebilecek kayıp ve hasarlar,"
+                        },
+                        {
+                            "paragraph": "Yatınız veya başka bir teknede ya da bunların yakınında meydana gelebilecek can kayıpları, yaralanmalar, bedensel sakatlıklar veya hastalıklardan doğan sorumluluğunuz sonucu yapacağınız harcamalar ile can kurtarma masrafları,"
+                        },
+                        {
+                            "paragraph": "Yatınızın liman, dok, iskele, rıhtım, fener, telgraf ve telefon kabloları gibi sabit veya hareketli cisimlere vereceği zararlar,"
+                        },
+                        {
+                            "paragraph": "Yatınızın bir kazaya uğraması hâlinde teknenin ya da üzerindeki eşyanın çıkartılması, bir başka yere taşınması ya da gerektiğinde yok edilmesi masrafları ile bu işlemler sırasındaki başarısızlık veya ihmaller dolayısıyla meydana gelebilecek sorumluluk hâlleri teminat altına alınmıştır."
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Emtea Sigortası",
+            "description": "Emtea Sigortası",
+            "linkHref": "emtea",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Blok Abonman Sigortası",
+            "description": "Blok Abonman Sigortası",
+            "linkHref": "blokabonman",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "CMR Sigortası",
+            "description": "CMR Sigortası",
+            "linkHref": "cmr",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Makine Kırılması Sigortası",
+            "description": "Makine Kırılması Sigortası",
+            "linkHref": "makinekirilmasi",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Elektronik Cihaz Sigortası",
+            "description": "Elektronik Cihaz Sigortası",
+            "linkHref": "elektronikcihaz",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "İnşaat All Risk Sigortası",
+            "description": "İnşaat All Risk Sigortası",
+            "linkHref": "insaatallrisk",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Montaj Sigortası",
+            "description": "Montaj Sigortası",
+            "linkHref": "montaj",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Kümes Sigortası",
+            "description": "Kümes Sigortası",
+            "linkHref": "kumes",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Hayvan Sigortası",
+            "description": "Hayvan Sigortası",
+            "linkHref": "hayvan",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Tarsim Sigortası",
+            "description": "Tarsim Sigortası",
+            "linkHref": "tarsim",
             "genelbilgiler": [
                 {
                     "title": "",
