@@ -166,81 +166,13 @@ const KaskoForm = () => {
         }
     }
 
-    const onPhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-        const formattedValue = numericValue.replace(/^0?(\d{0,3})?(\d{0,3})?(\d{0,2})?(\d{0,2})?/, (match, p1, p2, p3, p4) => {
-            let formatted = '';
-
-            if (p1) {
-                formatted += `0${p1}`;
-            }
-            if (p2) {
-                formatted += ` ${p2}`;
-            }
-            if (p3) {
-                formatted += ` ${p3}`;
-            }
-            if (p4) {
-                formatted += ` ${p4}`;
-            }
-
-            return formatted.trim();
-        });
-
-        e.target.value = formattedValue;
-
-        return formattedValue
-
-    };
-
-    const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-
-        if (numericValue.length > 11) {
-            return;
-        }
-
-        e.target.value = numericValue;
-
-        return numericValue
-    };
-
-    const onASBISChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-
-        if (numericValue.length > 19) {
-            return;
-        }
-
-        e.target.value = numericValue;
-
-        return numericValue
-
-    };
-
-    const onModelChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const inputValue = e.target.value;
-        const numericValue = inputValue.replace(/\D/g, ''); // Sadece rakamları al
-        console.log("inputValue:", inputValue)
-        if (numericValue.length > 4) {
-            return;
-        }
-
-        e.target.value = numericValue;
-
-        return numericValue
-
-    };
 
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full lg:w-2/3 '>
                 {/* RUHSAT SAHİBİ BİLGİLERİ */}
 
-                <TitleH2 className='mb-6'>Kasko Sigortası </TitleH2>
+                {/* <TitleH2 className='mb-6'>Kasko Sigortası </TitleH2> */}
                 <FormContainer>
                     <TitleH3>Ruhsat Sahibi Bilgileri</TitleH3>
                     <FormField

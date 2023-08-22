@@ -8,6 +8,8 @@ import TrafikForm from '../teklif-forms/trafik-form'
 import KonutForm from '../teklif-forms/konut-form'
 import { IsyeriForm } from '../teklif-forms/isyeri-form'
 import DaskForm from '../teklif-forms/dask-form'
+import IletisimForm from '../teklif-forms/iletisim-form'
+import FerdiKazaForm from '../teklif-forms/ferdi-kaza'
 
 
 interface SigortaCategoryProps {
@@ -96,6 +98,16 @@ const ContentType: React.FC<SigortaCategoryProps> = ({ categoryItems }) => {
                         {
                             categoryItems?.title === 'Dask Sigortası' && (
                                 <DaskForm />
+                            )
+                        }
+                        {
+                            categoryItems?.title === 'Ferdi Kaza Sigortası' && (
+                                <FerdiKazaForm />
+                            )
+                        }
+                        {
+                            categoryItems?.title && (
+                                <IletisimForm />
                             )
                         }
                     </>

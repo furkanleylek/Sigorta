@@ -128,7 +128,7 @@ const FerdiKazaForm = () => {
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full lg:w-2/3'>
                 {/* RUHSAT SAHİBİ BİLGİLERİ */}
-                <TitleH2 className='mb-6'>Ferdi Kaza Sigortası </TitleH2>
+                {/* <TitleH2 className='mb-6'>Ferdi Kaza Sigortası </TitleH2> */}
                 <FormContainer>
                     <TitleH3>Sigortalı \ Sigorta Ettiren Bilgileri</TitleH3>
                     <FormField
