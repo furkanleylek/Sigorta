@@ -67,10 +67,8 @@ const AllSigortaTypes = () => {
         <Container>
             <div className='flex flex-col space-y-2'>
                 <TitleH2>
-                    Sigorta Türleri
+                    Ürünler
                 </TitleH2>
-                <Paragraph className='text-gray-500 italic pl-4'>
-                    Farklı risklere karşı korunma ihtiyacını karşılamak için hayat sigortası, sağlık sigortası, otomobil sigortası gibi çeşitli güvence sistemleri sunulur. Her bir sigorta türü, özel ihtiyaçlarına yönelik koruma sağlar                            </Paragraph>
             </div>
             <div className='grid grid-cols-2 xl:grid-cols-3 gap-4'>
                 {

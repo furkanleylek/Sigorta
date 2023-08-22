@@ -33,9 +33,6 @@ const NasılCalısır = () => {
                     <TitleH2>
                         Tüm Sigorta İşlemleriniz için en uygun fiyat
                     </TitleH2>
-                    <Paragraph className='text-gray-500 italic pl-4'>
-                        Bizden teklif almadan sigorta ve kasko yaptırmayın !
-                    </Paragraph>
                 </div>
                 <Link href='/teklifal'>
                     <Button variant="outline" size="lg" className='hidden md:flex rounded-full hover:bg-main hover:text-white transition-all duration-500 text-xs '>
