@@ -69,7 +69,7 @@ const footerData = [
 const Footer = () => {
     return (
         <div
-            className="w-full h-full relative  bg-main text-white"
+            className="w-full h-full relative  bg-main text-white mt-16"
         >
             <Container className=' '>
                 <footer className='flex flex-col items-center space-y-10 py-4'>
