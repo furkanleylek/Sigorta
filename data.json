@@ -237,6 +237,862 @@
                     "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
                 }
             ]
+        },
+        {
+            "title": "Oto Sorumluluk Sigortası",
+            "description": "Oto Sorumluluk Sigortası",
+            "linkHref": "otosorumluluk",
+            "genelbilgiler": [
+                {
+                    "title": "Oto Kaza Sigortaları",
+                    "description": [
+                        {
+                            "paragraph": "Oto kaza sigortaları, kapsamları sigorta şirketleri tarafından belirlenen ve sigortalıları beklenmedik hastane, bakım, nakil ve maluliyet masraflarına karşı güvence altına alan özel paketlerdir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Kasko Sigortası",
+                    "description": [
+                        {
+                            "paragraph": "Karayolunda kullanma izni olan motorlu ve motorsuz kara araçları, römork, karavan, iş makinaları, lastik tekerlekli traktörler ve diğer tarım makinalarını, karayolunda hareket halinde ve gerekse durma halindeyken uğrayabileceği zararları temin eder."
+                        }
+                    ]
+                },
+                {
+                    "title": "Karayolları Motorlu Araçlar Zorunlu Mali Sorumluluk Sigortası (Trafik Sigortası)",
+                    "description": [
+                        {
+                            "paragraph": "Sigortacı, poliçede tanımlanan motorlu aracın işletilmesi sırasında, bir kimsenin ölümüne veya yaralanmasına veya bir şeyin zarara uğramasına sebebiyet vermiş olmasından dolayı, 2918 sayılı Karayolları Trafik Kanunu'na göre işletene düşen hukuki sorumluluğu, zorunlu sigorta limitlerine kadar temin eder. Aracın hasarı için kasko poliçesi yapılması gereklidir. Trafik poliçesinde hasar / hasarsızlık takibi plakaya bağlı olmayıp, sürücünün siciline göre belirlenmektedir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Zorunlu Karayolları Taşımacılık Mali Sorumluluk Sigortası",
+                    "description": [
+                        {
+                            "paragraph": "Motorlu bir aracın karayolunda işletilmesi sırasında 3. kişilerin ölümüne veya yaralanmasına veya bir şeyin zarara uğramasına sebebiyet vermesi halinde işletene düşen hukuki sorumluluğu temin eder."
+                        }
+                    ]
+                },
+                {
+                    "title": "Karayolu Yolcu Taşımacılığı Zorunlu Koltuk Ferdi Kaza Sigortası",
+                    "description": [
+                        {
+                            "paragraph": "Yurt içi ve yurt dışına ücretle yolcu taşımacılığı yapan ve taşımacılık yetki belgesi olan otobüslerin hizmetleri sırasında yolcuların, sürücülerin ve yardımcıların uğrayabileceği risklere karşı teminat sağlar."
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Oto Dışı Kaza Sigortaları",
+            "description": "Oto Dışı Kaza Sigortaları",
+            "linkHref": "otodisisorumluluk",
+            "genelbilgiler": [
+                {
+                    "title": "Hırsızlık Sigortaları (Hırsızlık, Kasa Hırsızlık)",
+                    "description": [
+                        {
+                            "paragraph": " Sigortalıya ait eşya ve malların hırsızlık veya hırsızlığa teşebbüs neticesinde uğrayacağı zararları temin eder. Banka, ticarethane vb. işletme ve müesseseler ile konutlarda bulunan kasalardaki para ve benzeri kıymetlerin çalınma rizikolarını temin eder."
+                        }
+                    ]
+                },
+                {
+                    "title": "Ferdi Kaza / Grup Ferdi Kaza",
+                    "description": [
+                        {
+                            "paragraph": "Sigortalının (ve/veya gruptaki kişilerin, kurum çalışanlarının) veya yakınlarının ani ve beklenmedik bir kaza sonucu yaşamını kaybetmesi veya kalıcı olarak sakatlanması durumunda menfaat sahiplerine veya kanuni hak sahiplerine ödenir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Cam Kırılması",
+                    "description": [
+                        {
+                            "paragraph": "Ticarethaneler, evler, bürolar ve bunun gibi yerlerde takılı bulunan ve poliçede belirtilen pencere, vitrin, kapı, tezgah, raf camları ve aynaların kırılmaları nedeniyle meydana gelecek hasarlar Türk Cam Kırılması Sigortası Genel Şartlarına göre teminat kapsamındadır. Taşınan Para Sigortalının bordrolu çalışanı tarafından, T.C. sınırları dahilinde, çek, senet, vb. kıymetli evrakın işyeri ile bankalar arasında veya diğer müesseseler arasında sevki sırasında uğrayacakları zararları temin eder."
+                        }
+                    ]
+                },
+                {
+                    "title": "Emniyeti Suistimal",
+                    "description": [
+                        {
+                            "paragraph": "Sigortalının bordrolu olarak çalıştırdığı personelin sigortalıya ait nakit, kıymetli evrak ve menkul kıymetlerini veya para ile ölçülebilen mallarını çalmak veya sahtekarlık yaparak zimmetine geçirmek suretiyle sigortalının uğrayacağı zararı temin eder"
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Konut Sigortası",
+            "description": "Konut Sigortası",
+            "linkHref": "konut",
+            "genelbilgiler": [
+                {
+                    "title": "Neden Konut Sigortası?",
+                    "description": [
+                        {
+                            "paragraph": "Eviniz, ailenizle birlikte huzur içinde yaşadığınız yerdir. Kimine göre ev; huzur, kimine göre sığınak, kimine göre ise güvenli bir kale anlamı taşır. Size özel ve değerli bu mekânı her türlü riske karşı güvence altına almak için konut sigortanızı mutlaka yaptırmanız gerekir."
+                        },
+                        {
+                            "paragraph": "Konut sigortası satın alırken değişen iklim koşulları, güçlü fırtınalar, aşırı yağışlar, depremler, dikkatsizlik sonucu çıkan yangınlar ve son zamanlarda artan hırsızlıklara karşı tam güvence için doğru teminatların seçilmesine özen gösterilmelidir."
+                        },
+                        {
+                            "paragraph": "Çeşitli risklerin konutunuza vereceği hasarlar, ortalama bir konut poliçesi priminden çok daha yüksektir. Konutunuzu sigortalatarak konut özelliklerinize göre değişen primlerle tüm evinizi ve hatta eşyalarınızı da güvence altına alabilirsiniz."
+                        }
+                    ]
+                },
+                {
+                    "title": "Hasarlarda Sigortalının Yükümlülükleri",
+                    "description": [
+                        {
+                            "paragraph": "Rizikonun gerçekleştiğini öğrendiği tarihten itibaren en geç 5 iş günü içinde sigortacıya bildirimde bulunmak, "
+                        },
+                        {
+                            "paragraph": "Sigortalı değilmiş gibi gerekli kurtarma ve koruma önlemlerini almak ve bu amaçla sigortacı tarafından verilen talimata elinden geldiği kadar uymak, "
+                        },
+                        {
+                            "paragraph": "Sigortacı veya yetkili kıldığı kimselerin, makul amaçlarla ve uygun şekillerde hasara uğrayan bina ve yerlere girmesine, bunları teslim almasına, el koymasına, muhafaza altına almasına ve zararı azaltmaya yönelik girişimlerde bulunmasına izin vermek, "
+                        },
+                        {
+                            "paragraph": "Zorunlu hâller dışında hasar konusu yer veya değerlerde bir değişiklik yapmamak. Sigortacının isteği üzerine, rizikonun gerçekleşmesi nedenlerini ayrıntılı şekilde belirlemeye, zarar miktarıyla delilleri saptamaya, rücu hakkının kullanılmasında yararlı olabilecek ve sigorta ettiren için sağlanması mümkün gerekli bilgi ve belgeleri gecikmeksizin sigortacıya vermek, "
+                        },
+                        {
+                            "paragraph": "Zararın tahmini miktarını belirtir yazılı bir bildirimi, makul bir süre içinde sigortacıya vermek, "
+                        },
+                        {
+                            "paragraph": "Tazminat yükümlülüğü ve miktarı ile rücu haklarının saptanması için sigortacının veya yetkili kıldığı temsilcilerin, sigortalı yer veya değerler ve bunlarla ilgili belgeler üzerinde yapacakları araştırma ve incelemelere izin vermek, "
+                        },
+                        {
+                            "paragraph": "Sigortalı yer veya değerler üzerine de başkaca sigorta sözleşmeleri varsa bunları sigortacıya bildirmek."
+                        }
+                    ]
+                },
+                {
+                    "title": "Konut Sigortası Teminatları",
+                    "description": [
+                        {
+                            "paragraph": "Konut sigortası konut ve içindeki eşyalar için gerekli bir güvencedir. Bu güvenceden en iyi şekilde yararlanmak için ihtiyaçlara en uygun teminatlar poliçede seçilmelidir."
+                        }
+                    ]
+                },
+                {
+                    "title": "1. Ana Teminatlar:",
+                    "description": [
+                        {
+                            "paragraph": "Konut sigortası teminatları sigorta şirketlerine göre farklılık göstermekle birlikte hepsinde ortak olan ana teminat yangın teminatıdır."
+                        },
+                        {
+                            "paragraph": "Yangın Teminatı: Yangın, yıldırımın ve infilakın neden olduğu zararları güvence altına alır."
+                        }
+                    ]
+                },
+                {
+                    "title": "2. Ek Teminatlar:",
+                    "description": [
+                        {
+                            "paragraph": "Konut sigortasının teminatları ek teminatlarla genişletilerek daha fazla risk güvence altına alınabilir."
+                        },
+                        {
+                            "paragraph": "Grev, Lokavt, Kargaşalık, Halk Hareketleri ve Kötü Niyetli Hareketler: Bu tür hareketlerin neden olacağı zararları güvence altına alır. Her bir hasarda, hasar bedelinin %5'i oranında muafiyet uygulanır."
+                        },
+                        {
+                            "paragraph": "Sel veya Su Baskını: Sigortalanan konutun civarındaki nehir, çay, dere ve kanalların taşması ile olağanüstü yağışlar nedeniyle meydana gelen sel sonucu dışarıdan basan suların vereceği zararları güvence altına alır."
+                        },
+                        {
+                            "paragraph": "Cam Kırılması: Bu teminat sabit ve dik durumda takılı olan cam ile aynaların kırılması sonucunda meydana gelebilecek zararları güvence altına alır."
+                        },
+                        {
+                            "paragraph": "Ferdi Kaza: Sigortalının riziko adresinde poliçe kapsamı çerçevesinde gerçekleşecek bir kaza sonucunda vefat etmesi hâlinde lehtarına, sürekli olarak sakat kalması hâlinde kendisine poliçede belirtilen limitler ve genel şartlar dahilinde tazminat ödenir."
+                        },
+                        {
+                            "paragraph": "Hırsızlık: Hırsızlık sonucu çalınan eşyaları ve hırsızın bina veya eşyalara vereceği zararları güvence altına alır."
+                        },
+                        {
+                            "paragraph": "Yardım Hizmetleri: Su tesisatı, elektrik, çilingir, cam ve benzeri tamir işleri ile acil servis ve irtibat hizmetleri verilmesini sağlar."
+                        },
+                        {
+                            "paragraph": "Enflasyondan Korunma: Bu teminat enflasyon ortamında bina ve eşyaların güncel değerini korumasını sağlar. Sigorta bedeline sigorta süresi boyunca seçilecek enflasyondan korunma oranı kadar artış uygulanır. Ancak hasar tarihinde seçilen oran Devlet İstatistik Enstitüsü'nün açıklamış olduğu oranın üzerinde ise DİE'nin oranı baz alınır."
+                        },
+                        {
+                            "paragraph": "Deprem ve Yanardağ Püskürmesi: Deprem ve yanardağ püskürmesinin sigortalı değerler üzerinde doğrudan neden olacağı bütün zararları güvence altına alır. Deprem hasarlarında öncelikle zorunlu deprem sigortası (DASK) limiti dahilinde ödeme yapar. DASK poliçesi DASK tarafından belirlenen bir üst limite kadar güvence sağlar. Bu bedeli aşan kısım için konut sigortası kapsamında yer alan deprem ve yanardağ püskürmesi teminatının isteğe bağlı olarak alınması gerekir."
+                        },
+                        {
+                            "paragraph": "Aile Reisi Sorumluluğu: Aynı evde ikamet eden sigortalı ve ailesinin, sigortalı mesken içinde üçüncü şahıslara bir kaza sonucu verebilecekleri bedeni ve maddi zararları poliçede yazılı limitlerle karşılar."
+                        },
+                        {
+                            "paragraph": "Dahili Su: Su tesisatının patlaması, taşması, sızması, tıkanması, kırılması ve donması sonucu evde oluşan zararlar ile muslukların açık unutulması gibi durumlarda meydana gelebilecek hasarları güvence altına alır."
+                        },
+                        {
+                            "paragraph": "Yer Kayması: Sigortalı binanın inşa edilmiş olduğu arsa veya civarında oluşan yer kayması veya toprak çökmesi sonucu sigortalı değerlerde oluşacak hasarları güvence altına alır."
+                        },
+                        {
+                            "paragraph": "Araç Çarpması: Kara ve hava taşıtlarının sigortalı konuta çarpması sonucu oluşacak hasarları güvence altına alır."
+                        },
+                        {
+                            "paragraph": "Fırtına: Fırtına veya fırtına sırasında rüzgârın sürüklediği veya attığı şeylerin çarpması sonucu oluşacak hasarları güvence altına alır. (Bu teminat kapsamında oluşan hasarın fırtına hasarı sayılabilmesi için rüzgârın hızının 10 metre yükseklikte saniyede 17,1 metre yani '7 bofor'dan daha şiddetli esmesi gerekmektedir.)"
+                        },
+                        {
+                            "paragraph": "Duman: Bir boru veya menfezle bacaya bağlanmış, ısıtma ve pişirme cihazlarının kusurlu şekilde çalışması nedeniyle çıkan dumanın neden olduğu zararları güvence altına alır."
+                        },
+                        {
+                            "paragraph": "Kar Ağırlığı: Yoğun yağıştan sonra çatı üzerinde biriken kar, ağırlığı nedeniyle çatıya ve bina ile içindeki eşyalara zarar verebilir. Kar ağırlığı teminatı bina ve içindeki sigortalı değerlerde meydana gelen hasarları güvence altına alır."
+                        },
+                        {
+                            "paragraph": "Yangın Mali Mesuliyet ve Kira Kaybı: Sigortalının, kiracının ve mal sahibinin sorumluluklarından doğan bir hasar sonucunda birbirlerine karşı verebilecekleri zararları güvence altına alır."
+                        },
+                        {
+                            "paragraph": "Enkaz Kaldırma: Hasar sonucu meydana gelen yıkıntının taşınma masraflarını güvence altına alır."
+                        },
+                        {
+                            "paragraph": "Alternatif İkametgâh Değişikliği Masrafları: Bir hasar sonucu sigortalı konutun kullanılamaz hâle gelmesi durumunda, hasarlı konutun tamiri ve yeniden inşası sürerken kullanılan diğer konutun kullanma maliyeti poliçede belirtilmiş teminat ve limiti dahilinde karşılanır."
+                        }
+                    ]
+                },
+                {
+                    "title": "Konut Sigortası Kapsamı Dışında Kalan Hâller Nelerdir?",
+                    "description": [
+                        {
+                            "paragraph": "Savaş, her türlü savaş olayları, istila, yabancı düşman hareketleri, çarpışma (savaş ilan edilmiş olsun veya olmasın), iç savaş, ihtilal, isyan, ayaklanma ve bunların gerektirdiği inzibati ve askeri hareketler nedeniyle meydana gelen bütün zararlar,"
+                        },
+                        {
+                            "paragraph": "Herhangi bir nükleer yakıttan veya nükleer yakıtın yanması sonucu nükleer artıklardan ya da bunlara atfedilen sebeplerden meydana gelen iyonlayıcı radyasyonların veya radyo-aktivite bulaşmalarının ve bunların gerektirdiği askeri, inzibati tedbirlerin sebep olduğu bütün zararlar (Bu bentte geçen yanma deyimi kendi kendini idame ettiren herhangi bir nükleer ayrışım olayını da kapsayacaktır.),"
+                        },
+                        {
+                            "paragraph": "Kamu otoritesi tarafından sigortalı varlıklar üzerinde yapılacak tasarruflar sebebiyle meydana gelen bütün zararlar,"
+                        },
+                        {
+                            "paragraph": "Yangın olmaksızın, sigortalı varlıkların kendi kusurlarından veya kendi bünyelerinde meydana gelen bozulmalar nedeniyle uğradıkları zararlar,"
+                        },
+                        {
+                            "paragraph": "Yangın olmaksızın sigortalı varlıkların işlenmek üzere veya başka bir nedenle ateşe, sıcaklığa tutulmasından, ateş bulunan benzeri bir yere düşmesinden, atılmasından, elbise, çamaşır ve diğer eşya yanıklığı gibi alev almaksızın kavrulmasından, yanmasından kaynaklanan veya ısıtma, aydınlatma, ütüleme aletleri ile lamba, mum, sigara ve bunların benzerlerine temasından doğan zararlar,"
+                        },
+                        {
+                            "paragraph": "Yangın olmaksızın, elektrikle çalışan her türlü motor, elektrikli veya elektronik alet, cihaz, tesisat ve kordonlarının kısa devre, topraklama, voltaj iniş çıkışları ile bu yüzden ısınma ve endüksiyon cereyanı gibi nedenlerle uğrayacakları zararlar,"
+                        },
+                        {
+                            "paragraph": "Alçak basınç sebebiyle kapların içeri doğru çökmesi, yırtılması, benzeri şekilde deformasyonu, yıpranması, santrifüj kuvvetler ve mekanik olaylar nedeniyle sigortalı cihaz ya da motorlarda meydana gelen bütün zararlar."
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "İşyeri Sigortası",
+            "description": "İşyeri Sigortası",
+            "linkHref": "isyeri",
+            "genelbilgiler": [
+                {
+                    "title": "İşyeri Sigortası Teminatları",
+                    "description": [
+                        {
+                            "paragraph": "İşyeri sigortası genel olarak iş yerlerindeki demirbaş, dekorasyon ve elektronik cihazların uğrayacağı tüm hasar ve kayıpları tek bir poliçeyle paket şeklinde teminat altına almaktadır. Ayrıca olası bir iş durması nedeniyle yaşanabilecek finansal kayıplara da aynı poliçeyle teminat verilebilmektedir."
+                        }
+                    ]
+                },
+                {
+                    "title": "1. Ana Teminatlar:",
+                    "description": [
+                        {
+                            "paragraph": "Yangın, Yıldırım, İnfilak: Yangın, yıldırım, infilak ve bunlar nedeniyle yapılan söndürme, yıkma ve kurtarma işlemleri sırasında oluşabilecek hasarlar."
+                        },
+                        {
+                            "paragraph": "Yangın Mali Sorumluluk : Kiracının Mal Sahibine Karşı Sorumluluğu, Mal Sahibinin Kiracıya Karşı Sorumluluğu, Mal Sahibi ya da Kiracının Komşuluk Sorumluluğu"
+                        },
+                        {
+                            "paragraph": "Grev, Lokavt, Kargaşalık, Halk Hareketleri, Kötü Niyetli Hareketler ve Terör"
+                        },
+                        {
+                            "paragraph": "Terör Sorumluluk"
+                        },
+                        {
+                            "paragraph": "Kara Taşıtları Çarpması: Motorlu ve motorsuz kara taşıt araçlarının sigortalı değerlere çarpması sonucu oluşan zararlar."
+                        },
+                        {
+                            "paragraph": "Hava Taşıtları Çarpması: Uçakların ve diğer hava taşıtlarının çarpması veya düşmesi ile bunlardan parça veya bir cisim düşmesi sonucu sigortalı değerlerde oluşacak zararlar."
+                        },
+                        {
+                            "paragraph": "Deniz Taşıtları Çarpması: Motorlu ve motorsuz deniz taşıtlarının sigortalı değerlere çarpması sonucu oluşacak zararlar."
+                        },
+                        {
+                            "paragraph": "Sel ve Su Baskını (Seylap)"
+                        },
+                        {
+                            "paragraph": "Dahili Su: İşyeri içindeki kalorifer, su veya kanalizasyon tesisatından sızmalar, geri tepmeler sonucu oluşacak zararlar."
+                        },
+                        {
+                            "paragraph": "Duman: Bacaya bağlanmış cihazların olağandışı veya hatalı çalışması sonucu çıkan dumanın sebep olacağı maddi kayıplar."
+                        },
+                        {
+                            "paragraph": "Hırsızlık: İşyeri, ticarethane, ambar, depo veya imalathanelerdeki mallarda, eşyalarda ve demirbaşlarda hırsızlık veya hırsızlığa teşebbüs sonucu meydan gelen maddi kayıp ve zararlar."
+                        },
+                        {
+                            "paragraph": "Kira Kaybı: Malik veya kiracının deprem hariç olmak üzere diğer tüm teminatlar kapsamına giren hasarlar nedeniyle uğrayacakları kira kayıpları."
+                        },
+                        {
+                            "paragraph": "Fırtına: Fırtınanın ve bu esnada sürüklenen nesnelerin çarpması sonucu sigortalı değerlerde oluşacak zararlar"
+                        },
+                        {
+                            "paragraph": "Yer Kayması: Binanın inşa edilmiş olduğu arsa ve etrafında oluşan toprak çökmesi ve yer kaymasının neden olduğu zararlar."
+                        },
+                        {
+                            "paragraph": "Kar Ağırlığı: Çatı üzerinde biriken karın ağırlığı nedeniyle sigorta konusu bina, bina içindeki eşyaların ıslanması ve çatıda oluşan hasardan dolayı meydana gelecek zararlar."
+                        },
+                        {
+                            "paragraph": "Yakıt Sızması: Sabit ısıtma sistemine dahil olan cihaz ve tesisatta herhangi bir nedenle meydana gelen yakıt akma ve sızmalarının sigortalı kıymetlerde doğrudan neden olacağı maddi zararlar (yakıtın kendisi ile yakıt tanklarında ve tesisatlarında meydana gelenler hariç)."
+                        },
+                        {
+                            "paragraph": "Alternatif İşyeri Masrafları"
+                        }
+                    ]
+                },
+                {
+                    "title": "2. Ek Teminatlar:",
+                    "description": [
+                        {
+                            "paragraph": "Deprem ve Yanardağ Püskürmesi: Deprem ve yanardağ püskürmesinin neden olacağı tüm zararlar (Hazine ve Dış Ticaret Müsteşarlığınca onaylanan Deprem ve Yanardağ Püskürmesi Tarifesi gereği poliçe üzerinde yazılı oranlarda muafiyet/koasürans uygulanır.)."
+                        },
+                        {
+                            "paragraph": "Cam ve Ayna Kırılması: Poliçede gösterilen cam ve aynaların kırılma neticesinde uğrayacakları zararlar."
+                        },
+                        {
+                            "paragraph": "Üçüncü Şahıslara Karşı Mali Sorumluluk: Her türlü işletme ve eğitim faaliyetleri, spor aktiviteleri ve geziler, öğrenci servis taşımaları, yangın ve infilak, kurum tarafından sağlanan yiyecek ve içeceklerden kaynaklanan gıda zehirlenmeleri sonucu öğrencilerin ve/veya diğer üçüncü şahısların uğrayacağı bedeni ve maddi zararlar."
+                        },
+                        {
+                            "paragraph": "Emniyeti Suiistimal: Sigortalının emrinde ve hizmetinde çalıştırdığı personelin sigortalıya ait nakit para, kıymetli evrak, menkul kıymetler veya para ile ölçülebilen mallarını çalmak, zimmetine geçirmek, hile, dolandırıcılık veya sahtekârlık yolu ile bunlara sahip olmak sureti ile iş yerine verebilecekleri zararlar."
+                        },
+                        {
+                            "paragraph": "Taşınan Para: Taşınan para teminatı, işyerleri ile bankalara veya diğer işyerleri arasında taşınan para ve kıymetleri;"
+                        },
+                        {
+                            "paragraph": "Üçüncü kişiler tarafından silahla tehdit veya zor kullanmak suretiyle meydana gelecek gasp ve hırsızlık hâllerine,"
+                        },
+                        {
+                            "paragraph": "Herhangi bir araç ile nakil esnasında aracın kazaya uğraması veya yanması sonucunda meydana gelebilecek zararlara,"
+                        },
+                        {
+                            "paragraph": "Grev, lokavt, kargaşalık, halk hareketlerinden ve bunların gerektirdiği asker ve inzibati hareketlerden, deprem, sel ve su baskını gibi doğal afetlerle, yangın, infilak gibi olaylar sonucu meydana gelebilecek hırsızlık ve yağmalamalara karşı teminat altına alır."
+                        },
+                        {
+                            "paragraph": "Ayrıca taşınan para, işyerinde çalışan işçi ve personele ödenecek maaş ve ücretleri teşkil ediyorsa sigorta teminatı paraların işyerindeki kasada muhafaza edilmesi kaydı ile taşımanın yapıldığı günden sonraki gün saat 19.00'a kadar teminat kapsamındadır.Bu teminatın verilebilmesi için; Taşımanın yapıldığı bölge,Taşımanın ne şekilde yapıldığı,Taşımanın ne sıklıkta yapıldığı,Taşıyan kişi sayısı,Bir seferde taşınan azami nakit ve kıymetli evrak miktarı,Yıllık taşınan toplam kıymet gibi bilgilerin bilinmesi gerekmektedir.Parayı taşıyan görevlilerin, suiistimalleri sonucu oluşabilecek kayıplar emniyeti suiistimal teminatına girmektedir."
+                        },
+                        {
+                            "paragraph": "Kasa Hırsızlık ve Yangın"
+                        },
+                        {
+                            "paragraph": "Enflasyondan Koruma"
+                        },
+                        {
+                            "paragraph": "Makine Kırılması: Makinelerde imalat veya çalışan hatası gibi nedenlerle oluşabilecek her türlü ani ve beklenmedik kırılma hasarları."
+                        },
+                        {
+                            "paragraph": "Elektronik Cihaz: Elektronik cihazların; elektrik, kısa devre hasarları, düşme, kırılma, yangın, yıldırım, infilak, hırsızlık ve kullanıcı hataları sonucu oluşabilecek zararlar."
+                        },
+                        {
+                            "paragraph": "Seyyar ve Taşınabilir Elektronik Cihazlar Ek Teminatı"
+                        },
+                        {
+                            "paragraph": "Tehlikeli Maddeler Zorunlu Sorumluluk: İşletmede; yanıcı, parlayıcı, patlayıcı maddelerin depolanması ve/veya satılması sırasında bu maddelerin sebep olduğu yangın ve infilak sonucu üçüncü şahıslara verilebilecek bedeni ve maddi zararlar."
+                        },
+                        {
+                            "paragraph": "Çevre Kirliliği Mali Sorumluluk: Yangın veya infilak neticesinde çevrede meydana gelebilecek ani kirlenme sebebiyle oluşacak zararlar ve temizleme masrafları."
+                        },
+                        {
+                            "paragraph": "Hatalı Ürün Verilmesinden Kaynaklanan Sorumluluk: Araçlara verilen akaryakıtın, bozuk olması veya hatalı ürün verilmesi sonucunda araç motorlarına verilebilecek zararlar."
+                        },
+                        {
+                            "paragraph": "Mesleki Sorumluluk: Mesleki faaliyetlerin kusurlu ve ayıplı olması dolayısıyla üçüncü şahıslara verilebilecek bedeni zararlar."
+                        },
+                        {
+                            "paragraph": "Hukuksal Koruma: Sigortalı işyeriyle ilgili oluşabilecek hukuksal uyuşmazlıkların giderilmesinde gereken gider ve edimler."
+                        },
+                        {
+                            "paragraph": "Ferdi Kaza: İşyeri çalışanlarının kaza sonucu ölmesi veya sakat kalması durumlarında talep edilebilecek tazminatlar."
+                        }
+                    ]
+                },
+                {
+                    "title": "İşyeri Yangın Sigortası",
+                    "description": [
+                        {
+                            "paragraph": "İşyeri yangın sigortası, işyeri ve içerisinde bulunan şahsi eşya, emtia, demirbaş, makine ve tesisatların kendiliğinden meydana gelen yangın, yıldırım, infilâk ile bunlardan kaynaklanan buhar, hararet, duman gibi tehlikelerin neden olabileceği maddi hasarlara karşı teminat verir."
+                        },
+                        {
+                            "paragraph": "Standart olarak verilen teminatların yanı sıra seçilecek ek teminatlar ile poliçe kapsamı gereksinimlerinize uygun olarak genişletebilmektedir."
+                        },
+                        {
+                            "paragraph": "Binaların dışındaki bahçıvan evi, garaj, su deposu, kömürlük gibi eklentiler ile binaların içlerinde veya üzerlerinde bulunan her çeşit sabit tesisat, asansör, yürüyen merdivenler, yıldırımlık ve televizyon anteni gibi binayı tamamlayan unsurlar sigorta bedeli kapsamı içindedir."
+                        },
+                        {
+                            "paragraph": "Ayrıca poliçede belirtilmek kaydıyla, temeller, bahçe ve çevre duvarları, istinat duvarları, rıhtımlar, teraslar, iskeleler, çeşmeler, bina dışındaki heykeller, sarnıç ve havuzlar gibi unsurlar teminat altına alınabilmektedir. Bina dahilinde bulunan eşya, makine-tesisat, demirbaş-dekorasyon ve emtia için ayrı ayrı sigorta bedeli belirlenerek teminat altına alınmaları esastır."
+                        },
+                        {
+                            "paragraph": "Tam kâgir, yığma kâgir, adi kâgir ve ahşap yapılara teminat verilebilmekte ve poliçeler, talep üzerine enflasyona veya dövize endeksli olarak ya da abonman (emtia) poliçeler şeklinde düzenlenebilmektedir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Otel Sigortası",
+                    "description": [
+                        {
+                            "paragraph": "Otel sigortası, dış ve iç duvarları ile taban ve tavanları beton, taş, tuğla gibi yanmaz malzeme ile yapılmış tam kâgir olarak tanımlanan otel binasını ve/veya eşyalarının uğrayacağı doğrudan ve dolaylı maddi zararları, teminatlar dahilinde sigorta eder. "
+                        },
+                        {
+                            "paragraph": "Daha detaylı olarak sigorta kapsamına, bina içindeki ve üzerindeki ve otel sahası içinde bulunan sigortalıya ait her çeşit sabit tesisat ve binayı tamamlayan şeyler (çatı malzemeleri, bacalar, su olukları vb. gibi) ile yapı tarzı tam kâgir olmak kaydı ile eklentiler, bahçe ve çevre duvarları, sabit yüzme ve süs havuzları ve sarnıçlar ile tanımı yapılan otel binası içinde, sigortalıya ait olan ve sigortalının iştigal konusuna giren makine, demirbaş, emtia, malzeme, dekorasyon (sigortalı, bina sahibi değilse ve kendisi tarafından yaptırılmış boya, badana, duvar kâğıdı, sabit dekorasyon ve tesisat mevcut ise bedelleri ve mahiyeti poliçede belirtilerek teminata dahil edilebilir) ve çalışanlara ait eşyalar gibi varlıkların girdiği söylenebilir."
+                        },
+                        {
+                            "paragraph": "Deprem ve yanardağ püskürmesi, sel ve su baskını, deniz taşıtları çarpması, yangına bağlı kâr kaybı, fırtına ile meydana gelen uydu anteni, güneş kolektörü ve reklam panosu hasarları, enkaz kaldırma masrafları, cam kırılması, hırsızlık, işveren mali sorumluluk, asansör kazalarında üçüncü kişilere karşı sorumluluk gibi teminatlar ek prim ödenmek suretiyle teminat altına alınabilir."
+                        },
+                        {
+                            "paragraph": "Otel mali sorumluluk teminatı ile konuklarınızın can ve mallarına gelebilecek zararlar sonucu işletmenin ödemek zorunda kalacağı tazminatları da (örneğin otel sınırları içerisinde otel müşterisi veya eşyalarının zarar görmesi) teminat altına almak mümkündür."
+                        }
+                    ]
+                },
+                {
+                    "title": "Akaryakıt İstasyonu Sigortası",
+                    "description": [
+                        {
+                            "paragraph": "Akaryakıt istasyonu sigortası, dış ve iç duvarları ile taban ve tavanları beton, taş, tuğla gibi yanmaz malzeme ile yapılmış tam kâgir olarak tanımlanan akaryakıt istasyonu binası içindeki ve üzerindeki her çeşit sabit tesisat ve binayı tamamlayan şeyler ile kanopi, bahçe ve çevre duvarları, oto yıkama bölümü, çatı sistemi vb. diğer sundurmalar (betonarme veya çelik konstrüksiyon olması şartı ile (kanopi hariç)), pompaların altındaki beton kaideler, beton sahalar, yeraltındaki ve yerüstündeki LPG ve yakıt tanklarını hasarlara karşı teminat altına almaktadır. İstinat duvarları, rıhtımlar, teraslar, iskeleler, çeşmeler, bina dışındaki heykeller, sarnıç ve havuzlar teminat dışında tutulmaktadır."
+                        },
+                        {
+                            "paragraph": "Sigorta kapsamına bina içinde bulunan ve sigortalıya ait olup sigortalının iştigal konusuna giren makinalar (akaryakıt pompaları, hava-su saatleri, kompresör, jeneratör, yıkama, temizleme, yağ değiştirme makinaları, ısıtma ve soğutma sistemleri, trafolar vb.), demirbaşlar (bilgisayar, faks, telefon, raflar, mobilyalar, soğutucu dolaplar vb.), emtia (akaryakıt emtiası (tanklarda bulunan akaryakıt)) gibi varlıklar da girmektedir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Eczane Sigortası",
+                    "description": [
+                        {
+                            "paragraph": "Eczane sigortası, eczanenizi aşağıdaki risklere karşı poliçede kapsamlı olarak açıklanan teminat şartları ve limitler dahilinde ilgili genel şartlara tabii olarak sigorta eder"
+                        },
+                        {
+                            "paragraph": "Kilit altında bulunan kırmızı reçete ve yeşil reçete kapsamındaki ilaçlar.Yanınızda çalışan personelin yapacağı emniyeti suiistimal, Sağlık Bakanlığı tarafından uygulanan ani fiyat artışları (sürşarj), Nöbetçi olduğunuz günlerde stoğunuzdaki ani artışlar, Duvara monte raf/vitrinlerin devrilmesi sonucu ilaç emtianızda meydana gelecek zararlar, Eczane buzdolabında bulunan ilaçlarınızın ve kimyasallarınızın bozulması, Kasada tutulan reçete ve eki kupürleri, Makineler ve demirbaşları işyerinizin dışındayken de belli limitlerle teminat altına alınabilir."
+                        },
+                        {
+                            "paragraph": "Bunların haricinde deprem ve yanardağ püskürmesi, sel ve su baskını, deniz taşıtları çarpması, fırtınayla meydana gelen uydu anteni, güneş kolektörü ve reklam panosu hasarları, cam kırılması, dolu, genişletme teminatları, taşınan para, emniyeti suiistimal (ihtiyari), mesleki sorumluluk, üçüncü şahıslara karşı mali sorumluluk, işveren mali sorumluluk, asansör kazalarında üçüncü kişilere karşı sorumluluk, ferdi kaza, makine kırılması ve elektronik cihaz teminatları da ek prim ödemek suretiyle alınabilmektedir."
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "DASK Sigortası",
+            "description": "DASK Sigortası",
+            "linkHref": "dask",
+            "genelbilgiler": [
+                {
+                    "title": "Neden Zorunlu Deprem Sigortası?",
+                    "description": [
+                        {
+                            "paragraph": "Zorunlu deprem sigortasının amacı meydana gelebilecek deprem riskine karşı bina sahiplerinin zararlarını karşılamaktır. Deprem riski yüksek bir ülkede yaşadığımız için 587 sayılı kanun hükmünde kararnameye göre bina sahipleri mutlaka zorunlu deprem sigortasını yaptırmalıdırlar. Zorunlu deprem sigortası olmayan binaların;"
+                        },
+                        {
+                            "paragraph": "Konut sigortaları yapılamaz"
+                        },
+                        {
+                            "paragraph": "Tapu dairelerinde, alım-satım ve ipotek gibi resmi işlemlerin yapılması sırasında konutun “DASK poliçesi olması şartı” aranır."
+                        },
+                        {
+                            "paragraph": "Herhangi bir deprem sonucunda oluşan zararlarda 'Doğal Afetler Sigortaları Kurumu (DASK) poliçesi' olmayanlara devlet hiçbir şekilde yardım etmez."
+                        }
+                    ]
+                },
+                {
+                    "title": "Zorunlu Deprem Sigorta Primi ve Sigorta Bedeli Nasıl Hesaplanır?",
+                    "description": [
+                        {
+                            "paragraph": "Çevre ve Şehircilik Bakanlığı tarafından hazırlanan Türkiye deprem bölgeleri haritasına göre ülkemiz deprem riski açısından beş ayrı bölgeye ayrılmıştır. Zorunlu deprem sigortası primi hesaplanırken bu bölgelerin her biri için yapı tarzlarına bağlı olan fiyatlar uygulanır."
+                        },
+                        {
+                            "paragraph": "Deprem riski yüksek olan bölgelere ait DASK sigortası primleri daha yüksek, riskin düşük olduğu bölgelerde zorunlu deprem sigortası fiyatları da daha düşük olmaktadır. "
+                        },
+                        {
+                            "paragraph": "Beş risk bölgesinin yanı sıra yapı kalitesine ait de 3 değişken belirlenmiştir. Bu durumda 15 farklı prim türü oluşmuştur."
+                        },
+                        {
+                            "paragraph": "Zorunlu deprem sigortası primi hesaplanırken binanın bulunduğu bölge ve yapı türüne ait olan bedel, toplam prime esas olacak birim bedelidir. Bu birim bedeli, sigorta yaptırılacak meskenin alanı ile çarpılır ve yıllık DASK poliçe bedeli bulunur. Bir meskenin sigorta bedeli, Zorunlu Deprem Sigortası Tarife ve Talimatında belirlenen azami teminat tutarı olan 150 bin TL'den fazla olamaz."
+                        }
+                    ]
+                },
+                {
+                    "title": "Zorunlu Deprem Sigortası Teminatları",
+                    "description": [
+                        {
+                            "paragraph": "587 sayılı kanun hükmünde kararname ile 27 Eylül 2000 tarihinden itibaren yürürlüğe giren zorunlu deprem sigortası, deprem ile depremin neden olacağı yangının, infilakın, tsunaminin, yer kaymasının sigortalı binalarda doğrudan neden olacağı maddi zararlar ile birlikte temeller, ana duvarlar, bağımsız bölümleri ayıran ortak duvarlar, bahçe duvarları, istinat duvarları, tavan ve tabanlar, merdivenler, asansörler, sahanlıklar, koridorlar, çatılar, bacalar ve yapının benzer nitelikteki tamamlayıcı kısımlarında meydana gelenler de dahil olmak üzere binaya ait kısımlarda meydana gelen hasarlar da  DASK tarafından, sigorta bedeline kadar sigorta teminatı kapsamında değerlendirilmektedir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Zorunlu Deprem Sigortası Kapsamı Dışında Kalan Hâller Nelerdir?",
+                    "description": [
+                        {
+                            "paragraph": "Zorunlu deprem sigortalarında da diğer tüm sigortalarda olduğu gibi kapsam altında olan ve olmayan hâller genel şartlar ile belirtilmiştir. Zorunlu deprem sigortası genel şartları her sigorta şirketi için aynıdır. Genel şartlara göre zorunlu deprem sigortası kapsamı dışında kalan hâller aşağıda belirtilmiştir:"
+                        },
+                        {
+                            "paragraph": "Enkaz kaldırma masrafları,"
+                        },
+                        {
+                            "paragraph": "Kâr kaybı,"
+                        },
+                        {
+                            "paragraph": "İş durması,"
+                        },
+                        {
+                            "paragraph": "Kira mahrumiyeti,"
+                        },
+                        {
+                            "paragraph": "Alternatif ikametgâh ve işyeri masrafları,"
+                        },
+                        {
+                            "paragraph": "Mali sorumluluklar ve benzeri başkaca ileri sürülebilecek diğer bütün dolaylı zararlar,"
+                        },
+                        {
+                            "paragraph": "Her türlü taşınır mal, eşya ve benzerleri,"
+                        },
+                        {
+                            "paragraph": "Ölüm dahil olmak üzere tüm bedeni zararlar,"
+                        },
+                        {
+                            "paragraph": "Manevi tazminat talepleri,"
+                        },
+                        {
+                            "paragraph": "Deprem ve deprem sonucu oluşan yangın, infilak, tsunami veya yer kaymasının dışında kalan hasarlar,"
+                        },
+                        {
+                            "paragraph": "Belirli bir deprem hadisesine bağlı olmaksızın binanın kendi kusur ve özellikleri nedeniyle zamanla oluşan zararlar."
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Yangın Sigortası",
+            "description": "Yangın Sigortası",
+            "linkHref": "yangin",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "Sağlık Sigortası",
+            "description": "Sağlık Sigortası",
+            "linkHref": "saglik",
+            "genelbilgiler": [
+                {
+                    "title": "Neden Sağlık Sigortası?",
+                    "description": [
+                        {
+                            "paragraph": "Özel sağlık sigortası sizi, sağlık sorunlarınızla ilgili masraflardan kurtaran önemli bir güvencedir. Sağlık sigortası, sizin ve ailenizin 1 yıl boyunca karşılaşabileceğiniz hastalık ya da kazalarda doktor, ilaç ve buna bağlı tedavi giderlerinizi bütçenizi zorlamadan karşılayabilmenizi sağlar."
+                        },
+                        {
+                            "paragraph": "Özel sağlık sigortası yaptırmanın sağladığı avantajlar:"
+                        },
+                        {
+                            "paragraph": "1. Bir hastalık ya da kaza sonucu tedavi görmeniz gerektiğinde özel sağlık kuruluşlarına ödeyeceğiniz masrafların çok altında bir bedelle her türlü sağlık hizmetinden 1 yıl boyunca yararlanabilirsiniz."
+                        },
+                        {
+                            "paragraph": "2. Doktor ya da sağlık kurumunu kendi tercihinize göre özgürce seçebilirsiniz."
+                        },
+                        {
+                            "paragraph": "3. Hastalanmanız hâlinde özel sağlık kuruluşlarında gördüğünüz tedavilerle ilgili karşılamakta zorluk çekeceğiniz giderleri rahatlıkla karşılayabilirsiniz."
+                        },
+                        {
+                            "paragraph": "4. Özel sağlık kuruluşlarından otel konforu ile yararlanır, en kaliteli hizmeti alır ve kendinizi ayrıcalıklı hissedersiniz."
+                        },
+                        {
+                            "paragraph": "5. Herhangi bir kaza ya da hastalık geçirmeniz sonucu ayakta ya da yatarak teşhis ve tedavilerinize ait masraflarınızı satın aldığınız ürüne bağlı olarak yurt içinde veya dünyanın neresinde olurlarsa olsun karşılayabilirsiniz."
+                        },
+                        {
+                            "paragraph": "6. Seçtiğiniz ürüne bağlı olarak yurt dışında da kaza ya da hastalık geçirdiğinizde poliçe teminatlarınıza göre tüm masraflarınızı ödersiniz."
+                        }
+                    ]
+                },
+                {
+                    "title": "Sağlık Sigortası Ne Zaman Yapılmalıdır?",
+                    "description": [
+                        {
+                            "paragraph": "Özel sağlık sigortası, doğumdan itibaren yapılabilmektedir. Kişisel olarak yapılabilmesinin yanı sıra tüm aile fertlerini kapsayacak bir şekilde istenilen bir zamanda da yaptırılabilir. "
+                        },
+                        {
+                            "paragraph": "Özel sağlık sigortası yaptırmak için herhangi bir zaman kısıtlaması yoktur. İhtiyaç duyduğunuzu düşündüğünüz anda sigortanızı gecikmeden yaptırabilirsiniz. Herhangi bir hastalık geçirmeden önce yaptıracağınız sağlık sigortası hem bütçenizi daha az zorlayacak hem de herhangi bir hastalık geçirme durumunuzda bütün ihtiyaçlarınızı karşılayacaktır. "
+                        },
+                        {
+                            "paragraph": "Sağlığınızda veya ailevi durumunuzda değişiklikler olduğu takdirde arzu ettiğiniz zamanda sigortanızın kapsamını değiştirebilir, ek teminatlar ekletebilirsiniz. Örneğin hamilelik, doğum ve doğum sonrası için poliçenizin içeriğine ilgili teminatları ekletmeniz mümkündür. "
+                        },
+                        {
+                            "paragraph": "Özellikle kadınların bebek sahibi olmaya karar vermeden önce özel sağlık sigortası yaptırmaları, muayene ve doğum ile ilgili masrafları için özel sağlık sigortasından yararlanmalarını sağlayacaktır."
+                        },
+                        {
+                            "paragraph": "Sağlık sigortası, uzmanlık gerektiren bir sigortadır. Sağlık kontrollerinizin yapılması, ileride başınıza gelebilecek hastalıklar ve riskler uzman sigortacılar tarafından ele alınmalı, siz ve aileniz için en doğru teminatlar ve poliçe bedeli belirlenmelidir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Tedavi Yerleri",
+                    "description": [
+                        {
+                            "paragraph": "Bir hastalık sonucunda doktora gitmenizin ve diğer sağlık harcamalarını yapmanızın gerektiği durumlarda poliçenizde yazılı, anlaşmalı özel sağlık kuruluşunu tercih etmek önerilen bir seçenektir.  Anlaşmasız sağlık kuruluşuna gittiğinizde eğer varsa ödemek zorunda kalacağınız katılım payı daha yüksek olacaktır. Anlaşmalı sağlık kuruluşunu tercih ettiğinizde sadece belirlenmiş olan katılım payını ödersiniz. Ayrıca anlaşmasız bir sağlık kurumuna giderseniz yapmış olduğunuz tüm sağlık harcamalarınızın belgelerini, doktor tarafından doldurulmuş özel bir form ile birlikte sigorta şirketine göndermeniz gerekir. Sigorta şirketi gönderdiğiniz evrakları inceleyerek ödenmesini uygun bulursa katılım payınız düşülerek masraflarınız daha önceden belirttiğiniz hesap numaranıza yatırılır."
+                        },
+                        {
+                            "paragraph": "Anlaşmasız kurumlardan hizmet almadan önce rahatsızlığınızın poliçe kapsamına dahil olup olmadığını önceden öğrenebilmek için sigorta şirketinden ön provizyon alınması gerekebilir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Sağlık Sigortası Primleri ",
+                    "description": [
+                        {
+                            "paragraph": "Sigorta şirketlerinin, sigortalı adaylarının tamamen sağlıklı oldukları varsayılarak her bir yaş ve cinsiyet için hazırladıkları prim tabloları bulunmaktadır. Sigortalının ilk defa poliçe  alması veya yenileme yapılması durumunda primler bu tablo fiyatları üzerinden çeşitli indirimler veya ek primler uygulanarak hesaplanmaktadır."
+                        },
+                        {
+                            "paragraph": "Sigorta şirketleri tablo fiyatlarını belirlerken; Ameliyatlarda kullanılan sarf malzeme fiyat artışı,Medikal enflasyon,Türk Tabipler Birliği Asgari Ücret Tarifesi’ne bağlı uygulama ve yıllık fiyatlandırma değişimi, Özel hastane cari fiyatlarındaki değişiklikler, Teknolojideki yeni gelişmelere bağlı olarak karşımıza çıkan yeni tanı ve tedavi yöntemlerinin maliyetleri gibi etkenleri de dikkate almaktadır.   "
+                        },
+                        {
+                            "paragraph": "Ürün tablo fiyatları gerekli görüldüğü anlarda sigorta şirketi tarafından yukarıda bahsedilen kriterler doğrultusunda yeniden hesaplanabilir ve değiştirilebilir."
+                        },
+                        {
+                            "paragraph": "Poliçelerin yenilenmesi aşamasında primin belirlenmesini etkileyen faktörleri açıklayacak olursak; bunların başında hasar/prim oranı ve buna bağlı olarak uygulanan indirim veya ek primler gelmektedir."
+                        },
+                        {
+                            "paragraph": "Hasar/prim oranı sigortalı olduğunuz yıl içinde poliçenizden karşıladığınız sağlık harcamalarınızın, sigortalı olduğunuz yıl poliçeniz için ödediğiniz prime oranıdır. Sigorta şirketlerinin bu kullanım oranlarına göre belirledikleri indirim veya ek prim oranları mevcuttur. Poliçenizin yatarak tedavi veya yatarak ve ayakta tedavi planlarına sahip olmasına göre de oranlar farklılık göstermektedir. Bazı firmalar yatarak tedavili poliçelerde kullanım olmamasına rağmen bir indirim veya kullanımdan dolayı bir ek prim uygulamamaktadır."
+                        },
+                        {
+                            "paragraph": "Bazı özel paket poliçelerde ise poliçelerde plan farkı gözetmeden, hasar/prim oranına göre  herhangi bir indirim veya ek prim uygulanmamaktadır."
+                        },
+                        {
+                            "paragraph": "Aile poliçelerinde ise bazı sigorta şirketleri  yenileme prim hesaplamasında kişi bazlı indirim veya ek prim uygularken, bazı sigorta şirketleri ise poliçe genelinde indirim veya ek prim uygulamaktadır. "
+                        },
+                        {
+                            "paragraph": "Hastalık ek primi de yenileme aşamasında primin belirlenmesini etkileyen faktörlerden biridir. Poliçenin yenileme aşamasında yapılan tıbbi değerlendirme sonucu alınabilecek bir ek primdir. Poliçe döneminde ortaya çıkan bir rahatsızlık poliçe özel şartları ve şirket risk kabul yönetmeliği gereği, sigorta şirketi tarafından yapılan değerlendirme sonucu kapsam dışı bırakılabilir veya o hastalık için belli bir ek prim talep ederek poliçeye dahil edebilir. Hastalık ek primi kişi bazlı uygulanan bir ek primdir. Bunların dışında poliçenin ilk defa yapılıyor olması veya yenileme olarak yapılıyor olması farkı olmaksızın, şirket uygulamaları gereği farklılık gösterebilecek; aile indirimi, il indirimi ve ödeme şekli indirimi veya ek primleri prim hesaplanmasını etkileyen faktörlerdir. "
+                        },
+                        {
+                            "paragraph": "Yenileme aşamasında sigorta şirketinin her bir yaş ve cinsiyet için hazırladıkları prim tabloları baz fiyatlarına yukarıda açıkladığımız hakedilen durumlarda; hasar/prim oranı indirim veya ek primleri, hastalık ek primi, aile indirimi, il indirimi, ödeme şekli indirimi veya ek primleri uygulanarak yenileme primlerine ulaşılmaktadır."
+                        }
+                    ]
+                },
+                {
+                    "title": "Sağlık Sigortası Vergi İndirimi",
+                    "description": [
+                        {
+                            "paragraph": "Sigortalı, kendi ile eşi ve çocuklarının sağlık sigortası primlerini vergiden düşebilir. Buna göre; Bordro ile ücret alan mükellefin ödeyeceği sağlık sigortası primi, ödendiği ayda elde edilen brüt kazancın %5'ini ve asgari ücretin aylık tutarını aşmamak şartıyla gelir vergisi matrahından indirilebilir. Gelir vergisi beyannamesine tabi mükellefin ödeyeceği hastalık sigortası primi, beyan edilen yıllık gelirin %5'ini ve asgari ücretin yıllık tutarını aşmayacak şekilde gelir vergisi matrahından indirilebilir. "
+                        },
+                        {
+                            "paragraph": "Bu vergi avantajından yararlanabilmeniz için; Bordro ile ücret alınıyor ise çalışılan iş yerinin muhasebe servisine sağlık sigortası makbuzunun verilmesi yeterlidir.  Serbest çalışılıyor ise sağlık sigortası makbuzundaki prim tutarının gelir vergisi beyannamesinde belirtilmesi yeterlidir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Sağlık Sigortası Teminatları",
+                    "description": [
+                        {
+                            "paragraph": "Sağlık sigortası kapsamında yatarak tedavi ve ayakta tedavi teminatları olmak üzere iki ayrı ana teminat vardır."
+                        }
+                    ]
+                },
+                {
+                    "title": "1. Ayakta Tedavi:",
+                    "description": [
+                        {
+                            "paragraph": "Doktor Muayene: Sağlık Bakanlığı tarafından çalışma ruhsatı verilmiş hastane, klinik veya özel muayenehanelerde doktor tarafından yapılan muayeneye ait giderleri karşılar."
+                        },
+                        {
+                            "paragraph": "Fizik Tedavi: Hastalığın tedavisi için doktorun gerekli gördüğü fizik tedavilere ait giderleri karşılar."
+                        },
+                        {
+                            "paragraph": "İlaç: Doktorun teşhis ve tedavi için tıbben gerekli gördüğü ve tazminat talep formunda belirttiği durumlarda doktor reçetesinde belirtilen ilaç giderleri karşılar. Reçetesiz ve küpürsüz alınan ilaç giderlerini karşılamaz."
+                        },
+                        {
+                            "paragraph": "Tanı Birimleri: Doktorun hastalığı teşhis edebilmesi için gerekli gördüğü her türlü laboratuvar, radyoloji, kardiyoloji ve nükleer tıp gibi tanı birimlerine ait giderleri karşılar."
+                        },
+                        {
+                            "paragraph": "Tahlil-Röntgen: Doktorun teşhis ve tedavi için tıbben gerekli gördüğü durumlarda tahlil, röntgen giderleri ile bu teşhis yöntemlerinin uygulanmasının gerektirdiği ilaç, anestezi, doktor ücreti giderlerini karşılar."
+                        },
+                        {
+                            "paragraph": "MR-Sintigrafi-Tomografi: Doktorun hastalığın teşhisi ve tedavisi için tıbben gerekli gördüğü durumlarda yapılan MR-Sintigrafi-Tomografi giderlerini karşılar."
+                        },
+                        {
+                            "paragraph": "Görüntüleme Hizmetleri: Doktorun hastalığın teşhisi ve  tetkiki için istediği röntgene ilişkin giderleri, tomografi, MR, anjiyografi, endoskopi, kolonoskopi, gastroskopi, sintigrafi, odyografi gibi benzeri ileri tetkik giderleri ile kimyasal madde ve ilaçlara ait giderleri karşılar."
+                        },
+                        {
+                            "paragraph": "Laboratuvar Hizmetleri: Doktorun hastalığın teşhisi ve gerekli gördüğü takdirde ileri tetkiki için istemde bulunduğu tahliller ile kimyasal madde ve ilaçlara ait giderleri karşılar."
+                        },
+                        {
+                            "paragraph": "Rutin Kontrol ve Diyagnostik: Sigortalının rutin kontrolleri, şikayeti olmaksızın yapılan doktor muayeneleri, aşılar ve ön tetkikleri, alerji tanı, göz muayeneleri, menopoz ve osteoporoz tanısı dahil, hekim tarafından istenen Check-up amaçlı tetkikler ve doğum teminatı kapsamındaki kontrol amaçlı harcamaları azalan bakiye şeklinde poliçe limitleri dahilinde karşıla"
+                        }
+                    ]
+                },
+                {
+                    "title": "2. Yatarak Tedavi:",
+                    "description": [
+                        {
+                            "paragraph": "Yatarak tedavi, hem hastanede yatılı tedaviyi gerektiren ameliyat ve anjiyografi gibi harcamaları, hem de alçı, kemoterapi ve radyoterapi gibi yatmayı gerektirmeyen tedavi harcamalarını karşılar. 24 saatten az olmamak şartıyla, hastanede yatmayı gerektiren durumlarda yatış ve tedavi masrafları ile birlikte acil durumlardaki harcamaları da kapsamaktadır."
+                        },
+                        {
+                            "paragraph": "Sigortalının, yatarak tedavi teminatlarından yararlanması için, hastaneye yatış ve tedavi gerektiren durumunun sigorta başlangıcından sonra teşhis edilmesi gerekmektedir. Teminatlar sigorta şirketlerinin sunduğu özel şartlara ve sigortalının genel sağlık durumuna göre sigorta poliçesinde ve sözleşmede belirtilen şekilde ve oranlarda karşılanır."
+                        },
+                        {
+                            "paragraph": "Cerrahi bir müdahale olsun veya olmasın yatılı tedavilerde hastane, yatak, yemek, refakatçi, operatör doktor ücreti, asistan doktor ücreti, anestezist, ameliyathane masrafları, sarf edilen tıbbi malzeme giderleri ve kullanılan ilaç giderleri poliçe limitleri dahilinde karşılanır"
+                        },
+                        {
+                            "paragraph": "Ameliyat: Sigortalının yatarak tedavisi sırasında ameliyat olması gerektiğinde ameliyathane masrafları, anestezi sırasında kullanılan malzemeler ve doktor ücreti bu teminat ile güvence altına alınır."
+                        },
+                        {
+                            "paragraph": "Yoğun Bakım: Yoğun bakım ünitesinde alınan tedavi için ödenecek giderleri karşılar."
+                        },
+                        {
+                            "paragraph": "Hastane Tedavi Giderleri: Ameliyatsız yatışlarda veya sigortalının hastanede yatmasını gerektirmeden yapılan cerrahi ve ortopedik müdahalelere ait konsültasyon ile doktor ücreti, kan ve kan plazması dahil gerekli malzeme, oksijen, anestezi, alçı ve dikiş uygulaması, kullanılması hekimce gerekli görülen ortopedik destekleyici ve korse, bandaj, sargı, pansuman, enjeksiyon ve benzeri giderleri karşılar."
+                        },
+                        {
+                            "paragraph": "İlaç: Sigortalının sağlık kuruluşlarında yatarak tedavisi sırasında kullanılan ilaçların giderlerini karşılar."
+                        },
+                        {
+                            "paragraph": "Tanı: Doktorun hastalığı teşhis edebilmesi için gerekli gördüğü her türlü tanı birimi giderlerini karşılar."
+                        },
+                        {
+                            "paragraph": "Refakatçi: Refakatçi kalmasının tıbbi zorunluluk gösterdiği durumlarda ilgili giderleri karşılar."
+                        },
+                        {
+                            "paragraph": "Oda ve Yemek: Hastanede yatılan her gün için oda ve yemek giderlerini karşılar."
+                        },
+                        {
+                            "paragraph": "Doğum: Bu teminat poliçenin yürürlüğe girdiği tarihten itibaren belirli bir süre sonra gerçekleşen doğumlar için geçerlidir. Bu süre, sigorta şirketleri arasında farklılık gösterir. Sigortalının doğum sonrasında, sağlık kuruluşundaki yatarak tedavisi süresince bebek ile ilgili ilk doktor muayenesi, aşı ve ilaç giderleri, teminat tablosunda belirtilen doğum giderlerini karşılar."
+                        },
+                        {
+                            "paragraph": "Doktor Takibi: Sigortalının yatarak tedavisi sırasında doktor tarafından yapılan takibe ait giderleri karşılar."
+                        },
+                        {
+                            "paragraph": "Küçük Müdahale"
+                        }
+                    ]
+                },
+                {
+                    "title": "3. Diğer Teminatlar:",
+                    "description": [
+                        {
+                            "paragraph": "Radyoterapi"
+                        },
+                        {
+                            "paragraph": "Suni Uzuv: Tedavinin suni uzuv gerektirmesi hâlinde bununla ilgili giderleri karşılar."
+                        },
+                        {
+                            "paragraph": "Kemoterapi"
+                        },
+                        {
+                            "paragraph": "Anjiyografi"
+                        },
+                        {
+                            "paragraph": "Tıbbi Danışmanlık"
+                        },
+                        {
+                            "paragraph": "Diyaliz"
+                        },
+                        {
+                            "paragraph": "Rehabilitasyon"
+                        },
+                        {
+                            "paragraph": "Evde Bakım: Tedavinin evde yapılması gerektiği hâllerde oluşan giderleri karşılar."
+                        },
+                        {
+                            "paragraph": "Kazaen Diş Tedavisi: Trafik kazası sonucunda meydana gelen diş rahatsızlıkları için yapılan tedavi giderleri karşılar."
+                        },
+                        {
+                            "paragraph": "Yurt Dışı: Gerekli olduğu takdirde yurt dışında alınması gereken tedaviler için yapılan giderleri karşılar."
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "",
+            "description": "",
+            "linkHref": "",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "title": "",
+            "description": "",
+            "linkHref": "",
+            "genelbilgiler": [
+                {
+                    "title": "",
+                    "description": [
+                        {
+                            "paragraph": ""
+                        }
+                    ]
+                }
+            ],
+            "merakedilenler": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
         }
     ]
 }

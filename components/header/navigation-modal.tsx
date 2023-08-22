@@ -48,22 +48,22 @@ const components = [
         altbaslıklar: [
             {
                 title: 'Konut',
-                linkHref: '/kasko',
+                linkHref: '/konut',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'İş Yeri',
-                linkHref: '/trafik',
+                linkHref: '/isyeri',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'Dask',
-                linkHref: '/otosorumluluk',
+                linkHref: '/dask',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'Yangın',
-                linkHref: '/otodisisorumluluk',
+                linkHref: '/yangin',
                 Icon: PiTrafficSignBold
             }
         ],
@@ -79,27 +79,27 @@ const components = [
         altbaslıklar: [
             {
                 title: 'Sağlık',
-                linkHref: '/kasko',
+                linkHref: '/saglik',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'Birikimli Hayat',
-                linkHref: '/trafik',
+                linkHref: '/birikimlihayat',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'Birikimsiz Hayat',
-                linkHref: '/otosorumluluk',
+                linkHref: '/birikimsizhayat',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'Emeklilik',
-                linkHref: '/otodisisorumluluk',
+                linkHref: '/emeklilik',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'Ferdi Kaza',
-                linkHref: '/otodisisorumluluk',
+                linkHref: '/ferdikaza',
                 Icon: MdHealthAndSafety
             }
         ],
@@ -115,22 +115,22 @@ const components = [
         altbaslıklar: [
             {
                 title: 'Tekne',
-                linkHref: '/kasko',
+                linkHref: '/tekne',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'Emtea',
-                linkHref: '/trafik',
+                linkHref: '/emtea',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'Blok Abonman',
-                linkHref: '/otosorumluluk',
+                linkHref: '/blokabonman',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'CMR',
-                linkHref: '/otodisisorumluluk',
+                linkHref: '/cmr',
                 Icon: GiCargoCrate
             }
         ],
@@ -145,22 +145,22 @@ const components = [
         altbaslıklar: [
             {
                 title: 'Mak. Kırılması',
-                linkHref: '/kasko',
+                linkHref: '/makkırılması',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'E. Cihaz',
-                linkHref: '/trafik',
+                linkHref: '/ecihaz',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'İnşaat All Risk',
-                linkHref: '/otosorumluluk',
+                linkHref: '/insaatallrisk',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'Montaj',
-                linkHref: '/otodisisorumluluk',
+                linkHref: '/montaj',
                 Icon: PiTrafficSignBold
             }
         ],
@@ -171,21 +171,21 @@ const components = [
     },
     {
         title: "TARIM",
-        href: "/isyerisigortasi",
+        href: "/tarım",
         altbaslıklar: [
             {
                 title: 'Kümes',
-                linkHref: '/kasko',
+                linkHref: '/kümes',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'Hayvan',
-                linkHref: '/trafik',
+                linkHref: '/hayvan',
                 Icon: PiTrafficSignBold
             },
             {
                 title: 'Tarsim',
-                linkHref: '/otosorumluluk',
+                linkHref: '/tarsim',
                 Icon: PiTrafficSignBold
             },
         ],
