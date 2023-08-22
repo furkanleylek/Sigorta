@@ -3,6 +3,7 @@ import { Paragraph } from '../ui/paragraph'
 import { GenelbilgiH3 } from '../ui/genelbilgi-h3'
 import { HiOutlineChevronRight } from 'react-icons/hi'
 import { Separator } from '../ui/separator'
+import ScrollProgressButton from '../ScrollArrow'
 interface GenelBilgilerProps {
     genelbilgiler?: {
         title: string
@@ -33,6 +34,7 @@ const GenelBilgi: React.FC<GenelBilgilerProps> = ({ genelbilgiler }) => {
                     </div>
                 )
             })}
+            <ScrollProgressButton />
         </div>
     )
 }
