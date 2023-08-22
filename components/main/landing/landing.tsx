@@ -10,7 +10,7 @@ const Landing = () => {
         <div className=' text-white h-full w-full flex items-center  relative  pb-12 pt-12 md:pb-36 md:pt-24'>
             <BackgroundImage />
             <Container className='h-full space-y-10'>
-                <h1 className='text-2xl md:text-4xl lg:text-6xl'>Kahramanmaraş Sigorta<br /> <span className='font-bold text-3xl md:text-5xl lg:text-7xl'>Kaza Geliyorum Demez !</span></h1>
+                <h1 className='text-2xl md:text-4xl lg:text-6xl'>Kahramanmaraş Sigorta<br /> <span className='font-bold text-3xl md:text-5xl lg:text-7xl'>Geleceğinizi Şimdi Koruma Altına Alın</span></h1>
                 <Paragraph className=' w-[96%] md:w-1/2 tracking-wider'>
                     Trafik kazalarında trafik sigorta poliçeniz ve kasko poliçenizde teminatların tam olduğundan emin olmanız gerekmektedir .
                 </Paragraph>
