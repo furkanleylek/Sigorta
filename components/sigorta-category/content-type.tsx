@@ -10,7 +10,7 @@ import { IsyeriForm } from '../teklif-forms/isyeri-form'
 import DaskForm from '../teklif-forms/dask-form'
 import IletisimForm from '../teklif-forms/iletisim-form'
 import FerdiKazaForm from '../teklif-forms/ferdi-kaza'
-
+import { usePathname } from 'next/navigation'
 
 interface SigortaCategoryProps {
     categoryItems?: {
@@ -48,6 +48,8 @@ const Buttons = [
 const ContentType: React.FC<SigortaCategoryProps> = ({ categoryItems }) => {
 
     const [content, setContent] = useState('genelbilgi')
+    const pathname = usePathname()
+    console.log("pathname:", pathname)
     return (
         <>
             <div className='flex items-center gap-4 w-full lg:w-2/3'>
@@ -74,7 +76,11 @@ const ContentType: React.FC<SigortaCategoryProps> = ({ categoryItems }) => {
             {
                 content === 'teklifformu' && (
                     <>
-
+                        {
+                            categoryItems?.linkHref === pathname && (
+                                <IletisimForm />
+                            )
+                        }
                         {
                             categoryItems?.title === 'Kasko Sigortası' && (
                                 <KaskoForm />
@@ -106,7 +112,12 @@ const ContentType: React.FC<SigortaCategoryProps> = ({ categoryItems }) => {
                             )
                         }
                         {
-                            categoryItems?.title && (
+                            !(categoryItems?.title === 'Kasko Sigortası' ||
+                                categoryItems?.title === 'Trafik Sigortası' ||
+                                categoryItems?.title === 'Konut Sigortası' ||
+                                categoryItems?.title === 'İşyeri Sigortası' ||
+                                categoryItems?.title === 'Dask Sigortası' ||
+                                categoryItems?.title === 'Ferdi Kaza Sigortası') && (
                                 <IletisimForm />
                             )
                         }

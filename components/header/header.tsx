@@ -14,7 +14,7 @@ const Header = () => {
 
     return (
         <header className='w-full '>
-            <div className='md:container px-4 w-full flex items-center justify-between py-8 text-main'>
+            <div className='md:container px-4 w-full flex items-center justify-between py-4 text-main'>
                 <SocialLinks />
                 <Link href='/' className='font-extrabold flex items-center space-x-3'>
                     <Image

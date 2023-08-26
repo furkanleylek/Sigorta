@@ -7,10 +7,12 @@ import { BackgroundImage } from './background-image'
 import Link from 'next/link'
 const Landing = () => {
     return (
-        <div className=' text-white h-full w-full flex items-center  relative  pb-8 pt-8 md:pb-24 md:pt-16'>
+        <div className=' text-white h-full w-full flex items-center  relative  pb-8 pt-8 md:pb-16 md:pt-16'>
             <BackgroundImage />
-            <Container className='h-full space-y-8 md:space-y-10'>
-                <h1 className='text-xl md:text-3xl lg:text-5xl'>Kahramanmaraş Sigorta<br /> <span className='font-bold text-3xl md:text-5xl lg:text-7xl'>Geleceğinizi Şimdi Koruma Altına Alın</span></h1>
+            <Container className='h-full space-y-6 md:space-y-4'>
+                {/* <h1 className='text-xl md:text-3xl lg:text-5xl'>Kahramanmaraş Sigorta<br /> <span className='font-bold text-3xl md:text-5xl lg:text-7xl'>Geleceğinizi Şimdi Koruma Altına Alın</span></h1> */}
+                <h1 className='font-bold text-3xl md:text-5xl lg:text-7xl'>Geleceğinizi Şimdi Koruma Altına Alın</h1>
+
                 <Paragraph className=' w-[96%] md:w-2/3 tracking-wider'>
                     Trafik kazalarında trafik sigorta poliçeniz ve kasko poliçenizde teminatların tam olduğundan emin olmanız gerekmektedir .
                 </Paragraph>
