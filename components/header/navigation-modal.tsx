@@ -88,11 +88,6 @@ const components = [
                 Icon: PiTrafficSignBold
             },
             {
-                title: 'Birikimsiz Hayat',
-                linkHref: '/birikimsizhayat',
-                Icon: PiTrafficSignBold
-            },
-            {
                 title: 'Emeklilik',
                 linkHref: '/emeklilik',
                 Icon: PiTrafficSignBold

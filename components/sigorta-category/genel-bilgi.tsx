@@ -24,7 +24,11 @@ const GenelBilgi: React.FC<GenelBilgilerProps> = ({ genelbilgiler }) => {
                             {
                                 element.description.map((e, index) => (
                                     <div key={index} className='inline-grid grid-flow-col justify-start gap-2 '>
-                                        <HiOutlineChevronRight size={14} className="mt-1" />
+                                        {
+                                            e.paragraph.length > 0 && (
+                                                <HiOutlineChevronRight size={14} className="mt-1" />
+                                            )
+                                        }
                                         <Paragraph>{e.paragraph}</Paragraph>
                                     </div>
                                 ))

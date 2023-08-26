@@ -26,7 +26,7 @@ const SigortaCategory: React.FC<SigortaCategoryProps> = ({ categoryItems }) => {
     return (
         <Container className='flex flex-col justify-center items-center'>
             <div className='w-full lg:w-2/3 flex items-center space-x-2'>
-                <FcDocument size={32} />
+                {/* <FcDocument size={32} /> */}
                 <h1 className='font-semibold text-xl w-max md:text-2xl'>{categoryItems?.title} </h1>
             </div>
             <Separator className='mt-2' />

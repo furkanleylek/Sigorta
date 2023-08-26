@@ -802,10 +802,243 @@
             "linkHref": "yangin",
             "genelbilgiler": [
                 {
-                    "title": "",
+                    "title": "Yangın Sigortası Nedir?",
                     "description": [
                         {
-                            "paragraph": ""
+                            "paragraph": "Yangın sigortası, ticari ve özel amaçla kullanılan her türlü bina ve yerleşim alanın kendiliğinden oluşan yıldırım, yangın, infilak gibi fiziki hasarlarını karşılayan bir sigorta türüdür. Peki, yangın sigortası zorunlu mudur? Bu soruya “hayır” şeklinde cevap verebiliriz. Ancak yangın sigortası her ne kadar isteğe bağlı bir sigorta türü olsa da bazı bankalar, konut kredisi verirken yangın ve konut sigortası talep etmektedir."
+                        },
+                        {
+                            "paragraph": "Bunun yanında zorunlu deprem sigortasının (DASK) yangına bağlı hasarı karşılayıp karşılamayacağı da oldukça merak edilen bir konudur. DASK yalnızca depremden kaynaklanan yangın hasarlarını karşılar. Eğer yangın, yıldırım ve infilak gibi nedenlerle meydana geldiği ise bu durum DASK kapsamına girmez. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Yangın Sigortası Genel Şartları Nelerdir?",
+                    "description": [
+                        {
+                            "paragraph": "Yangın sigortası genel şartlarında belirtildiği üzere; yangın sigortası sayesinde doğrudan doğruya yangından kaynaklanan zararlar, taşınır ve taşınmaz mallar ile birlikte içerisinde bulunan eşyalar da güvence altına alır. Sözleşmede aksine bir hüküm yoksa, seninle birlikte aile bireylerin, birlikte yaşadığın kişiler ve çalışanlarına ait mallar da sigorta kapsamına alınır. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Yangın sigortası genel şartları şu ana maddelerden oluşur;",
+                    "description": [
+                        {
+                            "paragraph": "Sigortanın kapsamı"
+                        },
+                        {
+                            "paragraph": "Hasar ve tazminat"
+                        },
+                        {
+                            "paragraph": "Çeşitli hükümler"
+                        },
+                        {
+                            "paragraph": "Klozlar "
+                        }
+                    ]
+                },
+                {
+                    "title": "Yangın Sigortası Kapsamı",
+                    "description": [
+                        {
+                            "paragraph": "Yangın sigortası, kapsamı oldukça geniş olan bir sigorta türüdür. Konut, bina ve iş yerleri dışında binanın dışındaki kömürlük, müştemilat, su deposu ve garaj gibi mekânlar ile bina içinde ve üzerinde bulunan yürüyen merdiven, asansör, tesisat, TV anteni gibi binayı tamamlayan şeyler için de yangın sigortası yaptırabilirsin. İş yeri sigortası hakkında bilgi almak için içeriğimizi okuyabilirsin. "
+                        },
+                        {
+                            "paragraph": "Yangın sigortası; iş yerini, konutunu/binanı, muhteviyatını (demirbaş, emtia, makine tesisat) ve camlarını poliçe ana teminatları ve bunlara ilave ek teminatlarla güvence altına alır. Bu sigorta hem taşınır hem de taşınmaz mallara uygulanabilir. Ayrıca poliçe kapsamında birlikte yaşadığın kişiler de koruma altındadır. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Yangın Sigortası Teminatları",
+                    "description": [
+                        {
+                            "paragraph": "Yangın sigortası ana teminatlarını şu şekilde sıralayabiliriz. "
+                        },
+                        {
+                            "paragraph": "İnfilak (patlama)"
+                        },
+                        {
+                            "paragraph": "Yangın"
+                        },
+                        {
+                            "paragraph": "Yıldırım  "
+                        },
+                        {
+                            "paragraph": "Yangın Sigortası Ek Teminatları "
+                        }
+                    ]
+                },
+                {
+                    "title": "Poliçeye ilave edilebilen ek teminatlar şu şekildedir:",
+                    "description": [
+                        {
+                            "paragraph": "Dahili su "
+                        },
+                        {
+                            "paragraph": "Dolu"
+                        },
+                        {
+                            "paragraph": "Duman"
+                        },
+                        {
+                            "paragraph": "Enkaz kaldırma masrafları"
+                        },
+                        {
+                            "paragraph": "Fırtına"
+                        },
+                        {
+                            "paragraph": "Geçici ikametgah masrafları"
+                        },
+                        {
+                            "paragraph": "Grev, lokavt, kargaşalık halk hareketleri, terör ve kötü niyetli hareketler"
+                        },
+                        {
+                            "paragraph": "Kar ağırlığı"
+                        },
+                        {
+                            "paragraph": "Kara taşıtları ve hava taşıtları"
+                        },
+                        {
+                            "paragraph": "Kira kaybı"
+                        },
+                        {
+                            "paragraph": "Yangın mali sorumluluk"
+                        },
+                        {
+                            "paragraph": "Yeniye göre ikame bedeli"
+                        },
+                        {
+                            "paragraph": "Yangın Sigortası Kapsam Dışı Durumlar"
+                        }
+                    ]
+                },
+                {
+                    "title": "İş yeri ve konut yangın sigortasının kapsamına girmeyen ve maddi hasarın karşılanmadığı bazı durumlar vardır.",
+                    "description": [
+                        {
+                            "paragraph": "Ayaklanma, çarpışma (savaş ilan edilmiş olsun olmasın), iç savaş, istila, isyan, savaş sonucu meydana gelen hasarlar"
+                        },
+                        {
+                            "paragraph": "Herhangi bir nükleer yakıt veya nükleer yakıtın yanması nedeniyle oluşan zararlar"
+                        },
+                        {
+                            "paragraph": "Sigortalının hasarı bizzat gerçekleştirdiği veya hasarın artmasında payının olduğu durumlar"
+                        },
+                        {
+                            "paragraph": "Devlet yaptırımları nedeniyle meydana gelen hasarlar"
+                        },
+                        {
+                            "paragraph": "Sigortalı eşyanın işlenmek amacıyla ateşe tutulması ve bunun sonucunda ortaya çıkan teknik arızalar"
+                        },
+                        {
+                            "paragraph": "Elektrikli aletlerin yangın dışında kendi aksamlarında hasar oluşması (örneğin elektrikli cihazın kısa devre yaparak patlaması veya ısınması)"
+                        },
+                        {
+                            "paragraph": "Sigortalı cihazlarda basınca bağlı deformasyonlar "
+                        },
+                        {
+                            "paragraph": "Aşırı hararet"
+                        },
+                        {
+                            "paragraph": "Buhar kazanının patlaması"
+                        },
+                        {
+                            "paragraph": "Sigortalı malın mum ve ütü gibi nesnelerle teması "
+                        }
+                    ]
+                },
+                {
+                    "title": "Yangında Hasar Bildirimi Nasıl Yapılır?",
+                    "description": [
+                        {
+                            "paragraph": "Yukarıda sıralanan teminatlardan yararlanabilmek için yangın gerçekleştikten sonra sigorta şirketine haber vermen gerekir. Böylece sigorta şirketin olay yerine sigorta eksperi gönderir ve hasar miktarını belirler. Bu süreçte eşyanın yerinin değiştirilmemesi ve eşyalarla etkileşimin en aza indirilmesi hasar tespitinin doğru yapılabilmesi için çok önemlidir. Yangın hasar bildirimi şu şekilde işler: "
+                        },
+                        {
+                            "paragraph": "Hasarın gerçekleştiği andan itibaren en geç beş iş gün içinde bildirilmesi"
+                        },
+                        {
+                            "paragraph": "Bütün belgelerin eksiksiz biçimde hazırlanması ve ekspere teslim edilmes"
+                        },
+                        {
+                            "paragraph": "Tahmini hasarın yazılı şekilde teslim edilmesi"
+                        },
+                        {
+                            "paragraph": "Eşya için yapılmış farklı bir sigorta varsa bildirilmesi gerekir. "
+                        },
+                        {
+                            "paragraph": "Yangın Hasar Bildirimi İçin Gerekli Evraklar"
+                        },
+                        {
+                            "paragraph": "Yangın sonrası sigorta şirketinden hasar tazminatı alabilmek için ilgili kurula bazı belgeleri teslim etmen gerekir. Hasar bildirimi için gerekli belgeleri şu şekilde sıralayabiliriz. "
+                        },
+                        {
+                            "paragraph": "Yangın sigorta poliçesi"
+                        },
+                        {
+                            "paragraph": "Hasar gören eşyaların faturası"
+                        },
+                        {
+                            "paragraph": "İtfaiye raporu"
+                        },
+                        {
+                            "paragraph": "Polis/jandarma tutanağı"
+                        },
+                        {
+                            "paragraph": "Onarım faturaları ve teklifleri"
+                        },
+                        {
+                            "paragraph": "Zararın belirtildiği talep yazısı"
+                        },
+                        {
+                            "paragraph": "Rüculu hasarlarda imzalı ibraname"
+                        },
+                        {
+                            "paragraph": "Cumhuriyet savcılığından alınan iddianame veya takipsizlik kararının aslı"
+                        },
+                        {
+                            "paragraph": "Sigorta eksperi gönderilmediyse hasar gören kıymetlerin fotoğrafı"
+                        },
+                        {
+                            "paragraph": "Eğer fırtına nedeniyle hasar oluşmuşsa beyan yazısı ve meteoroloji raporu"
+                        },
+                        {
+                            "paragraph": "Hırsızlıktan kaynaklanan hasarlarda polis merkezine yaptığın başvuruya ilişkin tutulan zapt tutanağı"
+                        },
+                        {
+                            "paragraph": "Mal sahibi isen tapu belgesi"
+                        },
+                        {
+                            "paragraph": "Kiracı isen kira kontratı"
+                        },
+                        {
+                            "paragraph": "Sigortalı mülk iş yeri ise kira, vergi levhası ve tapu sözleşmesi"
+                        },
+                        {
+                            "paragraph": "Sigortalı yer konut ise tapu sözleşmesi ve kira"
+                        }
+                    ]
+                },
+                {
+                    "title": "Sigortalı Konutun Mülkiyeti Değişirse Ne Olur? ",
+                    "description": [
+                        {
+                            "paragraph": "Mülkün mülkiyetinin değişmesi durumda yapılan poliçenin bütün hak ve borçları yeni hak sahibine  geçer. Fakat intikal durumunda 15 günlük bir bildirim süresi vardır. Bu süre aşılırsa sigorta şirketlerinin yangına ilişkin sorumluluğu ortadan kalkar ve sigorta şirketi anlaşmayı 8 gün içinde feshedebilir. Böyle bir sorunla karşılaşmamak için sigortanın yeni hak sahibine devrini 15 gün içinde mutlaka sigorta şirketine bildirmelisin. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Sigortalının Ölümü Durumunda Yangın Sigortası Ne Olur? ",
+                    "description": [
+                        {
+                            "paragraph": "Sigortalının ölümü de mülkiyet değişimi ile benzer bir durumdur. Eğer sigortalı ölürse yangın sigortası yeni sahibine devredilir. Sigorta şirketi ölüm hâlinde bilgilendirme talep ederse bunu en kısa sürede sigorta şirketine bildirmen gerekir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Yangın Sigortası Fiyatları",
+                    "description": [
+                        {
+                            "paragraph": "Yangın sigortasında fiyatlar; binanın kullanış biçimine, piyasa koşullarına, poliçede yer alan teminatların kapsamına ve sigorta şirketinin fiyatlandırma politikasına göre belirlenir bu nedenle  primler, sigorta firmaları arasında değişkenlik gösterir. Yangın sigortası hesaplamasında kişiye ait konutlar ile kamu kuruluşları ve ofis olarak kullanılan binalar için farklı tarifeler uygulanır. Yangın sigortası için başvuru yaptığında sigorta şirketlerinin aynı sigorta için farklı fiyatlar verdiğini görebilirsin. Dolayısıyla bu durumda “yangın sigortası ne kadar?” sorusuna net bir cevap vermek mümkün değildir"
                         }
                     ]
                 }
@@ -1061,28 +1294,139 @@
                     "title": "",
                     "description": [
                         {
-                            "paragraph": ""
+                            "paragraph": "Yatırılan sermaye ve bugüne kadar elde ettiği faiz de dahil olmak üzere, bir yatırımın halihazırda sahip olduğu toplam tutardır."
+                        },
+                        {
+                            "paragraph": "Birikimli hayat sigortası poliçesinin toplam kazanılmış değerini ifade ettiğinden, birikmiş değer sigorta alanında önemlidir. Birikmiş tutar veya nakit değeri olarak da adlandırılan birikmiş değer, ilk yatırımın toplamı veya toplamı ile bugüne kadar kazanılan faiz olarak hesaplanır."
+                        },
+                        {
+                            "paragraph": "Birikimli hayat sigortası, nakit değeri sunan kalıcı bir hayat sigortası türüdür. Bu politikalar, hayatta olduğunuzda kullanabileceğiniz nakit biriktirmenizi sağlar. Böylece, bir tür yatırımın yanı sıra, ölümünden sonra sevdiklerini sağlamanın bir yolu olarak görülebilir."
+                        },
+                        {
+                            "paragraph": "Birikimli hayat sigortasına bir göz atalım ve bu politikaların sizin için anlamlı olup olmadığını anlamanıza yardımcı olalım."
                         }
                     ]
-                }
-            ],
-            "merakedilenler": [
+                },
                 {
-                    "title": "",
-                    "description": ""
-                }
-            ]
-        },
-        {
-            "title": "Birikimsiz Hayat Sigortası",
-            "description": "Birikimsiz Hayat Sigortası",
-            "linkHref": "birikimsizhayat",
-            "genelbilgiler": [
-                {
-                    "title": "",
+                    "title": "Önemli Çıkarımlar",
                     "description": [
                         {
-                            "paragraph": ""
+                            "paragraph": "Birikmiş değer, ilk yatırım ve kazanılmış faiz dahil toplam yatırım tutarıdır."
+                        },
+                        {
+                            "paragraph": "Hayat sigortasında, birikmiş değer, bir hayat sigortası poliçesinin elde edilen toplam değeridir - nakit değeri olarak da bilinir."
+                        },
+                        {
+                            "paragraph": "Tüm yaşam politikalarında, poliçe sahibi aylık primleri ödemeye başladığında birikmiş değer artmaya başlar."
+                        },
+                        {
+                            "paragraph": "Birikimli hayat sigortası, poliçe sahibinin politikayı koruyarak ödünç alabileceği zorunlu tasarruf hesabı gibi düşünülebilir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Birikimli Hayat Sigortası Nasıl Çalışır?",
+                    "description": [
+                        {
+                            "paragraph": "Sigortacılık amacıyla, birikimli hayat sigortası poliçesinin, poliçe sahibi aylık prim ödemeye başladığında birikmiş değer artmaya başlar. Bir sigorta şirketi bu prim ödemelerini alır ve iki bölüme ayırır. İlk bölüm temel sigorta poliçesi maliyetlerini karşılar. İkinci kısım ise, sigorta şirketi tarafından dahili bir hesaba yatırılan nakit değeri biriktiren bir yatırım türü olarak işlev görür."
+                        },
+                        {
+                            "paragraph": "Bir sigortalı aynı zamanda tüm hayat sigortası poliçesini sigorta şirketine teslim edebilir ve karşılığında poliçenin nakit teslim değerini alabilir. Politikanın teslim masrafları varsa, nakit teslim değeri birikmiş değerden daha düşük olabilir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Özel Hususlar",
+                    "description": [
+                        {
+                            "paragraph": "Bir birikimli hayat sigortası poliçesinde biriken değer, poliçe sahibi sigorta sözleşmesini geçerli tuttuğu sürece vergi ertelenir."
+                        },
+                        {
+                            "paragraph": "Bir poliçe sahibinin emeklilik yıllarında birikmiş fonları geri çekmek, poliçe sahibinin daha düşük bir gelir vergisi dilimi için hak kazanmasına bile izin verebilir. Aksine, bir mevduat sertifikasında biriken değer derhal vergilendirilebilir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Birikimli Hayat Sigortası Neleri Kapsar?",
+                    "description": [
+                        {
+                            "paragraph": "Her tür hayat sigortasında olduğu gibi, poliçenizin başında seçtiğiniz vefat ödeneği miktarının belirlenmiş bir kullanımı yoktur. Tüm yaşam boyunca, bu fonlar genellikle cenaze masraflarını, kalan borçları karşılar ve küçük bir miras sağlar."
+                        },
+                        {
+                            "paragraph": "Bununla birlikte, fonlar kalan bir ipotek kredisini ödemek veya sigortalı tarafın kaybedilen gelirini değiştirmek için de kullanılabilir."
+                        },
+                        {
+                            "paragraph": "Ölüm yardımının yararlanıcılar tarafından istedikleri şekilde kullanılabileceğini belirtmek önemlidir. Planladığınız ürünlere harcamaları için yasal bir gereklilik olmadığından, yararlanıcılarınızı dikkatle seçmek akıllıca olacaktır"
+                        },
+                        {
+                            "paragraph": "Ayrıca, parayı aile üyeleri arasında istediğiniz şekilde bölmenize olanak tanıyan birden çok hak sahibi de seçebilirsiniz. Paranın nasıl harcanması gerektiğine dair herhangi bir gereklilik, örneğin çocuklar veya torunlar için ipotek veya üniversite harçları ödemek gibi bir irade ile belirtilmelidir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Birikimli Hayat Sigortası Teminatları Nasıl Hesaplanır?",
+                    "description": [
+                        {
+                            "paragraph": "Ne kadar birikimli hayat sigortası kapsamına ihtiyacınız olduğunu hesaplamak, poliçe satın alırken en önemli adımlardan biridir. Bununla birlikte, çoğu insan ihtiyaç duydukları tam hayat sigortası miktarını hesaplamakta zorlanıyor. Bunu söyledikten sonra, gerçekte ne kadar hayat sigortası kapsamına ihtiyacınız olduğunu hesaplamanın birçok yolu vardır, işte onlardan bazıları:"
+                        }
+                    ]
+                },
+                {
+                    "title": "Yöntem 1: İnsan Yaşam Değeri",
+                    "description": [
+                        {
+                            "paragraph": "Bu yönteme göre, birinin satın alması gereken hayat sigortası kapsamı, ekonomik değerle doğru orantılıdır, aksi takdirde insan yaşam değeri (HLV) olarak adlandırılır. Bir bireyin hayatının geri kalanı için kapitalize edilmiş değeridir ve cari enflasyon temelinde hesaplanır. HLV, üç faktöre göre hesaplanır - yaş, cari ve gelecekteki harcamalar."
+                        }
+                    ]
+                },
+                {
+                    "title": "Yöntem 2: Gelir Karşılık Değeri",
+                    "description": [
+                        {
+                            "paragraph": "Bu, birikimli hayat sigortası kapsam ihtiyaçlarınızı hesaplamanın temel bir yöntemidir ve yıllık gelirinize bağlıdır. Gerekli sigorta kapsamı: Yıllık Gelir * Emekliliğe kalan yıl sayısı"
+                        }
+                    ]
+                },
+                {
+                    "title": "Yöntem 3: İhtiyaç Analizi",
+                    "description": [
+                        {
+                            "paragraph": "Bu yöntemde hesaplama, ailenin en genç üyesinin yaşam beklentisine kadar günlük aile giderleri baz alınarak yapılır. Değerlendirme için dikkate alınması gereken başlıca faktörler şunlardır:"
+                        },
+                        {
+                            "paragraph": "Bağımlıların sayısı ve ihtiyaçları,"
+                        },
+                        {
+                            "paragraph": "Krediler,"
+                        },
+                        {
+                            "paragraph": "Çocuk eğitimi,"
+                        },
+                        {
+                            "paragraph": "Çocuk evliliği,"
+                        },
+                        {
+                            "paragraph": "Çalışmayan eş için hüküm,"
+                        },
+                        {
+                            "paragraph": "Ailenize sağlamak istediğiniz yaşam tarzı,"
+                        },
+                        {
+                            "paragraph": "Diğer özel ihtiyaçlar."
+                        },
+                        {
+                            "paragraph": "Yukarıdaki masrafların hepsini topladıktan sonra, bugün vefat ettiğinizi düşünürsek, ulaştığınız rakam ailenin bugün ihtiyacı olan şeydir. Daha sonra sahip olduğunuz hayat sigortası poliçenizi ve tüm mal varlığınızı düşürün. Bu yeni rakam, kapatmanız gereken boşluktur. Yatırım yapılan varlıkların konut ve arabayı içermediğini unutmayın."
+                        },
+                        {
+                            "paragraph": "İhtiyaç analizi, farklı yaşam aşamalarında ortaya çıkabilecek finansal ihtiyaçları dikkate aldığından insan yaşam değeri üzerinden puanlar. Bununla birlikte, insan hayatı değeri, insanların görev süreleri boyunca aynı geliri elde edeceklerini varsayar ve bu nedenle tam bir tablo vermez. Ek olarak, emeklilik ihtiyaçlarınızı değerlendirmek için ihtiyaç analizini kullanabilirsiniz."
+                        }
+                    ]
+                },
+                {
+                    "title": "Sonuç",
+                    "description": [
+                        {
+                            "paragraph": " Birikimli hayat sigortası kapsamının zamanla değişmesi gerekir, bu nedenle sigorta ihtiyaçlarınızı düzenli olarak gözden geçirmeniz önemlidir. Ayrıca, yukarıdaki yöntemler size yalnızca gösterge niteliğinde bir değer verir. Nihai sigorta portföyü mali durumunuza göre belirlenmelidir"
                         }
                     ]
                 }
@@ -1103,7 +1447,200 @@
                     "title": "",
                     "description": [
                         {
-                            "paragraph": ""
+                            "paragraph": "Bireysel Emeklilik Sistemi, kısaca BES olarak tanımlanmış, uzun vadeli, risk dağıtımı esasına yönelik tasarruf etme amaçlı bir yatırım aracıdır. Emekliliğinizle beraber düşen yaşam standardınızı destekleyerek rahat yaşamanıza olanak verir. Bir an önce bireysel emeklilik başvurusu yapmanız bu yönüyle çok faydalıdır."
+                        },
+                        {
+                            "paragraph": "BES, Hazine Müsteşarlığı tarafından 2003 yılında yapılan yeni düzenlemelerle daha profesyonel bir yapıya kavuşmuştur. Bunun yansımaları bireysel emeklilik şirketlerine, bireysel emeklilik başvurularındaki bazı detaylara ve bireysel emeklilik aracılarının sorumluluklarına olmuştur. BES; SPK, Emeklilik Gözetim Merkezi ve bağımsız denetim şirketleri gibi pek çok kuruluş tarafından da denetlenmektedir. Sisteme üye olunduğunda yatırım yaptığınız fonlar TAKASBANK güvencesinde saklanmaktadır."
+                        },
+                        {
+                            "paragraph": "Emeklilik Yatırım Fonları, fon yönetiminde uzman portföy yönetim şirketleri tarafından yönetilmektedir. BES katılımcısı tarafından düzenli olarak ödenen katkı payları, bireylerin emeklilik hesaplarında ve bireysel emeklilik fonlarında değerlendirilerek süre sonunda değer kaybına uğramadan hedefledikleri standartta bir yaşam sürecek birikim yapmalarına imkân vermektedir."
+                        },
+                        {
+                            "paragraph": "Bireysel emeklilik kapsamı içerisinde hastalık ya da vefat teminatları gibi teminatlar bulunmamaktadır. Bu nedenle yatırılan primler devletin aldığı belli başlı küçük kesintilerden sonra doğrudan fonlara yansıtılır"
+                        },
+                        {
+                            "paragraph": "18 yaşını dolduran herkes bireysel emeklilik başvurusu yapabilir. Sizin için hazırlanan emeklilik planını kabul ettiğiniz takdirde, bireysel emeklilik başvuru formunu doldurup, imzalayarak ilk aşamayı tamamlamış olursunuz. Bundan sonra 2 gün içinde sisteme girişiniz yapılır. Sözleşmenin yürürlük tarihi başvuru formunu imzaladığınız tarihtir. Bireysel emeklilik başvuru formu ile birlikte imzalanan sözleşmede, BES'e giriş, katkı paylarının ödenmesi ve fonlarda yatırıma yönlendirilmesi, birikimlerin bireysel emeklilik hesaplarında izlenmesi,  yapılacak kesintiler, katılımcının sistemden ayrılması, emekli olması, katılımcı veya lehtarlarına yapılacak ödemelere ilişkin esaslar ile tarafların diğer hak ve yükümlülüklerine ilişkin hususlar bulunur."
+                        }
+                    ]
+                },
+                {
+                    "title": "Neden BES ?",
+                    "description": [
+                        {
+                            "paragraph": "Ülkemizde ortalama yaşam süresi 70-74 yıl arasında olup devletin güvence sistemi olan SGK ile emekli olma yaşı ise ortalama 55 civarındadır. Var olan sistem bugün bile pek çok ihtiyacı karşılayamamaktayken BES planlarının ilerleyen günlerde artarak devam eden bir ihtiyaç hâline geleceği açıkça görülmektedir."
+                        },
+                        {
+                            "paragraph": "Bireysel Emeklilik Sistemine dahil olduğunuzda, şirketlerin belirlemiş olduğu bir alt limit ve ekonomik durumunuz da göz önüne alınarak belirlenecek bir ödeme planı ile düzenli ve zorunlu bir tasarruf yapmış olursunuz. Ödemelerinizi aylık, 3 aylık, 6 aylık ya da yıllık yapmak sizin isteğinize göre değişir. Bireysel Emeklilik Sistemine özel bir avantaj da katkı payı ödemeye ara verebilme imkânıdır. O güne kadar yatırdığınız miktar fon havuzunda değerlendirmeye devam edilir ancak emekli olma aşamasına geldiğinizde toplamda 10 yıl prim ödemiş olmanız şartı arandığından, prim ödemediğiniz aylar emeklilik hesaplamasında yer alamaz."
+                        },
+                        {
+                            "paragraph": "Erken yaşta BES sahibi olmak, alacağınız geri dönüşü doğrudan etkileyecek unsurların başında gelir. Bu, bütçenizin en az %10’u oranında bir prim ödemesi ve yapılacak ara ödemeler de fonlarınızın istikrarlı olarak büyümesi adına önemli bir konudur."
+                        },
+                        {
+                            "paragraph": "Bireysel Emeklilik Sisteminde seçtiğiniz fonları, ekonominin gidişatına göre siz ya da sizin adınıza finansal danışmanınız yılda en fazla 6 kere olmak üzere değiştirebilir. Bu yönüyle de ülkemizde sıkça örneklerini yaşadığımız ekonomik dalgalanmalardan ve getireceği olumsuzluklara karşı önemli bir avantaj edinmiş olursunuz."
+                        }
+                    ]
+                },
+                {
+                    "title": "BES'in Özellikleri",
+                    "description": [
+                        {
+                            "paragraph": "Prim miktarınızı belirlenen asgari tutarın altında olmamak kaydı ile yıl içinde değiştirebilir, fazla ve ara ödemeler yapabilirsiniz. Bu, fon büyüklüğünüze etki edecek önemli bir durumdur."
+                        },
+                        {
+                            "paragraph": "Şirket seçme ve sistemde en az 1 yıl kaldıktan sonra şirket değişikliğine gitme hakkınız vardır."
+                        },
+                        {
+                            "paragraph": "Aynı veya farklı şirketlerden elde edebileceğiniz bireysel emeklilik planlarınızdan birinden emeklilik hakkı kazanmanız durumunda diğerlerinden de emeklilik talebi haklarınız arasındadır"
+                        },
+                        {
+                            "paragraph": "Aynı sigorta şirketinden veya farklı şirketlerden birden fazla BES poliçesine sahip olmanız mümkündür."
+                        },
+                        {
+                            "paragraph": "Birikimlerinizi bir defada toplu olarak talep edebileceğiniz gibi, yapılacak olan yıllık gelir sözleşmesi ile belirli periyotlar dahilinde de alabilirsiniz."
+                        }
+                    ]
+                },
+                {
+                    "title": "BES, vergi avantajları açısından da önemli ölçüde kazanç sağlamaktadır. Buna göre;",
+                    "description": [
+                        {
+                            "paragraph": "Ücretliler için; Bireysel Emeklilik Sisteminde, ödediğiniz katkı paylarını, ödediğiniz ayda elde ettiğiniz brüt ücretin %10’nu ve yıllık olarak brüt asgari ücretin yıllık tutarını aşmamak kaydıyla gelir vergisi matrahından düşebilirsiniz."
+                        },
+                        {
+                            "paragraph": "Yıllık beyanname verenler için; yıllık gelirin %10’nu ve brüt asgari ücretin yıllık tutarını aşmamak kaydıyla ödediğiniz katkı paylarını gelirinizin elde edildiği yılda ödemeniz şartıyla vergi matrahından düşebilirsiniz."
+                        },
+                        {
+                            "paragraph": "İşverenler çalışanları için ödedikleri katkı paylarını doğrudan gider hanesine ekleyebilirler."
+                        },
+                        {
+                            "paragraph": "Ayrıca bireysel emeklilik fonlarından elde edilmiş gelirler icra-iflas hukukundan muaftır."
+                        }
+                    ]
+                },
+                {
+                    "title": "BES'ten Nasıl Emekli Olunur?",
+                    "description": [
+                        {
+                            "paragraph": "Bireysel Emeklilik Sistemi, 18 yaşını doldurmuş herkesin girebileceği bir sistemdir. Bu sistem var olan sosyal güvenlik sistemini tamamlayıcı özelliktedir. Kişi erken yaşta sistemden ayrılmayı tercih ederse, emeklilik hakkından ve edineceği diğer avantajlardan feragat etmek durumunda kalır."
+                        },
+                        {
+                            "paragraph": "Bireysel emeklilik, uzun - orta vadede, devlet güvencesinde ve kontrolünde, şeffaf şekilde işleyen bir programdır. BES planından emekli olmak için sigorta prim hesaplamalarınız sonucu aktif olarak 10 yıl yani 360 ay prim ödemiş olmanız, aynı zamanda 56 yaşınızı doldurmuş olmanız şartları aranır."
+                        },
+                        {
+                            "paragraph": "Bu iki koşul bir arada gerçekleştiğinde emeklilikle ilgili temel kazanım elde edilmiş demektir. Katılımcının, farklı tarih ve özelliklerde bir başka emeklilik planı olması durumunda ise bütün planların tek bir yerde toplanması yeterlidir."
+                        },
+                        {
+                            "paragraph": "Emekli olmak için bütün şartlar yerine geldikten sonra dilerseniz birikmiş paranızı, tek seferde toplu olarak alır ve sistemle ilişiğinizi kesersiniz ya da yıllık gelir sözleşmesi yaparak emekli maaşı şeklinde almaya devam edebilirsiniz. İkinci seçenekte, devlet tarafında yapılan kesintiler daha düşük oranda yansır. Ayrıca maaş ödemenizden arta kalan birikiminiz fon havuzunda büyümeye devam eder."
+                        }
+                    ]
+                },
+                {
+                    "title": "BES ile Daha Fazla Kazanmanın Yolları Nelerdir?",
+                    "description": [
+                        {
+                            "paragraph": "Bireysel emeklilik yatırım fonları, katılımcıların ödedikleri katkı paylarının bir havuzda toplanarak işletilmesi amacıyla oluşturulmuş bir tür mal varlığıdır. Bu fonlarda riskin dağıtılması ve inanç mülkiyeti esastır."
+                        }
+                    ]
+                },
+                {
+                    "title": "BES yatırım araçları;",
+                    "description": [
+                        {
+                            "paragraph": "Nakit, vadeli ve vadesiz mevduat,"
+                        },
+                        {
+                            "paragraph": "Borçlanma araçları (ters repo dahil) ile hisse senetleri,"
+                        },
+                        {
+                            "paragraph": "Kıymetli madenlere ve gayrimenkule dayalı varlıklar,"
+                        },
+                        {
+                            "paragraph": "Repo işlemleri,"
+                        },
+                        {
+                            "paragraph": "Vadeli işlem ve opsiyon sözleşmeleri,"
+                        },
+                        {
+                            "paragraph": "Borsa para piyasası işlemleri,"
+                        },
+                        {
+                            "paragraph": "Yatırım fonu katılma belgeleri,"
+                        },
+                        {
+                            "paragraph": "Sermaye Piyasası Kurulu tarafından uygun görülen ve kamuya ilan edilen diğer para ve sermaye piyasası araçlarından oluşturulan fonlar da dahil olmak üzere bütün yatırım araçlarını kapsayan ve onları aynı yerde toplayan bir yapıya sahiptir."
+                        },
+                        {
+                            "paragraph": "Ayrıca bu fonlardaki işletim gideri kesintisi diğer fonlara göre daha az kesintiye sahiptir. Tüm bu avantajların yanında BES katılımcısının kazanç oranını etkileyen en önemli unsurlardan biri de, gelir ve kurumlar vergisi ödemelerinden muaf tutulabilmesidir."
+                        },
+                        {
+                            "paragraph": "Kendiniz için uygun yatırımın ne olduğu hakkında kesin bir kanıya sahip değilseniz Risk Getiri Profili Formunu doldurarak en ideal fonları seçip bireysel emeklilik planınızı şekillendirebilirsiniz."
+                        }
+                    ]
+                },
+                {
+                    "title": "BES İptal Edilirse Ne Olur?",
+                    "description": [
+                        {
+                            "paragraph": "BES sözleşmesi, teklif formunun imzalandığı tarihi takip eden 30. günde yürürlüğe girer. Bu hâliyle, sözleşme yürürlüğe girmeden önce katılımcının cayma hakkı vardır. Cayma durumu oluşmuşsa, katılımcının tamamını veya bir kısmını ödediği giriş aidatı, hiçbir kesinti yapılmadan, katılımcıya 7 iş günü içinde iade edilir. Fakat bireysel emeklilik şirketi, sözleşmede belirtmek şartıyla, cayma durumunda belirlediği oranda kesinti yapmaya yetkilidir. Bu kesinti oranı, katılımcının sisteme girdiği süreç için öngörülen masraf tutarından fazla olamaz."
+                        },
+                        {
+                            "paragraph": "Bireysel Emeklilik Sistemi, uzun vadeli bir yatırım aracıdır. Ancak sözleşme yürürlüğe girdikten sonra herhangi bir nedenle Bireysel Emeklilik Sisteminden çıkmak gerekirse;"
+                        },
+                        {
+                            "paragraph": "Katılımcının BES planını 10 yıldan önce iptal ettirmesi durumunda birikimlerinin tamamı üzerinden gelir vergisi kanununa göre %15 kesinti yapılır."
+                        },
+                        {
+                            "paragraph": "Katılımcının 10 yıllık prim ödemesini yapmış ancak emekliliği hak etmemişken iptal ettirmesi durumunda birikimlerinin tamamı üzerinden gelir vergisi kanununa göre %10 kesinti yapılır."
+                        },
+                        {
+                            "paragraph": "Katılımcının emekliliğe hak kazanmadan önce vefat etmesi ve malul olması durumunda birikimlerinin %25’i muaf tutulmak şartı ile kalan tutar üzerinden, gelir vergisi kanununa göre %5 oranında kesinti yapılır."
+                        }
+                    ]
+                },
+                {
+                    "title": "BES ile Hayat Sigortası Arasındaki Farklar Nelerdir?",
+                    "description": [
+                        {
+                            "paragraph": "Öncelikle BES ve hayat sigortaları birbirlerinden farklı mevzuatlara ve içeriklere sahiptir."
+                        },
+                        {
+                            "paragraph": "Hayat sigortalarında poliçeler sigorta şirketi ile imzalanmaktadır. Bireysel emeklilik sözleşmelerinde ise bu hizmet sadece bu konuda lisans almış şirketler tarafından verilmektedir. Lisanslı şirketler dışında BES sözleşmesini Hazine Müsteşarlığınca düzenlenen sınavda başarılı olan finansal danışmanlar da imzalama yetkisine sahiptir."
+                        },
+                        {
+                            "paragraph": "Hayat sigortasında giriş aidatı uygulaması yoktur. Bireysel Emeklilik Sisteminde peşin ya da ertelenmiş olarak giriş aidatı mutlaka tahsil edilir."
+                        },
+                        {
+                            "paragraph": "Hayat sigortası sadece birikim amaçlı bile olsa içinde mutlaka vefat ve sakatlık teminatı barındırır. Bireysel emeklilik herhangi bir teminat içermez, sadece birikim yapar. Ancak teminatlar arzu edilirse ek olarak alınabilir. Bu sebepten ötürü de BES kesintileri çok daha düşük düzeydedir."
+                        },
+                        {
+                            "paragraph": "Hayat sigortası sigorta şirketinin belirlediği kararlara göre yatırım yapar. Bireysel emeklilikte fonlar, bir uzman yardımıyla ancak katılımcının kararı ile seçilir."
+                        },
+                        {
+                            "paragraph": "Hayat sigortaları sabit ve değişmezdir. Her bir poliçe ayrı hak ve teminatlar verir. Bireysel emeklilik, hayat sigortalarına göre çok daha esnektir. Katılımcı fon dağılımını yılda 6 kez, emeklilik planını 4 kez değiştirebilir. Birden fazla BES planını birleştirebilir."
+                        },
+                        {
+                            "paragraph": "Hayat sigortalarında primler düzenli ve sabit olarak ödenmek zorundadır. Bireysel emeklilikte katılımcı istediği zamanda ve miktarda ara ödeme yapabilir."
+                        },
+                        {
+                            "paragraph": "Hayat sigortalarında şirket değişikliği yapılamaz. Bireysel emeklilikte 1 yıl sonra şirket değişikliğine gidilebilir."
+                        },
+                        {
+                            "paragraph": "Hayat sigortası fonları sigorta şirketinin hesabından takip edilir. Bireysel emeklilik fonları TAKASBANK’ta saklanır ve şeffaf olarak takibi yapılabilir."
+                        },
+                        {
+                            "paragraph": "Hayat sigortalarından 10 yıl sonra emekli olunabilir veya birikimin bir kısmı borç olarak alınabilir. Bireysel emeklikte en az 10 yıl prim ödemek ve 56 yaşını doldurmuş olmak şartı aranmaktadır. Borç alma seçeneği ise yoktur."
+                        },
+                        {
+                            "paragraph": "Hayat sigortasında sigorta ettiren haklarını veya varsa borçlarını devredebilir. Bireysel emeklilikte hak devri söz konusu değildir."
+                        },
+                        {
+                            "paragraph": "Hayat sigortasında verilen teminatlardan ötürü kesinti oranları daha yüksektir. Bireysel Emeklilik Sistemi teminat vermediği için kesinti oranları da daha düşüktür."
+                        },
+                        {
+                            "paragraph": "Hayat sigortasında vergi avantajının sigortalıya geri dönüşümü %5 iken, bireysel emeklilikte %10' dur."
+                        },
+                        {
+                            "paragraph": "Hayat sigortasından ayrılmak için en az 3 yıl sistemde kalmak şartı aranır. Bireysel emeklilikte katılımcı sistemden istediği bir zamanda ayrılabilir ancak emekliliğe oranla daha yüksek kesinti ödemesiyle karşı karşıya kalır."
                         }
                     ]
                 }
@@ -1321,10 +1858,136 @@
             "linkHref": "emtea",
             "genelbilgiler": [
                 {
-                    "title": "",
+                    "title": "Emtea Nedir ?",
+                    "description": [
+                        {
+                            "paragraph": "Hukuksal anlamına bakıldığında emtea, ticarete konu olan bütün mallara ve ürünlere verilen isimdir. Ekonomik anlamına bakıldığında da emtea, insanların ihtiyaçlarını ve isteklerini gidermek amacıyla alınıp satılan mal demektir. Sonuçta emtea, üretilen, alınan ve satılan bir maldır."
+                        },
+                        {
+                            "paragraph": "Genel olarak işyerleri için özel işyeri paket sigortaları hazırlanırken, sigorta konusu olarak emtea ve demirbaşlar gösterilir. Burada da emtea derken, sigorta yaptıran işyeri sahibinin ticari kazanç sağlamak amacı ile ürettiği veya sattığı mallar kasdedilmektedir. Böyle bakınca işyerinde yeddiemin veya emanet olarak bırakılan mallar emtea kapsamında sayılmamaktadır ve sigorta poliçesinin kapsamı dışında kabul edilmektedir."
+                        },
+                        {
+                            "paragraph": "İşyeri sigorta paketlerinde emtea olarak şu kalemler kabul edilir: ham madde, yarı mamul madde ve mamul madde. Hammadde, henüz işlenmemiş olan, doğal halinde bulunan maddedir. Bir ürün veya mal oluşturmak için gereken maddelerin işlenmeden önceki doğal halidir. Yarı mamul madde, daha önce üretim sürecine girmiş olan ancak henüz kullanılabilir bir ürün haline gelmemiş maddelerdir. Mamul madde ise üretimi tamamlanmış ürünlerdir."
+                        },
+                        {
+                            "paragraph": "Sigorta poliçesi ile bu şekilde teminat altına alınmış emtea ve mallar, bu sigorta poliçesi ile teminat altına alınan ve tazmin edilebilir herhangi bir hasar anında sigorta şirketi tarafından tazmin edilir. Ancak ödeme yapılabilmesi için sigorta şirketinin gerekli gördüğü durumlarda, sigorta yaptıran işyeri sahibinin, Türk Ticaret Kanunu ve hükümleri uyarınca tutmak zorunda olduğu her türlü resmi defterde, emtea ile ilgili olarak, emteanın şirkete giriş çıkış kayıtlarının, stok kayıtlarının, KDV beyannamelerinin ve faturalarının belgelenmesi gerekmektedir."
+                        },
+                        {
+                            "paragraph": "Yine poliçe ile aksi kararlaştırılmamışsa, kalıplar ve işyerinin faaliyet alanı ile ilgili olsun ya da olmasın bütün sarf malzemeleri, emtea kapsamı dışında kabul edilmektedir."
+                        },
+                        {
+                            "paragraph": "İşyeri sigorta paketlerinde yer alan demirbaş tanımına gelince. Demirbaşlar, işyerinin resmi defterlerine demirbaş olarak kaydedilmiş olan taşınabilir bütün değerlerdir."
+                        },
+                        {
+                            "paragraph": "Örneğin market bir işyeridir. Bu markette bulunan masa, sandalye, dolap, raf gibi taşınabilir değerler demirbaştır. Markette bulunan güvenlik kameraları, televizyon ekranları, fiyat okuyucular, kasa makinaları ve alarm sistemleri elektronik cihazlar grubuna girer. Ancak markette satılan bütün ürünler emtea grubuna girer. Özel işyeri paket sigortası ile sigortalanan değerler emtea grubuna giren ve satılmak üzere raflara dizilen ya da depolarda korunan ürünlerdir."
+                        },
+                        {
+                            "paragraph": "Ancak üretim yapan bir işyeri olarak örneğin bir tekstil atölyesine bakılacak olursa, bu atölyede bulunan dikiş makineleri, kumaş kesim makinaları ve benzeri makinalar makine tesisat grubuna girerken, güvenlik kameraları, televizyon ekranları ve alarm sistemleri elektronik cihazlar grubuna girer. Atölyenin dekorosyona yönelik malzemeleri yine demirbaş malzemelerdir. Ancak dikimi yapılmakta olan ürünler, henüz dikimine başlanmamış kumaşlar, ürünün dikimi sırasında kullanılacak malzemeler emtea grubuna girmektedir."
+                        },
+                        {
+                            "paragraph": "Görüldüğü gibi işyerleri ne tür faaliyet gösteriyor olurlarsa olsunlar, faaliyetlerini sürdürebilmek için gerekli üretim araçları ve bina ve makinalar dahil her türlü ekipman demirbaş olarak kabul edilirken, faaliyet konusu ile ilgili olarak üretilen veya üretilmeyi bekleyen her türlü mal emtea olarak kabul edilmektedir."
+                        },
+                        {
+                            "paragraph": "Bu şekilde bir işyerinde bulunan emtea ve demirbaşları kapsamına alan özel işyeri paket sigortaları, genel olarak yangın, yıldırım düşmesi, patlama olması, grev ve lokavt hareketleri, kargaşa, halk hareketleri, terör, duman, fırtına ve dahili su basması gibi temel güvenceleri sunmaktadır."
+                        },
+                        {
+                            "paragraph": "Ancak ilave teminat olarak deprem, sel ve su baskını, kiracı veya bina sahibi için yangın sorumluluk, enkaz kaldırma masrafları, alternatif işyeri masrafları, emtea hırsızlık, demirbaş hırsızlık, cam kırılması, izolasyon eksikliği, işin durması, üçüncü kişiler mali mesuliyet gibi güvenceler de alınabilmektedir."
+                        }
+                    ]
+                },
+                {
+                    "title": "TEMİNATLARI",
                     "description": [
                         {
                             "paragraph": ""
+                        }
+                    ]
+                },
+                {
+                    "title": "Kasti Hareket;",
+                    "description": [
+                        {
+                            "paragraph": "Sigortalının kasti hareketine yüklenebilen zıya, hasar veya masraf"
+                        }
+                    ]
+                },
+                {
+                    "title": "Olağan Hasarlar;",
+                    "description": [
+                        {
+                            "paragraph": "Sigortalı şeyin olağan akması, olağan ağırlık veya hacim kaybı ya da olağan aşınma ve yıpranması"
+                        }
+                    ]
+                },
+                {
+                    "title": "Ambalajlanma ve Hazırlanma Yetersizlikleri;",
+                    "description": [
+                        {
+                            "paragraph": "Sigortalı şeyin ambalajlama veya hazırlanmasındaki yetersizlik ya da uygunsuzluğun neden olduğu zıya, hasar veya masraf"
+                        }
+                    ]
+                },
+                {
+                    "title": "Gizli Kusur;",
+                    "description": [
+                        {
+                            "paragraph": "Sigortalı şeyin gizli kusuru (zatiaybı) veya niteliğinin neden olduğu zıya, hasar veya masraf"
+                        }
+                    ]
+                },
+                {
+                    "title": "Gecikme;",
+                    "description": [
+                        {
+                            "paragraph": "Temin edilmiş bir rizikodan ileri gelse dahi yakın nedeni gecikme olan zıya, hasar veya masraf"
+                        }
+                    ]
+                },
+                {
+                    "title": "Mali Yükümlülükleri Yerine Getirememe;",
+                    "description": [
+                        {
+                            "paragraph": "Geminin donatanları, idarecileri, kiracıları veya işleticilerinin ödeme gücünü yitirmesi veya mali yükümlülüklerini yerine getirememesinden doğan zıya, hasar veya masraf"
+                        }
+                    ]
+                },
+                {
+                    "title": "Kasti Zarar;",
+                    "description": [
+                        {
+                            "paragraph": "Herhangi bir kişi ya da kişilerin haksız fiili sonucu sigortalı şeye veya herhangi parçasına bilerek verilen zarar yahut bilerek yok etme"
+                        }
+                    ]
+                },
+                {
+                    "title": "Savaş Silahından Doğan Zararlar;",
+                    "description": [
+                        {
+                            "paragraph": "Atom veya nükleer parçalanma ve/veya birleşme ya da diğer benzer reaksiyon veya radyoaktif güç ya da madde kullanan herhangi bir savaş silahının her türlü düşmanca kullanımından doğan zıya, hasar veya masraf"
+                        }
+                    ]
+                },
+                {
+                    "title": "Savaş ve grev;",
+                    "description": [
+                        {
+                            "paragraph": "Savaş ve grev durumu"
+                        }
+                    ]
+                },
+                {
+                    "title": "2: DAR TEMİNAT;",
+                    "description": [
+                        {
+                            "paragraph": "Denizyolunda Institute Cargo Clauses (C) 1.1.82, Karayolunda Kamyon Klozu, Demiryolunda Demiryolu Klozu ile verilen bu teminat taşıma aracının batması, karaya oturması, çarpması, çarpışması, devrilmesi, yanması vb. sonucu taşınan yüke gelebilecek zıya ve hasarı karşılar."
+                        }
+                    ]
+                },
+                {
+                    "title": "3: TAM ZIYA TEMİNATI;",
+                    "description": [
+                        {
+                            "paragraph": "Tam Zıya Klozu ile verilen bu teminat bilumum avaryalar ve masraflar ile kurtarma ve müşterek avarya masrafları hariç olmak şartıyla ancak nakil vasıtasının fiilen ve mutlak surette tamamının zıyaı neticesinde sigortalı yükün fiilen ve tamamen zıyaını temin eder."
                         }
                     ]
                 }
@@ -1342,10 +2005,16 @@
             "linkHref": "blokabonman",
             "genelbilgiler": [
                 {
-                    "title": "",
+                    "title": "Neden Nakliyat Abonman Sigortası yaptırmalıyım?",
                     "description": [
                         {
-                            "paragraph": ""
+                            "paragraph": "Nakliyat Abonman Poliçesi: Bu poliçe ile sigortacı ile sigortalının önceden anlaştığı teminat limiti, şart, fiyat ve süre çerçevesinde, yapılan tüm sevkiyatlar yükleme ihbarının zamanında yapılıp yapılmadığına bakılmaksızın teminat altındadır. Abonman poliçelerin süresi genellikle bir yıldır."
+                        },
+                        {
+                            "paragraph": "Nakliyat Blok Abonman Poliçesi: Sigortalının bildireceği ve sigorta dönemi içinde gerçekleştireceği poliçeye konu sevkiyatların toplam tahmini tutarı üzerine ayarlama fiyatının uygulanması sonucu tespit edilen primin önemli bir kısmı minimum ve depo prim olarak ve taksitler halinde tahsil edilir. Böylece, sigortacı ile sigortalının önceden anlaştığı teminat limiti, şart ve süre çerçevesinde olmak kaydıyla yapılan tüm sevkiyatlar herhangi bir ihbar yükümlülüğü olmaksızın teminat altındadır."
+                        },
+                        {
+                            "paragraph": "Poliçe dönemi sonunda, gerçeklesen sevkiyat tutarı üzerine ayarlama fiyatı uygulanarak, minimum ve depo primi aşan kısmı peşin olarak tahsil edilir. Poliçelerin süresi genellikle bir yıldır."
                         }
                     ]
                 }
@@ -1363,10 +2032,51 @@
             "linkHref": "cmr",
             "genelbilgiler": [
                 {
-                    "title": "",
+                    "title": "CMR Sigortaları Nedir?",
                     "description": [
                         {
-                            "paragraph": ""
+                            "paragraph": "CMR Sigortası; uluslararası karayolu taşımacılığı yapan nakliyat firmalarının, taşımayı taahhüt ettikleri mallara gelebilecek zararlar nedeniyle oluşacak hukuki sorumluluklarını CMR Konvansiyonu hükümleri gereğince poliçede belirlenen şartlar ve limitler dâhilinde teminat altına alan bir Sorumluluk sigortasıdır. Bu sigorta, taşıyıcı firmanın CMR Konvansiyonu hükümlerine göre kusurlu bulunduğu durumları güvence altına alır."
+                        },
+                        {
+                            "paragraph": "Uluslararası karayolu nakliyecileri, istihdam ettikleri kişilerin ve taşımanın yapılması için hizmetinden yararlandıkları aracıların görevlerini yerine getirirken işledikleri kusurlardan sorumludurlar. Taşıyıcının malları taşımak üzere teslim aldığı anda başlayan bu sorumluluk, varış yerinde bulunan alıcıya malların teslim edilmesi ile sona erer."
+                        },
+                        {
+                            "paragraph": "CMR Sigortasında, taşıyıcının mal sahibine ve üçüncü şahıslara karşı olan sorumluluğu oldukça geniştir. Malların teslimi sırasında herhangi bir hasar olmasa dahi teslimden sonra meydana gelecek hasarlardan taşıyıcı sorumlu tutulur. Bu sigortaya sahip olan taşıyıcıların sorumluluğu ise sigortacı firma tarafından üstlenir."
+                        },
+                        {
+                            "paragraph": "CMR Sigortası, sigortalının kendi taşıma senetleri ve araçları ile yaptığı taşımalarla birlikte, kendi hamule senetleri ve başka nakliye firmaları vasıtasıyla ya da bu firmalardan kiraladığı araçlarla yaptıkları taşımaları da teminat kapsamına almaktadır."
+                        },
+                        {
+                            "paragraph": "CMR Konvansiyonu, taşımacıların ödeyeceği tazminata bir limit getirmişlerdir. Söz konusu limit, kilogram başına 8.33 SDR (Special Drawing Right – Özel Çekme Hakkı) ile sınırlıdır."
+                        }
+                    ]
+                },
+                {
+                    "title": "CMR Sigortasında esas alınan unsurlar:",
+                    "description": [
+                        {
+                            "paragraph": "Taşıma karayolu ile gerçekleştirilmelidir.( araçtan inmediği sürece deniz, tren gibi taşıma araçlarıyla bölünebilir."
+                        },
+                        {
+                            "paragraph": "CMR’ye taraf en az bir ülkenin yer aldığı uluslararası bir taşıma olmalıdır."
+                        },
+                        {
+                            "paragraph": "Taşınan mal bir eşya olmalıdır. ( canlı hayvan nakli de yapılabilir.)"
+                        },
+                        {
+                            "paragraph": "Taşıma sözleşmesinden kaynaklanan bir borç-alacak ilişkisi bulunmalıdır."
+                        },
+                        {
+                            "paragraph": "CMR Konvansiyonu aşağıda belirtilen  durumlarda uygulanmaz ve sigorta teminatı içermez;"
+                        },
+                        {
+                            "paragraph": "Uluslararası posta anlaşmaları gereğince yapılan taşımalarda,"
+                        },
+                        {
+                            "paragraph": "Cenaze taşımalarında,"
+                        },
+                        {
+                            "paragraph": "Ev eşyası taşımalarında ( Zati eşya )"
                         }
                     ]
                 }
@@ -1384,10 +2094,148 @@
             "linkHref": "makinekirilmasi",
             "genelbilgiler": [
                 {
-                    "title": "",
+                    "title": "Makine Kırılması Sigortası Nedir? Neden Yapılır?",
                     "description": [
                         {
-                            "paragraph": ""
+                            "paragraph": "Makine kırılması sigortası; çalışır halde veya temizlik, revizyon ve değişim gibi işlemler esnasında makine ve tesisatta ani ve beklenmedik bir şekilde gelişen hasarları karşılamayı hedefleyen bir mühendislik sigortası çeşididir. Mühendislik sigortası türlerinden biri olan inşaat sigortası hakkında detaylı bilgi almak için yazımızı okuyabilirsin."
+                        },
+                        {
+                            "paragraph": "Bu noktada “Makine kırılması sigortası neden yapılır?” sorusuna yanıt vermek gerekir. Makine kırılması sigortası, makinelerin kullanılamaz hale gelmesi veya arızalanması sonucu işlerin kesintiye uğramasını önlemek amacıyla yapılır ve maddi kayıpları garanti altına alarak hasarın gerektirdiği tamirat ve ikame masraflarını temin eder. Makine kırılması sigortası teklifi alabilmek için yangın, mühendislik ve oto dışı kaza branşlarında üretime sahip olmak yeterlidir. "
+                        },
+                        {
+                            "paragraph": "'Az Bilinen Sigorta Türleri' hakkında detaylı bilgi almak için içeriğimizi okuyabilirsin. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Makine Kırılması Sigortası Kapsamında Hangi Makineler Yer Alır? ",
+                    "description": [
+                        {
+                            "paragraph": "Makine kırılması sigortasında test aşamasını geçmiş ve çalışır durumda olan makine ve tesisatlar ile bunlara bağlı finansal kayıplar poliçe kapsamında değerlendirilir. "
+                        },
+                        {
+                            "paragraph": "Her türlü iş makinesi"
+                        },
+                        {
+                            "paragraph": "Isıtma-havalandırma sistemler"
+                        },
+                        {
+                            "paragraph": "Kompresör"
+                        },
+                        {
+                            "paragraph": "Jeneratör"
+                        },
+                        {
+                            "paragraph": "Pompa"
+                        },
+                        {
+                            "paragraph": "Soğuma-arıtma sistemleri"
+                        },
+                        {
+                            "paragraph": "Trafo"
+                        },
+                        {
+                            "paragraph": "Tekstil, kâğıt, metalurji ve çimento gibi sanayi alanları"
+                        }
+                    ]
+                },
+                {
+                    "title": "Makine Kırılması Sigortası Teminatları ",
+                    "description": [
+                        {
+                            "paragraph": "Makine kırılması sigortası genel şartları doğrultusunda poliçe kapsamına alınan ana teminatları şu şekilde sıralayabiliriz. "
+                        },
+                        {
+                            "paragraph": "İmalat ve işçilik hataları: Makinenin hatalı dizayn, malzeme ve işçilik kaynaklı zarar görmesi sonucu oluşan maddi zararı karşılar."
+                        },
+                        {
+                            "paragraph": "İşletme hataları: Makine ve tesislerin işletimi sırasında meydana gelen bakım hataları, hatalı kullanım ve yağlama kusurlarından kaynaklanan maddi kayıplar poliçe kapsamında değerlendirilir"
+                        },
+                        {
+                            "paragraph": "Su çekiçlemesi: Makine ve tesislerin ani ve aşırı ısınma-soğuması nedeniyle oluşan hasara ilişkin maddi zararları karşılar."
+                        },
+                        {
+                            "paragraph": "Elektriksel ve atmosferik bozulmalar: Kısa devre, şerare, yüksek voltaj, endüksiyon akımı, izolasyon hataları kaynaklı maddi kayıplar poliçe kapsamındadır. "
+                        },
+                        {
+                            "paragraph": "Tıkanma ve yabancı maddeler: Makine ve tesisatlarda tıkanma ve yabancı maddelerin girmesine sonucu meydana gelen zararlar teminat altına alınır."
+                        },
+                        {
+                            "paragraph": "Çevresel zararlar: Yağmur, kar, dolu, fırtına, rüzgârın sürüklediği ya da attığı şeylerin çarpması sonucu meydana gelen zararlar sigorta kapsamında karşılanır. "
+                        },
+                        {
+                            "paragraph": "Merkezkaç kuvveti ile parçalanmalar: Santrifüj kuvvetinden dolayı meydana gelen parçalanmalara ilişkin masraflar güvence altına alınır."
+                        },
+                        {
+                            "paragraph": "Dikkatsizlik ve ihmal: Makine ve tesislerin işletimi sırasında dikkatsizlik ihmal sonucu meydana gelen ziya ve hasarları karşılar."
+                        },
+                        {
+                            "paragraph": "Alçak basınç nedeniyle deformasyonlar: Alçak basınçtan dolayı meydana gelen ezilme, buruşma ve yırtılma gibi deformasyonlar teminat altına alınır."
+                        }
+                    ]
+                },
+                {
+                    "title": "Makine Kırılması Sigortası Ek Teminatları ",
+                    "description": [
+                        {
+                            "paragraph": "Seri vasıtalarla yapılan ekspres, nakliye, fazla mesai ücreti ve zamlar: Teminat kapsamına giren olaylar sonucu meydana gelen hasarın giderilmesi için yapılan nakliye masrafları, fazla mesai ücretleri ve zamlar teminat altına alınır. (Nakliyat sigortası hakkında bilgi edinmek için içeriğimizi okuyabilirsin.)"
+                        },
+                        {
+                            "paragraph": "Grev, lokavt, kargaşalık, halk hareketleri, kötü niyetli hareketler ve terör: Beklenmedik bir anda gerçekleşen grev, lokavt gibi olayların neden olduğu zararları karşılar."
+                        },
+                        {
+                            "paragraph": "Hareketli makineler için geniş kasko: Kendi kendine hareket edebilen ve bir operatör tarafından kullanılabilen makinelerin mekanik bozulma ve kırılma ile birlikte çarpma, çarpışma, raydan çıkma, devrilme, düşme, toprak çökmesi, kaya düşmesi gibi nedenlerle meydana gelen hasarları karşılar. (Genişletilmiş kasko ile ilgili detaylı bilgi almak için içeriğimizi okuyabilirsin.)"
+                        },
+                        {
+                            "paragraph": "Fiziki infilak: Fiziki infilak nedeniyle meydana gelen hasarları güvence altına alır. "
+                        },
+                        {
+                            "paragraph": "Makine temel ve kaideleri: Makine ve tesisin temel ve kaidelerinde meydana gelen hasarlar teminat altına alınır. "
+                        },
+                        {
+                            "paragraph": "Kırılma ve bozulma kaynaklı kâr kaybı: Poliçe, makinenin çalışamaz durumu gelmesi sonucu oluşan kâr kaybını teminat altına alır."
+                        }
+                    ]
+                },
+                {
+                    "title": "Makine Kırılması Sigortası Teminat Dışı Durumlar",
+                    "description": [
+                        {
+                            "paragraph": "Makine kırılması sigortası genel şartları göz önünde bulundurularak poliçe kapsamı dışında tutulan durumları şu şekilde sıralayabiliriz. "
+                        },
+                        {
+                            "paragraph": "Hırsızlık ve hırsızlığa teşebbüs"
+                        },
+                        {
+                            "paragraph": "Yangın ve yangın nedeniyle söndürme, kurtarma ve yıkma faaliyetlerine ilişkin zararlar"
+                        },
+                        {
+                            "paragraph": "Toprak çökmesi, sel ve su baskını doğal afetleri"
+                        },
+                        {
+                            "paragraph": "Makinelerin işletiminden dolayı meydana gelen aşınma, çürüme, kireçlenme, paslanma ve yıpranma durumlarından doğan zararlar"
+                        },
+                        {
+                            "paragraph": "İhlal, isyan, ayaklanma, harp olayları nedeniyle meydana gelen hasarlar"
+                        }
+                    ]
+                },
+                {
+                    "title": "Makine Kırılması Sigortası Sigorta Bedeli Nasıl Hesaplanır ?",
+                    "description": [
+                        {
+                            "paragraph": "Makine kırılması sigortasında makine ve tesisatın sigorta bedeli, yeni ikame bedeline eşit olacak şekilde belirlenir. Yani henüz kullanılmamış olan aynı cihazın veya fonksiyonları bakımından benzer olan muadil bir cihazın bedeline işaret edilir. Eğer hasar anında makinenin değeri, yeni ikame değerinden fazla olursa aradaki farkı senin üstlenmen gerekir."
+                        },
+                        {
+                            "paragraph": "Makine kırılması sigortası sigorta primi, kısmı bir hasar olduğunda makinenin performansında düşüş olmaması ve makineye yeni parça takılacağı için kullanılmamış (yeni) parça üzerinden hesap edilir. Ayrıca gümrük, vergi, harç ve nakliye masrafları da bedel tespitinde dikkate alınan unsurlardır. Sigortalı ürün tam ziyaya uğrar ve çalışamaz durumuna gelirse ilgili hasarlar çok pahalıya mal olabilir bu durumda hasar ödemesi, makinenin piyasa rayiç bedeli üzerinden hesaplanır. Sigorta bedelinin güncelliğini korumak ve eksik sigorta riskinin ortadan kaldırılabilmesi için poliçenin enflasyona endeksli ya da döviz bazında yapılması avantajlı olacaktır. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Makine Kırılması Sigortası Kaç Yaşa Kadar Olan Makineleri Kapsar ?",
+                    "description": [
+                        {
+                            "paragraph": "Makine kırılması sigortası ile hareketli iş makinelerinde 7 yaşına kadar sabit makinelerde ise 10 yaşına kadar olan makineler teminat altına alınır."
                         }
                     ]
                 }
@@ -1405,10 +2253,229 @@
             "linkHref": "elektronikcihaz",
             "genelbilgiler": [
                 {
-                    "title": "",
+                    "title": "Elektronik Cihaz Sigortası Genel Şartları Nedir ?",
                     "description": [
                         {
-                            "paragraph": ""
+                            "paragraph": "Elektronik cihaz sigortası kapsamı içinde olan cihazların başına gelebilecek tüm zararları, karşılayan bir tüm riskler sigortasıdır. Kapsamında yer alan cihazlarda çalışırken, temizleme, yer değiştirme gibi işlemler sırasında ani ve beklenmedik olaylardan kaynaklanan hasarların giderilmesi için gereken tamirat ve ikame masraflarını karşılar. Elektronik cihaz sigortası, laptop ve cep telefonlarındaki hasarları ise karşılamaz. Fakat bazı sigorta şirketleri cep telefonlarını olası risklere karşı koruyan cep telefonu sigortası yapmaktadır."
+                        },
+                        {
+                            "paragraph": "Elektronik cihaz sigortası; kayış, conta gibi normal zamanda değiştirilmesi gereken malzemelerin hasarını karşılamaz. Ayrıca garanti süresi içerisinde meydana gelebilecek ve üretici firmanın sorumluluğunda olan hasarlar da teminat kapsamında değildir. Elektronik cihazlarda alevli veya alevsiz tüm yangın zararlar teminat altındadır. Eğer ağır bir kusur veya kasıt yoksa kullanıcı sonucu oluşan hasarları ve dıştan bağlı regülatörlerin olması koşuluyla elektronik cihazlarda meydana gelen elektriksel hasarları da karşılayacaktır. "
+                        },
+                        {
+                            "paragraph": "Elektronik cihazı sigortası; Elektronik makine, Elektronik tesisat, Bilgi işlem sistemleri gibi elektronik cihazları kapsar.  "
+                        },
+                        {
+                            "paragraph": "Peki, elektronik cihaz sigortası genel şartlarında yer alan ani ve beklenmedik hasar ne anlama gelir? Hasarın umulmayan bir anda meydana gelmesidir. Örneğin, devamlı su baskını olan bir bodrum katında veya harabe halindeki bir binada bilgisayar sistemin hasar görebilir. Önlem almadığın takdirde bu olayın beklenmedik ve ani olduğunu söylemek mümkün değildir."
+                        },
+                        {
+                            "paragraph": "Hasarın dış etkenli olması ise sigortalı cihazın iç yapısındaki arızadan veya işleyişinden dolayı değil de dışarından gelen bir etki ile arızalanması veya zarar görmesidir. Örneğin bir sabah işe başlamak için bilgisayarını açtığını varsayalım, eğer cihaz herhangi bir dış etken olmadan çalışmazsa bu durum bilgisayarın iç aksamında bir hasar olduğu anlamına gelir. Fakat bu hasar sigorta kapsamında değil, garanti kapsamında karşılanır. Bilgisayar ait olduğu yerdeki trafoda meydana gelen bir hata nedeniyle aşırı voltaj yüklemesi sonucu arızalanmış olabilir. Bu durum da dış etkenli bir hasardır ve garanti kapsamına değil, sigorta kapsamına girer. "
+                        },
+                        {
+                            "paragraph": "Elektronik cihaz sigortası kapsamı hakkında daha detaylı bilgi almak için Elektronik Cihaz Sigortası Genel Şartlarını okuyabilirsin. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Elektronik Cihaz Sigortası Teminatları Nelerdir ? ",
+                    "description": [
+                        {
+                            "paragraph": "Elektronik cihaz sigortası ile verilen teminatlar genelde 12 ayla sınırlıdır ve sigorta bedeli elektronik cihazların yeni bedelidir. 10 yaşına kadar olan cihazları teminat altına alabilirsin. Elektronik cihaz sigortası teminatları şu şekilde sıralanabilir: "
+                        },
+                        {
+                            "paragraph": "Hırsızlık ve hırsızlığa teşebbüs"
+                        },
+                        {
+                            "paragraph": "Hatalı dizayn ve malzeme"
+                        },
+                        {
+                            "paragraph": "Yüksek voltaj, endüksiyon akımının etkiler ve kısa devre"
+                        },
+                        {
+                            "paragraph": "Yangın, yıldırım gibi olaylar ve bunların söndürme, kurtarma ve yıkma işlemleri"
+                        },
+                        {
+                            "paragraph": "Duman, is, kararma ve kavrulma"
+                        },
+                        {
+                            "paragraph": "Deprem dışında su baskını, toprak çökmesi, sel fırtına gibi doğal afetler"
+                        },
+                        {
+                            "paragraph": "Rutubet ve su etkisi ve bunların neden olduğu korozyon hasarları"
+                        },
+                        {
+                            "paragraph": "Elektronik cihaz kullanıcılarını tehdit eden risklerden biri de siber güvenlik tehdidir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Elektronik Cihaz Sigortası Ek Teminatları Nelerdir?",
+                    "description": [
+                        {
+                            "paragraph": "Elektronik cihaz sigortasında teminat altına alınan riskleri, ek prim ile genişletebilir ve poliçene ekletebilirsin. Aşağıda maddeler halinde sıralanan riskleri teminat altına alabilirsin."
+                        },
+                        {
+                            "paragraph": "Deprem"
+                        },
+                        {
+                            "paragraph": "Hırsızlık"
+                        },
+                        {
+                            "paragraph": "Seyyar ve taşınabilir cihazın riziko adresi dışında kullanılması"
+                        },
+                        {
+                            "paragraph": "Nakliye ve fazla mesai ücretleri"
+                        },
+                        {
+                            "paragraph": "Terör, kötü niyetli hareket, grev, lokavt, halk hareketleri, kargaşalık "
+                        },
+                        {
+                            "paragraph": "Manyetik disk, bant ve düz metin formatı, bant gibi harici bilgi sistemlerinin fiziki hasarları sonucu oluşan ziya ve hasarlar"
+                        },
+                        {
+                            "paragraph": "Tüp ve valflerde meydana gelecek hasarlar"
+                        },
+                        {
+                            "paragraph": "Alternatif bir cihazın kullanılması sonucu ortaya çıkan iş ve çalışma masrafları"
+                        },
+                        {
+                            "paragraph": "Veri kaybı"
+                        }
+                    ]
+                },
+                {
+                    "title": "Elektronik Cihaz Sigortası Hangi Cihazları Kapsar? ",
+                    "description": [
+                        {
+                            "paragraph": "Ticari amaçlarla kullandığın bilgisayar, bilgi işlem sistemleri, grafik ve basın yayın endüstri ekipmanları, ofis ekipmanları, alarm, otomasyon gibi tüm elektronik cihazları sigortalatabilirsin. Bu cihazların en temel özellikleri, genellikle yarı iletken teknoloji kullanılması, kural olarak mekanik işlem yapılmaması, tipik görevlerinin bilgi alımı ya da iletimi olması ve test, ölçüm ve kontrol işlemleri için kullanılmasıdır. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Elektronik cihaz sigortası kapsamına alınan ve ticari amaçla kullanılan tüm teknolojik cihazları şu şekilde sıralayabiliriz.",
+                    "description": [
+                        {
+                            "paragraph": "Bilgisayar, bilgi işlem cihazları "
+                        },
+                        {
+                            "paragraph": "Ofis ekipmanları (telefaks, fotokopi, telefon sistem)"
+                        },
+                        {
+                            "paragraph": "İletişim sistemleri (TV ekipmanları, radyo ve telekomikasyon cihazları)"
+                        },
+                        {
+                            "paragraph": "Tıbbi cihazlar (tomografi, röntgen vb.)"
+                        },
+                        {
+                            "paragraph": "Alarm, otomasyon, test ve ölçüm ekipmanları"
+                        },
+                        {
+                            "paragraph": "Grafik ve basım yayın endüstrisi ekipmanları "
+                        },
+                        {
+                            "paragraph": "Elektronik cihazlardan biri de drone'lardır. Drone sigortası ise drone sahiplerini korumak amacıyla oluşturulmuş bir sigorta türüdür. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Hangi Durumlar Elektronik Cihaz Sigortası Kapsamı Dışında Yer Alır ?",
+                    "description": [
+                        {
+                            "paragraph": "Elektronik Cihaz Sigortası Genel Şartları 3. maddesinde belirtildiği üzere aşağıdaki haller sigorta teminatı dışında yer alır. "
+                        },
+                        {
+                            "paragraph": "Harp olayları, düşman hareketleri, isyan, ayaklanma, askeri hareketler sonucu meydana gelen hasarlar "
+                        },
+                        {
+                            "paragraph": "Nükleer yakıtlar ve bunların yanması sonucu oluşan nükleer artıklar nedeniyle oluşan hasarlar"
+                        },
+                        {
+                            "paragraph": "Aşınma, yıpranma, çürüme, paylanma, erozyon, korozyon gibi şartlar nedeniyle ortaya çıkan hasarlar"
+                        },
+                        {
+                            "paragraph": "Cihazın sigortalıyken hasarlanması ve bu hasar giderilmeden kullanılması sonucu oluşan hasar"
+                        },
+                        {
+                            "paragraph": "Belirli bir süre kullanıldıktan sonra değiştirilmesi ve yenilenmesi gereken parçalarda kullanım sonucu oluşan ziya ve hasarlar"
+                        },
+                        {
+                            "paragraph": "Sıyrık, çizik ve estetik gibi kusurlar"
+                        },
+                        {
+                            "paragraph": "Kasıtlı ve ağır kusurlu davranışlar sonucu meydana gelen hasarlar"
+                        }
+                    ]
+                },
+                {
+                    "title": "Elektronik Cihaz Sigortası İkame Bedeli Nasıl Hesaplanır ? ",
+                    "description": [
+                        {
+                            "paragraph": "Elektronik cihazın bedelinin tespit edilebilmesi için kalemlerin yeni ikame bedeline eşit olması gerekir. Eğer yeni ikame bedeli sigorta bedelinden fazla olursa, hasarın bu farka tekabül eden kısmını sigortalı tazmin eder. Sigorta bedelinin ikame bedelinden yüksek veya az olduğu hasardan önce tespit edilirse bunun öğrenildiği tarihten itibaren 15 gün içerisinde fazla veya eksik ödenmiş olan prim farkı iade ya da tahsil edilir. Yeni ikame bedeli uygulaması sigorta konusu olan cihazın hasar sonucu zarar görmesini önlemek ve eğer bir hasar yoksa da çalışmasına devam edebilmesi için tamir edilmesini sağlamak ile mümkün olur. Aksi takdirde cihazın çalışması etkilenir ve performansı azalır"
+                        }
+                    ]
+                },
+                {
+                    "title": "Elektronik cihaz sigortası ikame bedeli hesaplamasında dikkate alınan unsurlar:",
+                    "description": [
+                        {
+                            "paragraph": "Her tür nakliye masrafları"
+                        },
+                        {
+                            "paragraph": "Montaj masrafları"
+                        },
+                        {
+                            "paragraph": "Vergi, gümrük, resim ve harçlar"
+                        },
+                        {
+                            "paragraph": "Yeni cihazın alış bedeli"
+                        },
+                        {
+                            "paragraph": "Montaj sigortası hakkında bilgi edinmek için yazımızı okuyabilirsin. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Elektronik Cihaz Sigortasının Fiyatlarını Etkileyen Unsurlar Nelerdir? ",
+                    "description": [
+                        {
+                            "paragraph": "Elektronik cihaz sigortası fiyatını etkileyen unsurlar şu şekilde sıralanabilir: "
+                        },
+                        {
+                            "paragraph": "Cihazın modeli ve markası"
+                        },
+                        {
+                            "paragraph": "Kullanım Ömrü ve yapım yılı "
+                        },
+                        {
+                            "paragraph": "Menşei"
+                        },
+                        {
+                            "paragraph": "Hasar geçmişi"
+                        },
+                        {
+                            "paragraph": "Muafiyet"
+                        },
+                        {
+                            "paragraph": "Cihazın kullanıldığı ve maruz kaldığı güç miktarı"
+                        },
+                        {
+                            "paragraph": "Riziko adresi"
+                        },
+                        {
+                            "paragraph": "Periyodik bakımı ve bu bakımın yapılıp yapılmaması"
+                        },
+                        {
+                            "paragraph": "İşletme disiplini ve kullanıcı personelin iş tecrübesi"
+                        },
+                        {
+                            "paragraph": "Koruma önlemleri ve bunların alınıp alınmaması"
+                        }
+                    ]
+                },
+                {
+                    "title": "Hasar ödemesi Nasıl Yapılır ? ",
+                    "description": [
+                        {
+                            "paragraph": "Kısmi hasarlarda parçanın tamiri için gerekli masraflar ve yeni ikame bedeli ödenirken tam ziya hasarlarında ise sigorta şirketi ödemeyi cihazının yıpranma ve aşınma paylarının düşülmesi sonucu bulunan rayiç değer olarak yapar."
                         }
                     ]
                 }
@@ -1426,10 +2493,51 @@
             "linkHref": "insaatallrisk",
             "genelbilgiler": [
                 {
-                    "title": "",
+                    "title": "İnşaat All Risk Sigortası Nedir ?",
                     "description": [
                         {
-                            "paragraph": ""
+                            "paragraph": "Yeni inşa edilen yapıların inşaat döneminde karşı karşıya kalabilecekleri olaylar sonucunda uğrayacakları zararların finansmanını sağlayan sigortadır. İnşaat sahasında gerçekleşen ve poliçe üzerinde istisna edilmeyen ani ve beklenmedik tüm hasarları karşılayan bir üründür."
+                        }
+                    ]
+                },
+                {
+                    "title": "Zorunlu Teminatlar",
+                    "description": [
+                        {
+                            "paragraph": "Her türlü doğal afetler (yıldırım, seylap, toprak çökmesi, kaya düşmesi, deprem, don, fırtına, su basması, sel)"
+                        },
+                        {
+                            "paragraph": "Yangın"
+                        },
+                        {
+                            "paragraph": "Hırsızlık"
+                        },
+                        {
+                            "paragraph": "Sabotaj, hava taşıtları çarpması"
+                        },
+                        {
+                            "paragraph": "Kötü işçilik, ehliyetsizlik, ihmal, insan hataları, hırsızlık"
+                        },
+                        {
+                            "paragraph": "İsteğe Bağlı Teminatlar"
+                        },
+                        {
+                            "paragraph": "İnşaatın yapılması için kullanılan makine alet ve teçhizat ile geçici inşaat barakaları ve yardımcı yapılar,"
+                        },
+                        {
+                            "paragraph": "Üçüncü şahısların maruz kalacağı zararlar dolayısıyla sigortalıya düşecek hukuki sorumluluklar,"
+                        },
+                        {
+                            "paragraph": "Hasar neticesi enkazın kaldırılması masrafları ,"
+                        },
+                        {
+                            "paragraph": "Teminat kapsamına giren herhangi bir hasar sonucu ziya ve hasarların gerektirdiği uçak dışında kalan seri vasıtalarla yapılan nakliye ve fazla mesai ücret zamları "
+                        },
+                        {
+                            "paragraph": "Grev Lokavt Halk Hareketleri ve Terörizm ,"
+                        },
+                        {
+                            "paragraph": "İnşaatın bitim veya geçici kabulünden sonra başlayan bakım devresi"
                         }
                     ]
                 }
@@ -1447,10 +2555,188 @@
             "linkHref": "montaj",
             "genelbilgiler": [
                 {
-                    "title": "",
+                    "title": "Makine Montaj Sigortası Nedir?",
                     "description": [
                         {
-                            "paragraph": ""
+                            "paragraph": "Montaj sigortası; montaj faaliyetlerinin başlangıcından bitimine kadar geçen sürede ani ve beklenmedik bir olay sonucu meydana gelebilecek risklere karşı güvence sağlayan bir mühendislik sigortası türüdür. Yani şantiye sahasındaki hazırlık malzemelerinin, fabrika, sanayi gibi yapıların, elektrikli parçalarının, ilgili montaj ekipmanlarının ve iş makinelerinin yerleştirilmesi ve monte edilmesi sırasında oluşabilecek hasarları kapsar. Teknik nedenle doğan hasardan insan kaynaklı maddi kayıplara ve deprem, sel, toprak kayması, yıldırım, yangım infilak gibi doğal afet risklerine kadar güvence sağlar. "
+                        },
+                        {
+                            "paragraph": "Eğer yapılacak olan proje, montaj ve inşaat işlerinin her ikisini de kapsıyorsa yaygın olarak “inşaat montaj sigortası” terimi kullanılmaktadır."
+                        }
+                    ]
+                },
+                {
+                    "title": "Montaj Sigortası Kimleri Kapsar? ",
+                    "description": [
+                        {
+                            "paragraph": "İşveren (Poliçenin sahibi): Asıl menfaat sahibi olan işveren, şantiye alanını sağlayan, planlama aşamasında görev alan ve bazı projelerde de malzeme temininden sorumlu taraftır. "
+                        },
+                        {
+                            "paragraph": "Ana müteahhit: İşveren tarafından görevlendirilen, bütün projenin inşaat-montaj işlerinden sorumlu taraftır ve işlerin bir kısmına taşeronlara devredebilir"
+                        },
+                        {
+                            "paragraph": "Tali Müteahhit (Taşeronlar): İnşaat ve montaj işlerinin tamamında (anahtar teslimine kadar) veya bir kısmında görevlendirilen taraftır. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Montaj Sigortası Kapsamındaki Montaj İşleri",
+                    "description": [
+                        {
+                            "paragraph": "Makine montaj sigortası ile işletmeye alınan tüm mekanik ve elektronik makine ve ekipmanlarla yapılacak montaj işleri sigortalanabilir. Uygulama alanı oldukça geniş olan montaj sigortası ile havalandırma tesisatı, boru, bina için elektrik ve boru iletim hatları ile montaj faaliyetleri nedeniyle doğan inşaat işleri de güvence altına alınabilir. "
+                        },
+                        {
+                            "paragraph": "İnşaat sigortası hakkında detaylı bilgi almak için yazımızı okuyabilirsin. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Montaj Sigortası Teminatları",
+                    "description": [
+                        {
+                            "paragraph": "Montaj sigortası genel şartları doğrultusunda belirlenen teminatları şu şekilde sıralayabiliriz. "
+                        },
+                        {
+                            "paragraph": "Deprem, sel, su baskını, yağmur, kar, fırtına, çığ, sabotaj"
+                        },
+                        {
+                            "paragraph": "Yangın, yıldırım, infilak"
+                        },
+                        {
+                            "paragraph": "Toprak kayması ve toprak çözünmesi"
+                        },
+                        {
+                            "paragraph": "Şantiye sahasında taşıma sırasında meydana gelen kazalar"
+                        },
+                        {
+                            "paragraph": "Uçak çarpması ve uçaktan düşen parçalar"
+                        },
+                        {
+                            "paragraph": "İşletme kazaları"
+                        },
+                        {
+                            "paragraph": "Dikkatsizlik ve ihmal"
+                        },
+                        {
+                            "paragraph": "Elektriksel hasarlar (şerare, kısa devre vb.)"
+                        },
+                        {
+                            "paragraph": "Aksi belirtilmediği süre dört haftalık test deneme devresi (ikinci el makineler hariç)"
+                        }
+                    ]
+                },
+                {
+                    "title": "Montaj Sigortası Ek Teminatları",
+                    "description": [
+                        {
+                            "paragraph": "Üçüncü şahıs mali sorumluluk: Üçüncü şahıs mali sorumluluk ek teminatı, inşaat ve montaj işlerinde üçüncü şahısların yaşayabileceği can ve mal kayıplarına karşı teminat sağlar. Örneğin, şantiyeden geçmekte olan bir kişi, şantiye alanına izinsiz giren bir çocuk ya da inşaatının yakınına park etmiş bir araç üçüncü kişi olarak kabul edilir. Poliçe, montaj işlerinde çalışan ikinci şahısları ise karşılamaz. Çalışanlar, yalnızca işveren mali sorumluluk sigortası ile teminat kapsamına alınabilir. "
+                        },
+                        {
+                            "paragraph": "Enkaz Kaldırma: İnşaat-montaj işlerinde kalıp çökmesi, sel ve su baskını sonucu oluşan enkaz, ek masraf doğmasına neden olabilir. İşte enkaz kaldırma ek teminatı bu noktada devreye girerek ilgili masrafların karşılanmasını sağlar. "
+                        },
+                        {
+                            "paragraph": "Geçici Şantiye, Tesis ve Ekipman: Sigorta; inşaat ve montaj sırasında doğrudan ekipmanın (iskele, kalıp gibi) ya da doğrudan ilgili olmayan yapıların (işçi barakası, atölye, yemekhane gibi) uğrayacağı zararları temin eder. Aşınma ve yıpranma durumu da göz önünde bulundurulur. (Makine Kırılması Sigortası yalnızca makine çalışması ve mekanik hasarları karşılarken iş makineleri ek teminat sadece fiziki hasarları kapsadığı için bu ek teminatı Makine Kırılması Sigortası ile karıştırmamak gerekir.)"
+                        },
+                        {
+                            "paragraph": "İş makineleri: Montaj sahasında sabit ya da hareketli iş makinelerinin başına gelebilecek sigorta kapsamına giren fiziksel hasarları (sel, hırsızlık, yangın) karşılar. Ayrıca küçük el aletleri, dozer, kule, silindir, vinç, kablo, halat, kepçe ve asfaltlama makineleri de poliçeye dahil edilir. "
+                        },
+                        {
+                            "paragraph": "Grev, lokavt, halk hareketleri, kargaşalık ve terör: Montaj işleri yapılırken toplu sözleşme, grev, lokavt, halk hareketleri veya terör sebepli olaylar sonucunda meydana gelen hasarlar poliçede belirtilen limitler dahilinde karşılanır. "
+                        },
+                        {
+                            "paragraph": "Ekspres, Nakliyat, Fazla Mesai, Tatil Ücretleri ve Zamlar: Montaj işlerinde kullanılan ürünlere ilişkin hasarların bir an önce giderilmesi ve hasar nedeniyle oluşan gecikmenin azaltılması için yapılan işlemler sonucu ortaya çıkan ek masraflar (hızlı nakliye, fazla mesai) poliçe kapsamında karşılanır."
+                        },
+                        {
+                            "paragraph": "Uzatılmış bakım devresi: Eğer sözleşmede belirtilmiş ise müteahhit işlerinin bir kısmını mühendis kontrolünde kabul ettirebilir. Ancak bunun için işlerinin tamamına yakının bitirilmiş olması gerekir. Ayrıca projenin işletimine alınmasını etkilemeyecek bir nitelikteki işlerin kalmış olması da şarttır.  Proje genel olarak teslim edilmiş kabul edilse bile hala müteahhidin sorumlu olduğu işler vardır ve bu işlerin yapılması sırasında da bazı hasarlar meydana gelebilir. Uzatılmış bakım devresi ek teminatı, geçici kabul ve kesin kabul süresi içinde müteahhidin sorumluluğunda olan hasarları karşılanır. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Montaj Sigortası Teminat Dışı Durumlar",
+                    "description": [
+                        {
+                            "paragraph": "Makine montaj sigortası genel şartları doğrultusunda poliçe kapsamı dışında kalan teminatlar:"
+                        },
+                        {
+                            "paragraph": "İmalatçının yükümlülüğünde olan hasarlar"
+                        },
+                        {
+                            "paragraph": "Aşınma, çürüme, yıpranma"
+                        },
+                        {
+                            "paragraph": "Makine Kırılması Sigortası kapsamına giren hasarlar (iş makineleri vb.)"
+                        },
+                        {
+                            "paragraph": "Montaj sigortası genel şartlarında belirtilen diğer istisnalar"
+                        }
+                    ]
+                },
+                {
+                    "title": "Montaj Sigortası Sigorta Bedeli Nasıl Tespit Edilir ? ",
+                    "description": [
+                        {
+                            "paragraph": "Montaj sigortasında sigorta bedeli; işin bittiği tarihteki proje bedeli üzerinden belirlenir. Ayrıca montajı yapılacak olan üniteler, nakliye, navlun, sigorta masrafları varsa resim ve harçlar, gümrük vergileri, işçilik, montaj giderleri ve ihale bedeli de göz önünde bulundurulur. "
+                        },
+                        {
+                            "paragraph": "Uzun süreli poliçelerde sigorta bedeli zamanla yetersiz kalabilir veya enflasyona yenik düşebilir. Bundan dolayı büyük inşaat projelerinde eksik sigorta riskine karşı döviz bazında sigorta yaptırmak yararlı olacaktır."
+                        }
+                    ]
+                },
+                {
+                    "title": "Montaj Sigortası Süresi Ne Kadar? ",
+                    "description": [
+                        {
+                            "paragraph": "Montaj sigortası, poliçede aksi belirtilmediği sürece dört haftalık (deneme süreci dahil) poliçede ekli eşyaların montaj sahasına indiği andan poliçe bitiş tarihine kadar geçerli olur. Bazı durumlarda müteahhit firma, taahhüt edilen işlerin tamamını teslim edemeyebilir. Eğer böyle bir durum yaşanırsa “geçici kabul” yapılır ve bu sürede müteahhit kalan işlerini tamamladıktan sonra “kesin kabul”e gidilir. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Montaj Sigortası Yenilenir mi? ",
+                    "description": [
+                        {
+                            "paragraph": "Montaj sigortasında yenileme olması mümkün değildir çünkü inşaat tamamlandığında poliçenin vadesi sonlanmış olur fakat ek belge ile poliçe vadesinin uzatılması söz konusu olabilir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Montaj Sigortasında Fesih Hakkı Var mı? ",
+                    "description": [
+                        {
+                            "paragraph": "Montaj sigortası genel şartlarında fesih hakkı ile ilgili detaylar belirtirmiştir. Sigorta ettiren, sigortacı ve sigortalı söz konusu Montaj Tüm Riskler Sigortası genel şartlar doğrultusunda fesih hakkını kullanabilir. Ancak fesih hakkının geçerli olması için poliçede sigorta ettirenin beyan yükümlülüğü, sigorta süresi içinde ihbar sorumluluğu ve mülkiyet değişikliği gibi farklı şartlara uyulması gerekir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Montaj Sigortası Hesaplama Nasıl Yapılır? ",
+                    "description": [
+                        {
+                            "paragraph": "İşin net tanımının yapılması, teknik şartnamenin ve yerleşim planının alınması, fiyatların belirlenmesinde işleri kolaylaştırır. "
+                        },
+                        {
+                            "paragraph": "İşin hazırlık kalemine göre bedelinin dağılımı da fiyatlandırmayı etkiler. "
+                        },
+                        {
+                            "paragraph": "Tamamlanma süresi, bakım devresi ve ne kadar süreyle talep edildiği de fiyatlandırmayı belirleyen unsurlardır"
+                        },
+                        {
+                            "paragraph": "Doğal afetlerin sigorta kapsamında olduğu düşünülürse riziko adresinin detaylı bir şekilde ele alınması gerekir. “İnşaat sahası sel ve su baskınına uzak mı, mevcut bölgede daha önce deprem olmuş mu, kış aylarında don olayı yaşanıyor mu? Zemin türü ve inşaatın yapım özellikleri neler?” gibi sorulara detaylıca yanıt vermek fiyat belirlenmesi açısından önemlidir. "
+                        },
+                        {
+                            "paragraph": "Şantiye sahasında bekçi olup olmaması ve aydınlatmanın durumu gibi etkenler de fiyatlandırmayı etkiler. "
+                        },
+                        {
+                            "paragraph": "Üçüncü şahıs mali sorumluluk ek teminatı isteniyorsa şantiyeye en yakın yapılaşmanın ne olduğu ve mesafesi de büyük önem taşır. "
+                        },
+                        {
+                            "paragraph": "Eğer bir inşaat işi söz konusuyla kazının yüksekliği; montaj işinden bahsediliyorsa azami bedelli kullanılan makineleri ve en ağır makinenin kaç kilo olduğu da bilinmelidir. "
+                        }
+                    ]
+                },
+                {
+                    "title": "Montaj Sigortasında Prim İadesi Yapılır mı? ",
+                    "description": [
+                        {
+                            "paragraph": "Montaj sigortası yangın ya kasko sigortaları gibi yıllık olarak yenilenmeleri gerekmez bu nedenle iş tamamlandığında poliçe de sona erer. Projenin erken bitirilmesi durumunda prim iadesi yapılmaz."
                         }
                     ]
                 }
@@ -1468,10 +2754,100 @@
             "linkHref": "kumes",
             "genelbilgiler": [
                 {
-                    "title": "",
+                    "title": "SİGORTA KAPSAMI VE SİGORTALANAN TEHLİKELER",
+                    "description": [
+                        {
+                            "paragraph": "Tarım ve Orman Bakanlığı kayıt sistemlerine kayıtlı, bio güvenlik ve hijyen tedbirleri alınmış, kapalı tesislerde yetiştirilen kümes hayvanları ile açık ve yarı açık sistemde yetiştirilen kümes hayvanları için;"
+                        }
+                    ]
+                },
+                {
+                    "title": "Geniş Kapsamlı Tarifede:",
+                    "description": [
+                        {
+                            "paragraph": "5996 sayılı Veteriner Hizmetleri, Bitki Sağlığı, Gıda ve Yem Kanununa göre, ihbarı mecburi bulaşıcı hastalıklar hariç olmak üzere her türlü kanatlı hayvan hastalıkları (Açık ve yarı açık sistemde yetiştirilen kümes hayvanları sadece Dar Kapsamlı Tarife kapsamında sigortalanabilmekte olup, Dar Kapsamlı Tarifede, tüm hastalıklar teminat dışıdır.),"
+                        },
+                        {
+                            "paragraph": "Her türlü kaza ve zehirlenmeler,"
+                        },
+                        {
+                            "paragraph": "Jeneratör, fan ve benzeri ekipmanlarda meydana gelen arızalar,"
+                        },
+                        {
+                            "paragraph": "Her türlü doğal afetler,"
+                        },
+                        {
+                            "paragraph": "Yangın veya infilâk, sebebiyle meydana gelen ölüm, itlaf ve mecburi kesimler sonucu sigortalının doğrudan uğradığı zararlar, Genel Şartlar ile Tarife ve Talimatlar çerçevesinde sigorta kapsamındadır."
+                        },
+                        {
+                            "paragraph": "Ayrıca, isteğe bağlı olarak yapılacak değerlendirme veya risk inceleme sonucuna göre ek prim alınması koşuluyla;"
+                        },
+                        {
+                            "paragraph": "Salmonella test sonuçları menfi olan işletmelerde pullorum ve kanatlı tifosu (tavuk tifosu) hastalıkları nedeniyle meydana gelen ölümler ve mecburi kesimler sonucu sigortalının doğrudan uğrayacağı maddi zararlar, 3713 sayılı Terörle Mücadele Kanunu’nda belirtilen terör eylemleri ve bu eylemlerden doğan sabotaj ile bunları önlemek ve etkilerini azaltmak amacıyla, yetkili organlar tarafından yapılan müdahaleler sonucunda, meydana gelen ölümler, mecburi kesimler sonucu sigortalının doğrudan uğrayacağı maddi zararlar"
+                        },
+                        {
+                            "paragraph": "Grev, lokavt, kargaşa veya halk hareketleri sırasında meydana gelen olaylar ve bu olayları önlemek ve etkilerini azaltmak üzere yetkili organlar tarafından yapılan müdahaleler sonucu ölümler, mecburi kesimler sonucu sigortalının doğrudan uğrayacağı maddi zararlar teminat altına alınabilir"
+                        }
+                    ]
+                },
+                {
+                    "title": "Dar Kapsamlı Tarifede:",
+                    "description": [
+                        {
+                            "paragraph": "Her türlü kaza ve zehirlenmeler,"
+                        },
+                        {
+                            "paragraph": "Hortum, fırtına, deprem, heyelan ile sel ve su baskını,"
+                        },
+                        {
+                            "paragraph": "Yangın veya infilâk,"
+                        },
+                        {
+                            "paragraph": "Jeneratör, fan ve benzeri ekipmanlarda meydana gelen arızalar nedenleriyle meydana gelen ölüm, itlaf ve mecburi kesimler sonucu sigortalının doğrudan doğruya uğradığı zararlar teminat altına alınır."
+                        },
+                        {
+                            "paragraph": "Ayrıca, isteğe bağlı olarak yapılacak değerlendirme veya risk inceleme sonucuna göre ek prim alınması koşuluyla;"
+                        },
+                        {
+                            "paragraph": "3713 sayılı Terörle Mücadele Kanunu’nda belirtilen terör eylemleri ve bu eylemlerden doğan sabotaj ile bunları önlemek ve etkilerini azaltmak amacıyla, yetkili organlar tarafından yapılan müdahaleler sonucunda, meydana gelen ölümler, mecburi kesimler sonucu sigortalının doğrudan uğrayacağı maddi zararlar."
+                        },
+                        {
+                            "paragraph": "Grev, lokavt, kargaşa veya halk hareketleri sırasında meydana gelen olaylar ve bu olayları önlemek ve etkilerini azaltmak üzere yetkili organlar tarafından yapılan müdahaleler sonucu ölümler, mecburi kesimler sonucu sigortalının doğrudan uğrayacağı maddi zararlar teminat altına alınabilir."
+                        }
+                    ]
+                },
+                {
+                    "title": "POLİÇELEŞME SÜRECİ",
+                    "description": [
+                        {
+                            "paragraph": "Yetiştirici; Tarım ve Orman Bakanlığı kayıt sistemine kayıtlı, bio güvenlik ve hijyen tedbirleri alınmış, kapalı tesislerde yetiştirilen kümes hayvanları ile açık ve yarı açık sistemde yetiştirilen kümes hayvanlarını sigortalatmak için Tarım Sigortaları Havuzuna (TARSİM'e) üye sigorta şirketine veya acentesine başvurur. Tarım Sigortaları Havuzu (TARSİM), sigorta ettirenin/sigortalının beyanı ile düzenlenen önbilgi formunun sisteme kayıt edilmesiyle risk inceleme/değerlendirme organizasyonunu başlatır. Tarım Sigortaları Havuzu (TARSİM) tarafından değerlendirme veya risk inceleme işleminin sonucuna göre Genel Şartlar ile Tarife ve Talimatlar doğrultusunda acente sistemde poliçeyi tanzim eder. Tanzim edilen poliçe için Kişisel Verilerin Korunması Kanunu (KVKK) kapsamındaki Aydınlatma Metni, Poliçe Bilgilendirme Formu, Poliçe çıktıları TARSİM tarafından sigortalı üreticilerimize tercihine göre SMS veya e-posta olarak gönderilir. Sigortalı üreticimiz poliçesini çıktı olarak almayı tercih ederse, acente öncelikle; Kişisel Verilerin Korunması Kanunu (KVKK) kapsamındaki Aydınlatma Metni, Poliçe Bilgilendirme Formunu iki nüsha olarak sistemden alır ve birer nüshasını sigortalıya imza karşılığı verir. Sonrasında tanzim edilen poliçeden iki nüsha düzenleyerek bir nüshasını sigorta ettiren/sigortalıya verir"
+                        }
+                    ]
+                },
+                {
+                    "title": "Köy Bazlı Sigorta",
                     "description": [
                         {
                             "paragraph": ""
+                        }
+                    ]
+                },
+                {
+                    "title": "PRİMLERİN ÖDENMESİ",
+                    "description": [
+                        {
+                            "paragraph": "Kümes Hayvanları Hayat Sigortasında, poliçede yazılı primin %50'si Devlet tarafından karşılanır. Sigortalı tarafından ödenecek olan primin %25'i peşin alınır, kalan prim tutarı da en fazla 5 taksitle tahsil edilir. Sadece Geniş Kapsamlı 45 günlük Broiler sigortalarında primin tamamı peşin tahsil edilir."
+                        }
+                    ]
+                },
+                {
+                    "title": "HASAR İHBAR / EKSPERTİZ / ÖDEME SÜRECİ",
+                    "description": [
+                        {
+                            "paragraph": "Kümes Hayvanları Hayat Sigortasında, teminat kapsamında olan bir riskin gerçekleşmesi halinde; sigorta ettiren/sigortalı, rizikonun gerçekleştiğini öğrendiği tarihten itibaren en geç 24 saat içinde, doğrudan ya da acente aracılığı ile TARSİM ÇAĞRI MERKEZİNE (0850 250 82 77) hasar ihbarını yapar. Ayrıca; “TARSİM MOBİL ve TARSİM WEB” uygulamaları ile sigortalı/sigorta ettiren tarafından zamandan ve mekandan bağımsız olarak hasar ihbarları doğrudan yapılabilmektedir."
+                        },
+                        {
+                            "paragraph": "Kümes Hayvanları Hayat Sigortasında; Tarım Sigortaları Havuzu (TARSİM) tarafından görevlendirilen Tarım Sigortaları Havuzu Veteriner Hekim eksper, hasar ihbarı yapılan hayvanları / kümesi en kısa süre içerisinde görüp, gerekli incelemesini yaparak 'Hasar Raporunu' düzenler. Hasar dosyası tamamlanarak kesinleşmiş tazminat miktarları en geç 30 gün içinde yine Tarım Sigortaları Havuzu (TARSİM) tarafından sigortalıya banka kanalıyla ödenir."
                         }
                     ]
                 }
@@ -1489,10 +2865,115 @@
             "linkHref": "hayvan",
             "genelbilgiler": [
                 {
-                    "title": "",
+                    "title": "SİGORTA KAPSAMI VE SİGORTALANAN TEHLİKELER",
+                    "description": [
+                        {
+                            "paragraph": "Tarım ve Orman Bakanlığı kayıt sistemlerine kayıtlı olan süt ve erkek besi sığırları ile mandalar, yapılacak değerlendirme veya risk analiz sonucunda sigortaya kabul edilir"
+                        }
+                    ]
+                },
+                {
+                    "title": "Geniş Kapsamlı Tarifelerde,",
+                    "description": [
+                        {
+                            "paragraph": "Her türlü hayvan hastalıkları ve gebelik, doğum veya cerrahi müdahale,"
+                        },
+                        {
+                            "paragraph": "996 sayılı Veteriner Hizmetleri, Bitki Sağlığı, Gıda ve Yem Kanunu’na göre ihbarı mecburi olan hastalıklardan; mavi dil, rift vadisi humması, bulaşıcı sığır plörapnömonisi (contagious bovine pleuropneumonia), enzootik sığır löykozu, geyiklerin epizootik hemorajik hastalığı (EHD), bulaşıcı stomatitis (Veziküler Stomatitis) hastalıkları,"
+                        },
+                        {
+                            "paragraph": "Her türlü kaza, vahşi hayvan saldırısı, yılan ve böcek sokması,"
+                        },
+                        {
+                            "paragraph": "Zehirli çayır otları ve yeme bağlı zehirlenmeler,"
+                        },
+                        {
+                            "paragraph": "Her türlü doğal afetler ve güneş çarpması,"
+                        },
+                        {
+                            "paragraph": "Yangın veya infilâk, sebebiyle meydana gelen ölümler, zorunlu kesimler, yavru atma ve yavru ölümü sonucu sigortalının doğrudan uğradığı maddi zararlar Tarife ve Talimatlar çerçevesinde sigorta kapsamındadır."
+                        },
+                        {
+                            "paragraph": "İsteğe bağlı olarak ve yapılacak risk inceleme, değerlendirme sonucuna göre ek prim alınması koşuluyla;"
+                        },
+                        {
+                            "paragraph": "a) Hastalıklardan arilik belgesine sahip ve bio güvenlik önlemlerini almış işletmelerde, işletmede yer alan sigortalanabilir nitelikteki tüm hayvanların sigortalanması koşuluyla; şap hastalığı nedeniyle meydana gelen ölümler, zorunlu kesimler, yavru atma ve yavru ölümü sonucu sigortalının doğrudan uğrayacağı maddi zararlar, (Aşılı ari bölge olan; Edirne, Tekirdağ, Kırklareli illeri ile İstanbul ve Çanakkale illerinin Avrupa yakasında kalan ilçelerinde şap hastalığı teminatı verilmez.),"
+                        },
+                        {
+                            "paragraph": "b) Poliçede belirlenen sigortalı yerde;  Kırma, delme, yıkma, devirme ve zorlamayla girilerek,  Araç, gereç veya bedeni çeviklik sayesinde tırmanma veya aşma suretiyle girilerek, Kaybolan, çalınan veya haksız yere elde edilen asıl anahtarla veya anahtar uydurarak veya başka aletler veya şifre yardımıyla kilit açma suretiyle girilerek, Sigortalı yerlere gizlice girip saklanarak veya kapanarak,  Öldürme, yaralama, zor ve şiddet kullanma veya tehditle yapılan hırsızlık veya hırsızlığa teşebbüs nedeniyle sigortalı hayvanlarda doğrudan meydana gelen zararlar ile sigortalı hayvanların poliçede belirtilen adresteki tesis ile sigortalı tarafından bildirilen ve Tarım Sigortaları Havuzu tarafından kabul edilen mera veya meralar arasındaki nakliyesi esnasında veya buralardayken yapılan hırsızlık veya hırsızlığa teşebbüs nedeniyle sigortalı hayvanlarda doğrudan meydana gelen zararlar"
+                        },
+                        {
+                            "paragraph": "(c) 3713 sayılı Terörle Mücadele Kanunu'nda belirtilen terör eylemleri ve bu eylemlerden doğan sabotaj ile bunları önlemek ve etkilerini azaltmak amacıyla, yetkili organlar tarafından yapılan müdahaleler sonucunda, meydana gelen ölümler, mecburi kesimler, yavru atma ve yavru ölümü sonucu sigortalının doğrudan uğrayacağı maddi zararlar,"
+                        },
+                        {
+                            "paragraph": "ç) Grev, lokavt, kargaşa veya halk hareketleri sırasında meydana gelen olaylar ve bu olayları önlemek ve etkilerini azaltmak üzere yetkili organlar tarafından yapılan müdahaleler sonucu ölümler, mecburi kesimler, yavru atma ve yavru ölümü sonucu sigortalının doğrudan uğrayacağı maddi zararlar teminat kapsamına alınabilmektedir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Dar Kapsamlı Tarifede:",
+                    "description": [
+                        {
+                            "paragraph": "Bu sigorta, işletmede yer alan sigortalanabilir nitelikteki tüm hayvanların sigortalanması koşulu ile sigortalı büyükbaş hayvanlarda,"
+                        },
+                        {
+                            "paragraph": "Her türlü kaza, vahşi hayvan saldırısı, yılan ve böcek sokması"
+                        },
+                        {
+                            "paragraph": "Zehirli çayır otları ve yeme bağlı zehirlenmeler,"
+                        },
+                        {
+                            "paragraph": "Her türlü doğal afetler ve güneş çarpması,"
+                        },
+                        {
+                            "paragraph": "Yangın veya infilâk sebebiyle meydana gelen ölümler ve mecburi kesimler sonucu sigortalının doğrudan uğradığı maddi zararı temin eder"
+                        },
+                        {
+                            "paragraph": "İsteğe bağlı olarak ve yapılacak değerlendirme veya risk inceleme sonucuna göre ek prim alınması ve sigortalanabilir nitelikteki tüm hayvanların sigortalanması koşuluyla;"
+                        },
+                        {
+                            "paragraph": "a) Poliçede belirlenen sigortalı yerde; Kırma, delme, yıkma, devirme ve zorlamayla girilerek,  Araç, gereç veya bedeni çeviklik sayesinde tırmanma veya aşma suretiyle girilerek, Kaybolan, çalınan veya haksız yere elde edilen asıl anahtarla veya anahtar uydurarak veya başka aletler veya şifre yardımıyla kilit açma suretiyle girilerek,  Sigortalı yerlere gizlice girip saklanarak veya kapanarak, Öldürme, yaralama, zor ve şiddet kullanma veya tehditle, yapılan hırsızlık veya hırsızlığa teşebbüs nedeniyle sigortalı hayvanlarda doğrudan meydana gelen zararlar ile sigortalı hayvanların poliçede belirtilen adresteki tesis ile sigortalı tarafından bildirilen ve Tarım Sigortaları Havuzu tarafından kabul edilen mera veya meralar arasındaki nakliyesi esnasında veya buralardayken yapılan hırsızlık veya hırsızlığa teşebbüs nedeniyle sigortalı hayvanlarda doğrudan meydana gelen zararlar,  "
+                        },
+                        {
+                            "paragraph": "b) 3713 sayılı Terörle Mücadele Kanunu'nda belirtilen terör eylemleri ve bu eylemlerden doğan sabotaj ile bunları önlemek ve etkilerini azaltmak amacıyla, yetkili organlar tarafından yapılan müdahaleler sonucunda, meydana gelen ölümler, mecburi kesimler, yavru atma ve yavru ölümü sonucu sigortalının doğrudan uğrayacağı maddi zararlar,"
+                        },
+                        {
+                            "paragraph": "c) Grev, lokavt, kargaşa veya halk hareketleri sırasında meydana gelen olaylar ve bu olayları önlemek ve etkilerini azaltmak üzere yetkili organlar tarafından yapılan müdahaleler sonucu ölümler, mecburi kesimler, yavru atma ve yavru ölümü sonucu sigortalının doğrudan uğrayacağı maddi zararlar teminat kapsamına alınabilmektedir."
+                        }
+                    ]
+                },
+                {
+                    "title": "POLİÇELEŞME SÜRECİ",
+                    "description": [
+                        {
+                            "paragraph": "Yetiştirici; Tarım ve Orman Bakanlığı kayıt sistemlerine kayıtlı hayvanlarını sigortalatmak için Tarım Sigortaları Havuzuna (TARSİM'e) üye sigorta Şirketine veya acentesine başvurur. Tarım Sigortaları Havuzu (TARSİM), sigorta ettirenin/sigortalının beyanı ile düzenlenen önbilgi formunun sisteme kayıt edilmesiyle risk inceleme/değerlendirme organizasyonunu başlatır. Tarım Sigortaları Havuzu (TARSİM) tarafından yaptırılan risk inceleme/değerlendirme işleminin sonucuna göre Genel Şartlar ile Tarife ve Talimatlar doğrultusunda acente sistemde poliçeyi tanzim eder. Tanzim edilen poliçe için Kişisel Verilerin Korunması Kanunu (KVKK) kapsamındaki Aydınlatma Metni, Poliçe Bilgilendirme Formu, Poliçe çıktıları TARSİM tarafından sigortalı üreticilerimize tercihine göre SMS veya e-posta olarak gönderilir. Sigortalı üreticimiz poliçesini çıktı olarak almayı tercih ederse, acente öncelikle; Kişisel Verilerin Korunması Kanunu (KVKK) kapsamındaki Aydınlatma Metni, Poliçe Bilgilendirme Formunu iki nüsha olarak sistemden alır ve birer nüshasını sigortalıya imza karşılığı verir. Sonrasında tanzim edilen poliçeden iki nüsha düzenleyerek bir nüshasını sigorta ettiren/sigortalıya verir."
+                        }
+                    ]
+                },
+                {
+                    "title": "Büyükbaş Hayvan Hayat sigortası",
                     "description": [
                         {
                             "paragraph": ""
+                        }
+                    ]
+                },
+                {
+                    "title": "PRİMLERİN ÖDENMESİ",
+                    "description": [
+                        {
+                            "paragraph": "Büyükbaş Hayvan Hayat Sigortasında, poliçede yazılı primin %50' si Devlet tarafından karşılanır. Sigortalı tarafından ödenecek olan primin %25' i peşin alınır, kalan prim tutarı da en fazla 5 taksitle tahsil edilir."
+                        }
+                    ]
+                },
+                {
+                    "title": "HASAR İHBAR / EKSPERTİZ / ÖDEME SÜRECİ",
+                    "description": [
+                        {
+                            "paragraph": "Büyükbaş Hayvan Hayat Sigortasında, teminat kapsamındaki herhangi bir riskin gerçekleşmesi halinde, sigorta ettiren/sigortalı tarafından en geç 24 saat içinde doğrudan ya da acente aracılığı ile TARSİM ÇAĞRI MERKEZİNE (0850 250 82 77) hasar ihbarı yapılır. Ayrıca; “TARSİM MOBİL ve TARSİM WEB” uygulamaları ile sigortalı/sigorta ettiren tarafından zamandan ve mekandan bağımsız olarak hasar ihbarları doğrudan yapılabilmektedir."
+                        },
+                        {
+                            "paragraph": "Büyükbaş Hayvan Hayat Sigortasında; Tarım Sigortaları Havuzu (TARSİM) tarafından görevlendirilen Tarım Sigortaları Havuzu Veteriner Hekim eksper hasar ihbarı yapılan hayvanı en kısa süre içerisinde görüp, gerekli incelemesini yaparak, Hasar Raporunu düzenler. Hasar dosyası tamamlanarak, kesinleşmiş olan tazminat miktarları, en geç 30 gün içinde yine Tarım Sigortaları Havuzu (TARSİM) tarafından sigortalıya banka kanalıyla ödenir."
                         }
                     ]
                 }
@@ -1510,10 +2991,102 @@
             "linkHref": "tarsim",
             "genelbilgiler": [
                 {
-                    "title": "",
+                    "title": "SİGORTA KAPSAMI VE SİGORTALANAN TEHLİKELER",
                     "description": [
                         {
                             "paragraph": ""
+                        }
+                    ]
+                },
+                {
+                    "title": "Tüm bitkisel ürünler için;",
+                    "description": [
+                        {
+                            "paragraph": "Dolu, fırtına, hortum, yangın, deprem, heyelan, taşıt çarpması, sel ve su baskınının ürünlerde neden olduğu miktar kaybı,"
+                        },
+                        {
+                            "paragraph": "Dolunun yaş meyve, yaş sebze ve kesme çiçeklerde neden olduğu kalite kaybı,"
+                        },
+                        {
+                            "paragraph": "Yaban domuzunun tarla ürünlerinde, sebzelerde, fidanlarda ve çilekte neden olduğu miktar kaybı,"
+                        },
+                        {
+                            "paragraph": "Kuşların, ayçiçeği (yağlık), ayçiçeği (çerezlik) ürünleri ile ayçiçeği (sertifikalı tohumluk) ürününün olgunlaşma ve hasat döneminde tabla üzerindeki tohumları yemesi suretiyle ortaya çıkan miktar kaybı,"
+                        },
+                        {
+                            "paragraph": " Yağmur riskinin, pamuk ve pamuk (sertifikalı tohumluk) ürününde kozaların açılmasından itibaren hasada kadar olan dönemde, açılmış kozalarda neden olduğu miktar kaybı"
+                        },
+                        {
+                            "paragraph": "Don riskinin, meyve ve bağ fidanlarında neden olduğu miktar kaybı zararı dolu paketi olarak teminat kapsamına alınmaktadır."
+                        },
+                        {
+                            "paragraph": "Bu sayılan risklere ilave ve ek prim ile isteğe bağlı olarak,"
+                        },
+                        {
+                            "paragraph": "Don riskinin yaş meyvelerde, yağgülünde ve enginarda neden olduğu miktar kaybı,"
+                        },
+                        {
+                            "paragraph": " Dolu ağı ve örtü ile destek (telli terbiye) sistemleri ve bu sistemlerin altında bulunan ürünlerde; dolu, dolu ağırlığı, kar ağırlığı, fırtına, hortum, yangın, deprem, heyelan, sel ve su baskını, taşıt çarpması risklerinin neden olduğu zararlar"
+                        },
+                        {
+                            "paragraph": "Yağmur riskinin; kiraz ve üzüm ürünlerinde olgunlaşma ve hasat dönemlerinde neden olduğu miktar kaybı ile taze tüketime yönelik olarak üretilen incirlerde olgunlaşma ve hasat dönemlerinde yol açtığı kalite kaybı, kurutmalık amaçlı üretilen incirlerde olgunlaşma ve buruklaşma dönemlerinden hasada kadar olan dönemde neden olduğu miktar ve kalite kaybı"
+                        },
+                        {
+                            "paragraph": "Dolu, fırtına, hortum, yangın, deprem, heyelan, taşıt çarpması, sel ve su baskını, yaban domuzu zararı risklerinin, arpa, buğday, çavdar, tritikale, yulaf ve kaplıca buğday ürünleri ile bu ürünlerin sertifikalı tohumluklarının sap kısmında neden olduğu miktar kaybı,"
+                        },
+                        {
+                            "paragraph": "Dolu, fırtına, hortum, yangın, deprem, heyelan, taşıt çarpması, sel ve su baskını risklerinin, salamuralık yaprak üretimi yapılan asmaların yapraklarında neden olduğu miktar kaybı,"
+                        },
+                        {
+                            "paragraph": "Sıcak havanın, altıntop, limon, mandalina, portakal ürünlerinde çiçeklenme, meyve tutumu ve küçük meyve dönemlerinde kuruma, dökülme; üzümlerde ise çiçeklenme ve tane bağlama dönemlerinde salkımlarda tane tutumunun gerçekleşmemesi ve tanede büyümenin durması, kuruması ve dökülmesi şeklinde neden olduğu miktar kaybı,"
+                        },
+                        {
+                            "paragraph": "Don riskinin, şekerpancarı, kabak (çerezlik), domates, biber, patlıcan, kavun, karpuz ürünlerinde fide ve yapraklanma döneminde yeniden ekim dikime neden olacak şekilde meydana getirdiği zararlar teminat kapsamına alınabilmektedir."
+                        },
+                        {
+                            "paragraph": "İsteğe bağlı ek teminatlar tek başına alınamaz."
+                        },
+                        {
+                            "paragraph": "Ayrıca, ekonomik olarak verime yatmış meyve ağaçları, çay ve asmaların kendileri ile fidanlarında, süs bitkisi fidanlarında; dolu, fırtına, hortum, yangın, deprem, heyelan, sel ve su baskını, taşıt çarpması ve kar ağırlığı riskleri ile fidanlarda yaban domuzu zararı riski ile meyve ve bağ fidanlarında don riskinin neden olduğu tam hasarlar () üründen bağımsız olarak sigorta ettirilebilir. Ekonomik olarak verime yatmış meyve ağaçları, çay ve asmaların kendilerinin sigortalanmasından önce, döneminin uygun olması koşulu ile öncelikle ürünün sigortalanması şartı aranır. Ürünün sigortalanma döneminin uygun olmaması halinde bu şart aranmaz."
+                        },
+                        {
+                            "paragraph": "() Tam hasar; teminat altındaki riskler nedeniyle meyve ağaçları, çay ve asmaların kendilerinde 3 yıllık verimin tamamen kaybına; meyve ağaçlarının, çayın, asmaların ve süs bitkilerinin fidanlarında ise fidan özelliklerini kaybetmelerine yol açan zararları ifade eder."
+                        }
+                    ]
+                },
+                {
+                    "title": "POLİÇELEŞME SÜRECİ",
+                    "description": [
+                        {
+                            "paragraph": "Çiftçi, sigorta işlemlerini gerçekleştirebilmesi için öncelikle o yıla ait arazi ve ürün bilgilerine dair ÇKS (Çiftçi Kayıt Sistemi) kayıtlarını güncellemiş olması gerekmektedir. ÇKS kayıtlarını güncellemiş olan çiftçi ürününü sigortalatmak için Tarım Sigortaları Havuzuna (TARSİM'e) üye sigorta şirketine veya acentesine başvurur. Sigorta şirketi veya acente Tarım Sigortaları Havuzunun (TARSİM’ in) sistemine girerek çiftçi bilgilerinin sorgulanmasını yapar. Genel Şartlar ile Tarife ve Talimatlar doğrultusunda acente sistemde poliçeyi tanzim eder. Tanzim edilen poliçe için Kişisel Verilerin Korunması Kanunu (KVKK) kapsamındaki Aydınlatma Metni, Poliçe Bilgilendirme Formu, Poliçe çıktıları TARSİM tarafından sigortalı üreticilerimize tercihine göre SMS veya e-posta olarak gönderilir. Sigortalı üreticimiz poliçesini çıktı olarak almayı tercih ederse, acente öncelikle; Kişisel Verilerin Korunması Kanunu (KVKK) kapsamındaki Aydınlatma Metni, Poliçe Bilgilendirme Formunu iki nüsha olarak sistemden alır ve birer nüshasını sigortalıya imza karşılığı verir. Sonrasında tanzim edilen poliçeden iki nüsha düzenleyerek bir nüshasını sigorta ettiren/sigortalıya verir."
+                        }
+                    ]
+                },
+                {
+                    "title": "PRİMLERİN ÖDENMESİ",
+                    "description": [
+                        {
+                            "paragraph": "Bitkisel Ürün Sigortasında, dolu paket poliçelerinde yazılı primin %50' si Devlet tarafından karşılanır. Bununla birlikte, meyve ürünlerinde, ek olarak alınan don riski, meyve ve bağ fidanlarında don riski ile şekerpancarı, kabak (çerezlik), domates, biber, patlıcan, kavun ve karpuz ürünlerinde fide ve yapraklanma döneminde yeniden ekim dikime neden olacak don riski için; don priminin 2/3’ü Devlet tarafından karşılanır."
+                        },
+                        {
+                            "paragraph": "Sigortalı tarafından ödenecek olan primin % 15' i peşin alınır; kalan prim tutarı da en geç poliçe bitiş tarihinden itibaren 1 ay içinde tahsil edilir."
+                        },
+                        {
+                            "paragraph": "Ağaç/Fidan Sigortaları poliçelerinde ise sigortalı tarafından ödenecek olan primin %15' i peşin alınır, kalan prim tutarı da en fazla 5 taksitle tahsil edilir."
+                        }
+                    ]
+                },
+                {
+                    "title": "HASAR İHBAR / EKSPERTİZ / ÖDEME SÜRECİ",
+                    "description": [
+                        {
+                            "paragraph": "Bitkisel Ürün Sigortasında, teminat kapsamında olan bir riskin gerçekleşmesi halinde; sigorta ettiren/sigortalı, rizikonun gerçekleştiği tarihten itibaren, don hasarlarında 10 günü, diğer hasarlarda 15 günü aşmamak üzere Sesli Yanıt Sistemi uygulamasının yanı sıra, TARSİM Mobil Uygulama, tarsim.gov.tr üzerinde yer alan Poliçe sorgulama/hasar ihbarı ekranı veya acenteler aracılığıyla da Bitkisel Ürün Sigortası branşındaki poliçeleri için Tarım Sigortaları Havuzuna (TARSİM’ e) hasar ihbarında bulunabilir."
+                        },
+                        {
+                            "paragraph": "Hasar tespitleri Tarım Sigortaları Havuzu (TARSİM) tarafından görevlendirilen eksperler tarafından yapılır. Hasar dosyasının tamamlanmasından sonra, kesinleşmiş tazminat miktarları, en geç 30 gün içinde yine Tarım Sigortaları Havuzu (TARSİM) tarafından sigortalıya, banka kanalıyla ödenir. Tazminat, hasat tarihinden önce ödenmez. Ancak, ürünün tamamen hasarlanması halinde tazminat sigortacılık ilkeleri dahilinde poliçe bitiş tarihinden önce ödenir."
+                        },
+                        {
+                            "paragraph": "Erken bir gelişme devresinde sigortalı ürünün hasara uğraması durumunda; Tarım Sigortaları Havuzu eksperi tarafından, aynı ürünün veya farklı bir ürünün yeniden ekim/dikimine karar verilmesi halinde, sigortalının, hasar tarihine kadar, mevcut ürüne yapmış olduğu ekim/dikim ve bakım masrafları karşılığı olarak, Genel Şartlar ile Tarife ve Talimatlarında belirtildiği şekilde ödeme yapılır."
                         }
                     ]
                 }
