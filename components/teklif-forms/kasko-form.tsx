@@ -147,15 +147,15 @@ const KaskoForm = () => {
     async function onSubmit(values: z.infer<typeof formSchema>) {
         try {
             setLoading(true)
-            // const URL = `http://localhost:3001/api/trafik`
-            // const response = await fetch(URL, {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify(values)
-            // })
-            // form.reset();
+            const URL = `https://sigorta-admin-panel.vercel.app/api/kasko`
+            const response = await fetch(URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(values)
+            })
+            form.reset();
             console.log("values:", values)
 
         } catch (error) {
@@ -609,27 +609,10 @@ const KaskoForm = () => {
                                 <FormControl>
                                     <Input
                                         {...field}
-                                        type="text"
-                                        inputMode="numeric"
-                                        // pattern="0 \d{3} \d{3} \d{2} \d{2}"
-                                        maxLength={11}
+                                        type='text'
+                                        maxLength={14}
                                         placeholder='Telefon Numaranız'
-                                        value={field.value as string}
-                                        onChange={(e) => {
-                                            const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
-
-                                            if (numericValue.length <= 11) {
-                                                field.onChange(numericValue);
-                                            }
-                                        }}
-                                    // onChange={(e) => {
-                                    //     const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
-
-                                    //     if (numericValue.length <= 14) {
-                                    //         const formattedValue = numericValue.replace(/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/, '$1 $2 $3 $4 $5');
-                                    //         field.onChange(formattedValue);
-                                    //     }
-                                    // }}
+                                    // onChange={onPhoneChange}
                                     />
                                 </FormControl>
                             </FormItem>

@@ -105,7 +105,7 @@ const FerdiKazaForm = () => {
             }
 
             setLoading(true)
-            const URL = `http://localhost:3000/api/ferdikaza`
+            const URL = `https://sigorta-admin-panel.vercel.app/api/ferdikaza`
             const response = await fetch(URL, {
                 method: 'POST',
                 headers: {

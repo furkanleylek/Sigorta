@@ -118,15 +118,15 @@ const KonutForm = () => {
                 values.korumaOnlemleri = [''];
             }
             setLoading(true)
-            // const URL = `http://localhost:3001/api/trafik`
-            // const response = await fetch(URL, {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify(values)
-            // })
-            // form.reset();
+            const URL = `https://sigorta-admin-panel.vercel.app/api/konut`
+            const response = await fetch(URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(values)
+            })
+            form.reset();
             console.log("values:", values)
 
         } catch (error) {

@@ -79,7 +79,7 @@ const DaskForm = () => {
         yapitarzi: z.string().min(2),
         kullanimSekli: z.string().min(2),
         brutalan: z.string(),
-        katSayisi: z.number(),
+        katSayisi: z.string(),
         rizikoAdresi: z.string().min(2),
         hasar: z.enum(["var", "yok"]),
 
@@ -120,15 +120,15 @@ const DaskForm = () => {
     async function onSubmit(values: z.infer<typeof formSchema>) {
         try {
             setLoading(true)
-            // const URL = `http://localhost:3001/api/trafik`
-            // const response = await fetch(URL, {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify(values)
-            // })
-            // form.reset();
+            const URL = `https://sigorta-admin-panel.vercel.app/api/dask`
+            const response = await fetch(URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(values)
+            })
+            form.reset();
             console.log("values:", values)
 
         } catch (error) {
@@ -138,6 +138,7 @@ const DaskForm = () => {
             setOpenModal(true)
         }
     }
+
 
 
     return (
@@ -419,14 +420,22 @@ const DaskForm = () => {
                             name='katSayisi'
                             render={({ field }) => (
                                 <FormItem className='w-full'>
+                                    <FormLabel>Brüt Alanı :</FormLabel>
                                     <FormControl>
                                         <Input
-                                            placeholder='Kat Sayısı'
-                                            type='number'
                                             {...field}
-                                            value={field.value ?? ''}
+                                            type="text"
+                                            inputMode="numeric"
+                                            pattern="[0-9]*"
+                                            maxLength={2}
+                                            placeholder='Kat Sayısı'
+                                            value={field.value as string}
                                             onChange={(e) => {
-                                                field.onChange(e.target.value ? parseInt(e.target.value) : undefined);
+                                                const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                if (numericValue.length <= 2) {
+                                                    field.onChange(numericValue);
+                                                }
                                             }}
                                         />
                                     </FormControl>
