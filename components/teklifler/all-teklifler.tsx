@@ -119,7 +119,7 @@ const AllTeklifler = () => {
             }
             {
                 content === 'kasko' && (
-                    <TestForm />
+                    <KaskoForm />
                 )
             }
             {

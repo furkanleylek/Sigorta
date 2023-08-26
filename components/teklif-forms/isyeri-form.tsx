@@ -77,10 +77,16 @@ export const IsyeriForm = () => {
         faaliyetKonusu: z.string().min(2),
         calısanSayısı: z.string(),
         brütalan: z.string(),
+        katsayisi: z.string(),
+        binabedeli: z.string(),
+        demirbasbedeli: z.string(),
+        emtiabedeli: z.string(),
+        makinetesbedeli: z.string(),
+        cambedeli: z.string(),
+        elektronikcihazbedeli: z.string(),
+        kasamuhteviyatibedeli: z.string(),
         rizikoAdresi: z.string().min(2),
-        korumaOnlemleri: z.array(z.string()).refine((value) => value.some((item) => item), {
-            message: "You have to select at least one item.",
-        }),
+        korumaOnlemleri: z.array(z.string()).refine((value) => value.some((item) => item)).optional(),
         hasar: z.enum(["var", "yok"]),
 
 
@@ -108,7 +114,6 @@ export const IsyeriForm = () => {
             tcKimlik: '',
 
             rizikoAdresi: '',
-            korumaOnlemleri: [''],
 
             police: 'yok',
 
@@ -121,6 +126,9 @@ export const IsyeriForm = () => {
 
     async function onSubmit(values: z.infer<typeof formSchema>) {
         try {
+            if (values.korumaOnlemleri === undefined) {
+                values.korumaOnlemleri = [''];
+            }
             setLoading(true)
             // const URL = `http://localhost:3001/api/trafik`
             // const response = await fetch(URL, {
@@ -377,13 +385,75 @@ export const IsyeriForm = () => {
                             </FormItem>
                         )}
                     />
-                    <FormField
-                        control={form.control}
-                        name='brütalan'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Brüt Alanı :</FormLabel>
-                                <div className='relative'>
+                    <div className='flex flex-col md:flex-row items-center gap-3 w-full'>
+                        <FormField
+                            control={form.control}
+                            name='brütalan'
+                            render={({ field }) => (
+                                <FormItem className='w-full'>
+                                    <FormLabel>Brüt Alanı :</FormLabel>
+                                    <div className='relative'>
+                                        <FormControl>
+                                            <Input
+                                                {...field}
+                                                type="text"
+                                                inputMode="numeric"
+                                                pattern="[0-9]*"
+                                                maxLength={4}
+                                                placeholder='Brüt Alanınız'
+                                                value={field.value as string}
+                                                onChange={(e) => {
+                                                    const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                    if (numericValue.length <= 4) {
+                                                        field.onChange(numericValue);
+                                                    }
+                                                }}
+                                            />
+                                        </FormControl>
+                                        <span className='absolute top-2 right-10 h-full items-center text-center font-semibold text-md ordinal'>m²</span>
+                                    </div>
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name='katsayisi'
+                            render={({ field }) => (
+                                <FormItem className='w-full'>
+                                    <FormLabel>Kat Sayısı :</FormLabel>
+                                    <div className='relative'>
+                                        <FormControl>
+                                            <Input
+                                                {...field}
+                                                type="text"
+                                                inputMode="numeric"
+                                                pattern="[0-9]*"
+                                                maxLength={4}
+                                                placeholder='Kat Sayınız'
+                                                value={field.value as string}
+                                                onChange={(e) => {
+                                                    const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                    if (numericValue.length <= 4) {
+                                                        field.onChange(numericValue);
+                                                    }
+                                                }}
+                                            />
+                                        </FormControl>
+                                        <span className='absolute top-2 right-10 h-full items-center text-center font-semibold text-md ordinal'>m²</span>
+                                    </div>
+                                </FormItem>
+                            )}
+                        />
+                    </div>
+                    <div className='flex flex-col md:flex-row items-center gap-3 w-full'>
+                        <FormField
+                            control={form.control}
+                            name='binabedeli'
+                            render={({ field }) => (
+                                <FormItem className='w-full'>
+                                    <FormLabel>Bina Bedeli :</FormLabel>
                                     <FormControl>
                                         <Input
                                             {...field}
@@ -391,7 +461,7 @@ export const IsyeriForm = () => {
                                             inputMode="numeric"
                                             pattern="[0-9]*"
                                             maxLength={4}
-                                            placeholder='Brüt Alanınız'
+                                            placeholder='Bina Bedeliniz'
                                             value={field.value as string}
                                             onChange={(e) => {
                                                 const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
@@ -402,17 +472,176 @@ export const IsyeriForm = () => {
                                             }}
                                         />
                                     </FormControl>
-                                    <span className='absolute top-2 right-10 h-full items-center text-center font-semibold text-md ordinal'>m²</span>
-                                </div>
+                                </FormItem>
+                            )}
+                        />   <FormField
+                            control={form.control}
+                            name='demirbasbedeli'
+                            render={({ field }) => (
+                                <FormItem className='w-full'>
+                                    <FormLabel>Demirbaş Bedeli :</FormLabel>
+                                    <FormControl>
+                                        <Input
+                                            {...field}
+                                            type="text"
+                                            inputMode="numeric"
+                                            pattern="[0-9]*"
+                                            maxLength={4}
+                                            placeholder='Demirbaş Bedeliniz'
+                                            value={field.value as string}
+                                            onChange={(e) => {
+                                                const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                if (numericValue.length <= 4) {
+                                                    field.onChange(numericValue);
+                                                }
+                                            }}
+                                        />
+                                    </FormControl>
+                                </FormItem>
+                            )}
+
+                        />
+                    </div>
+                    <div className='flex flex-col md:flex-row items-center gap-3 w-full'>
+                        <FormField
+                            control={form.control}
+                            name='emtiabedeli'
+                            render={({ field }) => (
+                                <FormItem className='w-full'>
+                                    <FormLabel>Emtia Bedeli :</FormLabel>
+                                    <FormControl>
+                                        <Input
+                                            {...field}
+                                            type="text"
+                                            inputMode="numeric"
+                                            pattern="[0-9]*"
+                                            maxLength={4}
+                                            placeholder='Emtia Bedeliniz'
+                                            value={field.value as string}
+                                            onChange={(e) => {
+                                                const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                if (numericValue.length <= 4) {
+                                                    field.onChange(numericValue);
+                                                }
+                                            }}
+                                        />
+                                    </FormControl>
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name='makinetesbedeli'
+                            render={({ field }) => (
+                                <FormItem className='w-full'>
+                                    <FormLabel>Makine Tes. Bedeli :</FormLabel>
+                                    <FormControl>
+                                        <Input
+                                            {...field}
+                                            type="text"
+                                            inputMode="numeric"
+                                            pattern="[0-9]*"
+                                            maxLength={4}
+                                            placeholder='Makine Tes. Bedeli'
+                                            value={field.value as string}
+                                            onChange={(e) => {
+                                                const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                if (numericValue.length <= 4) {
+                                                    field.onChange(numericValue);
+                                                }
+                                            }}
+                                        />
+                                    </FormControl>
+                                </FormItem>
+                            )}
+                        />
+                    </div>
+                    <div className='flex flex-col md:flex-row items-center gap-3 w-full'>
+                        <FormField
+                            control={form.control}
+                            name='cambedeli'
+                            render={({ field }) => (
+                                <FormItem className='w-full'>
+                                    <FormLabel>Cam Bedeli :</FormLabel>
+                                    <FormControl>
+                                        <Input
+                                            {...field}
+                                            type="text"
+                                            inputMode="numeric"
+                                            pattern="[0-9]*"
+                                            maxLength={4}
+                                            placeholder='Cam Bedeliniz'
+                                            value={field.value as string}
+                                            onChange={(e) => {
+                                                const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                if (numericValue.length <= 4) {
+                                                    field.onChange(numericValue);
+                                                }
+                                            }}
+                                        />
+                                    </FormControl>
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name='elektronikcihazbedeli'
+                            render={({ field }) => (
+                                <FormItem className='w-full'>
+                                    <FormLabel>Elektronik Cihaz Bedeli :</FormLabel>
+                                    <FormControl>
+                                        <Input
+                                            {...field}
+                                            type="text"
+                                            inputMode="numeric"
+                                            pattern="[0-9]*"
+                                            maxLength={4}
+                                            placeholder='Elektronik Cihaz Bedeliniz'
+                                            value={field.value as string}
+                                            onChange={(e) => {
+                                                const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                                if (numericValue.length <= 4) {
+                                                    field.onChange(numericValue);
+                                                }
+                                            }}
+                                        />
+                                    </FormControl>
+                                </FormItem>
+                            )}
+                        />
+                    </div>
+                    <FormField
+                        control={form.control}
+                        name='kasamuhteviyatibedeli'
+                        render={({ field }) => (
+                            <FormItem className='w-full'>
+                                <FormLabel>Kasa Muhteviyatı Bedeli :</FormLabel>
+                                <FormControl>
+                                    <Input
+                                        {...field}
+                                        type="text"
+                                        inputMode="numeric"
+                                        pattern="[0-9]*"
+                                        maxLength={4}
+                                        placeholder='Kasa Muhteviyatı Bedeli'
+                                        value={field.value as string}
+                                        onChange={(e) => {
+                                            const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
+
+                                            if (numericValue.length <= 4) {
+                                                field.onChange(numericValue);
+                                            }
+                                        }}
+                                    />
+                                </FormControl>
                             </FormItem>
                         )}
                     />
-
-                    <span>BİNA BEDELİ</span>
-                    <span>EMTİA BEDELİ</span>
-                    <span>CAM BEDELİ</span>
-                    <span>KASA MUHTEVİYATI BEDELİ</span>
-
                     <FormField
                         control={form.control}
                         name='rizikoAdresi'
@@ -460,6 +689,8 @@ export const IsyeriForm = () => {
                                                     control={form.control}
                                                     name="korumaOnlemleri"
                                                     render={({ field }) => {
+                                                        const value = field.value || [];
+
                                                         return (
                                                             <FormItem
                                                                 key={item.id}
@@ -470,7 +701,7 @@ export const IsyeriForm = () => {
                                                                         checked={field.value?.includes(item.id)}
                                                                         onCheckedChange={(checked) => {
                                                                             return checked
-                                                                                ? field.onChange([...field.value, item.id])
+                                                                                ? field.onChange([...value, item.id])
                                                                                 : field.onChange(
                                                                                     field.value?.filter(
                                                                                         (value) => value !== item.id

@@ -27,9 +27,6 @@ const IletisimForm = () => {
         kullaniciAdi: z.string().min(2, {
             message: 'Kullanıcı ismi girilmesi gerekiyor .'
         }),
-        tcKimlik: z.string().refine((value) => value.length === 11 && /^\d+$/.test(value)),
-
-        dogumTarihi: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).min(2),
 
         adres: z.string(),
         telefonNumarasi: z.string().refine((value) => /^0\d{3} \d{3} \d{2} \d{2}$/.test(value)),
@@ -42,7 +39,6 @@ const IletisimForm = () => {
         resolver: zodResolver(extendFormSchema),
         defaultValues: {
             kullaniciAdi: '',
-            tcKimlik: '',
             adres: '',
             telefonNumarasi: '',
             eposta: '',
@@ -88,48 +84,6 @@ const IletisimForm = () => {
                                 <FormLabel>Adı - Soyadı : </FormLabel>
                                 <FormControl>
                                     <Input placeholder='Adınız / Soyadınız' {...field} value={field.value as string} />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name='tcKimlik'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>T.C. Kimlik Numaranız :</FormLabel>
-                                <FormControl>
-                                    <Input
-                                        {...field}
-                                        type="text"
-                                        inputMode="numeric"
-                                        pattern="[0-9]*"
-                                        maxLength={11}
-                                        placeholder="Kimlik numaranız"
-                                        value={field.value as string}
-                                        onChange={(e) => {
-                                            const numericValue = e.target.value.replace(/\D/g, ''); // Sadece rakamları al
-
-                                            if (numericValue.length <= 11) {
-                                                field.onChange(numericValue);
-                                            }
-                                        }}
-                                    />
-                                </FormControl>
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name='dogumTarihi'
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Doğum Tarihiniz :</FormLabel>
-                                <FormControl>
-                                    <Input
-                                        {...field}
-                                        type="date"
-                                    />
                                 </FormControl>
                             </FormItem>
                         )}
